@@ -52,6 +52,7 @@ PREFERRED_OUTLETS = {"The Hindu", "Indian Express", "NDTV"}
 
 DRY_RUN = os.getenv("DRY_RUN", "1") == "1"
 MODEL = os.getenv("GEMINI_MODEL", "gemini-flash-latest")
+OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
 WRITE_MODEL = os.getenv("GEMINI_WRITE_MODEL", "gemini-flash-latest")
 TEST_WRITE = os.getenv("TEST_WRITE", "0") == "1"
 MAX_POSTS = int(os.getenv("MAX_POSTS_PER_RUN", "1"))
@@ -61,6 +62,38 @@ LOOKBACK_HOURS = 3
 
 GRAPH = "https://graph.facebook.com/v19.0"
 GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+
+
+def openai_json(system_prompt, user_content, temperature=0.0):
+    """Fallback model (OpenAI) with the same JSON contract as gemini_json."""
+    body = {
+        "model": OPENAI_MODEL,
+        "messages": [
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_content},
+        ],
+        "response_format": {"type": "json_object"},
+        "temperature": temperature,
+    }
+    for attempt in range(3):
+        try:
+            r = requests.post(
+                "https://api.openai.com/v1/chat/completions",
+                headers={"Authorization": f"Bearer {os.environ['OPENAI_API_KEY']}", "Content-Type": "application/json"},
+                json=body,
+                timeout=120,
+            )
+        except requests.exceptions.RequestException:
+            if attempt < 2:
+                time.sleep(10 * (attempt + 1))
+                continue
+            raise
+        if r.status_code == 200:
+            return json.loads(r.json()["choices"][0]["message"]["content"])
+        if r.status_code in (429, 500, 503) and attempt < 2:
+            time.sleep(10 * (attempt + 1))
+            continue
+        raise RuntimeError(f"OpenAI call failed: {r.status_code} {r.text[:300]}")
 
 
 def gemini_json(system_prompt, user_content, temperature=0.0, model=None):
@@ -95,6 +128,9 @@ def gemini_json(system_prompt, user_content, temperature=0.0, model=None):
             log(f"Gemini returned {r.status_code}, retrying...")
             time.sleep(10 * (attempt + 1))
             continue
+        if r.status_code in (429, 500, 503) and os.getenv("OPENAI_API_KEY"):
+            log(f"Gemini unavailable ({r.status_code}); using OpenAI fallback")
+            return openai_json(system_prompt, user_content, temperature)
         raise RuntimeError(f"Gemini call failed: {r.status_code} {r.text[:500]}")
 
 
