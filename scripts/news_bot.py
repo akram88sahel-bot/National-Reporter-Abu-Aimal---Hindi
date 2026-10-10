@@ -370,7 +370,11 @@ def main():
         log("No recent items. Nothing to do.")
         return 0
 
-    events = classify(items, posted)
+    try:
+        events = classify(items, posted)
+    except Exception as e:  # AI unavailable: do not post, do not crash noisily
+        log(f"AI classification unavailable, nothing posted this run: {str(e)[:160]}")
+        return 0
     by_id = {i["id"]: i for i in items}
     candidates = []
     for ev in events:
