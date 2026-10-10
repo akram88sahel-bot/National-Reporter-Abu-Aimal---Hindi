@@ -129,7 +129,8 @@ def gemini_json(system_prompt, user_content, temperature=0.0, model=None):
             time.sleep(10 * (attempt + 1))
             continue
         if r.status_code in (403, 429, 500, 503) and os.getenv("OPENAI_API_KEY"):
-            log(f"Gemini unavailable ({r.status_code}); using OpenAI fallback")
+            log(f"Gemini unavailable ({r.status_code}): {r.text[:400]}")
+            log("Using OpenAI fallback")
             return openai_json(system_prompt, user_content, temperature)
         raise RuntimeError(f"Gemini call failed: {r.status_code} {r.text[:500]}")
 
