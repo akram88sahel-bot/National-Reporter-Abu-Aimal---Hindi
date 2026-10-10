@@ -32,7 +32,7 @@ jobs:
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-flash-latest' }}
-          GEMINI_WRITE_MODEL: ${{ vars.GEMINI_WRITE_MODEL || 'gemini-pro-latest' }}
+          GEMINI_WRITE_MODEL: ${{ vars.GEMINI_WRITE_MODEL || 'gemini-flash-latest' }}
           TEST_WRITE: ${{ vars.TEST_WRITE || '0' }}
           MAX_POSTS_PER_RUN: ${{ vars.MAX_POSTS_PER_RUN || '2' }}
           MIN_SOURCES: ${{ vars.MIN_SOURCES || '2' }}

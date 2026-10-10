@@ -16,7 +16,7 @@ Secrets (GitHub Actions secrets / env vars):
 Settings (env vars):
   DRY_RUN=1 (default) -> prints posts, does not publish
   GEMINI_MODEL (classification, default gemini-flash-latest)
-  GEMINI_WRITE_MODEL (Hindi/Roman Urdu writing, default gemini-pro-latest)
+  GEMINI_WRITE_MODEL (Hindi/Roman Urdu writing, default gemini-flash-latest)
   TEST_WRITE=1 -> writes one sample post to the log and exits (no publish)
   MAX_POSTS_PER_RUN (default 2)
   MIN_SOURCES (default 2)
@@ -49,7 +49,7 @@ PREFERRED_OUTLETS = {"The Hindu", "Indian Express", "NDTV"}
 
 DRY_RUN = os.getenv("DRY_RUN", "1") == "1"
 MODEL = os.getenv("GEMINI_MODEL", "gemini-flash-latest")
-WRITE_MODEL = os.getenv("GEMINI_WRITE_MODEL", "gemini-pro-latest")
+WRITE_MODEL = os.getenv("GEMINI_WRITE_MODEL", "gemini-flash-latest")
 TEST_WRITE = os.getenv("TEST_WRITE", "0") == "1"
 MAX_POSTS = int(os.getenv("MAX_POSTS_PER_RUN", "2"))
 MIN_SOURCES = int(os.getenv("MIN_SOURCES", "2"))
