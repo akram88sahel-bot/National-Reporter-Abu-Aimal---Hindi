@@ -54,7 +54,8 @@ DRY_RUN = os.getenv("DRY_RUN", "1") == "1"
 MODEL = os.getenv("GEMINI_MODEL", "gemini-flash-latest")
 WRITE_MODEL = os.getenv("GEMINI_WRITE_MODEL", "gemini-flash-latest")
 TEST_WRITE = os.getenv("TEST_WRITE", "0") == "1"
-MAX_POSTS = int(os.getenv("MAX_POSTS_PER_RUN", "2"))
+MAX_POSTS = int(os.getenv("MAX_POSTS_PER_RUN", "1"))
+MAX_POSTS_PER_DAY = int(os.getenv("MAX_POSTS_PER_DAY", "8"))
 MIN_SOURCES = int(os.getenv("MIN_SOURCES", "2"))
 LOOKBACK_HOURS = 3
 
@@ -157,14 +158,24 @@ def classify(items, posted):
     return data.get("events", [])
 
 
-WRITE_PROMPT = """Write a Facebook breaking-news post for a Hyderabad/Telangana news page.
-Use ONLY the facts in the provided source headlines and summaries. Never mention any news outlet or channel name (no NDTV, The Hindu, Indian Express, "reports by", "source") in the bullets. Never add names, numbers, causes or quotes that are not there.
-Use cautious wording for developing or police-related facts, such as "Reports suggest", "Police said", "More details are awaited".
+WRITE_PROMPT = """You write a Facebook breaking-news post for a Hyderabad/Telangana news page.
+STRICT RULES:
+1. Use ONLY facts present in the provided headlines and summaries. Never add names, numbers, causes, places, quotes or outcomes that are not there.
+2. Every story must answer WHO, WHAT, WHERE and WHY/CONTEXT. If the material does not clearly give all four, set "complete" to false. Do not guess.
+3. Never write filler such as "more details are awaited", "information is awaited", "reports are coming". Each bullet must state a fact.
+4. Never mention any news outlet, channel or source name (no NDTV, The Hindu, Indian Express, "reports by", "source").
+5. Hindi must be simple Devanagari. Roman Urdu must be simple, natural Latin letters. Both must carry the same 3 facts, with no added or missing facts.
+6. Exactly 3 bullets in Hindi and exactly 3 in Roman Urdu. Short, complete sentences.
 Return JSON:
-{"headline": "LATEST NEWS — HYDERABAD" (or TELANGANA / INDIA / WORLD),
- "hindi": ["bullet 1", "bullet 2", "bullet 3"],   // simple Hindi in Devanagari, exactly 3 short bullets
- "roman_urdu": ["bullet 1", "bullet 2", "bullet 3"], // simple natural Roman Urdu (Latin letters), exactly 3 short bullets, same 3 facts
- "sources": ["The Hindu", "NDTV"]}"""
+{"complete": true or false,
+ "headline": "LATEST NEWS — HYDERABAD" (or TELANGANA / INDIA / WORLD),
+ "hindi": ["bullet 1", "bullet 2", "bullet 3"],
+ "roman_urdu": ["bullet 1", "bullet 2", "bullet 3"],
+ "sources": ["The Hindu"]}"""
+
+
+class SkipStory(Exception):
+    pass
 
 
 def write_post(event, items):
@@ -175,6 +186,8 @@ def write_post(event, items):
         temperature=0.2,
         model=WRITE_MODEL,
     )
+    if not data.get("complete"):
+        raise SkipStory("writer marked story as incomplete")
     assert len(data["hindi"]) == 3 and len(data["roman_urdu"]) == 3, "bullet count must be exactly 3"
     return data
 
@@ -213,6 +226,23 @@ def publish(data, card_path):
     if r.status_code != 200:
         raise RuntimeError(f"Facebook publish failed: {r.status_code} {r.text}")
     return r.json()
+
+
+def posts_today(posted):
+    """Count live posts made today (Asia/Kolkata date)."""
+    ist = timezone(timedelta(hours=5, minutes=30))
+    today = datetime.now(ist).date().isoformat()
+    count = 0
+    for rec in posted:
+        if rec.get("dry_run"):
+            continue
+        try:
+            when = datetime.fromisoformat(rec["posted_at"]).astimezone(ist).date().isoformat()
+        except Exception:
+            continue
+        if when == today:
+            count += 1
+    return count
 
 
 def qualifies(event):
@@ -299,8 +329,18 @@ def main():
     # Most important first: A before B before C
     candidates.sort(key=lambda e: e["class"])
     published = 0
-    for ev in candidates[:MAX_POSTS]:
-        data = write_post(ev, items)
+    remaining_today = MAX_POSTS_PER_DAY - posts_today(posted)
+    if remaining_today <= 0:
+        log(f"Daily cap of {MAX_POSTS_PER_DAY} posts reached. Nothing more today.")
+        save_posted(posted)
+        return 0
+    limit = min(MAX_POSTS, remaining_today)
+    for ev in candidates[:limit]:
+        try:
+            data = write_post(ev, items)
+        except SkipStory as e:
+            log(f"SKIP (not complete news): {ev['event_key']} -> {e}")
+            continue
         message = format_message(data)
         card_path = Path("/tmp/nr_card.png")
         render_card(data["headline"], data["hindi"], data["roman_urdu"], "", card_path)

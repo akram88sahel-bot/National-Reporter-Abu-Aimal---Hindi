@@ -36,6 +36,7 @@ jobs:
           TEST_WRITE: ${{ vars.TEST_WRITE || '0' }}
           REPOST: ${{ vars.REPOST || '0' }}
           MAX_POSTS_PER_RUN: ${{ vars.MAX_POSTS_PER_RUN || '2' }}
+          MAX_POSTS_PER_DAY: ${{ vars.MAX_POSTS_PER_DAY || '8' }}
           MIN_SOURCES: ${{ vars.MIN_SOURCES || '2' }}
           DRY_RUN: ${{ vars.DRY_RUN || '1' }}   # set repo variable DRY_RUN to 0 to go live
         run: python scripts/news_bot.py
