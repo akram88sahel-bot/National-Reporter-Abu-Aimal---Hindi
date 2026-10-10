@@ -57,6 +57,7 @@ WRITE_MODEL = os.getenv("GEMINI_WRITE_MODEL", "gemini-flash-latest")
 TEST_WRITE = os.getenv("TEST_WRITE", "0") == "1"
 MAX_POSTS = int(os.getenv("MAX_POSTS_PER_RUN", "1"))
 MAX_POSTS_PER_DAY = int(os.getenv("MAX_POSTS_PER_DAY", "8"))
+MAX_ATTEMPTS = int(os.getenv("MAX_ATTEMPTS_PER_RUN", "4"))
 MIN_SOURCES = int(os.getenv("MIN_SOURCES", "2"))
 LOOKBACK_HOURS = 3
 
@@ -374,7 +375,11 @@ def main():
         save_posted(posted)
         return 0
     limit = min(MAX_POSTS, remaining_today)
-    for ev in candidates[:limit]:
+    attempts = 0
+    for ev in candidates:
+        if published >= limit or attempts >= MAX_ATTEMPTS:
+            break
+        attempts += 1
         try:
             data = write_post(ev, items)
         except SkipStory as e:
