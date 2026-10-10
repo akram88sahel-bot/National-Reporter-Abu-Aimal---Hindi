@@ -344,7 +344,21 @@ def _old_repost_previous_unused():
     return 0
 
 
+def diagnose():
+    """Read-only check of the Facebook token: which app, which type, which Page. Never posts."""
+    token = os.environ["FB_PAGE_TOKEN"]
+    page_id = os.environ["FB_PAGE_ID"]
+    r = requests.get(f"{GRAPH}/debug_token", params={"input_token": token, "access_token": token}, timeout=30)
+    d = r.json().get("data", {})
+    print("--- debug_token:", {k: d.get(k) for k in ["type", "app_id", "application", "is_valid", "expires_at", "scopes"]}, flush=True)
+    r = requests.get(f"{GRAPH}/{page_id}", params={"fields": "id,name", "access_token": token}, timeout=30)
+    print(f"--- page [{r.status_code}]: {r.text[:200]}", flush=True)
+    return 0
+
+
 def main():
+    if os.getenv("DIAG", "0") == "1":
+        return diagnose()
     if os.getenv("REPOST", "0") == "1":
         return repost_previous()
     if TEST_WRITE:
