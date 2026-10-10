@@ -1,0 +1,45 @@
+name: Breaking news bot
+
+on:
+  schedule:
+    - cron: "15 */2 * * *"   # every 2 hours, UTC (GitHub may delay runs a few minutes)
+  workflow_dispatch: {}      # manual run button in the Actions tab
+
+permissions:
+  contents: write            # needed to commit data/posted.json
+
+concurrency:
+  group: breaking-news
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Run bot
+        env:
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-2.5-flash' }}
+          MAX_POSTS_PER_RUN: ${{ vars.MAX_POSTS_PER_RUN || '2' }}
+          MIN_SOURCES: ${{ vars.MIN_SOURCES || '2' }}
+          DRY_RUN: ${{ vars.DRY_RUN || '1' }}   # set repo variable DRY_RUN to 0 to go live
+        run: python scripts/news_bot.py
+
+      - name: Save posted record
+        run: |
+          git config user.name "breaking-news-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/posted.json
+          git diff --cached --quiet || (git commit -m "Update posted record" && git push)
