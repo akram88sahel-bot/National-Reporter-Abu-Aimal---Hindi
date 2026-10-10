@@ -98,6 +98,8 @@ def openai_json(system_prompt, user_content, temperature=0.0):
 
 def gemini_json(system_prompt, user_content, temperature=0.0, model=None):
     """Call Gemini and return the parsed JSON object it produces."""
+    if os.getenv("LLM_PROVIDER", "gemini") == "openai" and os.getenv("OPENAI_API_KEY"):
+        return openai_json(system_prompt, user_content, temperature)
     api_key = os.environ["GEMINI_API_KEY"]
     body = {
         "systemInstruction": {"parts": [{"text": system_prompt}]},
