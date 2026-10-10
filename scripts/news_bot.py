@@ -15,7 +15,9 @@ Secrets (GitHub Actions secrets / env vars):
   FB_PAGE_ID, FB_PAGE_TOKEN, GEMINI_API_KEY
 Settings (env vars):
   DRY_RUN=1 (default) -> prints posts, does not publish
-  GEMINI_MODEL (default gemini-2.5-flash)
+  GEMINI_MODEL (classification, default gemini-flash-latest)
+  GEMINI_WRITE_MODEL (Hindi/Roman Urdu writing, default gemini-pro-latest)
+  TEST_WRITE=1 -> writes one sample post to the log and exits (no publish)
   MAX_POSTS_PER_RUN (default 2)
   MIN_SOURCES (default 2)
 """
@@ -46,7 +48,9 @@ FEEDS = [
 PREFERRED_OUTLETS = {"The Hindu", "Indian Express", "NDTV"}
 
 DRY_RUN = os.getenv("DRY_RUN", "1") == "1"
-MODEL = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
+MODEL = os.getenv("GEMINI_MODEL", "gemini-flash-latest")
+WRITE_MODEL = os.getenv("GEMINI_WRITE_MODEL", "gemini-pro-latest")
+TEST_WRITE = os.getenv("TEST_WRITE", "0") == "1"
 MAX_POSTS = int(os.getenv("MAX_POSTS_PER_RUN", "2"))
 MIN_SOURCES = int(os.getenv("MIN_SOURCES", "2"))
 LOOKBACK_HOURS = 3
@@ -55,7 +59,7 @@ GRAPH = "https://graph.facebook.com/v19.0"
 GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
 
 
-def gemini_json(system_prompt, user_content, temperature=0.0):
+def gemini_json(system_prompt, user_content, temperature=0.0, model=None):
     """Call Gemini and return the parsed JSON object it produces."""
     api_key = os.environ["GEMINI_API_KEY"]
     body = {
@@ -68,7 +72,7 @@ def gemini_json(system_prompt, user_content, temperature=0.0):
     }
     for attempt in range(3):
         r = requests.post(
-            GEMINI_URL.format(model=MODEL),
+            GEMINI_URL.format(model=model or MODEL),
             headers={"x-goog-api-key": api_key, "Content-Type": "application/json"},
             json=body,
             timeout=90,
@@ -159,6 +163,7 @@ def write_post(event, items):
         WRITE_PROMPT,
         json.dumps({"event": event["event_key"], "items": related}, ensure_ascii=False),
         temperature=0.2,
+        model=WRITE_MODEL,
     )
     assert len(data["hindi"]) == 3 and len(data["roman_urdu"]) == 3, "bullet count must be exactly 3"
     return data
@@ -202,8 +207,28 @@ def qualifies(event):
     return True, "ok"
 
 
+SAMPLE_EVENT = {
+    "event_key": "Test event: Hyderabad traffic disruption",
+    "item_ids": [0, 1],
+    "class": "A",
+}
+SAMPLE_ITEMS = [
+    {"id": 0, "outlet": "The Hindu", "title": "Traffic disrupted on Outer Ring Road near Gachibowli after vehicle breakdown", "summary": "Police said traffic was diverted and clearing work is under way."},
+    {"id": 1, "outlet": "NDTV", "title": "Vehicle breakdown causes traffic jam on Outer Ring Road, Hyderabad", "summary": "Commuters are advised to take alternate routes."},
+]
+
+
+def test_write():
+    log(f"TEST_WRITE with model {WRITE_MODEL}")
+    data = write_post(SAMPLE_EVENT, SAMPLE_ITEMS)
+    print(format_message(data), flush=True)
+    return 0
+
+
 def main():
-    log(f"Start. DRY_RUN={DRY_RUN} MODEL={MODEL} MIN_SOURCES={MIN_SOURCES}")
+    if TEST_WRITE:
+        return test_write()
+    log(f"Start. DRY_RUN={DRY_RUN} MODEL={MODEL} WRITE_MODEL={WRITE_MODEL} MIN_SOURCES={MIN_SOURCES}")
     posted = load_posted()
     items = fetch_items()
     if not items:
