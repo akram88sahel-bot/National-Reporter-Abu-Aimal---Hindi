@@ -158,7 +158,7 @@ def classify(items, posted):
 
 
 WRITE_PROMPT = """Write a Facebook breaking-news post for a Hyderabad/Telangana news page.
-Use ONLY the facts in the provided source headlines and summaries. Never add names, numbers, causes or quotes that are not there.
+Use ONLY the facts in the provided source headlines and summaries. Never mention any news outlet or channel name (no NDTV, The Hindu, Indian Express, "reports by", "source") in the bullets. Never add names, numbers, causes or quotes that are not there.
 Use cautious wording for developing or police-related facts, such as "Reports suggest", "Police said", "More details are awaited".
 Return JSON:
 {"headline": "LATEST NEWS — HYDERABAD" (or TELANGANA / INDIA / WORLD),
@@ -195,8 +195,7 @@ def publish(data, card_path):
     """Publish the black-and-gold card. Text lives on the image; caption is only the source line."""
     page_id = os.environ["FB_PAGE_ID"]
     token = os.environ["FB_PAGE_TOKEN"]
-    sources = ", ".join(data.get("sources", []))
-    caption = f"Source: {sources}" if sources else ""
+    caption = ""  # no source names; the card carries the credit line
     with open(card_path, "rb") as f:
         r = requests.post(
             f"{GRAPH}/{page_id}/photos",
@@ -238,7 +237,27 @@ def test_write():
     return 0
 
 
+def repost_previous():
+    """One-off: regenerate and republish the stories already on record, using the new card design."""
+    posted = load_posted()
+    for rec in posted:
+        if rec.get("dry_run"):
+            continue
+        event = {"event_key": rec["event_key"], "item_ids": [0], "class": rec.get("class", "B")}
+        items = [{"id": 0, "outlet": "", "title": rec["event_key"], "summary": ""}]
+        data = write_post(event, items)
+        card_path = Path("/tmp/nr_card.png")
+        render_card(data["headline"], data["hindi"], data["roman_urdu"], "", card_path)
+        log("REPOST: " + rec["event_key"])
+        result = publish(data, card_path)
+        log(f"Republished: {result}")
+        time.sleep(5)
+    return 0
+
+
 def main():
+    if os.getenv("REPOST", "0") == "1":
+        return repost_previous()
     if TEST_WRITE:
         return test_write()
     log(f"Start. DRY_RUN={DRY_RUN} MODEL={MODEL} WRITE_MODEL={WRITE_MODEL} MIN_SOURCES={MIN_SOURCES}")
@@ -265,8 +284,7 @@ def main():
         data = write_post(ev, items)
         message = format_message(data)
         card_path = Path("/tmp/nr_card.png")
-        render_card(data["headline"], data["hindi"], data["roman_urdu"],
-                    ", ".join(data.get("sources", [])) or "Verified news", card_path)
+        render_card(data["headline"], data["hindi"], data["roman_urdu"], "", card_path)
         if DRY_RUN:
             log("DRY RUN - would publish card:\n" + message)
         else:

@@ -86,17 +86,17 @@ def render_card(headline, hindi, roman_urdu, source, out_path):
     img.paste(logo, ((W - logo_w) // 2, 56))
     top = 56 + logo.height + 24
 
-    font_head = _font("NotoSans.ttf", 54, "Bold")
+    font_head = _font("NotoSans.ttf", 60, "Bold")
     head_w = draw.textlength(headline, font=font_head)
     draw.text(((W - head_w) // 2, top), headline, font=font_head, fill=GOLD)
     rule1 = top + 80
     _gold_rule(draw, rule1)
     body_top = rule1 + 24
-    body_bottom = H - 170  # leave room for source line and bottom rule
+    body_bottom = H - 180  # leave room for credit line and bottom rule
     max_w = W - 160
 
     # Shrink text until everything fits between the rules
-    size = 38
+    size = 44
     while size > 20:
         fonts = {
             "hi": _font("NotoSansDevanagari.ttf", size, "Medium"),
@@ -108,7 +108,7 @@ def render_card(headline, hindi, roman_urdu, source, out_path):
             break
         size -= 1
 
-    font_label = _font("NotoSans.ttf", 26, "Bold")
+    font_label = _font("NotoSans.ttf", 30, "Bold")
     y = body_top
     draw.text((80, y), "HINDI", font=font_label, fill=GOLD_DARK)
     y += 40
@@ -117,9 +117,11 @@ def render_card(headline, hindi, roman_urdu, source, out_path):
     y += 40
     _bullets(draw, y, roman_urdu, fonts["ru"], max_w, line_gap=8)
 
-    font_src = _font("NotoSans.ttf", 26, "Regular")
-    draw.text((80, H - 110), f"Source: {source}", font=font_src, fill=GREY)
-    _gold_rule(draw, H - 140)
+    font_credit = _font("NotoSans.ttf", 32, "Bold")
+    credit = "ABU AIMAL & AIMAL AKRAM"
+    cw = draw.textlength(credit, font=font_credit)
+    draw.text(((W - cw) // 2, H - 115), credit, font=font_credit, fill=GOLD)
+    _gold_rule(draw, H - 150)
 
     img.save(out_path, "PNG", optimize=True)
     return out_path
