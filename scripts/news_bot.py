@@ -23,6 +23,7 @@ Settings (env vars):
 """
 
 import json
+import re
 import os
 import sys
 import time
@@ -218,16 +219,51 @@ class SkipStory(Exception):
     pass
 
 
+def fetch_article_text(url, limit=6000):
+    """Pull readable body text from a story link. Returns '' on any failure."""
+    if not url:
+        return ""
+    try:
+        r = requests.get(url, timeout=20, headers={"User-Agent": "Mozilla/5.0 (NR news bot)"})
+        if r.status_code != 200:
+            return ""
+        html = re.sub(r"(?is)<(script|style|noscript).*?</\1>", " ", r.text)
+        paras = re.findall(r"(?is)<p[^>]*>(.*?)</p>", html)
+        text = " ".join(re.sub(r"(?s)<[^>]+>", " ", p) for p in paras)
+        text = re.sub(r"\s+", " ", text).strip()
+        return text[:limit]
+    except Exception:
+        return ""
+
+
 def write_post(event, items):
     related = [i for i in items if i["id"] in event["item_ids"]]
+    payload = {"event": event["event_key"], "items": related}
     data = gemini_json(
         WRITE_PROMPT,
-        json.dumps({"event": event["event_key"], "items": related}, ensure_ascii=False),
+        json.dumps(payload, ensure_ascii=False),
         temperature=0.2,
         model=WRITE_MODEL,
     )
     if not data.get("complete"):
-        raise SkipStory("writer marked story as incomplete")
+        # Do not drop the story yet: read the full article from its own link and try again.
+        full = []
+        for i in related:
+            body = fetch_article_text(i.get("link", ""))
+            if body:
+                full.append({"id": i["id"], "outlet": i["outlet"], "title": i["title"], "full_text": body})
+        if not full:
+            raise SkipStory("incomplete and no full article text available")
+        log(f"Story incomplete in headlines; retrying with full article text ({len(full)} source(s))")
+        payload = {"event": event["event_key"], "items": full}
+        data = gemini_json(
+            WRITE_PROMPT,
+            json.dumps(payload, ensure_ascii=False),
+            temperature=0.2,
+            model=WRITE_MODEL,
+        )
+    if not data.get("complete"):
+        raise SkipStory("still incomplete after reading full article")
     assert len(data["hindi"]) == 3 and len(data["roman_urdu"]) == 3, "bullet count must be exactly 3"
     return data
 
