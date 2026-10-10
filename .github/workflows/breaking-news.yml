@@ -28,8 +28,8 @@ jobs:
 
       - name: Run bot
         env:
-          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
-          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
+          FB_PAGE_TOKEN: ${{ secrets.FACEBOOK_PAGE_ACCESS_TOKEN }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-2.5-flash' }}
           MAX_POSTS_PER_RUN: ${{ vars.MAX_POSTS_PER_RUN || '2' }}
