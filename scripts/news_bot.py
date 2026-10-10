@@ -410,9 +410,19 @@ def card_check():
     return 0 if r.status_code == 200 else 1
 
 
+def publish_test_draft():
+    """Make the connection-check draft photo public (no new photo is created)."""
+    token = os.environ["FB_PAGE_TOKEN"]
+    r = requests.post(f"{GRAPH}/1637569854397717", data={"published": "true", "access_token": token}, timeout=60)
+    print(f"--- publish draft [{r.status_code}]: {r.text[:300]}", flush=True)
+    return 0 if r.status_code == 200 else 1
+
+
 def main():
     if os.getenv("DIAG", "0") == "1":
         return diagnose()
+    if os.getenv("CARD_PUBLISH", "0") == "1":
+        return publish_test_draft()
     if os.getenv("CARD_CHECK", "0") == "1":
         return card_check()
     if os.getenv("REPOST", "0") == "1":
