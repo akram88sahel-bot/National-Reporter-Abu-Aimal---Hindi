@@ -239,7 +239,8 @@ def diagnose():
     for label, path, params in [
         ("me", "me", {"fields": "id,name"}),
         ("me/permissions", "me/permissions", {}),
-        ("page", page_id, {"fields": "id,name,tasks"}),
+        ("accounts", "me/accounts", {"fields": "id,name"}),
+        ("page", page_id, {"fields": "id,name"}),
         ("debug_token", "debug_token", {"input_token": token}),
     ]:
         if label == "debug_token":
