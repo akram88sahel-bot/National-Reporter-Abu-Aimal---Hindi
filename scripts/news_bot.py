@@ -191,11 +191,18 @@ def format_message(data):
     )
 
 
+def post_text(data):
+    """Facebook post text: the same headline and bullets shown on the card (no source names)."""
+    hindi = "\n".join(f"• {b}" for b in data["hindi"])
+    urdu = "\n".join(f"• {b}" for b in data["roman_urdu"])
+    return f"🚨 {data['headline']}\n\nHINDI\n{hindi}\n\nROMAN URDU\n{urdu}"
+
+
 def publish(data, card_path):
     """Publish the black-and-gold card. Text lives on the image; caption is only the source line."""
     page_id = os.environ["FB_PAGE_ID"]
     token = os.environ["FB_PAGE_TOKEN"]
-    caption = ""  # no source names; the card carries the credit line
+    caption = post_text(data)  # same headline and bullets as the card; no source names
     with open(card_path, "rb") as f:
         r = requests.post(
             f"{GRAPH}/{page_id}/photos",

@@ -1,9 +1,9 @@
 """
 Renders the black-and-gold breaking-news card (1080x1080 PNG).
 
-Layout: logo at top, gold headline, Hindi bullets, Roman Urdu bullets,
-source line at the bottom. All text is drawn on the image so the card is
-the same design for every post.
+Layout: small logo in the top-left corner, gold headline beside it, Hindi
+bullets (Devanagari, bold), Roman Urdu bullets, and a credit line at the
+bottom with a small logo before it. All text is drawn on the image.
 """
 
 from pathlib import Path
@@ -16,16 +16,15 @@ LOGO = ROOT / "assets" / "logo.jpg"
 
 W = H = 1080
 BLACK = (14, 12, 10)
-PANEL = (28, 24, 19)
 GOLD = (212, 175, 90)
 GOLD_DARK = (150, 118, 52)
 WHITE = (245, 240, 230)
 GREY = (190, 182, 168)
+MARGIN = 70
 
 
 def _font(name, size, weight="Bold"):
-    path = FONT_DIR / name
-    f = ImageFont.truetype(str(path), size)
+    f = ImageFont.truetype(str(FONT_DIR / name), size)
     try:
         f.set_variation_by_name(weight)
     except Exception:
@@ -48,80 +47,86 @@ def _wrap(draw, text, font, max_width):
     return lines
 
 
-def _gold_rule(draw, y, x0=80, x1=W - 80):
-    draw.rectangle([x0, y, x1, y + 4], fill=GOLD)
-
-
-def _bullets(draw, y, items, font, max_width, indent=44, line_gap=10, bullet_color=GOLD, text_color=WHITE):
-    for item in items:
-        lines = _wrap(draw, item, font, max_width - indent)
-        draw.ellipse([88, y + 16, 104, y + 32], fill=bullet_color)
-        for i, line in enumerate(lines):
-            draw.text((80 + indent, y + i * (font.size + line_gap)), line, font=font, fill=text_color)
-        y += len(lines) * (font.size + line_gap) + 26
-    return y
-
-
-def _layout_height(draw, hindi, roman, fonts, max_w, gaps):
-    """Return total height the bullets need, so we can shrink text until it fits."""
-    fh, fr, lh, lr, bh_gap, br_gap = fonts["hi"], fonts["ru"], gaps[0], gaps[1], gaps[2], gaps[3]
+def _bullets_height(draw, items, font, max_w, line_gap):
     h = 0
-    for item in hindi:
-        h += len(_wrap(draw, item, fh, max_w - 44)) * (fh.size + lh) + 26
-    h += 44 + 50  # Hindi label block
-    for item in roman:
-        h += len(_wrap(draw, item, fr, max_w - 44)) * (fr.size + lr) + 26
+    for item in items:
+        h += len(_wrap(draw, item, font, max_w - 44)) * (font.size + line_gap) + 22
     return h
 
 
+def _draw_bullets(draw, y, items, font, max_w, line_gap):
+    for item in items:
+        lines = _wrap(draw, item, font, max_w - 44)
+        draw.ellipse([MARGIN + 6, y + font.size // 2 - 4, MARGIN + 22, y + font.size // 2 + 12], fill=GOLD)
+        for i, line in enumerate(lines):
+            draw.text((MARGIN + 44, y + i * (font.size + line_gap)), line, font=font, fill=WHITE)
+        y += len(lines) * (font.size + line_gap) + 22
+    return y
+
+
+def _logo(width):
+    logo = Image.open(LOGO).convert("RGB")
+    return logo.resize((width, int(logo.height * width / logo.width)))
+
+
 def render_card(headline, hindi, roman_urdu, source, out_path):
+    """`source` is ignored on purpose: source names are never printed on the card."""
     img = Image.new("RGB", (W, H), BLACK)
     draw = ImageDraw.Draw(img)
     draw.rectangle([30, 30, W - 30, H - 30], outline=GOLD_DARK, width=3)
 
-    # Logo (smaller, centered, top)
-    logo = Image.open(LOGO).convert("RGB")
-    logo_w = 220
-    logo = logo.resize((logo_w, int(logo.height * logo_w / logo.width)))
-    img.paste(logo, ((W - logo_w) // 2, 56))
-    top = 56 + logo.height + 24
+    # Logo in the top-left corner
+    logo = _logo(170)
+    img.paste(logo, (MARGIN, MARGIN))
 
-    font_head = _font("NotoSans.ttf", 60, "Bold")
-    head_w = draw.textlength(headline, font=font_head)
-    draw.text(((W - head_w) // 2, top), headline, font=font_head, fill=GOLD)
-    rule1 = top + 80
-    _gold_rule(draw, rule1)
-    body_top = rule1 + 24
-    body_bottom = H - 180  # leave room for credit line and bottom rule
-    max_w = W - 160
+    # Headline beside the logo (wraps to two lines if needed)
+    head_x = MARGIN + logo.width + 36
+    head_max = W - MARGIN - head_x
+    font_head = _font("NotoSans.ttf", 58, "Bold")
+    head_lines = _wrap(draw, headline, font_head, head_max)
+    hy = MARGIN + 6
+    for line in head_lines:
+        draw.text((head_x, hy), line, font=font_head, fill=GOLD)
+        hy += font_head.size + 8
+    top_block_bottom = max(MARGIN + logo.height, hy)
 
-    # Shrink text until everything fits between the rules
-    size = 44
-    while size > 20:
-        fonts = {
-            "hi": _font("NotoSansDevanagari.ttf", size, "Medium"),
-            "ru": _font("NotoSans.ttf", size - 2, "Medium"),
-        }
-        gaps = (12, 8, 0, 0)
-        need = _layout_height(draw, hindi, roman_urdu, fonts, max_w, gaps)
+    rule1 = top_block_bottom + 26
+    draw.rectangle([MARGIN, rule1, W - MARGIN, rule1 + 4], fill=GOLD)
+    body_top = rule1 + 28
+
+    # Bottom: credit line with small logo, then rule
+    credit_font = _font("NotoSans.ttf", 36, "Bold")
+    credit = "ABU AIMAL & AIMAL AKRAM"
+    small_logo = _logo(64)
+    credit_w = draw.textlength(credit, font=credit_font)
+    group_w = small_logo.width + 18 + credit_w
+    group_x = (W - group_w) / 2
+    credit_y = H - 118
+    img.paste(small_logo, (int(group_x), credit_y - 6))
+    draw.text((group_x + small_logo.width + 18, credit_y), credit, font=credit_font, fill=GOLD)
+    bottom_rule = H - 160
+    draw.rectangle([MARGIN, bottom_rule, W - MARGIN, bottom_rule + 4], fill=GOLD)
+    body_bottom = bottom_rule - 24
+
+    max_w = W - 2 * MARGIN
+    size = 54
+    while size > 22:
+        f_hi = _font("NotoSansDevanagari.ttf", size, "Bold")
+        f_ru = _font("NotoSans.ttf", size - 2, "Medium")
+        label_h = 40 + 50
+        need = label_h + _bullets_height(draw, hindi, f_hi, max_w, 10) + _bullets_height(draw, roman_urdu, f_ru, max_w, 8)
         if body_top + need <= body_bottom:
             break
         size -= 1
 
-    font_label = _font("NotoSans.ttf", 30, "Bold")
+    label_font = _font("NotoSans.ttf", 30, "Bold")
     y = body_top
-    draw.text((80, y), "HINDI", font=font_label, fill=GOLD_DARK)
+    draw.text((MARGIN, y), "HINDI", font=label_font, fill=GOLD_DARK)
     y += 40
-    y = _bullets(draw, y, hindi, fonts["hi"], max_w, line_gap=12)
-    draw.text((80, y), "ROMAN URDU", font=font_label, fill=GOLD_DARK)
-    y += 40
-    _bullets(draw, y, roman_urdu, fonts["ru"], max_w, line_gap=8)
-
-    font_credit = _font("NotoSans.ttf", 32, "Bold")
-    credit = "ABU AIMAL & AIMAL AKRAM"
-    cw = draw.textlength(credit, font=font_credit)
-    draw.text(((W - cw) // 2, H - 115), credit, font=font_credit, fill=GOLD)
-    _gold_rule(draw, H - 150)
+    y = _draw_bullets(draw, y, hindi, f_hi, max_w, 10)
+    draw.text((MARGIN, y + 4), "ROMAN URDU", font=label_font, fill=GOLD_DARK)
+    y += 50
+    _draw_bullets(draw, y, roman_urdu, f_ru, max_w, 8)
 
     img.save(out_path, "PNG", optimize=True)
     return out_path
