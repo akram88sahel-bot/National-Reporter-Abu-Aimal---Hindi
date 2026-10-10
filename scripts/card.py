@@ -82,7 +82,7 @@ def render_card(headline, hindi, roman_urdu, source, out_path):
     # Headline beside the logo (wraps to two lines if needed)
     head_x = MARGIN + logo.width + 36
     head_max = W - MARGIN - head_x
-    font_head = _font("NotoSans.ttf", 58, "Bold")
+    font_head = _font("NotoSans.ttf", 46, "Bold")
     head_lines = _wrap(draw, headline, font_head, head_max)
     hy = MARGIN + 6
     for line in head_lines:
