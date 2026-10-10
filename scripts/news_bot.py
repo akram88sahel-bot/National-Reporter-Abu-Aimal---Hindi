@@ -392,9 +392,29 @@ def diagnose():
     return 0
 
 
+def card_check():
+    """Connection check: build a plain test card and upload it to the Page UNPUBLISHED (not visible publicly)."""
+    page_id = os.environ["FB_PAGE_ID"]
+    token = os.environ["FB_PAGE_TOKEN"]
+    card_path = Path("/tmp/nr_check_card.png")
+    render_card("CONNECTION TEST", ["परीक्षण कार्ड", "यह एक तकनीकी जांच है", "कोई समाचार नहीं"],
+                ["Test card", "Connection check only", "Not a news story"], "", card_path)
+    with open(card_path, "rb") as f:
+        r = requests.post(
+            f"{GRAPH}/{page_id}/photos",
+            data={"message": "Connection check", "access_token": token, "published": "false"},
+            files={"source": ("card.png", f, "image/png")},
+            timeout=60,
+        )
+    print(f"--- card check [{r.status_code}]: {r.text[:300]}", flush=True)
+    return 0 if r.status_code == 200 else 1
+
+
 def main():
     if os.getenv("DIAG", "0") == "1":
         return diagnose()
+    if os.getenv("CARD_CHECK", "0") == "1":
+        return card_check()
     if os.getenv("REPOST", "0") == "1":
         return repost_previous()
     if TEST_WRITE:

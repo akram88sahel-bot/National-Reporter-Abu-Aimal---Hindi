@@ -38,6 +38,7 @@ jobs:
           GEMINI_WRITE_MODEL: ${{ vars.GEMINI_WRITE_MODEL || 'gemini-flash-latest' }}
           TEST_WRITE: ${{ vars.TEST_WRITE || '0' }}
           DIAG: ${{ vars.DIAG || '0' }}
+          CARD_CHECK: ${{ vars.CARD_CHECK || '0' }}
           REPOST: ${{ vars.REPOST || '0' }}
           MAX_POSTS_PER_RUN: ${{ vars.MAX_POSTS_PER_RUN || '2' }}
           MAX_POSTS_PER_DAY: ${{ vars.MAX_POSTS_PER_DAY || '8' }}
