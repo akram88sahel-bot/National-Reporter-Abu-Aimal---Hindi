@@ -71,12 +71,19 @@ def gemini_json(system_prompt, user_content, temperature=0.0, model=None):
         },
     }
     for attempt in range(3):
-        r = requests.post(
-            GEMINI_URL.format(model=model or MODEL),
-            headers={"x-goog-api-key": api_key, "Content-Type": "application/json"},
-            json=body,
-            timeout=90,
-        )
+        try:
+            r = requests.post(
+                GEMINI_URL.format(model=model or MODEL),
+                headers={"x-goog-api-key": api_key, "Content-Type": "application/json"},
+                json=body,
+                timeout=120,
+            )
+        except requests.exceptions.RequestException as e:
+            if attempt < 2:
+                log(f"Gemini request error ({e.__class__.__name__}), retrying...")
+                time.sleep(10 * (attempt + 1))
+                continue
+            raise
         if r.status_code == 200:
             text = r.json()["candidates"][0]["content"]["parts"][0]["text"]
             return json.loads(text)
