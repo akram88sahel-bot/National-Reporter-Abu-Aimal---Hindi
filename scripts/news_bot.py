@@ -232,7 +232,30 @@ def test_write():
     return 0
 
 
+def diagnose():
+    """Print what the Facebook token is and what it can do (no posting, token never printed)."""
+    token = os.environ["FB_PAGE_TOKEN"]
+    page_id = os.environ["FB_PAGE_ID"]
+    for label, path, params in [
+        ("me", "me", {"fields": "id,name"}),
+        ("me/permissions", "me/permissions", {}),
+        ("page", page_id, {"fields": "id,name,tasks"}),
+        ("debug_token", "debug_token", {"input_token": token}),
+    ]:
+        if label == "debug_token":
+            params = {"input_token": token, "access_token": token}
+            url = f"{GRAPH}/debug_token"
+        else:
+            params = dict(params, access_token=token)
+            url = f"{GRAPH}/{path}"
+        r = requests.get(url, params=params, timeout=30)
+        print(f"--- {label} [{r.status_code}]: {r.text[:700]}", flush=True)
+    return 0
+
+
 def main():
+    if os.getenv("DIAG", "0") == "1":
+        return diagnose()
     if TEST_WRITE:
         return test_write()
     log(f"Start. DRY_RUN={DRY_RUN} MODEL={MODEL} WRITE_MODEL={WRITE_MODEL} MIN_SOURCES={MIN_SOURCES}")
