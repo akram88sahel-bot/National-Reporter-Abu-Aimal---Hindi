@@ -411,10 +411,22 @@ def card_check():
 
 
 def publish_test_draft():
-    """Make the connection-check draft photo public (no new photo is created)."""
+    """Publish one connection-check card publicly, then remove the earlier unpublished draft."""
+    page_id = os.environ["FB_PAGE_ID"]
     token = os.environ["FB_PAGE_TOKEN"]
-    r = requests.post(f"{GRAPH}/1637569854397717", data={"published": "true", "access_token": token}, timeout=60)
-    print(f"--- publish draft [{r.status_code}]: {r.text[:300]}", flush=True)
+    card_path = Path("/tmp/nr_check_card.png")
+    render_card("CONNECTION TEST", ["परीक्षण कार्ड", "यह एक तकनीकी जांच है", "कोई समाचार नहीं"],
+                ["Test card", "Connection check only", "Not a news story"], "", card_path)
+    with open(card_path, "rb") as f:
+        r = requests.post(
+            f"{GRAPH}/{page_id}/photos",
+            data={"message": "Connection check", "access_token": token, "published": "true"},
+            files={"source": ("card.png", f, "image/png")},
+            timeout=60,
+        )
+    print(f"--- publish card [{r.status_code}]: {r.text[:300]}", flush=True)
+    d = requests.delete(f"{GRAPH}/1637569854397717", params={"access_token": token}, timeout=30)
+    print(f"--- delete draft [{d.status_code}]: {d.text[:200]}", flush=True)
     return 0 if r.status_code == 200 else 1
 
 
