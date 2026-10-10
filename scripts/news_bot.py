@@ -238,7 +238,19 @@ def test_write():
 
 
 def repost_previous():
-    """One-off: regenerate and republish the stories already on record, using the new card design."""
+    """One-off: republish the stories in data/reposts.json (no AI call) using the new card design."""
+    reposts = json.loads((ROOT / "data" / "reposts.json").read_text(encoding="utf-8"))
+    for data in reposts:
+        card_path = Path("/tmp/nr_card.png")
+        render_card(data["headline"], data["hindi"], data["roman_urdu"], "", card_path)
+        log("REPOST: " + data["headline"])
+        result = publish(data, card_path)
+        log(f"Republished: {result}")
+        time.sleep(5)
+    return 0
+
+
+def _old_repost_previous_unused():
     posted = load_posted()
     for rec in posted:
         if rec.get("dry_run"):
