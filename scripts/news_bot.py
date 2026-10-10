@@ -33,6 +33,9 @@ from pathlib import Path
 import feedparser
 import requests
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from card import render_card  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 POSTED_FILE = ROOT / "data" / "posted.json"
 LOGO_FILE = ROOT / "assets" / "logo.jpg"
@@ -188,14 +191,17 @@ def format_message(data):
     )
 
 
-def publish(message):
+def publish(data, card_path):
+    """Publish the black-and-gold card. Text lives on the image; caption is only the source line."""
     page_id = os.environ["FB_PAGE_ID"]
     token = os.environ["FB_PAGE_TOKEN"]
-    with open(LOGO_FILE, "rb") as f:
+    sources = ", ".join(data.get("sources", []))
+    caption = f"Source: {sources}" if sources else ""
+    with open(card_path, "rb") as f:
         r = requests.post(
             f"{GRAPH}/{page_id}/photos",
-            data={"message": message, "access_token": token, "published": "true"},
-            files={"source": f},
+            data={"message": caption, "access_token": token, "published": "true"},
+            files={"source": ("card.png", f, "image/png")},
             timeout=60,
         )
     if r.status_code != 200:
@@ -232,31 +238,7 @@ def test_write():
     return 0
 
 
-def diagnose():
-    """Print what the Facebook token is and what it can do (no posting, token never printed)."""
-    token = os.environ["FB_PAGE_TOKEN"]
-    page_id = os.environ["FB_PAGE_ID"]
-    for label, path, params in [
-        ("me", "me", {"fields": "id,name"}),
-        ("me/permissions", "me/permissions", {}),
-        ("accounts", "me/accounts", {"fields": "id,name"}),
-        ("page", page_id, {"fields": "id,name"}),
-        ("debug_token", "debug_token", {"input_token": token}),
-    ]:
-        if label == "debug_token":
-            params = {"input_token": token, "access_token": token}
-            url = f"{GRAPH}/debug_token"
-        else:
-            params = dict(params, access_token=token)
-            url = f"{GRAPH}/{path}"
-        r = requests.get(url, params=params, timeout=30)
-        print(f"--- {label} [{r.status_code}]: {r.text[:700]}", flush=True)
-    return 0
-
-
 def main():
-    if os.getenv("DIAG", "0") == "1":
-        return diagnose()
     if TEST_WRITE:
         return test_write()
     log(f"Start. DRY_RUN={DRY_RUN} MODEL={MODEL} WRITE_MODEL={WRITE_MODEL} MIN_SOURCES={MIN_SOURCES}")
@@ -282,10 +264,13 @@ def main():
     for ev in candidates[:MAX_POSTS]:
         data = write_post(ev, items)
         message = format_message(data)
+        card_path = Path("/tmp/nr_card.png")
+        render_card(data["headline"], data["hindi"], data["roman_urdu"],
+                    ", ".join(data.get("sources", [])) or "Verified news", card_path)
         if DRY_RUN:
-            log("DRY RUN - would publish:\n" + message)
+            log("DRY RUN - would publish card:\n" + message)
         else:
-            result = publish(message)
+            result = publish(data, card_path)
             log(f"Published: {result}")
         posted.append({
             "event_key": ev["event_key"],
