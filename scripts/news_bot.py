@@ -399,6 +399,9 @@ def main():
         except SkipStory as e:
             log(f"SKIP (not complete news): {ev['event_key']} -> {e}")
             continue
+        except Exception as e:  # provider error on this story: log it and move on
+            log(f"SKIP (AI error): {ev['event_key']} -> {str(e)[:160]}")
+            continue
         message = format_message(data)
         card_path = Path("/tmp/nr_card.png")
         render_card(data["headline"], data["hindi"], data["roman_urdu"], "", card_path)
