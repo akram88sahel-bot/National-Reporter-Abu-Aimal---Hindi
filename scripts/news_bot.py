@@ -389,6 +389,9 @@ def diagnose():
     print("--- debug_token:", {k: d.get(k) for k in ["type", "app_id", "application", "is_valid", "expires_at", "scopes"]}, flush=True)
     r = requests.get(f"{GRAPH}/{page_id}", params={"fields": "id,name", "access_token": token}, timeout=30)
     print(f"--- page [{r.status_code}]: {r.text[:200]}", flush=True)
+    for path, params in [(f"{page_id}", {"fields": "tasks"}), ("me/accounts", {"fields": "id,name,tasks"}), ("me", {"fields": "id,name"})]:
+        r2 = requests.get(f"{GRAPH}/{path}", params={**params, "access_token": token}, timeout=30)
+        print(f"--- {path} [{r2.status_code}]: {r2.text[:300]}", flush=True)
     return 0
 
 
