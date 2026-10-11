@@ -14,5 +14,15 @@
     "links": [],
     "posted_at": "2026-10-10T08:21:05+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Telangana government urges farmers to skip second Rabi crop amid water and power shortages",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/farmers-urged-not-to-go-for-second-rabi-crop-due-to-water-power-shortage/article71571906.ece"
+    ],
+    "posted_at": "2026-10-11T18:40:38+00:00",
+    "dry_run": false
   }
 ]
