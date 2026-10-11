@@ -24,5 +24,17 @@
     ],
     "posted_at": "2026-10-11T18:40:38+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Hyderabad man killed and two sons injured in Saudi airport missile attack",
+    "class": "A",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/hyderabad-man-killed-in-riyadh-airport-attack-two-sons-injured/article71572615.ece",
+      "https://www.thehindu.com/news/national/telangana/hyderabad-man-killed-in-riyadh-airport-attack-two-sons-injured/article71572615.ece",
+      "https://www.ndtv.com/world-news/indian-national-injured-in-saudi-arabia-airport-attack-dies-of-injuries-12170860#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-11T20:31:49+00:00",
+    "dry_run": false
   }
 ]
