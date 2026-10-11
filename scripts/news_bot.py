@@ -287,10 +287,23 @@ def post_text(data):
     return f"🚨 {data['headline']}\n\nHINDI\n{hindi}\n\nROMAN URDU\n{urdu}"
 
 
+def page_token():
+    """Return the Page's own access token (needed to post photos); falls back to the given token."""
+    user_token = os.environ["FB_PAGE_TOKEN"]
+    page_id = os.environ["FB_PAGE_ID"]
+    r = requests.get(f"{GRAPH}/me/accounts", params={"fields": "id,access_token", "access_token": user_token}, timeout=30)
+    if r.status_code == 200:
+        for acc in r.json().get("data", []):
+            if acc.get("id") == page_id and acc.get("access_token"):
+                return acc["access_token"]
+    print(f"--- page token lookup [{r.status_code}]: using token as given", flush=True)
+    return user_token
+
+
 def publish(data, card_path):
     """Publish the black-and-gold card. Text lives on the image; caption is only the source line."""
     page_id = os.environ["FB_PAGE_ID"]
-    token = os.environ["FB_PAGE_TOKEN"]
+    token = page_token()
     caption = post_text(data)  # same headline and bullets as the card; no source names
     with open(card_path, "rb") as f:
         r = requests.post(
@@ -398,7 +411,7 @@ def diagnose():
 def card_check():
     """Connection check: build a plain test card and upload it to the Page UNPUBLISHED (not visible publicly)."""
     page_id = os.environ["FB_PAGE_ID"]
-    token = os.environ["FB_PAGE_TOKEN"]
+    token = page_token()
     card_path = Path("/tmp/nr_check_card.png")
     render_card("CONNECTION TEST", ["परीक्षण कार्ड", "यह एक तकनीकी जांच है", "कोई समाचार नहीं"],
                 ["Test card", "Connection check only", "Not a news story"], "", card_path)
