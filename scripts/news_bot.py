@@ -190,6 +190,8 @@ Group the items that describe the SAME event. For each event return:
 - "duplicate_of": the posted event_key it duplicates, or null
 
 Rules: never invent facts. Routine, opinion, feature, entertainment, sports, and celebrity stories are class D.
+Coverage priority: politics, protests, public agitation, government decisions, elections, court rulings with public impact, and major national or international developments are important (class B or A). Crime is class D unless it is a MAJOR incident: mass casualties, a large-scale police operation, a high-profile case with wide public impact, or communal or terror violence. Single arrests, petty theft, fraud and ordinary accidents are class D.
+Region priority: Hyderabad and Telangana stories come first, then India, then World. Give WORLD stories class B only if they are major.
 Return JSON: {"events": [...]}"""
 
 
@@ -482,7 +484,8 @@ def main():
             candidates.append(ev)
 
     # Most important first: A before B before C
-    candidates.sort(key=lambda e: e["class"])
+    region_rank = {"HYDERABAD": 0, "TELANGANA": 1, "INDIA": 2, "WORLD": 3}
+    candidates.sort(key=lambda e: (e["class"], region_rank.get(str(e.get("region", "")).upper(), 9)))
     published = 0
     remaining_today = MAX_POSTS_PER_DAY - posts_today(posted)
     if remaining_today <= 0:
