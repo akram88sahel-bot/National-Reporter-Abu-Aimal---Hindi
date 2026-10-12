@@ -112,5 +112,18 @@
     ],
     "posted_at": "2026-10-12T19:48:04+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Arrest and public outcry over murder of five-year-old girl in Kowkoor",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.thehindu.com/news/cities/Hyderabad/former-security-guard-arrested-for-murder-of-five-year-old-girl-in-kowkoor-over-20-lakh-ransom/article71574279.ece",
+      "https://www.thehindu.com/news/national/telangana/family-residents-seek-speedy-trial-death-penalty-to-accused-in-kowkoor-girls-murder-case/article71574457.ece",
+      "https://www.thehindu.com/news/cities/Hyderabad/former-security-guard-arrested-for-murder-of-five-year-old-girl-in-kowkoor-over-20-lakh-ransom/article71574279.ece",
+      "https://www.thehindu.com/news/national/telangana/family-residents-seek-speedy-trial-death-penalty-to-accused-in-kowkoor-girls-murder-case/article71574457.ece"
+    ],
+    "posted_at": "2026-10-12T22:10:22+00:00",
+    "dry_run": false
   }
 ]
