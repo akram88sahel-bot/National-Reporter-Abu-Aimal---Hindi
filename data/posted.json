@@ -47,5 +47,16 @@
     ],
     "posted_at": "2026-10-12T00:45:09+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Hyderabad cyber fraud probe uncovers Rs 70 crore mule account network",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/45-lakh-for-old-1-note-hyderabad-cyber-fraud-probe-uncovers-70-crore-mule-account-network/article71571816.ece",
+      "https://www.thehindu.com/news/national/telangana/45-lakh-for-old-1-note-hyderabad-cyber-fraud-probe-uncovers-70-crore-mule-account-network/article71571816.ece"
+    ],
+    "posted_at": "2026-10-12T06:45:57+00:00",
+    "dry_run": false
   }
 ]
