@@ -81,5 +81,15 @@
     ],
     "posted_at": "2026-10-12T07:51:43+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Telangana man feared dead on Russian frontline as family seeks answers",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.ndtv.com/world-news/telangana-man-feared-dead-on-russian-frontline-family-seeks-answers-12172069#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-12T07:53:52+00:00",
+    "dry_run": false
   }
 ]
