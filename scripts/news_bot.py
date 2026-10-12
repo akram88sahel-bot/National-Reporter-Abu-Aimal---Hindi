@@ -46,6 +46,9 @@ FEEDS = [
     ("The Hindu", "https://www.thehindu.com/news/national/telangana/feeder/default.rss"),
     ("NDTV", "https://feeds.feedburner.com/ndtvnews-top-stories"),
     ("NDTV", "https://feeds.feedburner.com/ndtvnews-india-news"),
+    ("India Today", "https://www.indiatoday.in/rss/home"),
+    ("Munsif", "https://munsifdaily.com/feed/"),
+    ("Indian Express", "https://news.google.com/rss/search?q=site:indianexpress.com+(Hyderabad+OR+Telangana+OR+India+OR+world)&hl=en-IN&gl=IN&ceid=IN:en"),
     # Indian Express feeds currently return 403 to automated requests.
     # Add a working feed URL here when available.
 ]

@@ -2,7 +2,7 @@ name: Breaking news bot
 
 on:
   schedule:
-    - cron: "15 */2 * * *"   # every 2 hours, UTC (GitHub may delay runs a few minutes)
+    - cron: "*/30 * * * *"   # every 30 minutes, UTC (GitHub may delay runs a few minutes)
   workflow_dispatch: {}      # manual run button in the Actions tab
 
 permissions:
