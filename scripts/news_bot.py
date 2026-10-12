@@ -52,7 +52,7 @@ FEEDS = [
     # Indian Express feeds currently return 403 to automated requests.
     # Add a working feed URL here when available.
 ]
-PREFERRED_OUTLETS = {"The Hindu", "Indian Express", "NDTV"}
+PREFERRED_OUTLETS = {"The Hindu", "Indian Express", "NDTV", "India Today", "Munsif"}
 
 DRY_RUN = os.getenv("DRY_RUN", "1") == "1"
 MODEL = os.getenv("GEMINI_MODEL", "gemini-flash-latest")
