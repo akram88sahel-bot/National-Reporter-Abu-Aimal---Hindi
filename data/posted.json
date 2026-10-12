@@ -69,5 +69,17 @@
     ],
     "posted_at": "2026-10-12T07:32:56+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Telangana government to review fares of Hyderabad Metro-RTC common mobility pass",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.thehindu.com/news/cities/Hyderabad/telangana-government-to-revise-charges-of-hyderabad-metro-telangana-rtc-common-mobility-card/article71573734.ece",
+      "https://www.thehindu.com/news/cities/Hyderabad/telangana-government-to-revise-charges-of-hyderabad-metro-telangana-rtc-common-mobility-card/article71573734.ece",
+      "https://munsifdaily.com/telangana-government-to-review-metro-rtc-common-pass-fares/"
+    ],
+    "posted_at": "2026-10-12T07:51:43+00:00",
+    "dry_run": false
   }
 ]
