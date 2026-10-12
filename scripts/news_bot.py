@@ -47,12 +47,11 @@ FEEDS = [
     ("NDTV", "https://feeds.feedburner.com/ndtvnews-top-stories"),
     ("NDTV", "https://feeds.feedburner.com/ndtvnews-india-news"),
     ("India Today", "https://www.indiatoday.in/rss/home"),
-    ("Munsif", "https://munsifdaily.com/feed/"),
     ("Indian Express", "https://news.google.com/rss/search?q=site:indianexpress.com+(Hyderabad+OR+Telangana+OR+India+OR+world)&hl=en-IN&gl=IN&ceid=IN:en"),
     # Indian Express feeds currently return 403 to automated requests.
     # Add a working feed URL here when available.
 ]
-PREFERRED_OUTLETS = {"The Hindu", "Indian Express", "NDTV", "India Today", "Munsif"}
+PREFERRED_OUTLETS = {"The Hindu", "Indian Express", "NDTV", "India Today"}
 
 DRY_RUN = os.getenv("DRY_RUN", "1") == "1"
 MODEL = os.getenv("GEMINI_MODEL", "gemini-flash-latest")
