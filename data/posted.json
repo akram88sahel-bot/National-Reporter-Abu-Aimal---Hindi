@@ -101,5 +101,16 @@
     ],
     "posted_at": "2026-10-12T08:19:38+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "IndiGo flight from Delhi to Chennai diverted to Hyderabad after smoke onboard",
+    "class": "A",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.thehindu.com/news/cities/chennai/chennai-bound-indigo-flight-from-delhi-diverted-to-hyderabad-following-smoke-onboard-lands-safely/article71571375.ece",
+      "https://www.thehindu.com/news/cities/chennai/chennai-bound-indigo-flight-from-delhi-diverted-to-hyderabad-following-smoke-onboard-lands-safely/article71571375.ece"
+    ],
+    "posted_at": "2026-10-12T19:48:04+00:00",
+    "dry_run": false
   }
 ]
