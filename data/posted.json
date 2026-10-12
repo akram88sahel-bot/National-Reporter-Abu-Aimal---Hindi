@@ -58,5 +58,16 @@
     ],
     "posted_at": "2026-10-12T06:45:57+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Telangana man burns mother alive suspecting black magic",
+    "class": "A",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.ndtv.com/india-news/telangana-man-blames-mother-for-past-village-deaths-black-magic-burns-her-alive-12172064#publisher=newsstand",
+      "https://www.ndtv.com/india-news/telangana-man-blames-mother-for-past-village-deaths-black-magic-burns-her-alive-12172064#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-12T07:32:56+00:00",
+    "dry_run": false
   }
 ]
