@@ -62,7 +62,7 @@ MAX_POSTS = int(os.getenv("MAX_POSTS_PER_RUN", "1"))
 MAX_POSTS_PER_DAY = int(os.getenv("MAX_POSTS_PER_DAY", "8"))
 MAX_ATTEMPTS = int(os.getenv("MAX_ATTEMPTS_PER_RUN", "4"))
 MIN_SOURCES = int(os.getenv("MIN_SOURCES", "2"))
-LOOKBACK_HOURS = 3
+LOOKBACK_HOURS = 12
 
 GRAPH = "https://graph.facebook.com/v19.0"
 GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
