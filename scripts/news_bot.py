@@ -718,7 +718,14 @@ def run_digest():
         crime = 1 if CRIME_WORDS.search(text) and not POLITICS_WORDS.search(text) else 0
         return (crime, pol, hyd)
     remaining.sort(key=rank2)
-    pool = remaining[:DIGEST_POOL]
+    unique, titles = [], set()
+    for it in remaining:
+        key = re.sub(r"\W+", " ", it["title"].lower()).strip()[:60]
+        if key in titles:
+            continue
+        titles.add(key)
+        unique.append(it)
+    pool = unique[:DIGEST_POOL]
     if len(pool) < DIGEST_MIN:
         log("Not enough new headlines for a card this run.")
         return 0
