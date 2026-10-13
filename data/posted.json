@@ -258,5 +258,17 @@
     ],
     "posted_at": "2026-10-13T19:59:10+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Amit Shah attacks Rahul Gandhi over election defeats; Vijay meets Chandrababu Naidu for water and river linking; L Murugan quits Union Cabinet to strengthen Tamil Nadu BJP",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/stop-blaming-sir-introspect-amit-shah-jabs-rahul-says-congress-will-lose-for-4th-consecutive-time-in-2029-3016614-2026-10-13?utm_source=rss",
+      "https://www.indiatoday.in/india/tamil-nadu/story/vijay-tamil-nadu-chief-minister-andhra-chandrababu-naidu-vist-guntur-chennai-water-crisis-krishna-godavari-cauvery-link-3016761-2026-10-13?utm_source=rss",
+      "https://www.indiatoday.in/india/story/amid-reshuffle-buzz-union-minister-l-murugan-resigns-from-cabinet-urges-pm-to-let-him-return-to-tamil-nadu-3016527-2026-10-13?utm_source=rss"
+    ],
+    "posted_at": "2026-10-13T20:28:46+00:00",
+    "dry_run": false
   }
 ]
