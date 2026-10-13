@@ -172,5 +172,17 @@
     ],
     "posted_at": "2026-10-13T06:56:09+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Supreme Court directs petitioner to EC over UP ticket sting; Businessman Neville Singham accused of funding student protests; Hyderabad office leasing surges by 50 percent",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/supreme-court-sends-up-ticket-sale-sting-plea-to-election-commission-ptag-3016197-2026-10-13?utm_source=rss",
+      "https://www.indiatoday.in/world/video/fox-news-report-links-student-protests-to-left-network-bjp-hits-out-over-vote-chori-charge-ytvd-3016187-2026-10-13?utm_source=rss",
+      "https://www.thehindu.com/news/cities/Hyderabad/hyderabad-records-50-rise-in-office-leasing-crosses-131-million-sq-ft-in-nine-months-of-2026-knight-frank/article71575028.ece"
+    ],
+    "posted_at": "2026-10-13T07:19:42+00:00",
+    "dry_run": false
   }
 ]
