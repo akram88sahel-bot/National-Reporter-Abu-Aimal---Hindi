@@ -630,7 +630,7 @@ STRICT RULES:
 3. No filler such as "more details awaited". Never name any news outlet or source.
 4. Hindi in simple Devanagari; Roman Urdu in simple Latin letters. Both carry the same facts, one bullet per story.
 5. Keep each bullet short (one sentence).
-Return JSON: {"headline": "LATEST NEWS — HYDERABAD" (or TELANGANA / INDIA / WORLD, the region of the most important story), "stories": [{"id": item id, "important": true or false, "complete": true or false, "event_key": "short English description", "region": "HYDERABAD" or "TELANGANA" or "INDIA" or "WORLD", "hindi": "one Hindi sentence", "roman_urdu": "one Roman Urdu sentence"}]}"""
+Return JSON: {"headline": "LATEST NEWS — HYDERABAD" (or TELANGANA / INDIA / WORLD, the region of the most important story), "stories": [{"id": item id, "important": true or false, "complete": true or false, "event_key": "short English description", "region": "HYDERABAD" or "TELANGANA" or "INDIA" or "WORLD", "english": "one short complete English sentence with who, what, where and why", "hindi": "one Hindi sentence", "roman_urdu": "one Roman Urdu sentence (backup if the translator is not set up)"}]}"""
 
 
 def _item_for_prompt(it):
@@ -700,10 +700,22 @@ def run_digest():
         log(f"Only {len(chosen)} complete important stories this run; need {DIGEST_MIN}. No card.")
         return 0
 
+    roman = [st["roman_urdu"] for st, _ in chosen]
+    try:
+        import translator as ru_translator
+        res = ru_translator.translate_lines([st.get("english", "") for st, _ in chosen])
+        if res.get("ok") and len(res.get("lines", [])) == len(chosen):
+            roman = res["lines"]
+            log("Roman Urdu from translator")
+        else:
+            log(f"Translator not used ({res.get('problems') or res.get('warning')}); using AI Roman Urdu")
+    except Exception as e:  # never let the translator stop the card
+        log(f"Translator error, using AI Roman Urdu: {str(e)[:120]}")
+
     card_data = {
         "headline": data.get("headline") or "LATEST NEWS",
         "hindi": [st["hindi"] for st, _ in chosen],
-        "roman_urdu": [st["roman_urdu"] for st, _ in chosen],
+        "roman_urdu": roman,
         "sources": [],
     }
     card_path = Path("/tmp/nr_card.png")

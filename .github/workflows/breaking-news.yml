@@ -30,6 +30,10 @@ jobs:
         env:
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
           FB_PAGE_TOKEN: ${{ secrets.FB_ACCESS_TOKEN }}
+          RU_PROVIDER: openai
+          RU_BASE_URL: https://api.groq.com/openai/v1
+          RU_MODEL: llama-3.3-70b-versatile
+          RU_API_KEY: ${{ secrets.RU_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           LLM_PROVIDER: ${{ vars.LLM_PROVIDER || 'gemini' }}
