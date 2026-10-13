@@ -688,7 +688,9 @@ def _item_for_prompt(it):
 
 def run_digest():
     posted = load_posted()
-    seen = _load_json(SEEN_FILE, [])
+    seen = _load_json(SEEN_FILE, {})
+    if isinstance(seen, list):  # older format: plain list of links
+        seen = {l: 1 for l in seen}
     if posts_today(posted) >= MAX_POSTS_PER_DAY:
         log(f"Daily post cap of {MAX_POSTS_PER_DAY} reached. Nothing more today.")
         return 0
@@ -699,7 +701,7 @@ def run_digest():
 
     items = fetch_items()
     pool = []
-    seen_set = set(seen)
+    seen_set = {l for l, n in seen.items() if n >= 2}  # tried twice without success, or used
     posted_links = {l for p in posted for l in p.get("links", [])}
     remaining = [it for it in items if it["link"] and it["link"] not in seen_set and it["link"] not in posted_links]
     # Best-first ordering using the same keyword priority as before
@@ -723,8 +725,8 @@ def run_digest():
 
     log("Digest pool: " + " | ".join(it["title"][:70] for it in pool))
     for it in pool:
-        seen.append(it["link"])
-    _save_json(SEEN_FILE, seen[-500:])
+        seen[it["link"]] = seen.get(it["link"], 0) + 1
+    _save_json(SEEN_FILE, dict(list(seen.items())[-1000:]))
 
     payload = [_item_for_prompt(it) for it in pool]
     ai_bump()
@@ -744,6 +746,9 @@ def run_digest():
             continue
         chosen.append((st, it))
     chosen = chosen[:DIGEST_MAX]
+    for _, it in chosen:
+        seen[it["link"]] = 99  # used: never reconsider
+    _save_json(SEEN_FILE, dict(list(seen.items())[-1000:]))
     if len(chosen) < DIGEST_MIN:
         log(f"Only {len(chosen)} complete important stories this run; need {DIGEST_MIN}. No card.")
         return 0
