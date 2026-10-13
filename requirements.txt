@@ -1,3 +1,2 @@
-feedparser>=6.0
-requests>=2.31
-pillow>=10.0
+# NONE. This package uses only the Python standard library.
+# Python 3.9+ required (3.11/3.13 tested).

@@ -1,0 +1,12 @@
+{
+  "_comment": "Copy to config.json and fill in. NEVER commit a real key - config.json is gitignored. Environment variables override every value here.",
+  "RU_PROVIDER": "openai",
+  "RU_MODEL": "gpt-4o-mini",
+  "RU_API_KEY": "",
+  "RU_BASE_URL": "https://api.openai.com/v1",
+  "RU_TEMPERATURE": "0.2",
+  "RU_MAX_RETRIES": "2",
+  "RU_TIMEOUT": "60",
+  "RU_MAXLEN": "118",
+  "RU_PASTE_N": "4"
+}
