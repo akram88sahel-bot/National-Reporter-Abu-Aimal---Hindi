@@ -283,5 +283,17 @@
     ],
     "posted_at": "2026-10-13T21:03:46+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Telangana approves gratuity for rural development employees; TG SAFE suspends FSSAI licences in Hyderabad; Hyderabad water conservation plan CURE",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/telangana-approves-gratuity-for-3800-rural-development-fte-employees/article71579348.ece",
+      "https://www.thehindu.com/news/cities/Hyderabad/tg-safe-suspends-fssai-licences-of-four-hyderabad-eateries-over-food-safety-violations/article71579974.ece",
+      "https://www.thehindu.com/news/national/telangana/amidst-concerns-plans-charted-to-meet-hyderabad-cure-drinking-water-needs-efficient-usage/article71579506.ece"
+    ],
+    "posted_at": "2026-10-13T21:59:34+00:00",
+    "dry_run": false
   }
 ]
