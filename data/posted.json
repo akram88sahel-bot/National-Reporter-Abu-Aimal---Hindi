@@ -246,5 +246,17 @@
     ],
     "posted_at": "2026-10-13T11:14:14+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "DK Shivakumar protest and police crackdown in Bengaluru; BJP wins Gandhinagar civic polls; Muhammad Yunus heckled at JFK airport",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/karnataka/story/karnataka-anti-sir-protest-dk-shivakumar-police-crackdown-manhandling-journalists-itspc-3016501-2026-10-13?utm_source=rss",
+      "https://www.ndtv.com/india-news/bjp-sweeps-gandhinagar-civic-polls-congress-gains-ground-aap-draws-blank-12181156#publisher=newsstand",
+      "https://www.indiatoday.in/world/story/muhammad-yunus-heckled-at-jfk-airport-bangladesh-warns-legal-action-ptag-3016525-2026-10-13?utm_source=rss"
+    ],
+    "posted_at": "2026-10-13T19:59:10+00:00",
+    "dry_run": false
   }
 ]
