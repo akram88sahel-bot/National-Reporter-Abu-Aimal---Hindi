@@ -321,5 +321,18 @@
     ],
     "posted_at": "2026-10-13T22:57:11+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Indian airlines cancel Saudi flights over Houthi attacks; Mumbai Airport approves normal winter flight schedule; US Senators slam Trump diesel deal with Russia; Trump fires Greece ambassador over misconduct claims",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.ndtv.com/world-news/indian-airlines-cancel-flights-to-saudi-till-october-17-amid-houthi-attacks-12181393#publisher=newsstand",
+      "https://www.ndtv.com/india-news/mumbai-airport-says-airlines-to-operate-winter-flight-as-planned-12181374#publisher=newsstand",
+      "https://www.ndtv.com/world-news/us-senators-slam-donald-trumps-diesel-deal-with-russian-12181517#publisher=newsstand",
+      "https://www.ndtv.com/world-news/donald-trump-asks-greece-ambassador-kimberly-guilfoyle-to-resign-over-corruption-allegations-12181304#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-13T23:20:57+00:00",
+    "dry_run": false
   }
 ]
