@@ -295,5 +295,18 @@
     ],
     "posted_at": "2026-10-13T21:59:34+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "revanth pulls up mlas over mlc polls; contract teachers dharna in hyderabad; nims hyderabad public transport advisory; hyderabad water board refutes dry reservoir rumor",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/revanth-pulls-up-mlas-over-lack-of-interest-in-graduate-mlc-polls/article71580714.ece",
+      "https://www.thehindu.com/news/cities/Hyderabad/contract-teachers-to-hold-dharna-in-hyderabad-on-october-15-seeking-job-security-regularisation/article71579341.ece",
+      "https://www.thehindu.com/news/cities/Hyderabad/nims-hyderabad-advises-patients-visitors-to-use-public-transport-amid-three-month-road-works/article71579286.ece",
+      "https://www.thehindu.com/news/cities/Hyderabad/hyderabad-water-board-flags-message-on-reservoirs-will-run-dry-by-november-end-as-false/article71579077.ece"
+    ],
+    "posted_at": "2026-10-13T22:29:13+00:00",
+    "dry_run": false
   }
 ]
