@@ -100,6 +100,44 @@ def openai_json(system_prompt, user_content, temperature=0.0):
         raise RuntimeError(f"OpenAI call failed: {r.status_code} {r.text[:300]}")
 
 
+XAI_API_KEY = os.getenv("XAI_API_KEY", "")
+XAI_BASE_URL = os.getenv("XAI_BASE_URL", "https://api.x.ai/v1")
+XAI_MODEL = os.getenv("XAI_MODEL", "grok-4-1-fast-reasoning")
+
+
+def xai_json(system_prompt, user_content, temperature=0.0):
+    """Grok (xAI) fallback, OpenAI-compatible, same JSON contract."""
+    body = {
+        "model": XAI_MODEL,
+        "messages": [
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_content},
+        ],
+        "response_format": {"type": "json_object"},
+        "temperature": temperature,
+    }
+    for attempt in range(3):
+        try:
+            r = requests.post(
+                f"{XAI_BASE_URL.rstrip('/')}/chat/completions",
+                headers={"Authorization": f"Bearer {XAI_API_KEY}", "Content-Type": "application/json"},
+                json=body,
+                timeout=120,
+            )
+        except requests.exceptions.RequestException:
+            if attempt < 2:
+                time.sleep(10 * (attempt + 1))
+                continue
+            raise
+        if r.status_code == 200:
+            text = r.json()["choices"][0]["message"]["content"]
+            return json.loads(text)
+        if r.status_code in (429, 500, 503) and attempt < 2:
+            time.sleep(10 * (attempt + 1))
+            continue
+        raise RuntimeError(f"Grok call failed: {r.status_code} {r.text[:300]}")
+
+
 _last_gemini_call = 0.0
 
 
@@ -165,10 +203,20 @@ def gemini_json(system_prompt, user_content, temperature=0.0, model=None):
         except GeminiUnavailable as e:
             last = str(e)
             log(f"Gemini model unavailable, trying next: {last[:200]}")
+    errors = [f"gemini: {last[:160]}"]
     if os.getenv("OPENAI_API_KEY"):
-        log("All Gemini models unavailable; using OpenAI fallback")
-        return openai_json(system_prompt, user_content, temperature)
-    raise RuntimeError(f"Gemini unavailable on all models: {last}")
+        try:
+            log("Gemini unavailable; trying OpenAI")
+            return openai_json(system_prompt, user_content, temperature)
+        except Exception as e:
+            errors.append(f"openai: {str(e)[:160]}")
+    if XAI_API_KEY:
+        try:
+            log("OpenAI unavailable; trying Grok (xAI)")
+            return xai_json(system_prompt, user_content, temperature)
+        except Exception as e:
+            errors.append(f"grok: {str(e)[:160]}")
+    raise RuntimeError("All AI providers unavailable: " + " | ".join(errors))
 
 
 def log(msg):
@@ -703,12 +751,21 @@ def run_digest():
     roman = [st["roman_urdu"] for st, _ in chosen]
     try:
         import translator as ru_translator
-        res = ru_translator.translate_lines([st.get("english", "") for st, _ in chosen])
-        if res.get("ok") and len(res.get("lines", [])) == len(chosen):
-            roman = res["lines"]
-            log("Roman Urdu from translator")
-        else:
-            log(f"Translator not used ({res.get('problems') or res.get('warning')}); using AI Roman Urdu")
+        english = [st.get("english", "") for st, _ in chosen]
+        attempts = [{}]  # first: the translator's own configured provider (RU_* env, e.g. Groq)
+        if XAI_API_KEY:
+            attempts.append({"provider": "openai", "base_url": XAI_BASE_URL, "model": XAI_MODEL, "api_key": XAI_API_KEY})
+        done = False
+        for kw in attempts:
+            res = ru_translator.translate_lines(english, **kw)
+            if res.get("ok") and len(res.get("lines", [])) == len(chosen):
+                roman = res["lines"]
+                log("Roman Urdu from translator" + (" (Grok)" if kw else ""))
+                done = True
+                break
+            log(f"Translator attempt failed: {res.get('problems') or res.get('warning')}")
+        if not done:
+            log("Using AI Roman Urdu")
     except Exception as e:  # never let the translator stop the card
         log(f"Translator error, using AI Roman Urdu: {str(e)[:120]}")
 
