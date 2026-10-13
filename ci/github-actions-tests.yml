@@ -1,0 +1,73 @@
+# Ready-to-use GitHub Actions workflow for any project that vendors this folder.
+#
+#   cp roman_urdu_translator/ci/github-actions-tests.yml  .github/workflows/
+#
+# Runs the full offline test suite (no API key needed) on every push/PR, and
+# optionally a LIVE translation smoke test when the repo has a RU_API_KEY secret.
+
+name: roman-urdu-tests
+
+on:
+  push:
+    paths:
+      - "roman_urdu_translator/**"
+      - ".github/workflows/github-actions-tests.yml"
+  pull_request:
+    paths:
+      - "roman_urdu_translator/**"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  offline:
+    name: offline tests (no API key)
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.9", "3.11", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: run offline suite
+        run: python3 roman_urdu_translator/tests/test_translator.py
+
+  live-smoke:
+    name: live translation smoke test
+    runs-on: ubuntu-latest
+    if: ${{ vars.RU_RUN_LIVE_TESTS == '1' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: translate one card and assert structure
+        env:
+          RU_API_KEY: ${{ secrets.ROMAN_URDU_API_KEY }}
+          RU_PROVIDER: ${{ vars.RU_PROVIDER }}
+          RU_MODEL: ${{ vars.RU_MODEL }}
+          RU_BASE_URL: ${{ vars.RU_BASE_URL }}
+        run: |
+          python3 - <<'PY'
+          import sys
+          sys.path.insert(0, "roman_urdu_translator")
+          from translator import translate_card, has_urdu_script
+
+          c = translate_card(
+              "Petrol price may increase by Rs 8 per litre this week",
+              ["The government is reviewing oil prices today",
+               "New prices will apply from midnight",
+               "Consumers are worried about rising inflation"],
+          )
+          assert c["ok"], f"translation failed: {c['problems']} {c['warning']}"
+          assert len(c["bullets_ur"]) == 3, "bullet count changed"
+          for line in [c["title_ur"]] + c["bullets_ur"]:
+              assert not has_urdu_script(line), f"Urdu script leaked: {line}"
+              assert len(line) <= 118, f"line too long for card: {line}"
+          print("LIVE SMOKE OK")
+          for line in [c["title_ur"]] + c["bullets_ur"]:
+              print("  -", line)
+          PY
