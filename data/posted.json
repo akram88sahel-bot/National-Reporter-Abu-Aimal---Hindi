@@ -222,5 +222,17 @@
     ],
     "posted_at": "2026-10-13T10:14:30+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "supreme-court-notice-cec-immunity; bombay-hc-refuses-blanket-curb-detentions; himanta-attacks-rahul-gandhi-video",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/law-news/story/section-16-immunity-challenge-supreme-court-tags-adr-plea-with-pending-petitions-3016362-2026-10-13?utm_source=rss",
+      "https://www.indiatoday.in/india/story/bombay-high-court-refuses-blanket-order-on-police-detentions-in-cec-protests-ptag-3016368-2026-10-13?utm_source=rss",
+      "https://www.indiatoday.in/india/story/himanta-biswa-sarma-rahul-gandhi-karnataka-cm-dk-shivakumar-anti-cec-protest-video-criticism-delhi-itspc-3016277-2026-10-13?utm_source=rss"
+    ],
+    "posted_at": "2026-10-13T10:47:32+00:00",
+    "dry_run": false
   }
 ]
