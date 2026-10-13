@@ -591,12 +591,13 @@ def run_single():
 # Digest mode: one card per run with 3 to 5 separate complete stories,
 # built from ONE AI call (free-tier friendly).
 # ---------------------------------------------------------------------------
+SOFT_WORDS = re.compile(r"cricket|t20|\\bmatch\\b|\\bipl\\b|football|tennis|movie|film|trailer|actor|actress|celebrity|box office|recipe|horoscope|festive|festival sale|discount|offer|smartphone|review|launch|\\bpyre\\b|sculpture|feature|opinion|explainer|how to|tips", re.I)
 DIGEST_POOL = 8          # headlines sent to the AI in one call
 DIGEST_MIN = 3           # a card needs at least 3 complete stories
 DIGEST_MAX = 5           # and at most 5
 
 DIGEST_PROMPT = """You are the editor of a Hyderabad/Telangana breaking-news Facebook page. You get a numbered list of news items (outlet, headline, summary, article text). Choose the 3 to 5 most important items that can each be written as a COMPLETE short story, and write each one in Hindi and Roman Urdu.
-Importance order: Hyderabad and Telangana first, then India, then world. Politics, protests, government or court decisions with public impact, and MAJOR incidents come first. Routine crime, single arrests, petty theft, fraud, sports, entertainment, celebrity, opinion, features and shopping are NOT important.
+Importance order: politics, protests, government or court decisions with public impact, and MAJOR national or world incidents come first. Hyderabad and Telangana items are preferred when they are equally important. Routine crime, single arrests, petty theft, fraud, sports, entertainment, celebrity, opinion, features and shopping are NOT important.
 STRICT RULES:
 1. Use ONLY facts in the provided items. Never invent names, numbers, causes, places, or quotes.
 2. Each story must clearly state WHO, WHAT, WHERE and WHY/CONTEXT in one short sentence. If an item does not give all four, mark it "complete": false.
@@ -633,7 +634,14 @@ def run_digest():
         base = 0 if HYD_WORDS.search(text) else (1 if POLITICS_WORDS.search(text) else 2)
         crime = 1 if CRIME_WORDS.search(text) and not POLITICS_WORDS.search(text) else 0
         return (crime, base)
-    remaining.sort(key=rank)
+    remaining = [it for it in remaining if not SOFT_WORDS.search(f'{it["title"]} {it["summary"]}')]
+    def rank2(it):
+        text = f'{it["title"]} {it["summary"]}'
+        pol = 0 if POLITICS_WORDS.search(text) else 1
+        hyd = 0 if HYD_WORDS.search(text) else 1
+        crime = 1 if CRIME_WORDS.search(text) and not POLITICS_WORDS.search(text) else 0
+        return (crime, pol, hyd)
+    remaining.sort(key=rank2)
     pool = remaining[:DIGEST_POOL]
     if len(pool) < DIGEST_MIN:
         log("Not enough new headlines for a card this run.")
