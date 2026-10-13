@@ -587,6 +587,111 @@ def run_single():
     return 0
 
 
+# ---------------------------------------------------------------------------
+# Digest mode: one card per run with 3 to 5 separate complete stories,
+# built from ONE AI call (free-tier friendly).
+# ---------------------------------------------------------------------------
+DIGEST_POOL = 8          # headlines sent to the AI in one call
+DIGEST_MIN = 3           # a card needs at least 3 complete stories
+DIGEST_MAX = 5           # and at most 5
+
+DIGEST_PROMPT = """You are the editor of a Hyderabad/Telangana breaking-news Facebook page. You get a numbered list of news items (outlet, headline, summary, article text). Choose the 3 to 5 most important items that can each be written as a COMPLETE short story, and write each one in Hindi and Roman Urdu.
+Importance order: Hyderabad and Telangana first, then India, then world. Politics, protests, government or court decisions with public impact, and MAJOR incidents come first. Routine crime, single arrests, petty theft, fraud, sports, entertainment, celebrity, opinion, features and shopping are NOT important.
+STRICT RULES:
+1. Use ONLY facts in the provided items. Never invent names, numbers, causes, places, or quotes.
+2. Each story must clearly state WHO, WHAT, WHERE and WHY/CONTEXT in one short sentence. If an item does not give all four, mark it "complete": false.
+3. No filler such as "more details awaited". Never name any news outlet or source.
+4. Hindi in simple Devanagari; Roman Urdu in simple Latin letters. Both carry the same facts, one bullet per story.
+5. Keep each bullet short (one sentence).
+Return JSON: {"headline": "LATEST NEWS — HYDERABAD" (or TELANGANA / INDIA / WORLD, the region of the most important story), "stories": [{"id": item id, "important": true or false, "complete": true or false, "event_key": "short English description", "region": "HYDERABAD" or "TELANGANA" or "INDIA" or "WORLD", "hindi": "one Hindi sentence", "roman_urdu": "one Roman Urdu sentence"}]}"""
+
+
+def _item_for_prompt(it):
+    article = fetch_article_text(it["link"], limit=1200)
+    return {"id": it["id"], "outlet": it["outlet"], "title": it["title"], "summary": it["summary"], "article": article}
+
+
+def run_digest():
+    posted = load_posted()
+    seen = _load_json(SEEN_FILE, [])
+    if posts_today(posted) >= MAX_POSTS_PER_DAY:
+        log(f"Daily post cap of {MAX_POSTS_PER_DAY} reached. Nothing more today.")
+        return 0
+    used, _, _ = ai_calls_today()
+    if used >= AI_DAILY_LIMIT:
+        log(f"AI daily budget used ({used}/{AI_DAILY_LIMIT}). Waiting for tomorrow.")
+        return 0
+
+    items = fetch_items()
+    pool = []
+    seen_set = set(seen)
+    posted_links = {l for p in posted for l in p.get("links", [])}
+    remaining = [it for it in items if it["link"] and it["link"] not in seen_set and it["link"] not in posted_links]
+    # Best-first ordering using the same keyword priority as before
+    def rank(it):
+        text = f'{it["title"]} {it["summary"]}'
+        base = 0 if HYD_WORDS.search(text) else (1 if POLITICS_WORDS.search(text) else 2)
+        crime = 1 if CRIME_WORDS.search(text) and not POLITICS_WORDS.search(text) else 0
+        return (crime, base)
+    remaining.sort(key=rank)
+    pool = remaining[:DIGEST_POOL]
+    if len(pool) < DIGEST_MIN:
+        log("Not enough new headlines for a card this run.")
+        return 0
+
+    log("Digest pool: " + " | ".join(it["title"][:70] for it in pool))
+    for it in pool:
+        seen.append(it["link"])
+    _save_json(SEEN_FILE, seen[-500:])
+
+    payload = [_item_for_prompt(it) for it in pool]
+    ai_bump()
+    try:
+        data = gemini_json(DIGEST_PROMPT, json.dumps({"items": payload}, ensure_ascii=False), temperature=0.2, model=WRITE_MODEL)
+    except Exception as e:
+        log(f"AI error, no card this run: {str(e)[:160]}")
+        return 0
+
+    by_id = {it["id"]: it for it in pool}
+    chosen = []
+    for st in data.get("stories", []):
+        it = by_id.get(st.get("id"))
+        if not it or not st.get("important") or not st.get("complete"):
+            continue
+        if not st.get("hindi") or not st.get("roman_urdu"):
+            continue
+        chosen.append((st, it))
+    chosen = chosen[:DIGEST_MAX]
+    if len(chosen) < DIGEST_MIN:
+        log(f"Only {len(chosen)} complete important stories this run; need {DIGEST_MIN}. No card.")
+        return 0
+
+    card_data = {
+        "headline": data.get("headline") or "LATEST NEWS",
+        "hindi": [st["hindi"] for st, _ in chosen],
+        "roman_urdu": [st["roman_urdu"] for st, _ in chosen],
+        "sources": [],
+    }
+    card_path = Path("/tmp/nr_card.png")
+    render_card(card_data["headline"], card_data["hindi"], card_data["roman_urdu"], "", card_path)
+    if DRY_RUN:
+        log("DRY RUN - would publish card:\n" + post_text(card_data))
+    else:
+        result = publish(card_data, card_path)
+        log(f"Published: {result}")
+    posted.append({
+        "event_key": "; ".join(st.get("event_key", it["title"]) for st, it in chosen),
+        "class": "B",
+        "region": chosen[0][0].get("region"),
+        "links": [it["link"] for _, it in chosen],
+        "posted_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "dry_run": DRY_RUN,
+    })
+    save_posted(posted)
+    log(f"Done. 1 card with {len(chosen)} stories.")
+    return 0
+
+
 def main():
     if os.getenv("DIAG", "0") == "1":
         return diagnose()
@@ -598,9 +703,9 @@ def main():
         return repost_previous()
     if TEST_WRITE:
         return test_write()
-    if os.getenv("SINGLE_STORY", "1") == "1":
-        log(f"Start (one story per AI call). DRY_RUN={DRY_RUN} MODEL={WRITE_MODEL}")
-        return run_single()
+    if os.getenv("DIGEST", "1") == "1":
+        log(f"Start (one card per run, 3-5 stories, one AI call). DRY_RUN={DRY_RUN} MODEL={WRITE_MODEL}")
+        return run_digest()
     log(f"Start. DRY_RUN={DRY_RUN} MODEL={MODEL} WRITE_MODEL={WRITE_MODEL} MIN_SOURCES={MIN_SOURCES}")
     posted = load_posted()
     items = fetch_items()
