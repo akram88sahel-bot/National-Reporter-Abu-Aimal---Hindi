@@ -103,10 +103,8 @@ def openai_json(system_prompt, user_content, temperature=0.0):
 _last_gemini_call = 0.0
 
 
-def gemini_json(system_prompt, user_content, temperature=0.0, model=None):
-    """Call Gemini and return the parsed JSON object it produces."""
-    if os.getenv("LLM_PROVIDER", "gemini") == "openai" and os.getenv("OPENAI_API_KEY"):
-        return openai_json(system_prompt, user_content, temperature)
+def _gemini_once(system_prompt, user_content, temperature=0.0, model=None):
+    """Call one Gemini model. Raises GeminiUnavailable when that model is out of quota or down."""
     api_key = os.environ["GEMINI_API_KEY"]
     body = {
         "systemInstruction": {"parts": [{"text": system_prompt}]},
@@ -139,15 +137,38 @@ def gemini_json(system_prompt, user_content, temperature=0.0, model=None):
         if r.status_code == 200:
             text = r.json()["candidates"][0]["content"]["parts"][0]["text"]
             return json.loads(text)
-        if r.status_code in (429, 500, 503) and attempt < 2:
-            log(f"Gemini returned {r.status_code}, waiting for the per-minute limit to reset...")
-            time.sleep(65)
+        if r.status_code in (500, 503) and attempt < 2:
+            log(f"Gemini returned {r.status_code}, retrying...")
+            time.sleep(15 * (attempt + 1))
             continue
-        if r.status_code in (403, 429, 500, 503) and os.getenv("OPENAI_API_KEY"):
-            log(f"Gemini unavailable ({r.status_code}): {r.text[:400]}")
-            log("Using OpenAI fallback")
-            return openai_json(system_prompt, user_content, temperature)
+        if r.status_code in (403, 404, 429, 500, 503):
+            raise GeminiUnavailable(f"{model or MODEL} {r.status_code}: {r.text[:300]}")
         raise RuntimeError(f"Gemini call failed: {r.status_code} {r.text[:500]}")
+
+
+class GeminiUnavailable(Exception):
+    pass
+
+
+GEMINI_FALLBACK_MODELS = [m for m in os.getenv("GEMINI_FALLBACK_MODELS", "gemini-2.5-flash-lite,gemini-2.0-flash").split(",") if m.strip()]
+
+
+def gemini_json(system_prompt, user_content, temperature=0.0, model=None):
+    """Try Gemini models in order (each has its own free quota), then OpenAI if configured."""
+    if os.getenv("LLM_PROVIDER", "gemini") == "openai" and os.getenv("OPENAI_API_KEY"):
+        return openai_json(system_prompt, user_content, temperature)
+    chain = [model or MODEL] + [m.strip() for m in GEMINI_FALLBACK_MODELS if m.strip() != (model or MODEL)]
+    last = ""
+    for m in chain:
+        try:
+            return _gemini_once(system_prompt, user_content, temperature, model=m)
+        except GeminiUnavailable as e:
+            last = str(e)
+            log(f"Gemini model unavailable, trying next: {last[:200]}")
+    if os.getenv("OPENAI_API_KEY"):
+        log("All Gemini models unavailable; using OpenAI fallback")
+        return openai_json(system_prompt, user_content, temperature)
+    raise RuntimeError(f"Gemini unavailable on all models: {last}")
 
 
 def log(msg):
