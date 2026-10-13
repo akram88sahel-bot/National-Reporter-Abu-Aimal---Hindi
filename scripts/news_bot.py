@@ -678,7 +678,7 @@ STRICT RULES:
 3. No filler such as "more details awaited". Never name any news outlet or source.
 4. Hindi in simple Devanagari; Roman Urdu in simple Latin letters. Both carry the same facts, one bullet per story.
 5. Keep each bullet short (one sentence).
-Return JSON: {"headline": "LATEST NEWS — HYDERABAD" (or TELANGANA / INDIA / WORLD, the region of the most important story), "stories": [{"id": item id, "important": true or false, "complete": true or false, "event_key": "short English description", "region": "HYDERABAD" or "TELANGANA" or "INDIA" or "WORLD", "english": "one short complete English sentence with who, what, where and why", "hindi": "one Hindi sentence", "roman_urdu": "one Roman Urdu sentence (backup if the translator is not set up)"}]}"""
+Return JSON: {"headline": "LATEST NEWS — HYDERABAD" (or TELANGANA / INDIA / WORLD, the region of the most important story), "stories": [{"id": item id, "important": true or false, "complete": true or false, "event_key": "short English description", "region": "HYDERABAD" or "TELANGANA" or "INDIA" or "WORLD", "english": "one short complete English sentence with who, what, where and why", "hindi": "one Hindi sentence", "roman_urdu": "one Roman Urdu sentence in simple everyday Urdu (plain common words, not formal or heavy Urdu; keep English words like police, position, government, election, court where people normally use them)"}]}"""
 
 
 def _item_for_prompt(it):
