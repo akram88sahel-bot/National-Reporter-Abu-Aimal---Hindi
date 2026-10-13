@@ -234,5 +234,17 @@
     ],
     "posted_at": "2026-10-13T10:47:32+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Harish Rao alleges conspiracy to end free farm power; Delhi HC seeks Centre stand on regulating protests; Opposition preparing impeachment motion against CEC Gyanesh Kumar",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/telangana-govt-conspiring-to-discontinue-free-power-to-farm-sector-through-rythu-discom-harish-rao/article71578142.ece",
+      "https://www.indiatoday.in/india/story/delhi-high-court-protests-regulation-pleas-centre-asked-to-respond-on-delhi-disruptions-ptag-3016405-2026-10-13?utm_source=rss",
+      "https://www.indiatoday.in/india/story/gyanesh-kumar-legal-immunity-sir-row-shashi-tharoor-opposition-impeachment-motion-india-bloc-protest-3016382-2026-10-13?utm_source=rss"
+    ],
+    "posted_at": "2026-10-13T11:14:14+00:00",
+    "dry_run": false
   }
 ]
