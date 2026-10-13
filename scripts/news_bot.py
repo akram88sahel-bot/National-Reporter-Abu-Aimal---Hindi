@@ -188,7 +188,7 @@ class GeminiUnavailable(Exception):
     pass
 
 
-GEMINI_FALLBACK_MODELS = [m for m in os.getenv("GEMINI_FALLBACK_MODELS", "gemini-2.5-flash-lite,gemini-flash-lite-latest,gemini-3.1-flash-lite").split(",") if m.strip()]
+GEMINI_FALLBACK_MODELS = [m for m in os.getenv("GEMINI_FALLBACK_MODELS", "gemini-flash-lite-latest,gemini-3.1-flash-lite,gemini-3.5-flash-lite").split(",") if m.strip()]
 
 
 def gemini_json(system_prompt, user_content, temperature=0.0, model=None):
@@ -666,7 +666,7 @@ def run_single():
 # built from ONE AI call (free-tier friendly).
 # ---------------------------------------------------------------------------
 SOFT_WORDS = re.compile(r"cricket|t20|\bmatch\b|\bipl\b|football|tennis|movie|film|trailer|actor|actress|celebrity|box office|recipe|horoscope|festive|festival sale|discount|offer|smartphone|review|launch|\bpyre\b|sculpture|feature|opinion|explainer|how to|tips", re.I)
-DIGEST_POOL = 8          # headlines sent to the AI in one call
+DIGEST_POOL = 12          # headlines sent to the AI in one call
 DIGEST_MIN = 3           # a card needs at least 3 complete stories
 DIGEST_MAX = 5           # and at most 5
 
