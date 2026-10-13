@@ -150,7 +150,7 @@ class GeminiUnavailable(Exception):
     pass
 
 
-GEMINI_FALLBACK_MODELS = [m for m in os.getenv("GEMINI_FALLBACK_MODELS", "gemini-2.5-flash-lite,gemini-2.0-flash").split(",") if m.strip()]
+GEMINI_FALLBACK_MODELS = [m for m in os.getenv("GEMINI_FALLBACK_MODELS", "gemini-2.5-flash-lite,gemini-flash-lite-latest,gemini-3.1-flash-lite").split(",") if m.strip()]
 
 
 def gemini_json(system_prompt, user_content, temperature=0.0, model=None):
