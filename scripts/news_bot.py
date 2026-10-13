@@ -459,6 +459,134 @@ def publish_test_draft():
     return 0 if r.status_code == 200 else 1
 
 
+# ---------------------------------------------------------------------------
+# One story per AI call (free-tier friendly). Each run looks at the single
+# best unseen headline, makes ONE Gemini call that both judges and writes it,
+# and counts that call against a daily budget.
+# ---------------------------------------------------------------------------
+SEEN_FILE = ROOT / "data" / "seen.json"
+USAGE_FILE = ROOT / "data" / "ai_usage.json"
+AI_DAILY_LIMIT = int(os.getenv("AI_DAILY_LIMIT", "18"))
+IST_TZ = timezone(timedelta(hours=5, minutes=30))
+
+HYD_WORDS = re.compile(r"hyderabad|telangana|secunderabad|rangareddy|warangal|karimnagar|nizamabad|khammam|medak|nalgonda|ghmc|revanth|brs|kcr|telangana", re.I)
+POLITICS_WORDS = re.compile(r"protest|march|agitation|rally|bandh|election|\bsir\b|vote|assembly|parliament|supreme court|high court|governor|minister|cabinet|congress|bjp|opposition|bloc|chief minister|\bcm\b|tribunal|policy|government|govt|petition|verdict|ruling", re.I)
+CRIME_WORDS = re.compile(r"arrest|murder|killed|\bdies\b|\bdead\b|theft|robbery|fraud|rape|drug|mdma|ganja|cyber|accident|stabbed|burns|suicide|loot|cheat|molest|kidnap", re.I)
+
+SINGLE_PROMPT = """You are the editor of a Hyderabad/Telangana breaking-news Facebook page. You get ONE news story (outlet, headline, summary, article text). Decide and write in ONE reply.
+Important = politics, protests, government or court decisions with public impact, major national or world events, or MAJOR crime (mass casualties, large police operations, high-profile cases). Routine crime, single arrests, petty theft, fraud, sports, entertainment, celebrity, opinion, features and shopping are NOT important.
+STRICT RULES:
+1. Use ONLY facts in the provided material. Never invent names, numbers, causes, places or quotes.
+2. The story must answer WHO, WHAT, WHERE and WHY/CONTEXT. If the material does not clearly give all four, set "complete" to false.
+3. No filler such as "more details awaited". Each bullet states a fact.
+4. Never name any news outlet or source.
+5. Hindi in simple Devanagari, Roman Urdu in simple Latin letters. Both carry the same 3 facts.
+6. Exactly 3 Hindi bullets and exactly 3 Roman Urdu bullets.
+Return JSON: {"important": true or false, "complete": true or false, "class": "A" or "B" or "C" or "D", "region": "HYDERABAD" or "TELANGANA" or "INDIA" or "WORLD", "event_key": "short English description", "headline": "LATEST NEWS — HYDERABAD" (or TELANGANA / INDIA / WORLD), "hindi": ["...","...","..."], "roman_urdu": ["...","...","..."]}"""
+
+
+def _load_json(path, default):
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return default
+
+
+def _save_json(path, value):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(value, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def ai_calls_today():
+    today = datetime.now(IST_TZ).strftime("%Y-%m-%d")
+    usage = _load_json(USAGE_FILE, {})
+    return usage.get(today, 0), usage, today
+
+
+def ai_bump():
+    count, usage, today = ai_calls_today()
+    usage[today] = count + 1
+    _save_json(USAGE_FILE, usage)
+
+
+def pick_item(items, seen_links, posted):
+    posted_links = {l for p in posted for l in p.get("links", [])}
+    posted_keys = {p.get("event_key", "").lower() for p in posted}
+    best, best_score = None, None
+    for it in items:
+        if not it["link"] or it["link"] in seen_links or it["link"] in posted_links:
+            continue
+        if it["title"].lower() in posted_keys:
+            continue
+        text = f'{it["title"]} {it["summary"]}'
+        base = 0 if HYD_WORDS.search(text) else (1 if POLITICS_WORDS.search(text) else 2)
+        crime_penalty = 1 if CRIME_WORDS.search(text) and not POLITICS_WORDS.search(text) else 0
+        score = (crime_penalty, base, -len(it.get("published", "")))
+        if best_score is None or score < best_score:
+            best, best_score = it, score
+    return best
+
+
+def run_single():
+    posted = load_posted()
+    seen = _load_json(SEEN_FILE, [])
+    if posts_today(posted) >= MAX_POSTS_PER_DAY:
+        log(f"Daily post cap of {MAX_POSTS_PER_DAY} reached. Nothing more today.")
+        return 0
+    used, _, _ = ai_calls_today()
+    if used >= AI_DAILY_LIMIT:
+        log(f"AI daily budget used ({used}/{AI_DAILY_LIMIT}). Waiting for tomorrow.")
+        return 0
+
+    items = fetch_items()
+    item = pick_item(items, set(seen), posted)
+    if not item:
+        log("No new unseen headlines. Nothing to do.")
+        return 0
+    log(f"Story picked: [{item['outlet']}] {item['title']}")
+    seen.append(item["link"])
+    _save_json(SEEN_FILE, seen[-500:])
+
+    article = fetch_article_text(item["link"])
+    payload = {"outlet": item["outlet"], "title": item["title"], "summary": item["summary"], "article": article}
+    ai_bump()
+    try:
+        data = gemini_json(SINGLE_PROMPT, json.dumps(payload, ensure_ascii=False), temperature=0.2, model=WRITE_MODEL)
+    except Exception as e:
+        log(f"AI error, story skipped: {str(e)[:160]}")
+        return 0
+
+    if not data.get("important") or data.get("class") not in ("A", "B", "C"):
+        log("Not important enough, skipped.")
+        return 0
+    if not data.get("complete"):
+        log("Incomplete story (who/what/where/why missing), skipped.")
+        return 0
+    if len(data.get("hindi", [])) != 3 or len(data.get("roman_urdu", [])) != 3:
+        log("Bullet count is not 3, skipped.")
+        return 0
+
+    message = format_message(data)
+    card_path = Path("/tmp/nr_card.png")
+    render_card(data["headline"], data["hindi"], data["roman_urdu"], "", card_path)
+    if DRY_RUN:
+        log("DRY RUN - would publish card:\n" + message)
+    else:
+        result = publish(data, card_path)
+        log(f"Published: {result}")
+    posted.append({
+        "event_key": data.get("event_key", item["title"]),
+        "class": data.get("class"),
+        "region": data.get("region"),
+        "links": [item["link"]],
+        "posted_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "dry_run": DRY_RUN,
+    })
+    save_posted(posted)
+    log("Done. 1 post published.")
+    return 0
+
+
 def main():
     if os.getenv("DIAG", "0") == "1":
         return diagnose()
@@ -470,6 +598,9 @@ def main():
         return repost_previous()
     if TEST_WRITE:
         return test_write()
+    if os.getenv("SINGLE_STORY", "1") == "1":
+        log(f"Start (one story per AI call). DRY_RUN={DRY_RUN} MODEL={WRITE_MODEL}")
+        return run_single()
     log(f"Start. DRY_RUN={DRY_RUN} MODEL={MODEL} WRITE_MODEL={WRITE_MODEL} MIN_SOURCES={MIN_SOURCES}")
     posted = load_posted()
     items = fetch_items()

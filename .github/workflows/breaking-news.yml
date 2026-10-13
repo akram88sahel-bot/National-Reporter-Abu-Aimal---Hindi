@@ -51,5 +51,5 @@ jobs:
         run: |
           git config user.name "breaking-news-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add data/posted.json
+          git add data/posted.json data/seen.json data/ai_usage.json
           git diff --cached --quiet || (git commit -m "Update posted record" && git push)
