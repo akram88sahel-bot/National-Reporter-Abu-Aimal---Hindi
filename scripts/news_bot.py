@@ -100,6 +100,9 @@ def openai_json(system_prompt, user_content, temperature=0.0):
         raise RuntimeError(f"OpenAI call failed: {r.status_code} {r.text[:300]}")
 
 
+_last_gemini_call = 0.0
+
+
 def gemini_json(system_prompt, user_content, temperature=0.0, model=None):
     """Call Gemini and return the parsed JSON object it produces."""
     if os.getenv("LLM_PROVIDER", "gemini") == "openai" and os.getenv("OPENAI_API_KEY"):
@@ -113,7 +116,13 @@ def gemini_json(system_prompt, user_content, temperature=0.0, model=None):
             "responseMimeType": "application/json",
         },
     }
+    global _last_gemini_call
     for attempt in range(3):
+        # Space requests out so the free/low per-minute limit is not hit by a burst
+        wait = 6 - (time.time() - _last_gemini_call)
+        if wait > 0:
+            time.sleep(wait)
+        _last_gemini_call = time.time()
         try:
             r = requests.post(
                 GEMINI_URL.format(model=model or MODEL),
@@ -131,8 +140,8 @@ def gemini_json(system_prompt, user_content, temperature=0.0, model=None):
             text = r.json()["candidates"][0]["content"]["parts"][0]["text"]
             return json.loads(text)
         if r.status_code in (429, 500, 503) and attempt < 2:
-            log(f"Gemini returned {r.status_code}, retrying...")
-            time.sleep(10 * (attempt + 1))
+            log(f"Gemini returned {r.status_code}, waiting for the per-minute limit to reset...")
+            time.sleep(65)
             continue
         if r.status_code in (403, 429, 500, 503) and os.getenv("OPENAI_API_KEY"):
             log(f"Gemini unavailable ({r.status_code}): {r.text[:400]}")
