@@ -125,5 +125,15 @@
     ],
     "posted_at": "2026-10-12T22:10:22+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Telangana government to procure 5,800 MW renewable energy",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/telangana-to-procure-5800-mw-renewable-energy-to-meet-high-demand/article71576274.ece"
+    ],
+    "posted_at": "2026-10-13T03:13:56+00:00",
+    "dry_run": false
   }
 ]
