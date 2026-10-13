@@ -270,5 +270,18 @@
     ],
     "posted_at": "2026-10-13T20:28:46+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Police clash with PTI protesters in Khyber Pakhtunkhwa; Dhal Singh Bisen appointed Uttarakhand Governor; Delhi Police FIR against CJP leaders over Jantar Mantar entry; AISA vows to continue protests against CEC",
+    "class": "B",
+    "region": "WORLD",
+    "links": [
+      "https://www.indiatoday.in/world/story/khyber-pakhtunkhwa-tear-gas-live-rounds-fired-at-protesters-after-shehbaz-sharif-imposes-emergency-3016787-2026-10-14?utm_source=rss",
+      "https://www.indiatoday.in/india/story/dhal-singh-bisen-appointed-uttarakhand-governor-in-surprise-bjp-move-3016717-2026-10-13?utm_source=rss",
+      "https://www.indiatoday.in/cities/delhi/story/delhi-police-fir-cjp-leaders-saurav-das-ashutosh-ranka-jantar-mantar-breach-gyanesh-kumar-protest-3016710-2026-10-13?utm_source=rss",
+      "https://www.indiatoday.in/india/story/neha-bora-gyanesh-kumar-protests-aisa-says-movement-is-united-on-voting-rights-india-bloc-3016679-2026-10-13?utm_source=rss"
+    ],
+    "posted_at": "2026-10-13T21:03:46+00:00",
+    "dry_run": false
   }
 ]
