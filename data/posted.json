@@ -135,5 +135,17 @@
     ],
     "posted_at": "2026-10-13T03:13:56+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Security and traffic deployment for Uppal T20 match; Neglected Rashtrakuta sculpture examined in Medak; Muhammad Yunus heckled by Bangladeshi expats in New York",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.thehindu.com/news/cities/Hyderabad/2200-personnel-to-secure-india-west-indies-t20-match-at-hyderabads-uppal-stadium-on-october-14/article71576240.ece",
+      "https://www.thehindu.com/news/national/telangana/rare-gajalakshmi-sculpture-from-rashtrakuta-period-found-in-neglect-in-telanganas-medak/article71571098.ece",
+      "https://www.indiatoday.in/world/story/muhammad-yunus-bangladesh-terrorist-jfk-new-york-airport-us-news-itspc-3016117-2026-10-13?utm_source=rss"
+    ],
+    "posted_at": "2026-10-13T06:21:15+00:00",
+    "dry_run": false
   }
 ]
