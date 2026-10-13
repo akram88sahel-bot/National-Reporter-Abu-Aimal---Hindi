@@ -184,5 +184,18 @@
     ],
     "posted_at": "2026-10-13T07:19:42+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Supreme Court seeks IB inputs on Hawara jail transfer plea; Agencies probe ISI-linked accounts spreading fake videos during Delhi protests; Government to implement UPI fee on transactions above 2000 rupees after Diwali; Trump defends Russia oil deal amid US backlash",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/jagtar-singh-hawara-transfer-plea-supreme-court-seeks-ib-inputs-on-punjab-jail-shift-ptag-3016238-2026-10-13?utm_source=rss",
+      "https://www.indiatoday.in/india/story/anti-cec-protests-isi-linked-pakistan-accounts-spread-false-rahul-gandhi-injury-claim-fake-deaths-amid-delhi-protests-3016235-2026-10-13?utm_source=rss",
+      "https://www.indiatoday.in/business/story/upi-fee-on-merchant-transactions-above-rs-2000-to-be-implemented-after-diwali-says-government-3016242-2026-10-13?utm_source=rss",
+      "https://www.ndtv.com/world-news/made-the-right-choice-trump-on-russia-diesel-deal-pushback-12176609#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-13T08:15:32+00:00",
+    "dry_run": false
   }
 ]
