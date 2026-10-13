@@ -147,5 +147,18 @@
     ],
     "posted_at": "2026-10-13T06:21:15+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Supreme Court stays Rahul Gandhi defamation case; Yogi Adityanath meets disgruntled BJP leaders in UP; UP sets paddy procurement target and payment timeline; Delhi election officials resolve voter notice cases",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/rahul-gandhi-defamation-case-supreme-court-stays-trial-over-modi-remarks-ptag-3016155-2026-10-13?utm_source=rss",
+      "https://www.indiatoday.in/india/uttar-pradesh/story/yogi-adityanath-bjp-leaders-chief-minister-in-damage-control-mode-as-up-bjp-faces-family-ticket-revolt-ahead-of-2027-polls-3016136-2026-10-13?utm_source=rss",
+      "https://www.indiatoday.in/india/story/uttar-pradesh-paddy-procurement-target-65-lakh-tonnes-payments-in-48-hours-utrith-3016135-2026-10-13?utm_source=rss",
+      "https://www.indiatoday.in/cities/delhi/story/delhi-voter-list-revision-47-lakh-names-deleted-20-lakh-cases-resolved-final-sir-list-on-december-4-3016072-2026-10-13?utm_source=rss"
+    ],
+    "posted_at": "2026-10-13T06:30:24+00:00",
+    "dry_run": false
   }
 ]
