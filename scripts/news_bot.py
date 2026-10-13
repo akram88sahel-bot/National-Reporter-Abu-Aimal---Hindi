@@ -436,6 +436,11 @@ def diagnose():
     print("--- debug_token:", {k: d.get(k) for k in ["type", "app_id", "application", "is_valid", "expires_at", "scopes"]}, flush=True)
     r = requests.get(f"{GRAPH}/{page_id}", params={"fields": "id,name", "access_token": token}, timeout=30)
     print(f"--- page [{r.status_code}]: {r.text[:200]}", flush=True)
+    gk = os.getenv("GEMINI_API_KEY", "")
+    if gk:
+        rm = requests.get("https://generativelanguage.googleapis.com/v1beta/models", params={"pageSize": 200}, headers={"x-goog-api-key": gk}, timeout=30)
+        names = [m["name"].replace("models/", "") for m in rm.json().get("models", []) if "generateContent" in m.get("supportedGenerationMethods", [])] if rm.status_code == 200 else []
+        print(f"--- gemini models [{rm.status_code}]: {', '.join(names)[:1500] or rm.text[:300]}", flush=True)
     for path, params in [(f"{page_id}", {"fields": "tasks"}), ("me/accounts", {"fields": "id,name,tasks"}), ("me", {"fields": "id,name"})]:
         r2 = requests.get(f"{GRAPH}/{path}", params={**params, "access_token": token}, timeout=30)
         print(f"--- {path} [{r2.status_code}]: {r2.text[:300]}", flush=True)
