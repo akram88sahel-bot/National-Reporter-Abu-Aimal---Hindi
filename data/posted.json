@@ -489,5 +489,16 @@
     ],
     "posted_at": "2026-10-14T20:58:30+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "ED attaches dairy assets in TTD ghee adulteration case; Air France bans Pakistani pilots on Israel flights",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.thehindu.com/news/national/andhra-pradesh/ttd-ghee-adulteration-case-ed-attaches-assets-worth-12985-crore-of-dairy-firms/article71584095.ece",
+      "https://www.ndtv.com/world-news/pakistani-pilots-banned-from-air-france-flights-to-israel-after-flydubai-case-12186370#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-14T21:58:57+00:00",
+    "dry_run": false
   }
 ]
