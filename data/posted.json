@@ -420,5 +420,17 @@
     ],
     "posted_at": "2026-10-14T15:01:30+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "BRS farmers protest in Choppadandi; CM Revanth Reddy invites UK investments; Supreme Court seeks replies on liquor packaging",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/farmers-led-by-brs-leaders-stage-protest-at-canal-regulator-in-choppadandi-seek-srsp-water-release/article71584228.ece",
+      "https://www.thehindu.com/news/national/telangana/cm-invites-investments-from-uk-assures-policy-continuity-and-support/article71584733.ece",
+      "https://www.indiatoday.in/india/story/liquor-packaging-ban-supreme-court-seeks-centre-states-replies-ptag-3017421-2026-10-14?utm_source=rss"
+    ],
+    "posted_at": "2026-10-14T15:39:15+00:00",
+    "dry_run": false
   }
 ]
