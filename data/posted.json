@@ -395,5 +395,18 @@
     ],
     "posted_at": "2026-10-14T14:07:32+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Delhi magistrate sends CJP leaders to jail; IYC moves Delhi HC over Jantar Mantar; Supreme Court questions Chhattisgarh HC order; Delhi Police designates CBD Ground as protest site",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/law-news/story/saurav-das-ashutosh-ranka-cjp-tihar-jail-delhi-magistrate-order-jantar-mantar-protest-trespass-3017041-2026-10-14?utm_source=rss",
+      "https://www.indiatoday.in/india/story/jantar-mantar-protest-venue-removal-iyc-delhi-high-court-ptag-3017362-2026-10-14?utm_source=rss",
+      "https://www.indiatoday.in/india/story/supreme-court-questions-chhattisgarh-high-court-murder-conviction-reduction-ptag-3017333-2026-10-14?utm_source=rss",
+      "https://www.indiatoday.in/cities/delhi/story/delhi-cbd-ground-new-protest-site-tall-grass-waste-dump-rs-1-27-lakh-booking-fee-3017234-2026-10-14?utm_source=rss"
+    ],
+    "posted_at": "2026-10-14T14:19:44+00:00",
+    "dry_run": false
   }
 ]
