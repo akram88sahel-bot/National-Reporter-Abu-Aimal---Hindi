@@ -454,5 +454,16 @@
     ],
     "posted_at": "2026-10-14T18:36:42+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Saudi Arabia overturns death sentence for Sri Lankan man; Andhra Pradesh local body elections schedule announced",
+    "class": "B",
+    "region": "WORLD",
+    "links": [
+      "https://www.ndtv.com/world-news/saudi-arabia-overturns-death-sentence-for-sri-lankan-man-12186851#publisher=newsstand",
+      "https://www.ndtv.com/india-news/andhra-pradesh-local-body-elections-schedule-out-check-dates-12186817#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-14T19:28:18+00:00",
+    "dry_run": false
   }
 ]
