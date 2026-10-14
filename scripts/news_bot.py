@@ -667,10 +667,10 @@ def run_single():
 # ---------------------------------------------------------------------------
 SOFT_WORDS = re.compile(r"cricket|t20|\bmatch\b|\bipl\b|football|tennis|movie|film|trailer|actor|actress|celebrity|box office|recipe|horoscope|festive|festival sale|discount|offer|smartphone|review|launch|\bpyre\b|sculpture|feature|opinion|explainer|how to|tips", re.I)
 DIGEST_POOL = 12          # headlines sent to the AI in one call
-DIGEST_MIN = 3           # a card needs at least 3 complete stories
+DIGEST_MIN = 2           # a card needs at least 2 complete stories
 DIGEST_MAX = 5           # and at most 5
 
-DIGEST_PROMPT = """You are the editor of a Hyderabad/Telangana breaking-news Facebook page. You get a numbered list of news items (outlet, headline, summary, article text). Choose the 3 to 5 most important items that can each be written as a COMPLETE short story, and write each one in Hindi and Roman Urdu.
+DIGEST_PROMPT = """You are the editor of a Hyderabad/Telangana breaking-news Facebook page. You get a numbered list of news items (outlet, headline, summary, article text). Choose the 2 to 5 most important items that can each be written as a COMPLETE short story, and write each one in Hindi and Roman Urdu.
 Importance order: politics, protests, government or court decisions with public impact, and MAJOR national or world incidents come first. Hyderabad and Telangana items are preferred when they are equally important. Routine crime, single arrests, petty theft, fraud, sports, entertainment, celebrity, opinion, features and shopping are NOT important.
 STRICT RULES:
 1. Use ONLY facts in the provided items. Never invent names, numbers, causes, places, or quotes.
