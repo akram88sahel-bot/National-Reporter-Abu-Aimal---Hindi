@@ -383,5 +383,17 @@
     ],
     "posted_at": "2026-10-14T02:57:32+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Three rebel SP MLAs join BJP in Amethi; Harvard groups issue contrasting letters on Delhi protests; DMK responds to Vijay with RSS comparison poster",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/elections/assembly/story/rebel-samajwadi-party-mlas-rakesh-pratap-singh-abhay-singh-vinod-chaturvedi-join-bjp-amethi-up-elections-3017281-2026-10-14?utm_source=rss",
+      "https://www.indiatoday.in/india/story/harvard-club-india-alumni-letters-cjp-october-10-protest-bjp-rajat-sethi-itspc-3017205-2026-10-14?utm_source=rss",
+      "https://www.indiatoday.in/india/south/story/tamil-nadu-cm-vijay-stalin-hand-gesture-dmk-rss-comparison-poster-3017270-2026-10-14?utm_source=rss"
+    ],
+    "posted_at": "2026-10-14T14:07:32+00:00",
+    "dry_run": false
   }
 ]
