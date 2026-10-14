@@ -359,5 +359,17 @@
     ],
     "posted_at": "2026-10-14T01:10:20+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Russian strikes in Kyiv kill two; Trump ousts US envoy Kimberly Guilfoyle; Marco Rubio to visit Mumbai and Jamnagar",
+    "class": "B",
+    "region": "WORLD",
+    "links": [
+      "https://www.indiatoday.in/world/story/zelenskyy-says-russia-ignores-trumps-energy-ceasefire-as-missile-strikes-kill-two-in-kyiv-3016794-2026-10-14?utm_source=rss",
+      "https://www.indiatoday.in/world/us-news/story/trump-ousts-us-envoy-to-greece-kimberly-guilfoyle-over-deal-to-trade-influence-for-hefty-credit-card-bill-3016671-2026-10-13?utm_source=rss",
+      "https://www.indiatoday.in/world/story/marco-rubio-india-visit-energy-cooperation-strategic-ties-ptag-3016791-2026-10-14?utm_source=rss"
+    ],
+    "posted_at": "2026-10-14T01:58:10+00:00",
+    "dry_run": false
   }
 ]
