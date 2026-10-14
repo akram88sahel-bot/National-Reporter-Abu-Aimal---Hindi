@@ -334,5 +334,18 @@
     ],
     "posted_at": "2026-10-13T23:20:57+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Raj Bhavan governor reshuffle; missile attack on Saudi Aramco; Pope Leo cancer surgery; woman detained near Mamata residence",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india-today-insight/story/the-raj-bhavan-reset-loyalists-in-old-guard-out-3016494-2026-10-13?utm_source=rss",
+      "https://www.indiatoday.in/world/story/ballistic-missile-hits-saudi-aramco-complex-amid-escalating-houthi-attacks-3016790-2026-10-14?utm_source=rss",
+      "https://www.indiatoday.in/world/story/pope-leo-diagnosed-with-cancer-doctors-remove-lobe-of-lung-vatican-says-3016789-2026-10-14?utm_source=rss",
+      "https://www.indiatoday.in/india/story/mamata-trinamool-workers-claim-woman-tried-to-attack-mamata-banerjee-found-carrying-knife-tucked-in-her-saree-3016648-2026-10-13?utm_source=rss"
+    ],
+    "posted_at": "2026-10-14T00:23:42+00:00",
+    "dry_run": false
   }
 ]
