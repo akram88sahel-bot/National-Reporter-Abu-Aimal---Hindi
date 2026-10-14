@@ -432,5 +432,16 @@
     ],
     "posted_at": "2026-10-14T15:39:15+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Ankita Bhandari protest at India Gate; Allahabad High Court dummy school probe",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.ndtv.com/india-news/rahul-gandhi-joins-india-gate-protest-by-uttarakhand-murder-victim-ankita-bhandaris-parents-12185893#publisher=newsstand",
+      "https://www.indiatoday.in/india/story/allahabad-high-court-probe-dummy-school-enrolments-uttar-pradesh-ptag-3017531-2026-10-14?utm_source=rss"
+    ],
+    "posted_at": "2026-10-14T17:59:28+00:00",
+    "dry_run": false
   }
 ]
