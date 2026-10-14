@@ -347,5 +347,17 @@
     ],
     "posted_at": "2026-10-14T00:23:42+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Marco Rubio India visit October 17-22; UP madrasas science exhibitions on APJ Abdul Kalam birth anniversary; Amritsar bank financial dispute firing and injuries",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/rubio-to-visit-india-october-17-22-jaishankar-says-trade-talks-heading-towards-a-landing-point-3016793-2026-10-14?utm_source=rss",
+      "https://www.indiatoday.in/india/story/all-up-madrasas-to-celebrate-apj-abdul-kalams-birth-anniversary-with-science-exhibitions-seminars-3016788-2026-10-14?utm_source=rss",
+      "https://www.indiatoday.in/india/story/financial-dispute-turns-violent-inside-amritsar-bank-several-injured-including-loan-manager-3016786-2026-10-14?utm_source=rss"
+    ],
+    "posted_at": "2026-10-14T01:10:20+00:00",
+    "dry_run": false
   }
 ]
