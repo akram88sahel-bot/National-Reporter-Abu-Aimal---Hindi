@@ -465,5 +465,16 @@
     ],
     "posted_at": "2026-10-14T19:28:18+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Rahul Gandhi meets Uttarakhand victim's parents at India Gate; IYC protests near Parliament Street police station",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.ndtv.com/india-news/rahul-gandhi-meets-uttarakhand-murder-victims-parents-bjp-government-says-firm-action-was-taken-12185893#publisher=newsstand",
+      "https://www.indiatoday.in/india/video/iyc-protests-near-parliament-street-police-station-over-nsui-worker-assault-jantar-mantar-ban-ytvd-3017570-2026-10-14?utm_source=rss"
+    ],
+    "posted_at": "2026-10-14T20:03:49+00:00",
+    "dry_run": false
   }
 ]
