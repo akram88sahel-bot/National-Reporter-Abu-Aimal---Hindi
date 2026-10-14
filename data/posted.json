@@ -523,5 +523,17 @@
     ],
     "posted_at": "2026-10-14T23:20:21+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Bhopal cop suspended for abusing tribal students; US court upholds Florida social media ban for under-14s; Ukraine accuses US of aiding Russia",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/bhopal-police-officer-suspended-over-alleged-abuse-of-tribal-students-chanting-jai-johar-3017606-2026-10-15?utm_source=rss",
+      "https://www.indiatoday.in/world/story/florida-under-14-social-media-ban-us-appeals-court-3017609-2026-10-15?utm_source=rss",
+      "https://www.ndtv.com/world-news/ukraine-accuses-us-of-helping-russia-as-missiles-hit-kyiv-12187173#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-14T23:50:59+00:00",
+    "dry_run": false
   }
 ]
