@@ -476,5 +476,18 @@
     ],
     "posted_at": "2026-10-14T20:03:49+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Telangana suspends restaurant licences over food safety; Telangana fodder cultivation plan for El Nino shortage; Israel reinforces troops across all fronts ahead of elections; Pramila Jayapal raises alarm over India voter deletions",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/fssai-licence-of-seven-restaurants-in-three-telangana-districts-suspended-over-food-safety-violations/article71583575.ece",
+      "https://www.thehindu.com/news/national/telangana/el-nino-telangana-to-cultivate-fodder-in-lakes-and-ponds-shikam-lands-to-address-potential-shortage/article71583535.ece",
+      "https://www.ndtv.com/world-news/israel-reinforces-troops-on-all-fronts-ahead-of-elections-12186936#publisher=newsstand",
+      "https://www.indiatoday.in/world/story/pramila-jayapal-india-voter-roll-deletions-non-violent-protests-ptag-3017598-2026-10-15?utm_source=rss"
+    ],
+    "posted_at": "2026-10-14T20:58:30+00:00",
+    "dry_run": false
   }
 ]
