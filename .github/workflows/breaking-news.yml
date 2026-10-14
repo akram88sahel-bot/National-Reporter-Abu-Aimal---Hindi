@@ -35,6 +35,7 @@ jobs:
           RU_MODEL: llama-3.3-70b-versatile
           RU_API_KEY: ${{ secrets.RU_API_KEY }}
           XAI_API_KEY: ${{ secrets.GROK_API_KEY || secrets.XAI_API_KEY }}
+          AI_DAILY_LIMIT: ${{ vars.AI_DAILY_LIMIT || '60' }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           LLM_PROVIDER: ${{ vars.LLM_PROVIDER || 'gemini' }}
