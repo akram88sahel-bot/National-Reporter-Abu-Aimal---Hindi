@@ -511,5 +511,17 @@
     ],
     "posted_at": "2026-10-14T22:54:59+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Delhi Police files FIR against NSUI women workers; Israel seeks Saudi nod for Yemen campaign; Ukraine Starlink access restricted after US policy change",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/delhi-police-fir-nsui-women-rahul-gandhi-protester-assault-claims-3017607-2026-10-15?utm_source=rss",
+      "https://www.indiatoday.in/world/story/saudi-houthi-war-latest-news-israel-benjamin-netanyahu-proposal-yemen-conflict-mohammed-bin-salman-itspc-3016179-2026-10-14?utm_source=rss",
+      "https://www.indiatoday.in/world/story/ukraine-starlink-support-restricted-after-trump-pivot-towards-russian-diesel-not-a-coincidence-3017600-2026-10-15?utm_source=rss"
+    ],
+    "posted_at": "2026-10-14T23:20:21+00:00",
+    "dry_run": false
   }
 ]
