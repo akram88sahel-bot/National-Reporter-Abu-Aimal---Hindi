@@ -57,11 +57,16 @@ jobs:
         run: |
           git config user.name "breaking-news-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add data/posted.json data/seen.json data/ai_usage.json
-          git diff --cached --quiet && exit 0
-          git commit -m "Update posted record"
+          mkdir -p /tmp/state
+          cp data/posted.json data/seen.json data/ai_usage.json /tmp/state/
           for i in 1 2 3 4 5; do
-            git pull --rebase -q origin main && git push -q origin HEAD:main && exit 0
+            git fetch -q origin main
+            git reset -q --hard origin/main
+            cp /tmp/state/posted.json /tmp/state/seen.json /tmp/state/ai_usage.json data/
+            git add data/posted.json data/seen.json data/ai_usage.json
+            git diff --cached --quiet && exit 0
+            git commit -qm "Update posted record"
+            git push -q origin HEAD:main && exit 0
             sleep 5
           done
           exit 1
