@@ -688,5 +688,17 @@
     ],
     "posted_at": "2026-10-15T15:02:32+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Election Commission special summary revision of voter rolls in 17 states and UTs; Houthi missile attack on Yemen presidential palace in Aden; Kerala High Court suspends ex-DGP Tomin Thachankary's four-year sentence",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/election-commission-special-summary-revision-electoral-rolls-17-states-and-uts-january-1-2027-3018240-2026-10-15?utm_source=rss",
+      "https://www.indiatoday.in/world/story/houthi-missile-attack-yemen-presidential-complex-in-aden-pm-and-ministers-safe-3018304-2026-10-15?utm_source=rss",
+      "https://www.indiatoday.in/india/story/kerala-high-court-suspends-tomin-thachankary-sentence-disproportionate-assets-case-ptag-3018319-2026-10-15?utm_source=rss"
+    ],
+    "posted_at": "2026-10-15T16:01:52+00:00",
+    "dry_run": false
   }
 ]
