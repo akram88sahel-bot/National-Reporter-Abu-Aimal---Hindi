@@ -396,6 +396,42 @@ def publish(data, card_path):
         )
     if r.status_code != 200:
         raise RuntimeError(f"Facebook publish failed: {r.status_code} {r.text}")
+    result = r.json()
+    try:
+        publish_instagram(page_id, token, result.get("id"), caption)
+    except Exception as e:  # Instagram must never block or undo the Facebook post
+        log(f"Instagram publish skipped: {e}")
+    return result
+
+
+def publish_instagram(page_id, token, photo_id, caption):
+    """Post the same card to the Instagram account linked to the Facebook Page.
+
+    Uses the image URL Facebook already created for the published photo, so no extra file is stored.
+    """
+    if not photo_id:
+        raise RuntimeError("no Facebook photo id")
+    r = requests.get(f"{GRAPH}/{photo_id}", params={"fields": "images", "access_token": token}, timeout=30)
+    r.raise_for_status()
+    images = r.json().get("images") or []
+    if not images:
+        raise RuntimeError("no image URL from Facebook")
+    image_url = images[0]["source"]  # largest size first
+    r = requests.get(f"{GRAPH}/{page_id}", params={"fields": "instagram_business_account", "access_token": token}, timeout=30)
+    r.raise_for_status()
+    ig = (r.json().get("instagram_business_account") or {}).get("id")
+    if not ig:
+        raise RuntimeError("no Instagram account linked to this Page")
+    r = requests.post(f"{GRAPH}/{ig}/media",
+                      data={"image_url": image_url, "caption": caption, "access_token": token}, timeout=60)
+    if r.status_code != 200:
+        raise RuntimeError(f"Instagram container failed: {r.status_code} {r.text}")
+    creation_id = r.json()["id"]
+    r = requests.post(f"{GRAPH}/{ig}/media_publish",
+                      data={"creation_id": creation_id, "access_token": token}, timeout=60)
+    if r.status_code != 200:
+        raise RuntimeError(f"Instagram publish failed: {r.status_code} {r.text}")
+    log(f"Instagram published: {r.json()}")
     return r.json()
 
 
