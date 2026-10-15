@@ -653,5 +653,17 @@
     ],
     "posted_at": "2026-10-15T12:29:12+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Karnataka cabinet rejects Shubha Shankar clemency plea; Mumbai Police order actor Imran Khan to leave India; TGSPDCL assistant engineer caught taking bribe in Hyderabad",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/karnataka-cabinet-rejects-shubha-shankar-clemency-challenges-sc-st-quota-ruling-ptag-3018135-2026-10-15?utm_source=rss",
+      "https://www.indiatoday.in/india/story/imran-khan-india-exit-notice-mumbai-protest-bombay-high-court-ptag-3018131-2026-10-15?utm_source=rss",
+      "https://www.thehindu.com/news/national/telangana/tgspdcl-assistant-engineer-caught-taking-120-lakh-bribe-for-new-electricity-metres-in-hyderabad/article71587946.ece"
+    ],
+    "posted_at": "2026-10-15T13:15:40+00:00",
+    "dry_run": false
   }
 ]
