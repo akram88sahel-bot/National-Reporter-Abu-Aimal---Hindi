@@ -734,5 +734,16 @@
     ],
     "posted_at": "2026-10-15T23:16:02+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "IAS officer abuses subordinate in JK; Akhilesh and Sitharaman banking faceoff",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/jammu-kashmir-ias-officer-kumar-rajeev-ranjan-abuses-beenish-wani-video-row-iltija-mufti-demands-3018431-2026-10-16?utm_source=rss",
+      "https://www.indiatoday.in/india/story/akhilesh-yadav-nirmala-sitharaman-banking-row-idbi-bank-sale-3018456-2026-10-16?utm_source=rss"
+    ],
+    "posted_at": "2026-10-15T23:50:15+00:00",
+    "dry_run": false
   }
 ]
