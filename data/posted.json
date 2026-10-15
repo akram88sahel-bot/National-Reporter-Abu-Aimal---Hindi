@@ -618,5 +618,18 @@
     ],
     "posted_at": "2026-10-15T08:26:04+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Foreign medical graduates protest stipend disparity in Hyderabad; Supreme Court seeks Election Commission response on voter deletions; IIT Bombay bars caste and JEE rank queries amid protests; Indian government flags hate crimes in US after temple shooting plot",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/equal-work-equal-stipend-foreign-medical-graduates-protest-in-hyderabad-demanding-29792-monthly/article71587376.ece",
+      "https://www.indiatoday.in/india/story/supreme-court-seeks-election-commission-reply-voter-deletions-electoral-roll-revision-ptag-3017933-2026-10-15?utm_source=rss",
+      "https://www.indiatoday.in/education-today/news/story/iit-bombay-caste-guidelines-jee-rank-queries-student-protests-3017811-2026-10-15?utm_source=rss",
+      "https://www.indiatoday.in/india/story/adds-to-growing-concerns-over-anti-india-hate-in-us-govt-on-teens-arrest-for-plotting-temple-mass-shooting-3017887-2026-10-15?utm_source=rss"
+    ],
+    "posted_at": "2026-10-15T10:02:12+00:00",
+    "dry_run": false
   }
 ]
