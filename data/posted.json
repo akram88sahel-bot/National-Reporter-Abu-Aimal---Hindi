@@ -631,5 +631,16 @@
     ],
     "posted_at": "2026-10-15T10:02:12+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "delhi hc cjp protest connaught place; supreme court jantar mantar protest site notice",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/delhi-high-court-allows-cjp-protest-connaught-place-police-watch-ptag-3018026-2026-10-15?utm_source=rss",
+      "https://www.indiatoday.in/india/story/jantar-mantar-protest-site-removal-supreme-court-seeks-delhi-police-centre-replies-ptag-3017984-2026-10-15?utm_source=rss"
+    ],
+    "posted_at": "2026-10-15T11:31:40+00:00",
+    "dry_run": false
   }
 ]
