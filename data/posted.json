@@ -665,5 +665,17 @@
     ],
     "posted_at": "2026-10-15T13:15:40+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Guwahati visa centre inauguration; Dal Lake boat ban; Delhi HC gang rape ruling",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/assam-first-visa-application-centre-for-which-countries-list-himanta-vfs-global-guwahati-itspc-3017778-2026-10-15?utm_source=rss",
+      "https://www.indiatoday.in/india/story/dal-lake-motorboat-ban-jk-high-court-prohibits-fuel-powered-boats-jet-skis-ptag-3018221-2026-10-15?utm_source=rss",
+      "https://www.indiatoday.in/india/story/delhi-high-court-woman-facilitating-rape-can-face-gang-rape-charge-ptag-3018234-2026-10-15?utm_source=rss"
+    ],
+    "posted_at": "2026-10-15T14:08:39+00:00",
+    "dry_run": false
   }
 ]
