@@ -427,6 +427,17 @@ def publish_instagram(page_id, token, photo_id, caption):
     if r.status_code != 200:
         raise RuntimeError(f"Instagram container failed: {r.status_code} {r.text}")
     creation_id = r.json()["id"]
+    # Instagram needs time to fetch and process the image before it can be published
+    for _ in range(20):
+        time.sleep(3)
+        r = requests.get(f"{GRAPH}/{creation_id}", params={"fields": "status_code", "access_token": token}, timeout=30)
+        status = r.json().get("status_code") if r.status_code == 200 else None
+        if status == "FINISHED":
+            break
+        if status == "ERROR":
+            raise RuntimeError(f"Instagram could not process image: {r.text}")
+    else:
+        raise RuntimeError("Instagram image not ready after 60s")
     r = requests.post(f"{GRAPH}/{ig}/media_publish",
                       data={"creation_id": creation_id, "access_token": token}, timeout=60)
     if r.status_code != 200:
