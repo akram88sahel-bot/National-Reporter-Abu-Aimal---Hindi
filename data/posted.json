@@ -570,5 +570,17 @@
     ],
     "posted_at": "2026-10-15T04:03:53+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "India seeks UN report on PoK human rights; Ankita Bhandari parents detained and released in Delhi; Jammu and Kashmir changes school timings due to cold",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.ndtv.com/world-news/india-asks-un-human-rights-body-for-report-on-pakistans-actions-in-pok-12187766#publisher=newsstand",
+      "https://www.ndtv.com/india-news/uttarakhand-murder-victim-ankita-bhandari-parents-freed-after-overnight-protest-over-dushyant-kumar-gautam-governor-posting-12187659#publisher=newsstand",
+      "https://www.ndtv.com/education/jammu-and-kashmir-changes-school-timings-amid-cold-weather-classes-to-begin-after-10-am-12187761#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-15T05:26:45+00:00",
+    "dry_run": false
   }
 ]
