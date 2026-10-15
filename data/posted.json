@@ -582,5 +582,17 @@
     ],
     "posted_at": "2026-10-15T05:26:45+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "mandatory caller name display; supreme court reservation conversion decision; ambedkar university student suspension",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/technology/story/no-unknown-numbers-calling-anymore-soon-govt-makes-displaying-caller-name-mandatory-from-november-1-3017721-2026-10-15?utm_source=rss",
+      "https://www.indiatoday.in/india/law-news/story/supreme-court-upholds-madras-high-courts-decision-disallowing-reservation-benefits-after-conversion-3017732-2026-10-15?utm_source=rss",
+      "https://www.indiatoday.in/education-today/news/story/ambedkar-university-suspends-10-students-over-alleged-clash-with-security-staff-3017699-2026-10-15?utm_source=rss"
+    ],
+    "posted_at": "2026-10-15T05:58:13+00:00",
+    "dry_run": false
   }
 ]
