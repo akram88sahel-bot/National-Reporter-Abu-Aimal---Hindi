@@ -606,5 +606,17 @@
     ],
     "posted_at": "2026-10-15T06:33:54+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Nepal PM first foreign trip to India; El Nino impact severe in Telangana; Supreme Court rules on backward quota for converts",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/world/story/nepal-pm-balen-shah-india-visit-first-bilateral-trip-pm-narendra-modi-talks-agenda-itspc-3017806-2026-10-15?utm_source=rss",
+      "https://www.thehindu.com/news/national/telangana/el-nino-impact-severe-will-be-at-peak-till-february-telangana-chief-secretary/article71586970.ece",
+      "https://www.ndtv.com/india-news/no-automatic-backward-quota-benefits-for-converts-rules-supreme-court-12188281#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-15T08:26:04+00:00",
+    "dry_run": false
   }
 ]
