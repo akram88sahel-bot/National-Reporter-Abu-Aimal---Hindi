@@ -711,5 +711,17 @@
     ],
     "posted_at": "2026-10-15T21:29:18+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "CJP alleges delays in release of Saurav Das and Ashutosh Ranka in New Delhi; Court bans motorboats and jet skis in Dal Lake; Eight US states sue OpenAI over ChatGPT",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/cjp-alleges-deliberate-procedural-delays-in-release-of-saurav-das-ashutosh-ranka-3018455-2026-10-16?utm_source=rss",
+      "https://www.ndtv.com/india-news/court-bans-motorboats-jet-skis-in-dal-lake-over-environmental-concerns-12192093#publisher=newsstand",
+      "https://www.ndtv.com/world-news/chatgpt-hurting-children-deceiving-adults-8-us-states-sue-openai-12192181#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-15T22:54:40+00:00",
+    "dry_run": false
   }
 ]
