@@ -535,5 +535,17 @@
     ],
     "posted_at": "2026-10-14T23:50:59+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Congress leaders detained at India Gate; IMD monsoon and weather forecast; 2026 Economics Nobel Prize announced",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.aajtak.in/india/news/story/ankita-bhandaris-parents-india-gate-congress-leaders-detained-at-delhi-ntc-ksrj-dskc-2670956-2026-10-15?utm_source=rss",
+      "https://www.indiatoday.in/science/story/southwest-monsoon-withdrawal-northeast-monsoon-onset-forecast-hail-western-disturbance-3017159-2026-10-14?utm_source=rss",
+      "https://www.indiatoday.in/business/story/2026-economics-nobel-robert-e-hall-michael-woodford-emi-inflation-jobs-3016112-2026-10-15?utm_source=rss"
+    ],
+    "posted_at": "2026-10-15T01:58:21+00:00",
+    "dry_run": false
   }
 ]
