@@ -700,5 +700,16 @@
     ],
     "posted_at": "2026-10-15T16:01:52+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Protesters in Hyderabad demand CEC resignation and scrapping of SIR; Indian-American Congressman speaks on foiled Hindu temple attack in Illinois",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.thehindu.com/news/cities/Hyderabad/protesters-in-hyderabad-demand-cec-gyanesh-kumars-resignation-scrapping-of-sir/article71540168.ece",
+      "https://www.indiatoday.in/world/us-news/story/indian-american-congressman-on-foiled-hindu-temple-attack-illinois-says-he-and-his-family-was-worshipping-there-3018453-2026-10-16?utm_source=rss"
+    ],
+    "posted_at": "2026-10-15T21:29:18+00:00",
+    "dry_run": false
   }
 ]
