@@ -677,5 +677,16 @@
     ],
     "posted_at": "2026-10-15T14:08:39+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Delhi Central Park shut for CJP Tiranga march; Supreme Court seeks EC reply on voter deletions",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/cities/delhi/story/delhi-cockroach-party-central-park-closure-connaught-place-cjp-tricolour-march-abhijeet-dipke-protest-3018252-2026-10-15?utm_source=rss",
+      "https://www.indiatoday.in/india/story/supreme-court-sir-hearing-ec-response-voter-deletion-allegations-ptag-3018260-2026-10-15?utm_source=rss"
+    ],
+    "posted_at": "2026-10-15T15:02:32+00:00",
+    "dry_run": false
   }
 ]
