@@ -723,5 +723,16 @@
     ],
     "posted_at": "2026-10-15T22:54:40+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Global Hunger Index release; Saudi Arabia executes Bangladeshis",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.ndtv.com/india-news/indias-hunger-score-improves-but-child-wasting-remains-high-12192134#publisher=newsstand",
+      "https://www.indiatoday.in/world/story/saudi-arabia-mecca-bangladeshi-pair-execution-immoral-acts-itspc-3018194-2026-10-15?utm_source=rss"
+    ],
+    "posted_at": "2026-10-15T23:16:02+00:00",
+    "dry_run": false
   }
 ]
