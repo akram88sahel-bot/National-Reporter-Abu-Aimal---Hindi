@@ -559,5 +559,16 @@
     ],
     "posted_at": "2026-10-15T02:59:23+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Sensex and Nifty open higher; Elon Musk on Starlink access in Ukraine",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/business/market/story/market-opening-sensex-opens-300-points-higher-nifty-above-22700-idbi-bank-shares-down-3-3017665-2026-10-15?utm_source=rss",
+      "https://www.indiatoday.in/technology/news/story/did-elon-musk-block-starlink-access-in-ukraine-here-is-what-he-claims-3017651-2026-10-15?utm_source=rss"
+    ],
+    "posted_at": "2026-10-15T04:03:53+00:00",
+    "dry_run": false
   }
 ]
