@@ -547,5 +547,17 @@
     ],
     "posted_at": "2026-10-15T01:58:21+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Delhi Cabinet approves Industrial Policy 2026; Saudi Arabia and Israel explore security cooperation against Houthis; India dispatches first broad-gauge railway coaches to Bangladesh",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.ndtv.com/delhi-news/hospitals-msmes-incentives-delhis-rs-1-000-crore-industry-push-12187369#publisher=newsstand",
+      "https://www.indiatoday.in/world/story/saudi-arabia-israel-normalisation-houthi-attack-pakistan-turkey-mecca-pact-trump-iran-itspc-3016182-2026-10-15?utm_source=rss",
+      "https://www.ndtv.com/india-news/india-dispatches-first-18-of-200-railway-coaches-to-bangladesh-12187306#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-15T02:59:23+00:00",
+    "dry_run": false
   }
 ]
