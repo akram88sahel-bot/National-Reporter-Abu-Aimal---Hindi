@@ -594,5 +594,17 @@
     ],
     "posted_at": "2026-10-15T05:58:13+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Home secretary apology to Supreme Court; Kerala High Court dismisses Vijayan family plea; Delhi HC urgent hearing on Connaught Place protest",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/govind-mohan-supreme-court-apology-delhi-protest-internet-suspension-case-ptag-3017750-2026-10-15?utm_source=rss",
+      "https://www.indiatoday.in/india/story/cmrl-bribery-case-kerala-high-court-rejects-pinarayi-vijayan-family-appeal-bid-ptag-3017761-2026-10-15?utm_source=rss",
+      "https://www.indiatoday.in/india/story/delhi-high-court-plea-against-abhijeet-dipke-connaught-place-protest-ptag-3017738-2026-10-15?utm_source=rss"
+    ],
+    "posted_at": "2026-10-15T06:33:54+00:00",
+    "dry_run": false
   }
 ]
