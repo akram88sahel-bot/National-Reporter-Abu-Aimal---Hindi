@@ -803,5 +803,17 @@
     ],
     "posted_at": "2026-10-16T05:30:30+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Supreme Court declines urgent hearing on Connaught Place Central Park closure; Supreme Court defers Athar Khan bail hearing in Delhi riots case; Supreme Court seeks Sanjay Raut explanation in electoral rolls case",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/law-news/story/cjp-tiranga-march-supreme-court-declines-urgent-hearing-flags-business-impact-3018623-2026-10-16?utm_source=rss",
+      "https://www.indiatoday.in/india/story/athar-khan-bail-plea-supreme-court-defers-delhi-riots-uapa-hearing-ptag-3018628-2026-10-16?utm_source=rss",
+      "https://www.indiatoday.in/india/story/supreme-court-electoral-rolls-case-sanjay-raut-conduct-explanation-ptag-3018649-2026-10-16?utm_source=rss"
+    ],
+    "posted_at": "2026-10-16T07:14:48+00:00",
+    "dry_run": false
   }
 ]
