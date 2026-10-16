@@ -792,5 +792,16 @@
     ],
     "posted_at": "2026-10-16T05:00:36+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "special parliament session for bills; it stocks rally in india",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.ndtv.com/india-news/special-parliament-session-likely-this-month-to-pass-womens-quota-delimitation-bills-12193156#publisher=newsstand",
+      "https://www.indiatoday.in/business/market/story/it-stocks-rally-7-percent-tech-mahindra-wipro-infosys-tcs-why-quarterly-results-q2-ai-global-selloff-3018562-2026-10-16?utm_source=rss"
+    ],
+    "posted_at": "2026-10-16T05:30:30+00:00",
+    "dry_run": false
   }
 ]
