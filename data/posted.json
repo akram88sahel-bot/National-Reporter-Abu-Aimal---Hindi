@@ -780,5 +780,17 @@
     ],
     "posted_at": "2026-10-16T04:05:28+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Telangana CM urges crop deferral; Special Parliament session for key bills; Connaught Place Central Park closure",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.ndtv.com/india-news/el-nino-worst-in-decades-telangana-revanth-reddy-urges-farmers-to-defer-one-crop-12193039#publisher=newsstand",
+      "https://www.indiatoday.in/india/story/special-parliament-session-this-month-govt-has-numbers-to-pass-bills-on-delimitation-womens-quota-sources-3018544-2026-10-16?utm_source=rss",
+      "https://www.ndtv.com/delhi-news/delhis-central-park-in-connaught-place-to-remain-shut-on-october-16-17-due-to-cjp-march-12191193#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-16T05:00:36+00:00",
+    "dry_run": false
   }
 ]
