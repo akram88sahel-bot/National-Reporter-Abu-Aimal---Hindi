@@ -897,5 +897,17 @@
     ],
     "posted_at": "2026-10-16T13:34:30+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "voter list deletion attempt case in Musheerabad; High Court order on revenue officials in disputed properties; Karimnagar indoor substation charged",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.thehindu.com/news/cities/Hyderabad/case-registered-against-bjp-booth-level-agent-over-alleged-attempt-to-delete-names-of-30-voters-in-musheerabad/article71552777.ece",
+      "https://www.thehindu.com/news/national/telangana/no-coercive-steps-by-revenue-officials-from-october-17-to-25-in-disputed-properties-hc-to-government/article71593392.ece",
+      "https://www.thehindu.com/news/national/telangana/first-indoor-3311-kv-substation-in-karimnagar-under-tgnpdcl-jurisdiction-technically-charged/article71552440.ece"
+    ],
+    "posted_at": "2026-10-16T19:54:28+00:00",
+    "dry_run": false
   }
 ]
