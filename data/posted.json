@@ -933,5 +933,16 @@
     ],
     "posted_at": "2026-10-16T21:23:30+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "DGP orders night patrolling in Malkajgiri; ISB announces scholarships on 25th anniversary",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/dgp-calls-for-stronger-surveillance-and-night-patrolling-as-crime-cases-rise-in-malkajgiri-commissionerate-limits/article71588819.ece",
+      "https://www.thehindu.com/news/cities/Hyderabad/indian-school-of-business-commits-to-250-annual-scholarships-sets-up-national-research-platform-to-mark-its-25th-anniversary/article71551835.ece"
+    ],
+    "posted_at": "2026-10-16T21:56:08+00:00",
+    "dry_run": false
   }
 ]
