@@ -851,5 +851,17 @@
     ],
     "posted_at": "2026-10-16T10:33:38+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Congress seeks SIT probe over Hyderabad electoral rolls; Supreme Court on Connaught Place Central Park closure; J&K govt orders probe against IAS officer",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/telangana-congress-alleges-coordinated-attempt-to-remove-genuine-voters-from-hyderabad-electoral-rolls-seek-sit-probe/article71546698.ece",
+      "https://www.indiatoday.in/india/story/supreme-court-connaught-place-traders-compensation-central-park-closure-ptag-3018899-2026-10-16?utm_source=rss",
+      "https://www.indiatoday.in/india/story/jk-govt-orders-probe-into-ias-officer-abusing-woman-official-report-in-15-days-3018888-2026-10-16?utm_source=rss"
+    ],
+    "posted_at": "2026-10-16T11:22:50+00:00",
+    "dry_run": false
   }
 ]
