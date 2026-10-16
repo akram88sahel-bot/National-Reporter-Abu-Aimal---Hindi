@@ -863,5 +863,17 @@
     ],
     "posted_at": "2026-10-16T11:22:50+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Delhi election officials recheck 47.5 lakh dropped voters; Abhijeet Dipke detained ahead of Delhi protest march; Supreme Court stays Twisha Sharma death trial in Bhopal",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/cities/delhi/story/delhi-voter-list-revision-47-lakh-excluded-names-reverification-ptag-3018862-2026-10-16?utm_source=rss",
+      "https://www.indiatoday.in/india/story/cjp-protest-live-updates-tiranga-march-delhi-connaught-place-central-park-cockroach-janta-party-abhijeet-dipke-3018651-2026-10-16?utm_source=rss",
+      "https://www.indiatoday.in/india/story/twisha-sharma-death-case-supreme-court-stays-bhopal-trial-delhi-transfer-ptag-3018941-2026-10-16?utm_source=rss"
+    ],
+    "posted_at": "2026-10-16T11:59:31+00:00",
+    "dry_run": false
   }
 ]
