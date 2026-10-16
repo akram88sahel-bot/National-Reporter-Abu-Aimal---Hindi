@@ -815,5 +815,17 @@
     ],
     "posted_at": "2026-10-16T07:14:48+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "EC announces voter list revision amid protests; Security stepped up in Delhi for Tiranga March; Supreme Court notice on Muslim divorce safeguards",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/election-commission-voter-list-revision-readable-pdf-cjp-rahul-gandhi-protests-3018682-2026-10-16?utm_source=rss",
+      "https://www.ndtv.com/india-news/cjp-tiranga-march-today-6-000-cops-deployed-central-park-closed-for-public-12193481#publisher=newsstand",
+      "https://www.indiatoday.in/india/story/talaq-e-hasan-supreme-court-centre-uniform-muslim-divorce-safeguards-ptag-3018736-2026-10-16?utm_source=rss"
+    ],
+    "posted_at": "2026-10-16T08:04:23+00:00",
+    "dry_run": false
   }
 ]
