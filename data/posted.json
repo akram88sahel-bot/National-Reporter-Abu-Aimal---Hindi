@@ -745,5 +745,16 @@
     ],
     "posted_at": "2026-10-15T23:50:15+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "BJP defends SIR process in Telangana; Abhijeet Dipke claims tracking by IB in New Delhi",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/bjp-rejects-allegations-of-voter-deletions-during-sir-defends-ec-process/article71543367.ece",
+      "https://www.indiatoday.in/india/story/ahead-of-tiranga-march-cjps-abhijeet-dipke-says-delhi-police-may-detain-him-3018459-2026-10-16?utm_source=rss"
+    ],
+    "posted_at": "2026-10-16T00:20:43+00:00",
+    "dry_run": false
   }
 ]
