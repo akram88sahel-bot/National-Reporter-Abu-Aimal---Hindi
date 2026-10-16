@@ -839,5 +839,17 @@
     ],
     "posted_at": "2026-10-16T09:03:14+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Telangana CM pitches Hyderabad for Hyundai car plant; Delhi Police warn against Tiranga March; CM Vijay inaugurates Periyar centre in Coimbatore",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/telangana-cm-pitches-hyderabad-as-ideal-location-for-hyundais-car-manufacturing-facility/article71591842.ece",
+      "https://www.ndtv.com/india-news/dont-hold-tiranga-march-delhi-police-at-abhijeet-dipkes-home-to-serve-notice-ahead-of-cjp-protest-12194165#publisher=newsstand",
+      "https://www.indiatoday.in/india/tamil-nadu/story/periyar-arivulagam-science-centre-vijay-coimbatore-dmk-project-ptag-3018713-2026-10-16?utm_source=rss"
+    ],
+    "posted_at": "2026-10-16T10:33:38+00:00",
+    "dry_run": false
   }
 ]
