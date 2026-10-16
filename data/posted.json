@@ -756,5 +756,17 @@
     ],
     "posted_at": "2026-10-16T00:20:43+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "petrol diesel export duty revision; delhi police traffic advisory cjp stir; delhi ramlila cockroach effigy",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/business/story/india-petrol-export-duty-raised-five-times-diesel-duty-cut-half-october-16-3018518-2026-10-16?utm_source=rss",
+      "https://www.indiatoday.in/cities/delhi/story/cjp-central-park-gathering-call-delhi-traffic-police-issues-advisory-ahead-of-proposed-assembly-in-connaught-place-3018472-2026-10-16?utm_source=rss",
+      "https://www.indiatoday.in/cities/delhi/story/delhi-ramlila-maidan-cockroach-effigy-cjp-protests-gyanesh-kumar-dussehra-jantar-mantar-3018485-2026-10-16?utm_source=rss"
+    ],
+    "posted_at": "2026-10-16T03:30:43+00:00",
+    "dry_run": false
   }
 ]
