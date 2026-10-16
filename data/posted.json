@@ -827,5 +827,17 @@
     ],
     "posted_at": "2026-10-16T08:04:23+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Congress Seva Dal protest against CEC; Minister invites Karnataka industries to summit; Supreme Court order on airfare rules",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/telangana-congress-seva-dal-organsies-satyagraha-seeks-cec-gyanesh-kumars-resignation/article71546715.ece",
+      "https://www.thehindu.com/news/national/telangana/telangana-karnataka-can-form-integrated-industrial-value-chain-it-and-industries-minister-sridhar-babu/article71591609.ece",
+      "https://www.indiatoday.in/business/story/supreme-court-asks-centre-to-finalise-airfare-rules-by-november-16-3018752-2026-10-16?utm_source=rss"
+    ],
+    "posted_at": "2026-10-16T09:03:14+00:00",
+    "dry_run": false
   }
 ]
