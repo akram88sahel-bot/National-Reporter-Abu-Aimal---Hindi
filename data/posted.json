@@ -768,5 +768,17 @@
     ],
     "posted_at": "2026-10-16T03:30:43+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "BJP leader Madan Rathore remarks on Pak-US war; Mumbai police permit CJP rally at Azad Maidan; Reliance statement on Starlink and Indian law",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.ndtv.com/india-news/if-pakistan-us-war-breaks-out-will-stand-with-pakistan-rajasthan-bjp-leader-madan-rathore-sparks-row-aap-congress-hit-out-12192819#publisher=newsstand",
+      "https://www.ndtv.com/mumbai-news/mumbai-cops-give-cjp-permission-for-lehra-do-tiranga-rally-at-azad-maidan-today-12192891#publisher=newsstand",
+      "https://www.indiatoday.in/technology/story/welcome-competition-including-starlink-but-all-must-abide-by-indian-law-reliance-on-elon-musk-comments-3018521-2026-10-16?utm_source=rss"
+    ],
+    "posted_at": "2026-10-16T04:05:28+00:00",
+    "dry_run": false
   }
 ]
