@@ -875,5 +875,16 @@
     ],
     "posted_at": "2026-10-16T11:59:31+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "CJP convenor Abhijeet Dipke detained ahead of Delhi march; French police face backlash over student injuries during protests",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/dipke-detention-leadership-test-cjp-plan-b-ready-tiranga-march-delhi-protest-3018926-2026-10-16?utm_source=rss",
+      "https://www.indiatoday.in/world/story/france-school-protests-student-injuries-police-crowd-control-weapons-3018916-2026-10-16?utm_source=rss"
+    ],
+    "posted_at": "2026-10-16T12:33:29+00:00",
+    "dry_run": false
   }
 ]
