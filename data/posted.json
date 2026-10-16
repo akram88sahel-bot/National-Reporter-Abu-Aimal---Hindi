@@ -909,5 +909,17 @@
     ],
     "posted_at": "2026-10-16T19:54:28+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "NHM employees strike in Telangana; Restaurant licences suspended over food safety violations; TGHRC pulls up NIMS over delayed pension benefits",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/nhm-employees-strike-in-telangana-continues-as-17541-staff-demand-regularisation-equal-pay/article71592605.ece",
+      "https://www.thehindu.com/news/national/telangana/fssai-licences-of-nine-restaurants-in-telanganas-medak-kamareddy-and-nizamabad-suspended-over-food-safety-violations/article71552304.ece",
+      "https://www.thehindu.com/news/national/telangana/tghrc-pulls-up-nims-hyderabad-over-12-year-delay-in-releasing-retired-professors-pension-benefits/article71551025.ece"
+    ],
+    "posted_at": "2026-10-16T20:19:43+00:00",
+    "dry_run": false
   }
 ]
