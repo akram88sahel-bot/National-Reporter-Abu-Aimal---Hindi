@@ -1132,5 +1132,17 @@
     ],
     "posted_at": "2026-10-17T09:54:00+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "ED moves Telangana High Court on Jagan Mohan Reddy cases; Kishan Reddy on rail corridor land acquisition; Protests in Hyderabad over voter deletions",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/ed-moves-telangana-hc-seeking-speedy-trial-in-money-laundering-cases-against-ysrcp-chief-jagan-mohan-reddy/article71567613.ece",
+      "https://www.thehindu.com/news/national/telangana/land-acquisition-for-high-speed-rail-corridors-without-requisition-illegal-union-minister-kishan-reddy/article71567451.ece",
+      "https://www.thehindu.com/news/cities/Hyderabad/scrap-sir-gyanesh-kumar-must-resign-protesters-take-to-hyderabad-streets-seek-accountability-over-voter-deletions/article71569006.ece"
+    ],
+    "posted_at": "2026-10-17T10:18:10+00:00",
+    "dry_run": false
   }
 ]
