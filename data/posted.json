@@ -956,5 +956,17 @@
     ],
     "posted_at": "2026-10-16T23:18:08+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Survey ordered for missing land near KCR farmhouse; Telangana government announces DA release for employees; Telangana allocates funds for temple complex in Musi project",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/survey-ordered-to-trace-45-acres-missing-from-records-near-kcrs-farmhouse/article71554143.ece",
+      "https://www.thehindu.com/news/national/telangana/telangana-govt-announces-release-of-two-da-instalments-payable-with-october-salary-to-employees/article71554894.ece",
+      "https://www.thehindu.com/news/cities/Hyderabad/telangana-govt-allocates-1108-crore-for-temple-complex-as-part-of-musi-project/article71556383.ece"
+    ],
+    "posted_at": "2026-10-17T00:22:17+00:00",
+    "dry_run": false
   }
 ]
