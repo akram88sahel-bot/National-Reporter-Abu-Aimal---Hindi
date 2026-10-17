@@ -1253,5 +1253,16 @@
     ],
     "posted_at": "2026-10-17T21:17:17+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Telangana Power Minister rejects power privatisation and criticises BRS on YTPS; Abhijeet Dipke released on bail in New Delhi",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/ytps-was-established-without-assured-coal-allotment-previous-brs-govt-changed-source-several-times-bhatti/article71578368.ece",
+      "https://www.indiatoday.in/india/story/cjp-founder-abhijit-dipke-granted-conditional-bail-and-asked-to-sign-a-bond-to-be-released-shortly-3019614-2026-10-17?utm_source=rss"
+    ],
+    "posted_at": "2026-10-17T21:51:28+00:00",
+    "dry_run": false
   }
 ]
