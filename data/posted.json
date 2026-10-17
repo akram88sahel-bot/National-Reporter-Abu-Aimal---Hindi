@@ -979,5 +979,16 @@
     ],
     "posted_at": "2026-10-17T01:08:45+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "LK Advani admitted to hospital in Delhi; Abhijeet Dipke arrested and Neha Bora released over Delhi protests",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOZ1prSGdwVzA1WTdkbnJ5dy1MeWV5dTFtQ0NKd3psRnlKWkwyVEZILW9sZmZIOXA0M3lvS0NhMWQwbFdGNjd4eEt5cW9QVU04c0kycnUyY0ZCZFhMRlM3eVgzYVpINGlBUU1lSGx2ZWZSY0hjVmk1c1haSDNlX1FLQXM2OFNYY29Rb1ZTYmpjeGlJNDRLdUJBMFJQdXpvY25ycTg4R09Wby1vNHoyd21VaFpMTnItUGNUMml2VlBvMEN3dXFkMGJWR2lEcE1jYjJ0dkUtQ1U2NHFSeDltdUE?oc=5",
+      "https://www.ndtv.com/india-news/cjps-abhijeet-dipke-under-preventive-arrest-aisa-chief-neha-bora-released-over-protests-in-delhi-12197504#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-17T01:57:32+00:00",
+    "dry_run": false
   }
 ]
