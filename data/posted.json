@@ -1085,5 +1085,16 @@
     ],
     "posted_at": "2026-10-17T07:08:21+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Hyderabad water tanker bookings double amid rain deficit; BRS questions Telangana government land mortgaging plan",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.thehindu.com/news/cities/Hyderabad/el-nino-concerns-hyderabad-tanker-bookings-double-households-told-to-cut-water-use-by-20/article71595566.ece",
+      "https://www.thehindu.com/news/national/telangana/brs-raises-concerns-over-mortgaging-land-to-raise-10000-crore-by-government/article71565231.ece"
+    ],
+    "posted_at": "2026-10-17T07:55:29+00:00",
+    "dry_run": false
   }
 ]
