@@ -1144,5 +1144,17 @@
     ],
     "posted_at": "2026-10-17T10:18:10+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Osmania junior doctors protest announcement; Revanth Reddy El Nino action plan; Supreme Court internet access ruling",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.thehindu.com/news/cities/Hyderabad/osmania-junior-doctors-plan-oct-12-protest-at-osmania-general-hospital/article71570607.ece",
+      "https://www.thehindu.com/news/national/telangana/revanth-reddy-calls-for-action-plan-to-tackle-el-nino-impact/article71569037.ece",
+      "https://www.ndtv.com/india-news/internet-access-fundamental-right-for-children-supreme-court-no-to-age-related-ban-12198711#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-17T10:52:59+00:00",
+    "dry_run": false
   }
 ]
