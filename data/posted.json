@@ -1218,5 +1218,18 @@
     ],
     "posted_at": "2026-10-17T19:51:40+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Kolkata stampede inquiry ordered; Saudi Arabia intercepts drones over Riyadh; European diplomats attacked in West Bank; Pope returns to Vatican after surgery",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/cities/story/kolkata-durga-puja-tragedy-probe-17-dead-chorbagan-pandal-3019912-2026-10-17?utm_source=rss",
+      "https://www.ndtv.com/world-news/saudi-arabia-intercepted-four-drones-over-riyadh-amid-houthi-attacks-12200439#publisher=newsstand",
+      "https://www.ndtv.com/world-news/israeli-settlers-attack-european-diplomats-in-west-bank-french-mayor-beaten-12200387#publisher=newsstand",
+      "https://www.ndtv.com/world-news/pope-leo-returns-to-vatican-after-successful-cancer-surgery-12200417#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-17T20:14:19+00:00",
+    "dry_run": false
   }
 ]
