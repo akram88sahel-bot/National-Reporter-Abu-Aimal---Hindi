@@ -1169,5 +1169,17 @@
     ],
     "posted_at": "2026-10-17T11:17:18+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Ponnam Prabhakar challenges BJP state president over voters list; Supreme Court directs platforms to block child abuse material; Supreme Court grants bail to Sandip Ghosh in RG Kar case",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/telangana-minister-ponnam-challenges-bjp-state-president-to-produce-voters-who-lost-voting-rights/article71570884.ece",
+      "https://www.indiatoday.in/india/story/supreme-court-child-safety-directions-online-abuse-material-platform-penalties-ptag-3019625-2026-10-17?utm_source=rss",
+      "https://www.indiatoday.in/india/story/sandip-ghosh-bail-rg-kar-victims-father-doctors-question-cbi-ptag-3019593-2026-10-17?utm_source=rss"
+    ],
+    "posted_at": "2026-10-17T11:51:17+00:00",
+    "dry_run": false
   }
 ]
