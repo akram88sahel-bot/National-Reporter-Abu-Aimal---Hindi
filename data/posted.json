@@ -1096,5 +1096,18 @@
     ],
     "posted_at": "2026-10-17T07:55:29+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Centre clears German funding for Warangal sewerage project; Telangana to raise bifurcation issues at MHA meeting; Drought affects 17 mandals in Khammam district; KTR demands removal of Gyanesh Kumar",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/warangal-sewerage-project-gets-major-boost-as-centre-clears-5000-crore-german-funding-proposal/article71563580.ece",
+      "https://www.thehindu.com/news/national/telangana/telangana-to-make-strong-pitch-for-resolution-of-bifurcation-issues-at-mha-meeting-on-oct-22/article71563743.ece",
+      "https://www.thehindu.com/news/national/telangana/17-of-21-mandals-in-telanganas-khammam-district-drought-hit-12-mandals-face-fodder-shortage/article71593023.ece",
+      "https://www.thehindu.com/news/national/telangana/ktr-seeks-supreme-court-probe-into-sir-process-demands-cec-gyanesh-kumars-removal/article71562462.ece"
+    ],
+    "posted_at": "2026-10-17T08:19:12+00:00",
+    "dry_run": false
   }
 ]
