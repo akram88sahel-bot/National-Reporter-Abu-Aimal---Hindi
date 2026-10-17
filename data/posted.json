@@ -1264,5 +1264,17 @@
     ],
     "posted_at": "2026-10-17T21:51:28+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Singareni workers bonus announced; Osmania junior doctors defer strike; FSSAI proposes ban on added sugar in baby food",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/38737-regular-workers-of-singareni-to-get-nearly-154-lakh-bonus-each-deputy-cm/article71579896.ece",
+      "https://www.thehindu.com/news/cities/Hyderabad/osmania-junior-doctors-defer-strike-by-10-days-to-give-govt-time-to-address-deficiencies/article71579457.ece",
+      "https://www.indiatoday.in/health/story/fssai-infant-nutrition-rules-sucrose-fructose-ban-babies-under-six-months-3019688-2026-10-17?utm_source=rss"
+    ],
+    "posted_at": "2026-10-17T23:48:08+00:00",
+    "dry_run": false
   }
 ]
