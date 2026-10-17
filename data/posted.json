@@ -1231,5 +1231,16 @@
     ],
     "posted_at": "2026-10-17T20:14:19+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Uddhav Thackeray backs regime change call; Investigation into Kolkata Durga Puja pandal incident",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/uddhav-thackeray-says-govt-taking-away-right-to-vote-protest-backs-regime-change-call-3019934-2026-10-18?utm_source=rss",
+      "https://www.ndtv.com/india-news/kolkata-durga-puja-stampede-live-updates-north-kolkata-chorbagan-pandal-chorebagan-sarbojanin-news-today-12200230#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-17T20:53:37+00:00",
+    "dry_run": false
   }
 ]
