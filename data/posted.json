@@ -968,5 +968,16 @@
     ],
     "posted_at": "2026-10-17T00:22:17+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Goshamahal ERO warns against bulk Form-7 submissions; Telangana CM condemns Rahul Gandhi detention",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/sir-blos-being-forced-to-accept-form-7s-without-signature-of-applicants/article71552172.ece",
+      "https://www.thehindu.com/news/national/telangana/unlawful-detention-of-rahul-gandhi-reflective-of-hubris-of-a-failing-govt-telangana-cm/article71552977.ece"
+    ],
+    "posted_at": "2026-10-17T01:08:45+00:00",
+    "dry_run": false
   }
 ]
