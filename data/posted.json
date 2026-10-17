@@ -1242,5 +1242,16 @@
     ],
     "posted_at": "2026-10-17T20:53:37+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Approval for elevated corridor and ropeways in Hyderabad; Inquiry ordered into Kolkata pandal accident",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/centre-approves-lb-nagarhayathnagar-double-decker-corridor-five-ropeways-and-three-robs-in-telangana-komatireddy/article71578563.ece",
+      "https://www.aajtak.in/west-bengal/story/kolkata-chorbagan-stampede-suvendu-adhikari-fact-finding-committee-human-life-theme-ntc-aktw-rptc-2673674-2026-10-18?utm_source=rss"
+    ],
+    "posted_at": "2026-10-17T21:17:17+00:00",
+    "dry_run": false
   }
 ]
