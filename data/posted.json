@@ -990,5 +990,16 @@
     ],
     "posted_at": "2026-10-17T01:57:32+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Telangana Congress leaders detained during march in Hyderabad; Bhatti seeks protection of States revenues in GST reforms",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/telangana-congress-leaders-detained-during-march-to-lok-bhavan-in-hyderabad-against-cec-gyanesh-kumar/article71558998.ece",
+      "https://www.thehindu.com/news/national/telangana/bhatti-seeks-protection-of-states-revenues-in-gst-reforms/article71560866.ece"
+    ],
+    "posted_at": "2026-10-17T02:23:37+00:00",
+    "dry_run": false
   }
 ]
