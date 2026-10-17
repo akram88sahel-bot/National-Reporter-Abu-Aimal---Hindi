@@ -1061,5 +1061,17 @@
     ],
     "posted_at": "2026-10-17T05:54:28+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "GMC Jagtial students call off protest; BRS attacks Congress over SCCL and bonus; Hyderabad common mobility pass criticized",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/telanganas-gmc-jagtial-medical-students-call-off-protest-after-rb-dept-agreement-on-infrastructure-deadlines/article71563488.ece",
+      "https://www.thehindu.com/news/national/telangana/brs-blames-congress-govt-decisions-for-decline-in-sccl-performance/article71560925.ece",
+      "https://www.thehindu.com/news/national/telangana/hyderabads-common-mobility-pass-fails-to-hit-the-mark/article71564182.ece"
+    ],
+    "posted_at": "2026-10-17T06:21:42+00:00",
+    "dry_run": false
   }
 ]
