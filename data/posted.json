@@ -1156,5 +1156,18 @@
     ],
     "posted_at": "2026-10-17T10:52:59+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "HMWSSB to supply treated water for construction and industry; KTR urges CM to expedite Sircilla JNTU campus construction; Telangana contingency plan for uninterrupted rural water supply; Delhi HC allows deleted voters to re-apply using Form 6",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.thehindu.com/news/cities/Hyderabad/water-board-plans-to-involve-hyderabad-gated-communities-stps-in-dial-a-green-tanker-service/article71595968.ece",
+      "https://www.thehindu.com/news/national/telangana/ktr-seeks-early-construction-of-jntu-engineering-college-campus-in-sircilla/article71570896.ece",
+      "https://www.thehindu.com/news/national/telangana/telanganas-el-nino-contingency-plan-for-uninterrupted-water-supply-in-rural-areas/article71595939.ece",
+      "https://www.indiatoday.in/india/law-news/story/delhi-high-court-allows-voters-deleted-from-electoral-rolls-to-use-form-6-to-re-apply-3019559-2026-10-17?utm_source=rss"
+    ],
+    "posted_at": "2026-10-17T11:17:18+00:00",
+    "dry_run": false
   }
 ]
