@@ -1073,5 +1073,17 @@
     ],
     "posted_at": "2026-10-17T06:21:42+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Telangana CM proposes PRT system for Hyderabad; Sunitha Krishnan SIR form rejected; Bali fuel shortage protests",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/telangana-cm-revanth-calls-for-prt-system-to-improve-public-transport-in-hyderabad/article71567016.ece",
+      "https://www.thehindu.com/news/national/telangana/padma-shri-recipient-sunitha-krishnans-sir-enumeration-form-rejected/article71565640.ece",
+      "https://www.ndtv.com/world-news/bali-hit-by-fuel-shortage-hundreds-protest-as-queues-stretch-over-kilometre-12198153#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-17T07:08:21+00:00",
+    "dry_run": false
   }
 ]
