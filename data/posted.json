@@ -1049,5 +1049,17 @@
     ],
     "posted_at": "2026-10-17T04:56:37+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Telangana RTC cuts Pushpak bus fares; ACB finds disproportionate assets with Civil Supplies official; IIIT-H study warns against AI in medical diagnosis",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/cities/Hyderabad/telangana-rtc-slashes-pushpak-airport-bus-fares-up-to-40-effective-from-october-7/article71552826.ece",
+      "https://www.thehindu.com/news/national/telangana/acb-finds-assets-worth-941-crore-linked-to-civil-supplies-official-in-disproportionate-assets-case/article71564595.ece",
+      "https://www.thehindu.com/news/cities/Hyderabad/iiit-h-study-caution-doctors-against-relying-entirely-on-ai-for-medical-diagnosis/article71562754.ece"
+    ],
+    "posted_at": "2026-10-17T05:54:28+00:00",
+    "dry_run": false
   }
 ]
