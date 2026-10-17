@@ -1037,5 +1037,17 @@
     ],
     "posted_at": "2026-10-17T03:58:57+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Telangana RTC union election results; Chief Secretary directs follow-up on investments; India rejects UN rapporteur claims on youth protests",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/telangana-rtc-union-polls-underway-results-on-october-17/article71562916.ece",
+      "https://www.thehindu.com/news/national/telangana/cs-directs-departments-to-be-in-constant-touch-with-firms-that-assured-investments-in-telangana/article71555500.ece",
+      "https://www.ndtv.com/india-news/hearsay-dressed-as-report-india-rejects-un-rapporteurs-claims-on-youth-protests-12197719#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-17T04:56:37+00:00",
+    "dry_run": false
   }
 ]
