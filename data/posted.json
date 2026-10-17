@@ -1120,5 +1120,17 @@
     ],
     "posted_at": "2026-10-17T09:19:21+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "HC imposes costs on School Education department; Supreme Court quip over Mathura Road delay; Connaught Place shops open during protests",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/hc-imposes-costs-on-school-education-department-for-delay-in-filing-appeal/article71565263.ece",
+      "https://www.ndtv.com/india-news/will-sit-on-dharna-supreme-courts-quip-over-delayed-road-work-near-delhi-high-court-12198690#publisher=newsstand",
+      "https://www.indiatoday.in/newsmo/short-videos/shops-stayed-open-in-connaught-place-amid-cjp-tiranga-march-protests-3019560-2026-10-17?utm_source=rss"
+    ],
+    "posted_at": "2026-10-17T09:54:00+00:00",
+    "dry_run": false
   }
 ]
