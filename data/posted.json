@@ -1206,5 +1206,17 @@
     ],
     "posted_at": "2026-10-17T19:18:58+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Hyderabad police book motorists over sirens; GMR Aero Technic MoU with French firm; Stampede at Kolkata Durga Puja pandal",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/hyderabad-traffic-police-book-304-motorists-for-using-unauthorised-sirens-multi-tone-horns/article71596835.ece",
+      "https://www.thehindu.com/news/cities/Hyderabad/gmr-aero-technic-signs-mou-with-french-firm-to-develop-integrated-cabin-excellence-centre-in-hyderabad/article71582873.ece",
+      "https://www.ndtv.com/india-news/witnesses-recount-kolkata-stampede-at-chorebagan-sarbojanin-durga-puja-pandal-rain-narrow-exit-weekend-rush-12200319#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-17T19:51:40+00:00",
+    "dry_run": false
   }
 ]
