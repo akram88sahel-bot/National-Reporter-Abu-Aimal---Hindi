@@ -1181,5 +1181,17 @@
     ],
     "posted_at": "2026-10-17T11:51:17+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Telangana High Court upholds DSC 2008 reservation; Kolkata Durga Puja stampede; DMK MPs petition President against EC",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/dsc-2008-telangana-high-court-upholds-30-reservation-for-ded-candidates/article71596831.ece",
+      "https://www.indiatoday.in/cities/kolkata/story/kolkata-durga-puja-stampede-live-updates-chorbagan-pandal-collapses-3019873-2026-10-17?utm_source=rss",
+      "https://www.indiatoday.in/india/tamil-nadu/story/dmk-demands-cec-gyanesh-kumar-removal-sir-rollback-ballot-paper-voting-3019705-2026-10-17?utm_source=rss"
+    ],
+    "posted_at": "2026-10-17T18:56:58+00:00",
+    "dry_run": false
   }
 ]
