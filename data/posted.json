@@ -1193,5 +1193,18 @@
     ],
     "posted_at": "2026-10-17T18:56:58+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "France cost of living mass protests; Kerala High Court refuses stay on Waqf Board reconstitution; Pregnant journalist files complaint against Rahul Gandhi in Delhi; ABVP wins majority in Odisha university student elections",
+    "class": "B",
+    "region": "WORLD",
+    "links": [
+      "https://www.indiatoday.in/world/story/france-protests-272-arrested-cost-of-living-rallies-turn-violent-3019803-2026-10-17?utm_source=rss",
+      "https://www.indiatoday.in/india/story/kerala-waqf-board-reconstituted-mayin-haji-high-court-refuses-stay-ptag-3019872-2026-10-17?utm_source=rss",
+      "https://www.indiatoday.in/india/story/rahul-gandhi-complaint-pregnant-journalist-richa-parashar-manhandling-supreme-court-protest-3019839-2026-10-17?utm_source=rss",
+      "https://www.indiatoday.in/education-today/news/story/odisha-student-union-elections-abvp-wins-eight-universities-amit-shah-hails-verdict-ptag-3019508-2026-10-17?utm_source=rss"
+    ],
+    "posted_at": "2026-10-17T19:18:58+00:00",
+    "dry_run": false
   }
 ]
