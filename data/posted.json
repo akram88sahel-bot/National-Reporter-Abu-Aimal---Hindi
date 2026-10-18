@@ -1393,5 +1393,17 @@
     ],
     "posted_at": "2026-10-18T08:19:39+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Kolkata Durga Puja pandal stampede; Maharashtra seeks Form 6 change for SIR voters; AdaniConneX and Google Vizag data centres water conservation",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.ndtv.com/india-news/chorbagan-sarbojanin-video-shows-moment-kolkata-durga-puja-stampede-broke-out-killing-19-12202055#publisher=newsstand",
+      "https://www.ndtv.com/india-news/maharashtra-seeks-form-6-change-for-voters-removed-in-sir-to-apply-again-amid-first-time-voter-row-12201890#publisher=newsstand",
+      "https://www.ndtv.com/india-news/adaniconnex-google-vizag-data-centres-to-use-air-cooling-cut-water-use-12202169#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-18T08:56:24+00:00",
+    "dry_run": false
   }
 ]
