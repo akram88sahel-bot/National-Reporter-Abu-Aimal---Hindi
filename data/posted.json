@@ -1322,5 +1322,17 @@
     ],
     "posted_at": "2026-10-18T04:57:40+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "student killed in lighting stand collapse; Mayawati praises Akash Anand; Afghan girls denied secondary education",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.ndtv.com/hyderabad-news/hyderabad-engineering-student-killed-as-lighting-stand-collapses-during-dandiya-event-in-college-12201206#publisher=newsstand",
+      "https://www.indiatoday.in/india/story/akash-anand-bsp-programmes-mayawati-rules-out-ashok-siddharth-return-ptag-3019982-2026-10-18?utm_source=rss",
+      "https://www.ndtv.com/education/over-2-6-million-afghan-girls-denied-secondary-education-since-2021-says-united-nations-body-12201467#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-18T05:21:46+00:00",
+    "dry_run": false
   }
 ]
