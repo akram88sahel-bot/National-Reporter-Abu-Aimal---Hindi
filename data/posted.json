@@ -1405,5 +1405,17 @@
     ],
     "posted_at": "2026-10-18T08:56:24+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Pakistan airspace ban extension on Indian flights; Ravi Kishan praises Gen Z amid Delhi protests; Anthropic proposes safety thresholds for US AI regulation",
+    "class": "B",
+    "region": "WORLD",
+    "links": [
+      "https://www.ndtv.com/world-news/pakistan-extends-ban-on-indian-aircraft-in-its-airspace-till-november-24-12202114#publisher=newsstand",
+      "https://www.indiatoday.in/india/story/ravi-kishan-gen-z-india-soul-cockroach-protest-delhi-3020094-2026-10-18?utm_source=rss",
+      "https://www.indiatoday.in/technology/news/story/anthropic-proposes-ai-models-can-be-blocked-only-if-they-risk-1-billion-damage-or-50-deaths-3020086-2026-10-18?utm_source=rss"
+    ],
+    "posted_at": "2026-10-18T09:19:37+00:00",
+    "dry_run": false
   }
 ]
