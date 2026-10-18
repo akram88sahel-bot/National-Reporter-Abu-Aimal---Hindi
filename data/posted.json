@@ -1417,5 +1417,17 @@
     ],
     "posted_at": "2026-10-18T09:19:37+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Akhlaghi elected Iran defence minister; BJP calls for protest over activist murder in Punjab; JD Vance defends H-1B remark",
+    "class": "B",
+    "region": "WORLD",
+    "links": [
+      "https://www.ndtv.com/world-news/iran-gets-new-defence-minister-mehrdad-akhlaghi-8-months-after-predecessor-killed-in-us-strikes-12202288#publisher=newsstand",
+      "https://www.ndtv.com/india-news/parvinder-singh-jhota-bjp-urges-people-to-wear-black-to-protest-against-aap-over-punjab-anti-drug-activists-murder-12202279#publisher=newsstand",
+      "https://www.indiatoday.in/world/us-news/story/jd-vance-h1b-visa-row-indentured-servants-remark-indian-workers-indian-in-laws-usha-vance-3020103-2026-10-18?utm_source=rss"
+    ],
+    "posted_at": "2026-10-18T09:54:43+00:00",
+    "dry_run": false
   }
 ]
