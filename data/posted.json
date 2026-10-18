@@ -1429,5 +1429,16 @@
     ],
     "posted_at": "2026-10-18T09:54:43+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "NMC withdraws 2023 medical education regulations; Four arrested for disrupting school prayer in MP",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/education-today/news/story/nmc-medical-education-rules-commission-scraps-2023-regulations-adr-filing-remains-mandatory-3020109-2026-10-18?utm_source=rss",
+      "https://www.indiatoday.in/cities/other-cities/story/tikamgarh-morning-assembly-disrupted-men-object-to-gods-name-in-prayers-4-arrested-madhya-pradesh-3020096-2026-10-18?utm_source=rss"
+    ],
+    "posted_at": "2026-10-18T10:19:50+00:00",
+    "dry_run": false
   }
 ]
