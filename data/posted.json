@@ -1368,5 +1368,17 @@
     ],
     "posted_at": "2026-10-18T07:07:43+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Supreme Court menstrual hygiene compliance warning; Omar Abdullah demands action after stone pelting on bus; Rubio on Trump tariff waiver review and India energy",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/supreme-court-warns-states-menstrual-hygiene-ruling-compliance-ptag-3020059-2026-10-18?utm_source=rss",
+      "https://www.aajtak.in/india/news/story/jammu-kashmir-bus-attack-haryana-kurukshetra-stone-pelting-omar-abdullah-ntc-acwi-dskc-2673851-2026-10-18?utm_source=rss",
+      "https://www.indiatoday.in/india/story/trump-russia-sanctions-tariffs-waiver-marco-rubio-says-india-diversified-energy-portfolio-3020035-2026-10-18?utm_source=rss"
+    ],
+    "posted_at": "2026-10-18T07:56:47+00:00",
+    "dry_run": false
   }
 ]
