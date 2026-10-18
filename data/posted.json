@@ -1380,5 +1380,18 @@
     ],
     "posted_at": "2026-10-18T07:56:47+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Telangana BJP graduate MLC election preparations; Pakistan extends airspace ban on Indian flights; ECI tells Delhi HC deleted voters can use Form 6; Kolkata Durga Puja pandal stampede",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/telangana-bjp-gears-up-for-graduate-mlc-elections-focuses-on-voter-enrolment-and-candidates-selection/article71599310.ece",
+      "https://www.indiatoday.in/world/story/pakistan-airspace-ban-indian-aircraft-extended-november-24-2026-ptag-3020063-2026-10-18?utm_source=rss",
+      "https://www.indiatoday.in/india/story/delhi-electoral-rolls-form-6-restore-deleted-voter-names-ptag-3020075-2026-10-18?utm_source=rss",
+      "https://www.indiatoday.in/cities/kolkata/story/chorbagan-durga-puja-pandal-stampede-kolkata-police-on-leave-venue-announcement-3020064-2026-10-18?utm_source=rss"
+    ],
+    "posted_at": "2026-10-18T08:19:39+00:00",
+    "dry_run": false
   }
 ]
