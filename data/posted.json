@@ -1513,5 +1513,16 @@
     ],
     "posted_at": "2026-10-18T20:14:12+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Macron appeals for calm amid France protests; Netanyahu urges stronger ties with India",
+    "class": "B",
+    "region": "WORLD",
+    "links": [
+      "https://www.indiatoday.in/world/story/france-protests-macron-urges-calm-2400-arrested-violence-3020435-2026-10-19?utm_source=rss",
+      "https://www.indiatoday.in/world/story/netanyahu-india-israel-alliances-future-us-president-warning-ptag-3020434-2026-10-19?utm_source=rss"
+    ],
+    "posted_at": "2026-10-18T20:52:37+00:00",
+    "dry_run": false
   }
 ]
