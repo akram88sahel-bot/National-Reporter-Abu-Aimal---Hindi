@@ -1345,5 +1345,17 @@
     ],
     "posted_at": "2026-10-18T05:53:49+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Amit Shah visits Kolkata stampede victims; Chennai heavy rain and relief ops; J&K issues code of conduct for officers",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.ndtv.com/india-news/kolkata-durga-puja-pandal-stampede-amit-shah-visits-kolkata-hospital-meets-durga-puja-pandal-stampede-victims-12201589#publisher=newsstand",
+      "https://www.indiatoday.in/cities/chennai/story/chennai-rain-cloudburst-questions-ndrf-relief-water-clearance-3020009-2026-10-18?utm_source=rss",
+      "https://www.ndtv.com/india-news/after-ias-officer-rajiv-ranjan-abuses-woman-colleague-jammu-and-kashmir-issues-fresh-code-of-conduct-12201553#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-18T06:21:43+00:00",
+    "dry_run": false
   }
 ]
