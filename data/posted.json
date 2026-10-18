@@ -1501,5 +1501,17 @@
     ],
     "posted_at": "2026-10-18T19:48:25+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Harish Rao accuses TOMCOM of job fraud; Tiger Shroff assassination attempt in Mumbai; Eight labourers run over by car in Punjab",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/tomcom-deceived-75-youth-after-collecting-45-lakh-each-for-jobs-in-germany-harish-rao/article71599692.ece",
+      "https://www.ndtv.com/india-news/tiger-shroff-assassination-bid-updates-lawrence-bishnoi-gang-salman-khan-juhu-mumbai-12203309#publisher=newsstand",
+      "https://www.ndtv.com/india-news/8-labourers-mowed-down-by-car-in-punjabs-sangrur-witnesses-say-many-died-waiting-for-ambulance-12203175#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-18T20:14:12+00:00",
+    "dry_run": false
   }
 ]
