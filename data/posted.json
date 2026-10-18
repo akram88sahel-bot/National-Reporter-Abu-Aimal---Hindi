@@ -1465,5 +1465,18 @@
     ],
     "posted_at": "2026-10-18T11:17:01+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Jagan Mohan Reddy demands neutral EC panel; Trump endorses Netanyahu in Israel elections; Chennai prepares for Northeast Monsoon rain; IIT Bombay students detained during protest",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/south/story/ys-jagan-mohan-reddy-regrets-ec-appointment-law-seeks-neutral-selection-panel-3020231-2026-10-18?utm_source=rss",
+      "https://www.indiatoday.in/world/story/trump-endorses-benjamin-netanyahu-for-re-election-israel-parliamentary-election-october-27-iran-warning-3020383-2026-10-18?utm_source=rss",
+      "https://www.ndtv.com/india-news/chennai-braces-for-northeast-monsoon-heavy-rain-predicted-12203843#publisher=newsstand",
+      "https://www.indiatoday.in/cities/mumbai/story/iit-bombay-protest-22-students-detained-sahil-wakode-justice-ptag-3020385-2026-10-19?utm_source=rss"
+    ],
+    "posted_at": "2026-10-18T18:56:31+00:00",
+    "dry_run": false
   }
 ]
