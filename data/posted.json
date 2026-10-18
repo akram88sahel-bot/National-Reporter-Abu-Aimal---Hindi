@@ -1299,5 +1299,17 @@
     ],
     "posted_at": "2026-10-18T02:26:52+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Sikkim students protest against Governor appointment; Historic town hall destroyed in France clashes; Trump defends Russia sanctions waiver amid backlash",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.ndtv.com/india-news/ankita-bhandari-case-sikkim-students-wont-be-silent-protest-over-governor-dushyant-gautam-appointment-12201212#publisher=newsstand",
+      "https://www.ndtv.com/world-news/france-protest-limoges-town-hall-survived-world-wars-destroyed-in-clashes-paris-riots-cost-of-living-12201101#publisher=newsstand",
+      "https://www.indiatoday.in/world/story/russia-sanctions-waiver-trump-bipartisan-backlash-exemptions-ptag-3019973-2026-10-18?utm_source=rss"
+    ],
+    "posted_at": "2026-10-18T03:59:56+00:00",
+    "dry_run": false
   }
 ]
