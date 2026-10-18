@@ -1478,5 +1478,17 @@
     ],
     "posted_at": "2026-10-18T18:56:31+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Telangana road safety funds guidelines; Congress graduate MLC elections strategy; Temple development works in Telangana",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/telangana-issues-guidelines-for-management-of-road-safety-funds/article71595890.ece",
+      "https://www.thehindu.com/news/national/telangana/congress-makes-graduate-mlc-elections-a-prestige-battle/article71600228.ece",
+      "https://www.thehindu.com/news/national/telangana/temple-development-works-worth-2500-crore-underway-across-telangana-bhatti-vikramarka/article71600272.ece"
+    ],
+    "posted_at": "2026-10-18T19:17:22+00:00",
+    "dry_run": false
   }
 ]
