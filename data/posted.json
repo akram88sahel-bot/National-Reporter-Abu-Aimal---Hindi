@@ -1558,5 +1558,16 @@
     ],
     "posted_at": "2026-10-18T22:16:05+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Bangladesh ex-air chief arrested in Qatar; Mgnrega workers run over in Punjab",
+    "class": "B",
+    "region": "WORLD",
+    "links": [
+      "https://www.indiatoday.in/world/story/sheikh-abdul-hannan-arrested-qatar-bangladesh-graft-charges-3020401-2026-10-18?utm_source=rss",
+      "https://www.indiatoday.in/cities/other-cities/story/punjab-road-accident-speeding-car-hits-mnrega-workers-lehragaga-jakhal-road-3020252-2026-10-18?utm_source=rss"
+    ],
+    "posted_at": "2026-10-18T23:47:32+00:00",
+    "dry_run": false
   }
 ]
