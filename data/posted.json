@@ -1357,5 +1357,16 @@
     ],
     "posted_at": "2026-10-18T06:21:43+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Indian Embassy advisory in Saudi Arabia; France cost-of-living protest looting",
+    "class": "B",
+    "region": "WORLD",
+    "links": [
+      "https://www.indiatoday.in/world/story/saudi-arabia-security-alert-indian-embassy-emergency-guidelines-houthi-strikes-ptag-3020036-2026-10-18?utm_source=rss",
+      "https://www.indiatoday.in/world/story/france-protests-luxury-stores-looted-over-1200-arrested-violence-3020037-2026-10-18?utm_source=rss"
+    ],
+    "posted_at": "2026-10-18T07:07:43+00:00",
+    "dry_run": false
   }
 ]
