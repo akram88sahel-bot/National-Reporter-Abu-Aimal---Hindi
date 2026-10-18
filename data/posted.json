@@ -1490,5 +1490,16 @@
     ],
     "posted_at": "2026-10-18T19:17:22+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "TGSRTC announces no bus fare hike for Dasara; HMWSSB fines Jubilee Hills pub for water wastage",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/no-hike-in-fare-this-dasara-tgsrtc/article71600034.ece",
+      "https://www.thehindu.com/news/national/telangana/hmwssb-imposes-a-fine-of-20000-on-pub-in-jubilee-hills-for-wasting-water/article71599970.ece"
+    ],
+    "posted_at": "2026-10-18T19:48:25+00:00",
+    "dry_run": false
   }
 ]
