@@ -1276,5 +1276,16 @@
     ],
     "posted_at": "2026-10-17T23:48:08+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Kolkata Durga Puja pandal stampede; Gwalior temple truck accident",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/cities/kolkata/story/kolkata-durga-puja-pandal-stampede-chorbagan-sarbojanin-survivor-recounts-horror-after-losing-mother-in-tragedy-3019937-2026-10-18?utm_source=rss",
+      "https://www.indiatoday.in/india/madhya-pradesh/story/gwalior-accident-sheetla-mata-temple-truck-devotees-killed-injured-hospitalised-3019938-2026-10-18?utm_source=rss"
+    ],
+    "posted_at": "2026-10-18T01:57:27+00:00",
+    "dry_run": false
   }
 ]
