@@ -1287,5 +1287,17 @@
     ],
     "posted_at": "2026-10-18T01:57:27+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "hyderabad medical shops notice; kolkata pandal stampede; france violent protests",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.thehindu.com/news/cities/Hyderabad/show-cause-notice-to-137-medical-shops-in-hyderabad-over-illegal-sale-of-habit-forming-drugs/article71588939.ece",
+      "https://www.aajtak.in/india/news/story/kolkata-chorbagan-sarbojinin-stampede-nineteen-died-best-of-the-best-award-ntc-acwi-rpti-2673690-2026-10-18?utm_source=rss",
+      "https://www.indiatoday.in/world/story/france-protests-1200-arrested-arson-looting-spread-across-cities-3019939-2026-10-18?utm_source=rss"
+    ],
+    "posted_at": "2026-10-18T02:26:52+00:00",
+    "dry_run": false
   }
 ]
