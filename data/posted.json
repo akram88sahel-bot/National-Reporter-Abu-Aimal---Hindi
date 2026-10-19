@@ -1639,5 +1639,16 @@
     ],
     "posted_at": "2026-10-19T06:01:05+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Assassination attempt on Tiger Shroff in Mumbai; Venezuela opposition chooses Maria Machado",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.ndtv.com/india-news/no-one-will-be-spared-maharashtra-chief-minister-devendra-fadnavis-on-assassination-attempt-on-tiger-shroff-12204618#publisher=newsstand",
+      "https://www.ndtv.com/world-news/venezuela-opposition-parties-choose-nobel-laureate-maria-machado-as-leader-12204648#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-19T06:43:22+00:00",
+    "dry_run": false
   }
 ]
