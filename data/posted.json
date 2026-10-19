@@ -1616,5 +1616,17 @@
     ],
     "posted_at": "2026-10-19T04:05:58+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Macron calls for calm amid France protests; Akhilesh Yadav dissolves Kannauj SP unit; Fadnavis assures security after firing at Tiger Shroff house",
+    "class": "B",
+    "region": "WORLD",
+    "links": [
+      "https://www.ndtv.com/world-news/videos-protesters-in-france-rob-luxury-stores-burn-historic-building-amid-riots-12204357#publisher=newsstand",
+      "https://www.aajtak.in/elections/assembly-chunav/story/akhilesh-yadav-action-kannauj-samajwadi-party-district-organizational-dissolved-empty-seats-at-pda-conference-lclg-rpti-2674445-2026-10-19?utm_source=rss",
+      "https://www.indiatoday.in/india/story/tiger-shroff-firing-fadnavis-assures-security-vows-to-trace-accused-3020505-2026-10-19?utm_source=rss"
+    ],
+    "posted_at": "2026-10-19T05:05:39+00:00",
+    "dry_run": false
   }
 ]
