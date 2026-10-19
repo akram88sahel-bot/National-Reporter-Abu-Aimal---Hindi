@@ -1604,5 +1604,17 @@
     ],
     "posted_at": "2026-10-19T03:24:49+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Trump approval ratings drop ahead of midterms; Mumbai airport international flight shift deferred; CJP alleges deliberate bail hearing delay over threat",
+    "class": "B",
+    "region": "WORLD",
+    "links": [
+      "https://www.indiatoday.in/world/us-news/story/donald-trump-approval-ratings-hit-record-low-amid-iran-war-inflation-before-november-3-us-midterm-elections-3020473-2026-10-19?utm_source=rss",
+      "https://www.indiatoday.in/india/story/mumbai-airport-t1-revamp-navi-international-flight-shift-deferred-santacruz-airport-mial-nmia-csmia-itspc-3020289-2026-10-19?utm_source=rss",
+      "https://www.indiatoday.in/india/story/delhi-police-ncr-magistrate-death-threat-cjp-leaders-custody-3020467-2026-10-19?utm_source=rss"
+    ],
+    "posted_at": "2026-10-19T04:05:58+00:00",
+    "dry_run": false
   }
 ]
