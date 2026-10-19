@@ -1776,5 +1776,16 @@
     ],
     "posted_at": "2026-10-19T21:00:11+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "SP dissolves Kannauj district unit; Saudi postpones investment summit amid Houthi claims",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/samajwadi-party-dissolves-kannauj-unit-poor-pda-conference-turnout-3020727-2026-10-19?utm_source=rss",
+      "https://www.indiatoday.in/world/story/saudi-arabia-fii-conference-postponed-2027-houthi-attack-claims-3021102-2026-10-20?utm_source=rss"
+    ],
+    "posted_at": "2026-10-19T21:58:56+00:00",
+    "dry_run": false
   }
 ]
