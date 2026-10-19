@@ -1581,5 +1581,17 @@
     ],
     "posted_at": "2026-10-19T02:01:56+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Tel Aviv flight diverted over bomb threat; Row over religious symbols on Karnataka temple walls; Harassment of BJP councillor in Ahmedabad",
+    "class": "B",
+    "region": "WORLD",
+    "links": [
+      "https://www.ndtv.com/world-news/vienna-bound-austrian-airlines-plane-from-tel-aviv-diverts-to-bulgaria-after-bomb-threat-12204272#publisher=newsstand",
+      "https://www.indiatoday.in/india/karnataka/story/karnataka-temple-row-cross-mosque-images-arakeshwara-wall-bjp-congress-3020448-2026-10-19?utm_source=rss",
+      "https://www.indiatoday.in/cities/ahmedabad/story/ahmedabad-bjp-councillor-family-harassed-raas-garba-three-arrested-gujarat-3020449-2026-10-19?utm_source=rss"
+    ],
+    "posted_at": "2026-10-19T02:32:29+00:00",
+    "dry_run": false
   }
 ]
