@@ -1719,5 +1719,17 @@
     ],
     "posted_at": "2026-10-19T13:15:37+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Telangana water and power contingency plans; Houthi missile strike in Yemen; Shooters nabbed in Kota for attack on Tiger Shroff car",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/el-nino-effect-prepare-micro-level-contingency-plans-to-avert-drinking-water-electricity-shortages-says-telangana-chief-secretary/article71602772.ece",
+      "https://www.indiatoday.in/world/story/yemen-houthi-attack-kills-53-injures-200-shabwa-security-camp-3020990-2026-10-19?utm_source=rss",
+      "https://www.indiatoday.in/programme/super-6/video/tiger-shroff-firing-3-shooters-nabbed-in-kota-bishnoi-link-under-probe-parliament-delimitation-row-frvd-3020951-2026-10-19?utm_source=rss"
+    ],
+    "posted_at": "2026-10-19T16:00:54+00:00",
+    "dry_run": false
   }
 ]
