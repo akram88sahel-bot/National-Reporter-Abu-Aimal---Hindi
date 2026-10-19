@@ -1754,5 +1754,16 @@
     ],
     "posted_at": "2026-10-19T19:11:19+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "academics slam protests; left bookstall vandalism row",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/indian-origin-scholars-spare-india-from-anarchy-statement-democracy-3021074-2026-10-19?utm_source=rss",
+      "https://www.indiatoday.in/india/story/west-bengal-durga-puja-left-bookstall-vandalism-bjp-rss-row-ptag-3021090-2026-10-19?utm_source=rss"
+    ],
+    "posted_at": "2026-10-19T20:01:07+00:00",
+    "dry_run": false
   }
 ]
