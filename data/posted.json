@@ -1628,5 +1628,16 @@
     ],
     "posted_at": "2026-10-19T05:05:39+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "UP launches interest-free loans for rural women entrepreneurs; Hyderabad airport recovers hacked X account",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/up-mahila-udyami-credit-yojana-interest-free-loans-rural-women-utrith-3020549-2026-10-19?utm_source=rss",
+      "https://www.thehindu.com/news/cities/Hyderabad/hyderabads-rgia-x-account-was-hacking/article71602090.ece"
+    ],
+    "posted_at": "2026-10-19T06:01:05+00:00",
+    "dry_run": false
   }
 ]
