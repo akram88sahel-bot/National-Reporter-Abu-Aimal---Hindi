@@ -1697,5 +1697,16 @@
     ],
     "posted_at": "2026-10-19T11:01:11+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Jamia forms panel over student union demand; Congress seeks SC probe into Ayodhya temple theft",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/jamia-millia-islamia-panel-student-protests-union-restoration-demand-ptag-3020798-2026-10-19?utm_source=rss",
+      "https://www.indiatoday.in/india/story/ayodhya-ram-temple-alleged-donation-theft-congress-supreme-court-probe-ptag-3020778-2026-10-19?utm_source=rss"
+    ],
+    "posted_at": "2026-10-19T12:02:28+00:00",
+    "dry_run": false
   }
 ]
