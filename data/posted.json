@@ -1708,5 +1708,16 @@
     ],
     "posted_at": "2026-10-19T12:02:28+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Manipur villagers protest with bodies outside CM office; Supreme Court reinstates Periyar University deputy registrar",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/manipur-villagers-bodies-cm-office-three-killed-militant-attack-3020831-2026-10-19?utm_source=rss",
+      "https://www.indiatoday.in/india/story/supreme-court-reinstates-periyar-university-official-dismissed-without-evidence-ptag-3020849-2026-10-19?utm_source=rss"
+    ],
+    "posted_at": "2026-10-19T13:15:37+00:00",
+    "dry_run": false
   }
 ]
