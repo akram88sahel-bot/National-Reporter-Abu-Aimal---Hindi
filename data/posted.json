@@ -1673,5 +1673,17 @@
     ],
     "posted_at": "2026-10-19T08:33:16+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "govt warns meta over algorithm; trump targets zelensky over war; tvk political donations disclosure",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/technology/news/story/cjp-protest-effect-govt-issues-warning-to-meta-fix-your-algorithm-3020660-2026-10-19?utm_source=rss",
+      "https://www.ndtv.com/world-news/he-doesnt-want-to-end-war-donald-trump-targets-volodymyr-zelensky-ukraine-russia-war-12205276#publisher=newsstand",
+      "https://www.indiatoday.in/india/tamil-nadu/story/tvk-donations-sports-minister-aadhav-arjuna-contributes-rs-82-crore-of-partys-rs-133-crore-funds-3020664-2026-10-19?utm_source=rss"
+    ],
+    "posted_at": "2026-10-19T09:29:50+00:00",
+    "dry_run": false
   }
 ]
