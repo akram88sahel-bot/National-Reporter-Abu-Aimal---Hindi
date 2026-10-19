@@ -1787,5 +1787,17 @@
     ],
     "posted_at": "2026-10-19T21:58:56+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Kolkata Durga Puja stampede accountability; Sheikh Hasina plans Bangladesh return; Netanyahu seeks security alliances with India",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india-today-insight/story/chorebagan-stampede-who-will-be-held-accountable-3020924-2026-10-19?utm_source=rss",
+      "https://www.indiatoday.in/world/story/its-my-responsibility-to-go-sheikh-hasina-reiterates-she-will-return-to-bangladesh-in-december-3021029-2026-10-19?utm_source=rss",
+      "https://www.indiatoday.in/world/story/benjamin-netanyahu-us-israel-relations-donald-trump-hexagon-alliance-countries-india-latin-america-itspc-3020759-2026-10-19?utm_source=rss"
+    ],
+    "posted_at": "2026-10-19T22:57:37+00:00",
+    "dry_run": false
   }
 ]
