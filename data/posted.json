@@ -1569,5 +1569,17 @@
     ],
     "posted_at": "2026-10-18T23:47:32+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "austrian airlines emergency landing bomb threat; iran responds to trump threats; pakistan takes charge of un debt platform",
+    "class": "B",
+    "region": "WORLD",
+    "links": [
+      "https://www.indiatoday.in/world/story/tel-aviv-vienna-flight-makes-emergency-landing-in-bulgaria-after-bomb-threat-report-3020443-2026-10-19?utm_source=rss",
+      "https://www.indiatoday.in/world/story/iran-us-tensions-araghchi-counters-trump-threat-accuses-netanyahu-pushing-war-3020447-2026-10-19?utm_source=rss",
+      "https://www.indiatoday.in/world/story/pakistan-borrowers-platform-chair-unctad-debt-imf-loans-role-explained-itspc-3017765-2026-10-19?utm_source=rss"
+    ],
+    "posted_at": "2026-10-19T02:01:56+00:00",
+    "dry_run": false
   }
 ]
