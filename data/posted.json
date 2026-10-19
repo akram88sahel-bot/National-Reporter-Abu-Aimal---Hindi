@@ -1685,5 +1685,17 @@
     ],
     "posted_at": "2026-10-19T09:29:50+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Supreme Court ruling on bribe probe approval; Albania student protests demand PM resignation; AISA president challenges Delhi Police peace bond notice",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/supreme-court-bribe-probe-no-prior-approval-section-17a-ptag-3020737-2026-10-19?utm_source=rss",
+      "https://www.indiatoday.in/world/story/edi-rama-albania-students-protest-europe-violence-education-ministry-prime-minister-resign-demand-itspc-3020642-2026-10-19?utm_source=rss",
+      "https://www.indiatoday.in/india/story/neha-bora-delhi-high-court-plea-police-peace-bond-notice-ptag-3020745-2026-10-19?utm_source=rss"
+    ],
+    "posted_at": "2026-10-19T11:01:11+00:00",
+    "dry_run": false
   }
 ]
