@@ -1799,5 +1799,16 @@
     ],
     "posted_at": "2026-10-19T22:57:37+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Delhi court extends custody of Jantar Mantar protesters; Violent riots and arson in France",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/programme/to-the-point/video/tiger-shroff-firing-bishnoi-gang-claims-hit-3-held-fadnavis-under-fire-frvd-3020984-2026-10-19?utm_source=rss",
+      "https://www.indiatoday.in/programme/india-first/video/weaponised-social-media-shooters-held-in-tiger-shroff-attack-india-us-trade-frvd-3021020-2026-10-19?utm_source=rss"
+    ],
+    "posted_at": "2026-10-19T23:24:36+00:00",
+    "dry_run": false
   }
 ]
