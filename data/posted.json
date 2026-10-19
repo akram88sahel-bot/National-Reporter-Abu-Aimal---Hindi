@@ -1765,5 +1765,16 @@
     ],
     "posted_at": "2026-10-19T20:01:07+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Trump ready to meet Putin and Xi in China; Marco Rubio begins three-day India visit",
+    "class": "B",
+    "region": "WORLD",
+    "links": [
+      "https://www.ndtv.com/world-news/trump-says-he-is-ready-to-meet-with-putin-xi-jinping-next-month-in-china-12208457#publisher=newsstand",
+      "https://www.ndtv.com/india-news/marco-rubio-to-begin-3-day-india-tour-today-will-honour-26-11-victims-12208382#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-19T21:00:11+00:00",
+    "dry_run": false
   }
 ]
