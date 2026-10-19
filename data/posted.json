@@ -1650,5 +1650,17 @@
     ],
     "posted_at": "2026-10-19T06:43:22+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "India US trade deal close to finalization; Oil tanker hits mine in Hormuz; Bathukamma and Dasara celebrated in Vienna",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.aajtak.in/business/news/story/good-news-india-us-trade-deal-donald-trump-minister-marco-rubio-says-we-are-close-to-final-tutc-dskc-2674686-2026-10-19?utm_source=rss",
+      "https://www.ndtv.com/world-news/oil-tanker-on-unauthorised-route-hits-mine-in-strait-of-hormuz-catches-fire-iran-guards-12204939#publisher=newsstand",
+      "https://www.thehindu.com/news/national/telangana/bathukamma-dasara-celebrations-held-in-vienna-austria/article71602136.ece"
+    ],
+    "posted_at": "2026-10-19T07:44:17+00:00",
+    "dry_run": false
   }
 ]
