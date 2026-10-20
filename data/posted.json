@@ -1913,5 +1913,17 @@
     ],
     "posted_at": "2026-10-20T10:31:42+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Owaisi seeks Rijiju intervention over Delhi mosque eviction; INDIA bloc seeks all-party meeting on Manipur killings; Marco Rubio arrives in Mumbai for India visit",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/race-course-masjid-demolition-row-owaisi-seeks-kiren-rijiju-intervention-3021375-2026-10-20?utm_source=rss",
+      "https://www.ndtv.com/india-news/india-bloc-seeks-all-party-meeting-over-civilian-killings-in-manipur-12210235#publisher=newsstand",
+      "https://www.ndtv.com/india-news/marco-rubio-in-mumbai-for-3-day-india-visit-trade-deal-talks-on-agenda-12210435#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-20T11:23:53+00:00",
+    "dry_run": false
   }
 ]
