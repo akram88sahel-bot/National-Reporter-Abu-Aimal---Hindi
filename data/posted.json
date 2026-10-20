@@ -1833,5 +1833,16 @@
     ],
     "posted_at": "2026-10-20T01:17:49+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "India urges vigilance on technology transfers; Kolkata puja stampede probe",
+    "class": "B",
+    "region": "WORLD",
+    "links": [
+      "https://www.indiatoday.in/world/story/india-warns-un-sensitive-technology-transfers-wmd-terrorism-threat-ptag-3021124-2026-10-20?utm_source=rss",
+      "https://www.indiatoday.in/cities/kolkata/story/kolkata-durga-puja-stampede-vip-corridor-rs-399-passes-under-scanner-3021118-2026-10-20?utm_source=rss"
+    ],
+    "posted_at": "2026-10-20T03:04:52+00:00",
+    "dry_run": false
   }
 ]
