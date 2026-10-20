@@ -1844,5 +1844,16 @@
     ],
     "posted_at": "2026-10-20T03:04:52+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "JD Vance refuses Netanyahu endorsement; Poland PM Tusk India visit",
+    "class": "B",
+    "region": "WORLD",
+    "links": [
+      "https://www.indiatoday.in/world/us-news/story/jd-vance-refuses-endorse-benjamin-netanyahu-despite-donald-trump-backing-3021133-2026-10-20?utm_source=rss",
+      "https://www.ndtv.com/world-news/poland-seeks-to-boost-defence-tech-ties-during-pm-tusks-upcoming-india-visit-12208079#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-20T04:03:59+00:00",
+    "dry_run": false
   }
 ]
