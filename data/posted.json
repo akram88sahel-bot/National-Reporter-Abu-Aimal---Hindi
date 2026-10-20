@@ -1810,5 +1810,17 @@
     ],
     "posted_at": "2026-10-19T23:24:36+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Pete Hegseth visits Israel; Trump slams Macron over France riots; Panchkula Dussehra Ravana effigy",
+    "class": "B",
+    "region": "WORLD",
+    "links": [
+      "https://www.ndtv.com/world-news/pete-hegseth-meets-netanyahu-in-unannounced-visit-to-israel-report-12208686#publisher=newsstand",
+      "https://www.indiatoday.in/world/story/france-riots-trump-blames-macron-immigration-policies-amid-curfews-3021104-2026-10-20?utm_source=rss",
+      "https://www.indiatoday.in/cities/other-cities/story/haryana-panchkula-dussehra-221-foot-ravana-effigy-rs-35-lakh-3021056-2026-10-19?utm_source=rss"
+    ],
+    "posted_at": "2026-10-20T00:27:12+00:00",
+    "dry_run": false
   }
 ]
