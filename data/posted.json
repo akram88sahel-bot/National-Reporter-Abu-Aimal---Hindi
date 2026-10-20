@@ -1879,5 +1879,17 @@
     ],
     "posted_at": "2026-10-20T07:18:30+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Mislabelled food seized in Hyderabad; Mohan Bhagwat Vijayadashami address on protests; India-New Zealand FTA takes effect",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.thehindu.com/news/cities/Hyderabad/55-tonnes-of-mislabelled-food-products-worth-3394-lakh-seized-from-snack-manufacturing-units-in-hyderabad/article71603247.ece",
+      "https://www.indiatoday.in/india/story/mohan-bhagwat-vijayadashami-sarsanghchalak-speech-protests-social-division-france-riots-cjp-cec-itspc-3021218-2026-10-20?utm_source=rss",
+      "https://www.ndtv.com/business-news/india-new-zealand-free-trade-agreement-fta-export-import-sectors-most-benefit-12209610#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-20T08:06:26+00:00",
+    "dry_run": false
   }
 ]
