@@ -1855,5 +1855,17 @@
     ],
     "posted_at": "2026-10-20T04:03:59+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Supreme Court holiday bench to hear YSRCP poll violence plea; Gujarat resumes land allotment process for Yusuf Pathan; Mahmoud Khalil appeals deportation to US Supreme Court",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/supreme-court-ysrcp-civic-poll-plea-cmrl-bribery-fir-challenge-ptag-3021149-2026-10-20?utm_source=rss",
+      "https://www.indiatoday.in/india/story/yusuf-patha-vadodara-plot-gujarat-bjp-government-clears-disputed-land-possession-after-his-tmc-exit-3021148-2026-10-20?utm_source=rss",
+      "https://www.ndtv.com/world-news/palestinian-activist-mahmoud-khalil-appeals-to-us-supreme-court-over-trump-deportation-push-trump-administration-immigration-policy-12208935#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-20T05:01:30+00:00",
+    "dry_run": false
   }
 ]
