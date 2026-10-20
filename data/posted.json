@@ -1959,5 +1959,16 @@
     ],
     "posted_at": "2026-10-20T13:35:27+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "UN experts on police crackdown on youth protests in India; CJP leaders seek urgent night hearing in Delhi High Court",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/world/story/india-youth-protests-un-experts-probe-alleged-police-crackdown-ptag-3021535-2026-10-20?utm_source=rss",
+      "https://www.indiatoday.in/india/story/delhi-high-court-cjp-leaders-custody-extension-jantar-mantar-protest-ptag-3021518-2026-10-20?utm_source=rss"
+    ],
+    "posted_at": "2026-10-20T15:07:07+00:00",
+    "dry_run": false
   }
 ]
