@@ -1948,5 +1948,16 @@
     ],
     "posted_at": "2026-10-20T12:36:10+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Rubio Jaishankar bilateral talks in Mumbai; PM Modi Dussehra address in Delhi",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/marco-rubio-india-visit-live-updates-mumbai-talks-s-jaishankar-us-trade-deal-jamnagar-oil-refinery-3021225-2026-10-20?utm_source=rss",
+      "https://www.indiatoday.in/india/story/pm-invokes-ram-rajya-on-dussehra-says-governance-must-ensure-equal-justice-and-opportunities-for-all-3021495-2026-10-20?utm_source=rss"
+    ],
+    "posted_at": "2026-10-20T13:35:27+00:00",
+    "dry_run": false
   }
 ]
