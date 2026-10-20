@@ -2048,5 +2048,17 @@
     ],
     "posted_at": "2026-10-20T22:01:25+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Singareni officers revised pay structure; Man shot dead in Manipur; Meerut highway car collision deaths",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/dasara-gift-for-singareni-officers-dy-cm-fulfils-long-pending-demand/article71604614.ece",
+      "https://www.ndtv.com/india-news/man-shot-dead-in-manipur-days-after-killing-of-3-firewood-collectors-12212231#publisher=newsstand",
+      "https://www.ndtv.com/india-news/3-dead-after-2-cars-collide-on-highway-in-uttar-pradeshs-meerut-12211620#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-20T23:52:44+00:00",
+    "dry_run": false
   }
 ]

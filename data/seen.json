@@ -1,11 +1,4 @@
 {
-  "https://www.thehindu.com/news/national/telangana/funding-snag-delays-hyderabad-metro-takeover-until-december/article71551368.ece": 2,
-  "https://www.thehindu.com/news/cities/Hyderabad/hyderabad-court-sentences-two-men-to-four-days-imprisonment-for-public-nuisance/article71551837.ece": 2,
-  "https://www.thehindu.com/news/national/telangana/fssai-licences-of-nine-restaurants-in-telanganas-medak-kamareddy-and-nizamabad-suspended-over-food-safety-violations/article71552304.ece": 99,
-  "https://www.thehindu.com/news/national/telangana/nhm-employees-strike-in-telangana-continues-as-17541-staff-demand-regularisation-equal-pay/article71592605.ece": 99,
-  "https://www.thehindu.com/news/cities/Hyderabad/hyderabad-based-foss-presents-snake-encounter-prediction-model/article71548180.ece": 2,
-  "https://www.thehindu.com/news/cities/Hyderabad/braou-convocation-in-hyderabad-on-october-7-degrees-to-be-awarded-to-over-36000-students/article71551587.ece": 2,
-  "https://www.thehindu.com/news/national/telangana/tghrc-pulls-up-nims-hyderabad-over-12-year-delay-in-releasing-retired-professors-pension-benefits/article71551025.ece": 99,
   "https://www.thehindu.com/news/cities/Hyderabad/invoicecloud-to-invest-350-crore-on-hyderabad-innovation-hub/article71593393.ece": 2,
   "https://www.ndtv.com/world-news/yemens-government-controlled-city-of-aden-attacked-in-houthi-strikes-12197212#publisher=newsstand": 99,
   "https://www.thehindu.com/news/cities/Hyderabad/swiss-firm-cotecna-acquires-hyderabad-based-energon-labs/article71593303.ece": 2,
@@ -994,9 +987,16 @@
   "https://www.ndtv.com/india-news/ex-aap-sarpanch-arrested-in-punjab-over-links-to-cop-caught-with-15-kg-heroin-12212498#publisher=newsstand": 2,
   "https://www.ndtv.com/india-news/finance-with-harish-v-harish-chennai-jason-samuel-influencer-with-13-lakh-followers-dies-by-suicide-father-claims-cyberbullying-12212442#publisher=newsstand": 2,
   "https://www.ndtv.com/india-news/3-arrested-in-after-fresh-manipur-violence-12-firearms-explosives-recovered-12212311#publisher=newsstand": 2,
-  "https://www.thehindu.com/news/national/telangana/dasara-gift-for-singareni-officers-dy-cm-fulfils-long-pending-demand/article71604614.ece": 1,
-  "https://www.ndtv.com/world-news/iran-rejects-moving-enriched-uranium-out-of-country-12212792#publisher=newsstand": 1,
-  "https://www.ndtv.com/world-news/trump-administration-says-it-has-revoked-over-300-000-visas-12212751#publisher=newsstand": 1,
-  "https://www.ndtv.com/india-news/man-shot-dead-in-manipur-days-after-killing-of-3-firewood-collectors-12212231#publisher=newsstand": 1,
-  "https://www.ndtv.com/india-news/3-dead-after-2-cars-collide-on-highway-in-uttar-pradeshs-meerut-12211620#publisher=newsstand": 1
+  "https://www.thehindu.com/news/national/telangana/dasara-gift-for-singareni-officers-dy-cm-fulfils-long-pending-demand/article71604614.ece": 99,
+  "https://www.ndtv.com/world-news/iran-rejects-moving-enriched-uranium-out-of-country-12212792#publisher=newsstand": 2,
+  "https://www.ndtv.com/world-news/trump-administration-says-it-has-revoked-over-300-000-visas-12212751#publisher=newsstand": 2,
+  "https://www.ndtv.com/india-news/man-shot-dead-in-manipur-days-after-killing-of-3-firewood-collectors-12212231#publisher=newsstand": 99,
+  "https://www.ndtv.com/india-news/3-dead-after-2-cars-collide-on-highway-in-uttar-pradeshs-meerut-12211620#publisher=newsstand": 99,
+  "https://www.ndtv.com/india-news/will-hunt-down-those-behind-killings-of-punjab-anti-drug-activists-amit-shah-12211312#publisher=newsstand": 1,
+  "https://www.indiatoday.in/india/story/delhi-police-arrest-4-including-2-women-from-haryana-for-supplying-weapons-to-tiger-shroffs-shooters-3021631-2026-10-20?utm_source=rss": 1,
+  "https://www.indiatoday.in/india/story/bhavnagar-postal-employee-suicide-konkankada-viral-video-police-probe-3021525-2026-10-20?utm_source=rss": 1,
+  "https://www.indiatoday.in/cities/other-cities/story/chorbagan-stampede-fake-video-bengal-man-14-day-judicial-custody-3021512-2026-10-20?utm_source=rss": 1,
+  "https://www.aajtak.in/india/punjab/story/parvinder-singh-jhota-murder-case-cbi-team-reaches-mansa-amit-shah-ntc-apdy-rptc-2675816-2026-10-21?utm_source=rss": 1,
+  "https://www.aajtak.in/india/news/story/tiger-shroff-firing-mumbai-lawrence-bishnoi-delhi-police-detain-four-shooters-ntc-dhrj-rpti-2675805-2026-10-20?utm_source=rss": 1,
+  "https://news.google.com/rss/articles/CBMiswFBVV95cUxOXy1jWi10UGVuZGNSYjdBb0xvbVo2UGpDUWZTZW9oN0ZFZE5BRnZHODVpaUM1ZGpZWEo3M1BEemV2ZERKTGExZkF0dHA3V3EwLWVKX0NUODEyYmNrU1k1dDB3bTYyQmVHaTBmVWRySTg0UnRfU2RWWTF2dHBXWGtXdUV5SXJRWHFqeGxVYkc2elppdDlUMVJ2dVZmczdibnF6Ym9vM1VsY1piQnFfMEpmTWVkWdIBugFBVV95cUxQQWFnbm0wMDV0MHVHTTZXNWFSNW1VT2tVbnhiSjBDTk43QnFvSV9fODNBbEtDaHY3SU15TlRiNjBqVThwbEl2X0QwalZaQUMwZVU4NnM1d2d3TmxtcjdFT2E2eGd5WGtNRHhqeDdKR2J5dDdwX3BUb3kwREJ3cjZQa0JxMkNQSHAzbk9vNVRFMzlnbXIyMkFuM0dhdk1Ec2t5Y0M2UE1lTzVKc2R2UXk5ZDZwQ25pMWZkb1E?oc=5": 1
 }
