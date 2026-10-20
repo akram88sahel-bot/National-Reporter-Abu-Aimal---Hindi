@@ -1867,5 +1867,17 @@
     ],
     "posted_at": "2026-10-20T05:01:30+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Priyanka Gandhi meets UP Congress leaders over SP alliance; RSS chief Mohan Bhagwat warns against regime change bids; Sena UBT leaders clash over Albania protests",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.ndtv.com/india-news/up-elections-2027-samajwadi-party-priyanka-gandhi-at-the-wheel-as-congress-prepares-for-up-alliance-talks-12209460#publisher=newsstand",
+      "https://www.ndtv.com/india-news/rss-chief-mohan-bhagwat-like-bangladesh-france-attempts-of-regime-change-in-india-as-well-12209226#publisher=newsstand",
+      "https://www.indiatoday.in/india/story/sena-ubt-leaders-sanjay-raut-priyanka-chaturvedi-clash-over-albania-student-protests-differ-over-lessons-for-india-3021222-2026-10-20?utm_source=rss"
+    ],
+    "posted_at": "2026-10-20T07:18:30+00:00",
+    "dry_run": false
   }
 ]
