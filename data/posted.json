@@ -1936,5 +1936,17 @@
     ],
     "posted_at": "2026-10-20T12:00:12+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Manipur shutdown over killings; CJP leaders challenge custody extension; Ladakh first medical college rules eased",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.ndtv.com/india-news/manipur-48-hour-shutdown-over-killings-of-3-women-disrupts-life-12210542#publisher=newsstand",
+      "https://www.indiatoday.in/india/story/cjp-approaches-delhi-hc-for-urgent-night-hearing-seeks-release-of-saurav-das-ashutosh-ranka-3021451-2026-10-20?utm_source=rss",
+      "https://www.ndtv.com/education/ladakhs-first-medical-college-to-start-in-2027-28-centre-eases-hiring-norms-12210869#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-20T12:36:10+00:00",
+    "dry_run": false
   }
 ]
