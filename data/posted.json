@@ -1822,5 +1822,16 @@
     ],
     "posted_at": "2026-10-20T00:27:12+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "violent protests across European countries; Delhi crack down on Yamuna polluters",
+    "class": "B",
+    "region": "WORLD",
+    "links": [
+      "https://www.indiatoday.in/world/story/europe-arab-spring-protests-riots-france-italy-spain-albania-nine-nations-itspc-3020751-2026-10-20?utm_source=rss",
+      "https://www.ndtv.com/delhi-news/crackdown-on-yamuna-polluters-in-delhi-3-illegal-dhobi-ghats-sealed-12208739#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-20T01:17:49+00:00",
+    "dry_run": false
   }
 ]
