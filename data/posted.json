@@ -1981,5 +1981,16 @@
     ],
     "posted_at": "2026-10-20T16:05:33+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Kerala government to file case against parents after child dies of malnutrition; Gujarat authorities remove illegal encroachments in East Kutch",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/kerala/story/case-to-be-filed-against-parents-after-two-year-old-dies-malnutrition-alappuzha-keralam-minister-3021414-2026-10-20?utm_source=rss",
+      "https://www.indiatoday.in/india/story/gujarat-east-kutch-clears-1445-encroachments-government-land-worth-rs-200-crore-3021580-2026-10-20?utm_source=rss"
+    ],
+    "posted_at": "2026-10-20T17:03:27+00:00",
+    "dry_run": false
   }
 ]
