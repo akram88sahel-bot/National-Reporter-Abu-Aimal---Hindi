@@ -1902,5 +1902,16 @@
     ],
     "posted_at": "2026-10-20T09:08:27+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "India plans security monitor for Starlink satellite internet; Alberta votes to remain in Canada",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/technology/news/story/starlink-under-scanner-govt-plans-security-monitor-to-track-global-satcom-firms-3021298-2026-10-20?utm_source=rss",
+      "https://www.indiatoday.in/world/story/alberta-separation-referendum-voters-back-canada-mark-carney-us-trade-war-3021311-2026-10-20?utm_source=rss"
+    ],
+    "posted_at": "2026-10-20T10:31:42+00:00",
+    "dry_run": false
   }
 ]
