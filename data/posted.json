@@ -2186,5 +2186,17 @@
     ],
     "posted_at": "2026-10-21T16:05:13+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Telangana police vacancies filled by 2028; Ladakh High Court bench begins hearings in Leh; Italy announces 20000 euro fine for property damage after Milan protests",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/cities/Hyderabad/telangana-to-fill-all-police-vacancies-by-2028-recruit-5000-more-personnel-cm-revanth-reddy/article71607552.ece",
+      "https://www.ndtv.com/india-news/at-11-500-feet-ladakh-high-court-bench-begins-regular-hearings-in-leh-12216170#publisher=newsstand",
+      "https://www.indiatoday.in/world/video/italy-riots-meloni-enforces-eu20000-fine-parental-liability-after-milan-chaos-ytvd-3022303-2026-10-21?utm_source=rss"
+    ],
+    "posted_at": "2026-10-21T17:03:18+00:00",
+    "dry_run": false
   }
 ]
