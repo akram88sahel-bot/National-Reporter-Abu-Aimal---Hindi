@@ -2116,5 +2116,17 @@
     ],
     "posted_at": "2026-10-21T03:31:50+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Telangana Food Safety Authority suspends Sahil Foods licenses; Meloni orders crackdown on protests after Milan riots; Google and Apple block eMudhra certificates",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.ndtv.com/telangana-news/telangana-food-safety-authority-suspends-sahil-foods-licences-over-hygiene-12213139#publisher=newsstand",
+      "https://www.ndtv.com/world-news/italy-prime-minister-giorgia-meloni-orders-tougher-crackdown-on-protests-after-milan-riots-12212946#publisher=newsstand",
+      "https://www.indiatoday.in/technology/news/story/internet-on-alert-after-emudhra-uses-shockingly-weak-keys-google-and-apple-rush-to-block-them-3021685-2026-10-21?utm_source=rss"
+    ],
+    "posted_at": "2026-10-21T05:01:07+00:00",
+    "dry_run": false
   }
 ]
