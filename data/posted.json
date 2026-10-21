@@ -2255,5 +2255,17 @@
     ],
     "posted_at": "2026-10-21T22:57:05+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Indian Embassy advisory in France; Saudi airport attack; US orders diplomats to leave Saudi Arabia",
+    "class": "B",
+    "region": "WORLD",
+    "links": [
+      "https://www.indiatoday.in/world/story/indian-embassy-issues-advisory-for-nationals-amid-france-protests-as-macron-slams-trump-3022369-2026-10-22?utm_source=rss",
+      "https://www.indiatoday.in/world/story/king-fahd-international-airport-attack-kills-one-injures-eight-saudi-arabia-ptag-3022371-2026-10-22?utm_source=rss",
+      "https://www.indiatoday.in/world/story/us-orders-diplomats-their-families-to-leave-saudi-arabia-amid-houthi-strikes-3022370-2026-10-22?utm_source=rss"
+    ],
+    "posted_at": "2026-10-21T23:56:29+00:00",
+    "dry_run": false
   }
 ]
