@@ -2071,5 +2071,16 @@
     ],
     "posted_at": "2026-10-21T00:24:17+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Jaishankar hosts Rubio in Mumbai; Zelensky talks with Trump envoys in Oslo",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.ndtv.com/india-news/marco-rubio-in-mumbai-s-jaishankar-calls-for-zero-tolerance-on-terrorism-12212852#publisher=newsstand",
+      "https://www.ndtv.com/world-news/volodymyr-zelensky-holds-productive-talks-with-trump-envoys-steve-witkoff-to-meet-putin-today-12212817#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-21T01:12:59+00:00",
+    "dry_run": false
   }
 ]
