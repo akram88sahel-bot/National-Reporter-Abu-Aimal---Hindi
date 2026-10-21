@@ -2232,5 +2232,16 @@
     ],
     "posted_at": "2026-10-21T21:01:08+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "CJP leaders released from Tihar jail; US Supreme Court blocks Trump curbs on transgender inmates",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/delhi-court-releases-cjp-co-convenors-saurav-das-and-ashutosh-ranka-after-days-in-judicial-custody-3022127-2026-10-21?utm_source=rss",
+      "https://www.indiatoday.in/world/story/us-supreme-court-blocks-trump-bid-to-restrict-gender-affirming-care-for-transgender-prisoners-3022366-2026-10-22?utm_source=rss"
+    ],
+    "posted_at": "2026-10-21T22:23:40+00:00",
+    "dry_run": false
   }
 ]
