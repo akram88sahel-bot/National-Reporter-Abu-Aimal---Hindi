@@ -2175,5 +2175,16 @@
     ],
     "posted_at": "2026-10-21T13:36:29+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Ladakh panchayat polls; Europe government websites offline",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/ladakh-panchayat-elections-2026-polling-november-21-results-before-november-30-3022244-2026-10-21?utm_source=rss",
+      "https://www.indiatoday.in/world/story/php-critical-vulnerabilities-government-websites-offline-cybersecurity-alert-3022240-2026-10-21?utm_source=rss"
+    ],
+    "posted_at": "2026-10-21T16:05:13+00:00",
+    "dry_run": false
   }
 ]
