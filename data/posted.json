@@ -2128,5 +2128,18 @@
     ],
     "posted_at": "2026-10-21T05:01:07+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Congress ends Jaipur sit-in over zero FIR; Election Commissioners write to Cabinet Secretary; CJP leaders withdraw custody plea in Delhi HC; Rubio defends India over protest crackdown",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/ritu-barala-zero-fir-row-congress-to-move-high-court-supreme-court-ptag-3021877-2026-10-21?utm_source=rss",
+      "https://www.indiatoday.in/india/story/election-commissioners-sukhbir-singh-sandhu-and-vivek-joshi-wrote-to-cabinet-secretary-rti-reveals-what-happened-next-3021900-2026-10-21?utm_source=rss",
+      "https://www.indiatoday.in/india/law-news/story/cjps-sourav-das-ashutosh-ranka-withdraw-petition-against-custody-after-high-court-flags-technical-issues-3021865-2026-10-21?utm_source=rss",
+      "https://www.indiatoday.in/india/story/marco-rubio-gyanesh-kumar-resignation-protests-india-domestic-matter-3021845-2026-10-21?utm_source=rss"
+    ],
+    "posted_at": "2026-10-21T09:07:45+00:00",
+    "dry_run": false
   }
 ]
