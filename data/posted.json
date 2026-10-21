@@ -2141,5 +2141,16 @@
     ],
     "posted_at": "2026-10-21T09:07:45+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "BRS alleges conspiracy over Godavari-Cauvery project; Delhi HC blocks RTI disclosure on PM travel records",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/godavari-cauvery-link-project-turning-into-controversy-as-brs-senses-major-conspiracy/article71606878.ece",
+      "https://www.indiatoday.in/india/story/delhi-high-court-blocks-rti-disclosure-pm-foreign-visit-iaf-records-ptag-3022048-2026-10-21?utm_source=rss"
+    ],
+    "posted_at": "2026-10-21T12:01:34+00:00",
+    "dry_run": false
   }
 ]
