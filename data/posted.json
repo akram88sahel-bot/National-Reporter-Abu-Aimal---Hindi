@@ -2082,5 +2082,16 @@
     ],
     "posted_at": "2026-10-21T01:12:59+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Bhagwant Mann detained at Delhi airport; Delhi pollution panel anti-pollution project",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/bhagwant-mann-delhi-airport-detention-rs-50000-challan-aap-allegation-paris-trip-centre-modi-government-punjab-politics-3021662-2026-10-21?utm_source=rss",
+      "https://www.ndtv.com/delhi-news/delhis-rs-104-crore-bet-on-private-firms-to-cut-pollution-at-40-locations-12212869#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-21T02:03:05+00:00",
+    "dry_run": false
   }
 ]
