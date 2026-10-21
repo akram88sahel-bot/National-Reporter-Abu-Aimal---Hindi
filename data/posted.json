@@ -2220,5 +2220,17 @@
     ],
     "posted_at": "2026-10-21T19:11:59+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Putin US envoy Ukraine peace talks; Meta ordered to pay 25 billion; Delhi GRAP-1 pollution curbs",
+    "class": "B",
+    "region": "WORLD",
+    "links": [
+      "https://www.ndtv.com/world-news/vladimir-putin-tells-us-envoy-steve-witkoff-russia-is-willing-to-resume-ukraine-peace-talks-next-month-12217301#publisher=newsstand",
+      "https://www.ndtv.com/world-news/meta-ordered-to-pay-25-billion-over-data-leak-with-a-trump-link-12217198#publisher=newsstand",
+      "https://www.ndtv.com/india-news/delhi-air-quality-grap-1-pollution-curbs-under-grap-1-in-delhi-ncr-as-air-quality-drops-to-poor-12214729#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-21T21:01:08+00:00",
+    "dry_run": false
   }
 ]
