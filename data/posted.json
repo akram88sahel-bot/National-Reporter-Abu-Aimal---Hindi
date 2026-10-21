@@ -2152,5 +2152,17 @@
     ],
     "posted_at": "2026-10-21T12:01:34+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "jk_intern_stipend_hiked; delhi_grap_stage_one_imposed; russia_frees_us_citizen",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.ndtv.com/education/jammu-and-kashmir-doubles-medical-interns-stipend-to-rs-25-000-amid-strike-12215487#publisher=newsstand",
+      "https://www.indiatoday.in/health/story/delhi-air-quality-aqi-turns-poor-after-dussehra-may-worsen-further-3021823-2026-10-21?utm_source=rss",
+      "https://www.indiatoday.in/world/story/stephen-hubbard-release-russia-american-teacher-ukraine-peace-talks-donald-trump-us-envoy-3022050-2026-10-21?utm_source=rss"
+    ],
+    "posted_at": "2026-10-21T12:38:57+00:00",
+    "dry_run": false
   }
 ]
