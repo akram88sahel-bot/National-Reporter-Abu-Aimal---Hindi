@@ -1,12 +1,4 @@
 {
-  "https://www.thehindu.com/news/national/telangana/electors-befuddled-as-names-on-asdd-list-leave-form-6-submission-the-only-option-in-hyderabad/article71568509.ece": 1,
-  "https://www.thehindu.com/news/cities/Hyderabad/water-board-plans-to-involve-hyderabad-gated-communities-stps-in-dial-a-green-tanker-service/article71595968.ece": 99,
-  "https://www.thehindu.com/news/national/telangana/brs-accused-of-paying-followers-to-run-smear-campaign-against-revanth/article71568506.ece": 1,
-  "https://www.thehindu.com/news/national/telangana/telangana-fmg-interns-seek-stipend-parity-threaten-protest/article71571297.ece": 1,
-  "https://www.thehindu.com/news/cities/Hyderabad/demonstration-staged-in-hyderabad-against-police-crackdown-on-protesters-in-delhi/article71571443.ece": 1,
-  "https://www.indiatoday.in/india/story/supreme-court-child-safety-directions-online-abuse-material-platform-penalties-ptag-3019625-2026-10-17?utm_source=rss": 99,
-  "https://www.indiatoday.in/education-today/news/story/odisha-student-union-elections-abvp-wins-eight-universities-amit-shah-hails-verdict-ptag-3019508-2026-10-17?utm_source=rss": 99,
-  "https://www.aajtak.in/world/story/pakistan-army-influence-fazlur-rehman-shehbaz-sharif-government-ntc-dhrj-dskc-2673353-2026-10-17?utm_source=rss": 1,
   "https://www.aajtak.in/india/news/story/delhi-cjp-protest-connaught-place-leadership-crisis-abhijeet-dipke-ntc-pvp-dskc-2673325-2026-10-17?utm_source=rss": 1,
   "https://www.thehindu.com/news/cities/Hyderabad/smoke-detected-from-electronic-device-delhi-chennai-indigo-flight-diverted-to-hyderabad/article71571354.ece": 1,
   "https://www.thehindu.com/news/national/telangana/four-rescued-after-fire-breaks-out-at-footwear-shop-in-nalgonda/article71571092.ece": 1,
@@ -995,8 +987,16 @@
   "https://www.indiatoday.in/india/story/delhi-court-releases-cjp-co-convenors-saurav-das-and-ashutosh-ranka-after-days-in-judicial-custody-3022127-2026-10-21?utm_source=rss": 99,
   "https://www.indiatoday.in/world/story/meta-ordered-to-pay-25-billion-in-facebook-data-privacy-case-linked-to-trumps-2016-campaign-3022347-2026-10-21?utm_source=rss": 99,
   "https://www.indiatoday.in/india/karnataka/story/shivamogga-dasara-elephant-runs-amok-650-kg-silver-howdah-3022074-2026-10-21?utm_source=rss": 2,
-  "https://www.indiatoday.in/business/story/marco-rubio-reliance-jamnagar-refinery-mukesh-ambani-us-india-energy-ties-sergio-gor-3022095-2026-10-21?utm_source=rss": 1,
-  "https://www.indiatoday.in/india-today-insight/story/why-a-ukrainian-rescue-by-drone-holds-lessons-for-india-ukraine-heavy-shot-drone-rescue-3022178-2026-10-21?utm_source=rss": 1,
-  "https://www.indiatoday.in/india-today-insight/story/how-archaeology-may-put-ujjain-on-the-global-tourist-map-3022168-2026-10-21?utm_source=rss": 1,
-  "https://www.indiatoday.in/india-today-insight/story/how-learning-english-helps-open-new-doors-3022162-2026-10-21?utm_source=rss": 1
+  "https://www.indiatoday.in/business/story/marco-rubio-reliance-jamnagar-refinery-mukesh-ambani-us-india-energy-ties-sergio-gor-3022095-2026-10-21?utm_source=rss": 2,
+  "https://www.indiatoday.in/india-today-insight/story/why-a-ukrainian-rescue-by-drone-holds-lessons-for-india-ukraine-heavy-shot-drone-rescue-3022178-2026-10-21?utm_source=rss": 2,
+  "https://www.indiatoday.in/india-today-insight/story/how-archaeology-may-put-ujjain-on-the-global-tourist-map-3022168-2026-10-21?utm_source=rss": 2,
+  "https://www.indiatoday.in/india-today-insight/story/how-learning-english-helps-open-new-doors-3022162-2026-10-21?utm_source=rss": 2,
+  "https://www.indiatoday.in/world/story/vivek-ramaswamy-amy-acton-estranged-mother-ad-ohio-governor-race-ptag-3022368-2026-10-22?utm_source=rss": 1,
+  "https://www.indiatoday.in/india/story/china-tunnel-boring-machine-new-restrictions-india-border-infrastrcture-impact-itspc-3021950-2026-10-21?utm_source=rss": 1,
+  "https://www.indiatoday.in/india/story/bihar-liquor-ban-hajipur-grp-personnel-jailed-garib-rath-express-seizure-3022289-2026-10-21?utm_source=rss": 1,
+  "https://www.indiatoday.in/trending-news/story/monkey-accused-of-biting-over-12-people-captured-in-haryana-slapped-by-crowd-3022163-2026-10-21?utm_source=rss": 1,
+  "https://www.indiatoday.in/india/story/ips-officer-ankita-sharma-ak-47-assault-riflre-firing-shastra-puja-safety-row-kjs-dhillon-ias-itspc-3021999-2026-10-21?utm_source=rss": 1,
+  "https://www.indiatoday.in/india/story/fssai-issues-notices-nestle-abbott-india-zydus-wellness-infant-formula-complan-advertisement-claims-3022237-2026-10-21?utm_source=rss": 99,
+  "https://www.indiatoday.in/world/story/vladimir-putin-ready-to-resume-ukraine-volodymyr-zelenskyy-peace-talks-with-us-and-kyiv-next-month-abu-dhabi-3022212-2026-10-21?utm_source=rss": 99,
+  "https://www.indiatoday.in/world/story/after-mecca-pact-its-badr-mou-pak-turkey-qatar-indonesia-sign-defence-deal-strengthen-military-cooperation-rising-gulf-tensions-3022280-2026-10-21?utm_source=rss": 99
 }

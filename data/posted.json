@@ -2243,5 +2243,17 @@
     ],
     "posted_at": "2026-10-21T22:23:40+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "FSSAI notices to Nestle Abbott and Zydus; Putin ready to resume peace talks; Pakistan signs defence deal with Qatar, Indonesia, Turkey",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/fssai-issues-notices-nestle-abbott-india-zydus-wellness-infant-formula-complan-advertisement-claims-3022237-2026-10-21?utm_source=rss",
+      "https://www.indiatoday.in/world/story/vladimir-putin-ready-to-resume-ukraine-volodymyr-zelenskyy-peace-talks-with-us-and-kyiv-next-month-abu-dhabi-3022212-2026-10-21?utm_source=rss",
+      "https://www.indiatoday.in/world/story/after-mecca-pact-its-badr-mou-pak-turkey-qatar-indonesia-sign-defence-deal-strengthen-military-cooperation-rising-gulf-tensions-3022280-2026-10-21?utm_source=rss"
+    ],
+    "posted_at": "2026-10-21T22:57:05+00:00",
+    "dry_run": false
   }
 ]
