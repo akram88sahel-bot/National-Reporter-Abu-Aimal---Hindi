@@ -2164,5 +2164,16 @@
     ],
     "posted_at": "2026-10-21T12:38:57+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Hyderabad traffic restrictions for Durga immersion; SCR special trains for festive rush",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.thehindu.com/news/cities/Hyderabad/durga-idol-immersion-traffic-restrictions-around-hyderabads-hussain-sagar-from-october-21-to-6-am-on-october-24/article71606688.ece",
+      "https://www.thehindu.com/news/national/telangana/scr-running-700-plus-special-trains-to-handle-dasara-diwali-and-chhath-puja/article71606995.ece"
+    ],
+    "posted_at": "2026-10-21T13:36:29+00:00",
+    "dry_run": false
   }
 ]
