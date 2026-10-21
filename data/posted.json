@@ -2105,5 +2105,16 @@
     ],
     "posted_at": "2026-10-21T03:01:40+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "India US trade deal finalisation; Chennai Mayor police complaint against obscene post",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/india-us-trade-deal-nearing-finalisation-donald-trump-marco-rubio-mumbai-visit-3021676-2026-10-21?utm_source=rss",
+      "https://www.indiatoday.in/india/tamil-nadu/story/chennai-mayor-r-priya-police-complaint-obscene-post-questions-tvk-vijay-3021690-2026-10-21?utm_source=rss"
+    ],
+    "posted_at": "2026-10-21T03:31:50+00:00",
+    "dry_run": false
   }
 ]
