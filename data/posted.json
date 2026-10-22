@@ -2406,5 +2406,18 @@
     ],
     "posted_at": "2026-10-22T21:31:35+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Gujarat school entry circular; Songadh Navratri violence; Saudi Aramco evacuation; Bharatiya Mazdoor Sangh Kashmir office",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.ndtv.com/india-news/gujarats-school-entry-rules-invoke-child-sexual-abuse-law-against-violators-12222449#publisher=newsstand",
+      "https://www.ndtv.com/india-news/tensions-flare-in-songadh-after-social-media-post-leads-to-navratri-stone-pelting-incident-12222503#publisher=newsstand",
+      "https://www.ndtv.com/world-news/saudi-aramco-tells-staff-to-evacuate-headquarters-amid-yemen-tensions-report-12222562#publisher=newsstand",
+      "https://www.ndtv.com/india-news/rss-linked-group-opens-its-first-public-office-in-kashmir-valley-12222355#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-22T22:59:21+00:00",
+    "dry_run": false
   }
 ]
