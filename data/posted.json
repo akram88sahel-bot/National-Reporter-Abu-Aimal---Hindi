@@ -2337,5 +2337,16 @@
     ],
     "posted_at": "2026-10-22T12:01:07+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "telangana pocso case pendency; pakistan high court summons officials over imran khan sisters detention",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/telangana-did-not-figure-among-top-states-with-improvements-in-dealing-with-pocso-cases/article71611168.ece",
+      "https://www.indiatoday.in/world/story/imran-khan-sisters-detention-lahore-high-court-summons-punjab-officials-3022847-2026-10-22?utm_source=rss"
+    ],
+    "posted_at": "2026-10-22T12:39:30+00:00",
+    "dry_run": false
   }
 ]
