@@ -2419,5 +2419,17 @@
     ],
     "posted_at": "2026-10-22T22:59:21+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "UP voter entries glitches suspension; Iran caps dollar purchases; Trump drops Atlantic Ocean renaming",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.ndtv.com/india-news/glitches-in-over-10-000-voter-entries-in-up-two-poll-officials-suspended-12222897#publisher=newsstand",
+      "https://www.ndtv.com/world-news/iran-caps-dollar-purchases-at-1-000-per-day-amid-sanctions-hit-economy-12222878#publisher=newsstand",
+      "https://www.indiatoday.in/world/story/donald-trump-drops-atlantic-ocean-renaming-idea-after-sundar-pichai-warning-ptag-3022992-2026-10-22?utm_source=rss"
+    ],
+    "posted_at": "2026-10-22T23:54:23+00:00",
+    "dry_run": false
   }
 ]
