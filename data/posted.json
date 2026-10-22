@@ -2395,5 +2395,16 @@
     ],
     "posted_at": "2026-10-22T18:00:08+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Owaisi seeks flights for stranded Umrah pilgrims; Punjab government employees strike",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/arrange-special-flights-to-bring-back-umrah-pilgrims-owaisi-urges-centre/article71611338.ece",
+      "https://www.ndtv.com/india-news/punjab-hit-as-over-3-lakh-government-employees-roadways-workers-on-strike-12222587#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-22T21:31:35+00:00",
+    "dry_run": false
   }
 ]
