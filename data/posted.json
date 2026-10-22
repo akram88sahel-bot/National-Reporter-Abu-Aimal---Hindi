@@ -2359,5 +2359,17 @@
     ],
     "posted_at": "2026-10-22T13:39:22+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "global cyber scare php vulnerabilities; france to ban illegitimate protests; revanth reddy pitches rahul gandhi for pm",
+    "class": "B",
+    "region": "WORLD",
+    "links": [
+      "https://www.indiatoday.in/world/story/php-vulnerabilities-force-government-hospital-major-websites-offline-worldwide-3023017-2026-10-22?utm_source=rss",
+      "https://www.indiatoday.in/world/story/france-protests-macron-plans-bans-blames-ultra-left-groups-for-riots-3022994-2026-10-22?utm_source=rss",
+      "https://www.indiatoday.in/india/story/rahul-gandhi-pm-pitch-revanth-reddy-backward-class-welfare-telangana-congress-ptag-3022868-2026-10-22?utm_source=rss"
+    ],
+    "posted_at": "2026-10-22T16:03:16+00:00",
+    "dry_run": false
   }
 ]
