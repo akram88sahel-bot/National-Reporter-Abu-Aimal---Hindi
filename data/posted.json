@@ -2279,5 +2279,16 @@
     ],
     "posted_at": "2026-10-22T03:02:27+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Delhi Crime Branch summons CJP leaders; India alerts nationals in France",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/cjp-leaders-ashutosh-ranka-saurav-das-summoned-delhi-police-protest-cases-3022423-2026-10-22?utm_source=rss",
+      "https://www.indiatoday.in/world/story/france-protests-india-advises-nationals-avoid-crowds-amid-riots-curfews-ptag-3022431-2026-10-22?utm_source=rss"
+    ],
+    "posted_at": "2026-10-22T04:25:50+00:00",
+    "dry_run": false
   }
 ]
