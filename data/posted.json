@@ -2313,5 +2313,18 @@
     ],
     "posted_at": "2026-10-22T06:01:14+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Telangana CM attends Mysuru Dasara; High Court bans firecrackers on Mumbai roads; J&K increases stipend for medical interns; Ukrainian drones strike Russian data centres",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/telangana-cm-participates-in-mysuru-dasara-festivities/article71608038.ece",
+      "https://www.ndtv.com/india-news/worse-than-delhi-bombay-high-court-flags-mumbai-pollution-raps-authorities-firecrackers-ban-12218916#publisher=newsstand",
+      "https://www.ndtv.com/education/jammu-and-kashmir-doubles-monthly-stipend-for-mbbs-bds-interns-to-rs-25-000-12218980#publisher=newsstand",
+      "https://www.ndtv.com/world-news/russias-ai-dream-in-dark-as-ukraine-drones-target-3-big-data-centres-12219234#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-22T09:12:31+00:00",
+    "dry_run": false
   }
 ]
