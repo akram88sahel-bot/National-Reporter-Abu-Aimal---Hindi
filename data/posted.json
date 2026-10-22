@@ -2371,5 +2371,17 @@
     ],
     "posted_at": "2026-10-22T16:03:16+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Telangana to host Raksha Expo; Bus crash in Chhattisgarh; BJP Congress clash over US report",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/cities/Hyderabad/telangana-to-host-three-day-raksha-expo-from-december-7/article71612717.ece",
+      "https://www.ndtv.com/india-news/6-killed-40-injured-as-bus-crashes-into-tree-in-chhattisgarhs-manendragarh-chirmiri-bharatpur-12221250#publisher=newsstand",
+      "https://www.indiatoday.in/india/story/rahul-gandhi-bjp-congress-row-foreign-protest-links-electoral-rolls-3023068-2026-10-22?utm_source=rss"
+    ],
+    "posted_at": "2026-10-22T17:02:22+00:00",
+    "dry_run": false
   }
 ]
