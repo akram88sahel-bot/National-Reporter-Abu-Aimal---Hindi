@@ -2383,5 +2383,17 @@
     ],
     "posted_at": "2026-10-22T17:02:22+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Southern states police chiefs meeting in Hyderabad; Allahabad High Court property and power connection ruling; India rejects UN migrant rights report",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/southern-states-police-chiefs-to-meet-in-hyderabad-on-october-23-to-tackle-inter-state-crime/article71611413.ece",
+      "https://www.indiatoday.in/india/law-news/story/allahabad-high-court-property-dispute-cannot-block-electricity-connection-ptag-3023094-2026-10-22?utm_source=rss",
+      "https://www.indiatoday.in/india/story/india-rejects-un-migrant-rights-report-inaccurate-assam-reference-3023109-2026-10-22?utm_source=rss"
+    ],
+    "posted_at": "2026-10-22T18:00:08+00:00",
+    "dry_run": false
   }
 ]
