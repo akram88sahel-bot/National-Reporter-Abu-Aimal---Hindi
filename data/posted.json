@@ -2514,5 +2514,17 @@
     ],
     "posted_at": "2026-10-23T17:06:17+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Bharat Biotech slashes malaria vaccine price; IndiGo extends Saudi flight cancellations; 14 Indians safe after boat incident off Yemen",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.thehindu.com/news/cities/Hyderabad/bharat-biotech-slashes-malaria-vaccine-price-on-gavi-backed-pact-with-unicef/article71616771.ece",
+      "https://www.ndtv.com/india-news/indigo-extends-saudi-flight-cancellations-till-october-27-amid-houthi-attacks-12227632#publisher=newsstand",
+      "https://www.ndtv.com/india-news/14-indians-safe-after-boat-got-involved-in-incident-off-yemen-coast-embassy-12227675#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-23T20:00:01+00:00",
+    "dry_run": false
   }
 ]
