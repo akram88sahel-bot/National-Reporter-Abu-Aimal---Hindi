@@ -2549,5 +2549,18 @@
     ],
     "posted_at": "2026-10-23T21:28:33+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "ED files FIR after trespassers enter Thane flat linked to Dawood's brother; Maharashtra man slaps female doctor during medical examination; India to build Atmospheric and Space Science Research Facility in Odisha; Union health ministry orders crackdown on hospitals reusing single-use devices",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/iqbal-kaskar-money-laundering-case-ed-fir-thane-flat-trespass-3023924-2026-10-23?utm_source=rss",
+      "https://www.indiatoday.in/trending-news/story/maharashtra-man-slaps-female-doctor-in-front-of-cops-during-medical-examination-3023442-2026-10-23?utm_source=rss",
+      "https://www.indiatoday.in/science/story/odisha-atmospheric-space-science-research-facility-chandipur-3023488-2026-10-23?utm_source=rss",
+      "https://www.indiatoday.in/health/story/single-use-medical-devices-centre-orders-hospital-reuse-crackdown-3023630-2026-10-23?utm_source=rss"
+    ],
+    "posted_at": "2026-10-23T22:32:12+00:00",
+    "dry_run": false
   }
 ]
