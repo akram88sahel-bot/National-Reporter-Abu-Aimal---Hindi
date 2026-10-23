@@ -2573,5 +2573,17 @@
     ],
     "posted_at": "2026-10-23T23:26:38+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "lorry rams ambulance in Nirmal; firecracker explosion kills five in Bihar; deadly road accident in Pakistan",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/mother-ailing-daughter-killed-as-speeding-lorry-rams-ambulance-in-nirmal-district/article71616149.ece",
+      "https://www.ndtv.com/india-news/5-killed-in-explosion-at-house-storing-firecrackers-in-bihar-12227692#publisher=newsstand",
+      "https://www.ndtv.com/world-news/13-killed-21-injured-in-road-collision-in-pakistan-12227674#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-23T23:53:53+00:00",
+    "dry_run": false
   }
 ]
