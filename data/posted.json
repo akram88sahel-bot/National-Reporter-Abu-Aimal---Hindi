@@ -2443,5 +2443,17 @@
     ],
     "posted_at": "2026-10-23T01:17:32+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Owaisi seeks flights for stranded pilgrims in Saudi Arabia; ITBP chief confirms India-China face-offs in Arunachal; BJD delegation to visit Kotia over Andhra election activities",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.indiatoday.in/india/story/indian-pilgrims-stranded-saudi-arabia-owaisi-seeks-special-flights-3023234-2026-10-23?utm_source=rss",
+      "https://www.indiatoday.in/india/story/india-china-faceoff-arunachal-pradesh-border-itbp-chief-congress-pm-modi-3023232-2026-10-23?utm_source=rss",
+      "https://www.indiatoday.in/india/law-news/story/kotia-dispute-bjd-delegation-andhra-pradesh-panchayat-election-activities-ptag-3023222-2026-10-23?utm_source=rss"
+    ],
+    "posted_at": "2026-10-23T05:01:10+00:00",
+    "dry_run": false
   }
 ]
