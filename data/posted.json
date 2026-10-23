@@ -2480,5 +2480,17 @@
     ],
     "posted_at": "2026-10-23T09:08:15+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Mann claims Delhi airport detention was revenge; IndiGo cancels Saudi flights amid missile strikes; Israel closes West Bank after checkpoint shooting",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/punjab-cm-bhagwant-mann-alleges-political-revenge-delhi-airport-customs-chief-cec-gyanesh-kumar-brother-manish-sir-3023500-2026-10-23?utm_source=rss",
+      "https://www.ndtv.com/world-news/indigo-cancels-saudi-arabia-flights-till-october-31-amid-regional-tensions-12224659#publisher=newsstand",
+      "https://www.ndtv.com/world-news/israel-closes-west-bank-after-military-kills-2-terrorists-for-shooting-5-injured-12224818#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-23T12:03:51+00:00",
+    "dry_run": false
   }
 ]
