@@ -2492,5 +2492,16 @@
     ],
     "posted_at": "2026-10-23T12:03:51+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Delhi HC rejects Neha Bora peace bond notice plea; France to deploy 70000 police for protests",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/law-news/story/anti-sir-protest-delhi-hc-rejects-neha-boras-plea-challenging-police-notice-to-execute-rs-10000-peace-bond-3023736-2026-10-23?utm_source=rss",
+      "https://www.ndtv.com/world-news/france-to-deploy-70-000-cops-nationwide-ahead-of-weekend-protests-12226434#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-23T15:08:27+00:00",
+    "dry_run": false
   }
 ]
