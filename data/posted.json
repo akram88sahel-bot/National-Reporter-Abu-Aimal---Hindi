@@ -2526,5 +2526,16 @@
     ],
     "posted_at": "2026-10-23T20:00:01+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Haryana power unions call off strike; Odisha moves Supreme Court over Kotia polls",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/haryana-power-strike-ends-government-rules-out-privatisation-restores-supply-3023890-2026-10-23?utm_source=rss",
+      "https://www.indiatoday.in/india/law-news/story/odisha-andhra-pradesh-kotia-dispute-supreme-court-contempt-panchayat-elections-ptag-3023941-2026-10-24?utm_source=rss"
+    ],
+    "posted_at": "2026-10-23T21:04:10+00:00",
+    "dry_run": false
   }
 ]
