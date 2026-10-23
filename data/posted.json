@@ -2431,5 +2431,17 @@
     ],
     "posted_at": "2026-10-22T23:54:23+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Gurugram power strike against privatisation; Allahabad HC ruling on SC ST Act FIRs; Ukraine Starshield disruptions cause US blame game",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/cities/gurugram/story/gurugram-power-cuts-electricity-workers-indefinite-strike-against-power-distribution-privatisation-haryana-chaos-3022960-2026-10-22?utm_source=rss",
+      "https://www.indiatoday.in/india/law-news/story/allahabad-high-court-exact-casteist-slur-not-essential-sc-st-act-fir-3023150-2026-10-23?utm_source=rss",
+      "https://www.indiatoday.in/world/story/ukraine-starshield-restrictions-trump-musk-blame-military-disruption-ptag-3023152-2026-10-23?utm_source=rss"
+    ],
+    "posted_at": "2026-10-23T01:17:32+00:00",
+    "dry_run": false
   }
 ]
