@@ -2537,5 +2537,17 @@
     ],
     "posted_at": "2026-10-23T21:04:10+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Storm Austen batters France and UK; Gunman kills one and injures four in Trappes; American Express cutting 5 percent of global workforce",
+    "class": "B",
+    "region": "WORLD",
+    "links": [
+      "https://www.indiatoday.in/world/story/storm-austen-france-power-cuts-uk-disruption-storm-boelo-warnings-weather-3023827-2026-10-23?utm_source=rss",
+      "https://www.ndtv.com/world-news/gunman-kills-1-injures-4-in-town-outside-paris-police-12227774#publisher=newsstand",
+      "https://www.ndtv.com/world-news/american-express-cutting-5-of-global-workforce-12227754#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-23T21:28:33+00:00",
+    "dry_run": false
   }
 ]
