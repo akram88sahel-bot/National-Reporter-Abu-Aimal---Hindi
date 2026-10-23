@@ -2455,5 +2455,17 @@
     ],
     "posted_at": "2026-10-23T05:01:10+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Hussain Sagar traffic restrictions extended; US banks block AI bots; Lula seeks fourth presidential term",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.thehindu.com/news/cities/Hyderabad/traffic-restrictions-to-remain-in-place-till-saturday-as-durga-idol-immersions-continue/article71613042.ece",
+      "https://www.ndtv.com/world-news/top-us-banks-block-ai-agents-as-bots-access-customer-accounts-without-consent-12223847#publisher=newsstand",
+      "https://www.ndtv.com/world-news/with-selfies-and-squats-brazils-president-luiz-inacio-lula-da-silva-seeks-one-last-political-comeback-12223581#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-23T07:20:11+00:00",
+    "dry_run": false
   }
 ]
