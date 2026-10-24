@@ -2823,5 +2823,17 @@
     ],
     "posted_at": "2026-10-24T19:22:58+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "ED moves Supreme Court against quashing of NewsClick case; UP poll officials get notices for same name on voter roll; Repolling announced at 3 booths in Agra",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.ndtv.com/india-news/probe-agency-ed-moves-top-court-against-quashing-of-case-against-newsclick-12231393#publisher=newsstand",
+      "https://www.ndtv.com/india-news/same-name-appears-10-times-on-azamgarh-voter-roll-5-up-poll-officials-get-notices-12231409#publisher=newsstand",
+      "https://www.ndtv.com/india-news/repolling-at-3-booths-in-agra-tomorrow-for-legislative-council-polls-12231370#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-24T19:49:51+00:00",
+    "dry_run": false
   }
 ]
