@@ -2703,5 +2703,17 @@
     ],
     "posted_at": "2026-10-24T09:58:34+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "IMD red alert for heavy rain in Telangana districts; Jaishankar meets Uzbek counterpart in Baku; Kolkata Police seek voice samples in stampede probe",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/ray-of-hope-for-drought-hit-telangana-as-low-pressure-over-bay-of-bengal-likely-to-bring-heavy-rain/article71619552.ece",
+      "https://www.indiatoday.in/world/story/india-uzbekistan-ties-jaishankar-saidov-baku-bilateral-agreements-ptag-3024146-2026-10-24?utm_source=rss",
+      "https://www.indiatoday.in/india/law-news/story/chorbagan-durga-puja-stampede-kolkata-police-seek-voice-samples-ptag-3024153-2026-10-24?utm_source=rss"
+    ],
+    "posted_at": "2026-10-24T10:23:09+00:00",
+    "dry_run": false
   }
 ]
