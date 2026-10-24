@@ -2596,5 +2596,17 @@
     ],
     "posted_at": "2026-10-24T00:28:42+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Gangster Himanshu Bhau arrested in US; Surat university installs anti-suicide fans; Centre flags hospital malpractice in Supreme Court",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.ndtv.com/india-news/gangster-himanshu-bhau-wanted-in-india-for-multiple-murders-arrested-in-us-12227703#publisher=newsstand",
+      "https://www.indiatoday.in/cities/other-cities/story/surat-university-vnsgu-installs-388-anti-suicide-fans-nine-hostels-3023839-2026-10-23?utm_source=rss",
+      "https://www.indiatoday.in/india/story/patients-have-very-low-bargaining-position-vis-a-vis-hospitals-centre-flags-malpractice-in-sc-3023942-2026-10-24?utm_source=rss"
+    ],
+    "posted_at": "2026-10-24T01:19:20+00:00",
+    "dry_run": false
   }
 ]
