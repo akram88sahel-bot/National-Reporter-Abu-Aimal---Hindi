@@ -2657,5 +2657,16 @@
     ],
     "posted_at": "2026-10-24T06:01:00+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Congress MP detained in Jamia Millia Islamia protests; Sound protest across Manipur",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.ndtv.com/india-news/congress-mp-imraan-masood-detained-during-jamia-millia-islamia-protests-students-demand-union-polls-12228776#publisher=newsstand",
+      "https://www.ndtv.com/india-news/drums-horns-and-utensils-thousands-join-sound-protest-across-manipur-against-continued-killings-ethnic-conflict-12228520#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-24T06:25:54+00:00",
+    "dry_run": false
   }
 ]
