@@ -2668,5 +2668,17 @@
     ],
     "posted_at": "2026-10-24T06:25:54+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "bombay high court illegal arrest order; supreme court panel jantar mantar violence; trump operation sindoor claim florida rally",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.ndtv.com/mumbai-news/bombay-high-court-orders-action-against-cops-magistrate-over-illegal-arrest-12228808#publisher=newsstand",
+      "https://www.indiatoday.in/india/law-news/story/jantar-mantar-protest-violence-supreme-court-panel-hearing-october-29-30-ptag-3024078-2026-10-24?utm_source=rss",
+      "https://www.indiatoday.in/world/story/operation-sindoor-trump-india-pakistan-ceasefire-claim-florida-election-rally-ptag-3024064-2026-10-24?utm_source=rss"
+    ],
+    "posted_at": "2026-10-24T07:59:48+00:00",
+    "dry_run": false
   }
 ]
