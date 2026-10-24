@@ -2787,5 +2787,17 @@
     ],
     "posted_at": "2026-10-24T17:00:04+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Telangana aerospace policy 2.0 announcement; ED moves Supreme Court over NewsClick case; Rajasthan panchayat polls voting turnout",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/telangana-to-unveil-new-aerospace-and-defence-policy-20-soon-says-revanth/article71621205.ece",
+      "https://www.indiatoday.in/india/law-news/story/newsclick-money-laundering-case-ed-supreme-court-appeal-ptag-3024436-2026-10-24?utm_source=rss",
+      "https://www.indiatoday.in/india/story/rajasthan-panchayat-elections-80-09-percent-turnout-16-districts-ptag-3024428-2026-10-24?utm_source=rss"
+    ],
+    "posted_at": "2026-10-24T17:20:44+00:00",
+    "dry_run": false
   }
 ]
