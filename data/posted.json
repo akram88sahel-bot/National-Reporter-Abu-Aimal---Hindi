@@ -2848,5 +2848,16 @@
     ],
     "posted_at": "2026-10-24T20:16:01+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "JDU expels Bihar MLA Anant Singh; Bay of Bengal depression cyclone warning for Andhra Pradesh",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/anant-singh-expelled-jdu-rival-candidate-bihar-mlc-polls-3024399-2026-10-24?utm_source=rss",
+      "https://www.indiatoday.in/india/story/andhra-pradesh-cyclone-alert-october-28-landfall-heavy-rain-ptag-3024467-2026-10-24?utm_source=rss"
+    ],
+    "posted_at": "2026-10-24T20:52:50+00:00",
+    "dry_run": false
   }
 ]
