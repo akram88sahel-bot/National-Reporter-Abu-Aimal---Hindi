@@ -2715,5 +2715,18 @@
     ],
     "posted_at": "2026-10-24T10:23:09+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Uppal bus terminal completion deadline; President Murmu Odisha visit postponed; Naidu attacks Jagan Reddy over violence; Sajjan Singh Yadav named JK Chief Secretary",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/new-bus-terminal-at-uppal-to-be-ready-in-100-days/article71619492.ece",
+      "https://www.ndtv.com/india-news/president-droupadi-murmus-2-day-odisha-visit-postponed-over-cyclone-forecast-12229378#publisher=newsstand",
+      "https://www.ndtv.com/india-news/failed-as-chief-minister-brother-chandrababu-naidu-attacks-jagan-reddy-12229637#publisher=newsstand",
+      "https://www.ndtv.com/india-news/ias-officer-sajjan-singh-yadav-named-new-jammu-and-kashmir-chief-secretary-12229435#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-24T10:57:10+00:00",
+    "dry_run": false
   }
 ]
