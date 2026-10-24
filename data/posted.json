@@ -2859,5 +2859,17 @@
     ],
     "posted_at": "2026-10-24T20:52:50+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Supreme Court PIL on digital data access; Air India suspends Saudi flights; Rishikesh Karnaprayag rail project",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/plea-in-supreme-court-seeks-guidelines-on-investigating-agencies-access-to-personal-digital-data-3024481-2026-10-25?utm_source=rss",
+      "https://www.indiatoday.in/india/story/air-india-air-india-express-suspend-riyadh-dammam-flights-till-november-7-as-regional-tensions-escalate-3024463-2026-10-24?utm_source=rss",
+      "https://www.indiatoday.in/india/story/rishikesh-karnaprayag-railway-line-kedarnath-badrinath-china-border-access-3024465-2026-10-24?utm_source=rss"
+    ],
+    "posted_at": "2026-10-24T21:18:38+00:00",
+    "dry_run": false
   }
 ]
