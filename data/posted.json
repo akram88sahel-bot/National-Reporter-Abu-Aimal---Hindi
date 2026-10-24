@@ -2608,5 +2608,16 @@
     ],
     "posted_at": "2026-10-24T01:19:20+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Russia and Ukraine Oleshky ceasefire; Delhi Yamuna wall project",
+    "class": "B",
+    "region": "WORLD",
+    "links": [
+      "https://www.indiatoday.in/world/story/russia-ukraine-agree-to-oleshky-ceasefire-as-us-pushes-for-fresh-peace-talks-3023948-2026-10-24?utm_source=rss",
+      "https://www.ndtv.com/delhi-news/delhi-plans-rs-99-crore-wall-along-yamuna-to-prevent-flooding-12228070#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-24T02:03:02+00:00",
+    "dry_run": false
   }
 ]
