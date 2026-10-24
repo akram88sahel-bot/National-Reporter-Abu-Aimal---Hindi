@@ -2764,5 +2764,17 @@
     ],
     "posted_at": "2026-10-24T14:19:42+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Human chain protest in Hyderabad; Iran Speaker skips BRICS forum in Delhi; Jamia graffiti controversy",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://news.google.com/rss/articles/CBMikgFBVV95cUxOT252NG1qWjRRUlY4RkVzcnc1OVdrYi1ld3ZVZ2diMVpSbFZKMC1FWTN3cE1sNUxJUnQ1Tkp1TUJZcFFxYmdVaG01Yzd1SmtHTm5xVW5GX1FsSUxQV1BZd3V6NWkxeWRpbkQ3Z0VGZ3RLQUppMF9kVnlPTGV5VzNrcktBSjBXMG4teWFFckRWRElGUdIBmAFBVV95cUxPaHloakxCWlFydXczSXRCSVNRejJHSGFySklzWGxYQzBrSXEzTndMdVludnVoUXBWTzVIeU9MODVEVEw2a1AxLUFhU2xnYlBvcnAzSlVNNFFtY1VTZTNLb1JNSmwwdk1KOWNPMHNSQU1jOGVWZTROUFlydTNHaW45ZXQzU0lEU1E4dHJBTExVWDE2OTJKY2VaQw?oc=5",
+      "https://www.indiatoday.in/world/story/iran-speaker-ghalibaf-skip-brics-parliamentary-forum-new-delhi-3024376-2026-10-24?utm_source=rss",
+      "https://www.indiatoday.in/india/story/jamia-millia-islamia-protest-kashmir-row-bjp-congress-sharjeel-imam-imran-masood-visit-itspc-3024358-2026-10-24?utm_source=rss"
+    ],
+    "posted_at": "2026-10-24T14:56:02+00:00",
+    "dry_run": false
   }
 ]
