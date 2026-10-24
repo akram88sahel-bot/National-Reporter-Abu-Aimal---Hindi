@@ -2810,5 +2810,18 @@
     ],
     "posted_at": "2026-10-24T19:03:31+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "BJP attacks Congress over Lord Ram idol removal; Congress plans Delhi rally demanding CEC removal; Sonam Wangchuk warns Centre at Mumbai festival; Protests across France",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.ndtv.com/india-news/bjp-attacks-congress-after-lord-ram-idol-moved-from-hyderabad-crossing-anti-hindu-12231112#publisher=newsstand",
+      "https://www.indiatoday.in/india/story/congress-delhi-rally-ramlila-november-1-maidan-demands-cec-gyanesh-kumar-removal-electoral-rolls-india-bloc-ptag-3024397-2026-10-24?utm_source=rss",
+      "https://www.indiatoday.in/india/story/sonam-wangchuk-peaceful-protests-ladakh-autonomy-cjp-protest-gyanesh-kumar-resignation-demand-3024442-2026-10-24?utm_source=rss",
+      "https://www.ndtv.com/world-news/over-400-000-march-across-france-against-school-funding-rising-living-costs-challenging-macron-12231091#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-24T19:22:58+00:00",
+    "dry_run": false
   }
 ]
