@@ -2691,5 +2691,17 @@
     ],
     "posted_at": "2026-10-24T09:25:33+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Supreme Court wetlands verification order; IMD cyclone alert for Andhra Pradesh and Odisha; AISA president refuses peace bond",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/law-news/story/supreme-court-wetlands-order-states-four-month-verification-demarcation-ptag-3024144-2026-10-24?utm_source=rss",
+      "https://www.indiatoday.in/science/story/bay-of-bengal-cyclone-landfall-october-imd-rain-andhra-odisha-3024145-2026-10-24?utm_source=rss",
+      "https://www.indiatoday.in/india/law-news/story/neha-bora-refuses-peace-bond-after-delhi-high-court-ruling-ptag-3024141-2026-10-24?utm_source=rss"
+    ],
+    "posted_at": "2026-10-24T09:58:34+00:00",
+    "dry_run": false
   }
 ]
