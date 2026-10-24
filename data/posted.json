@@ -2680,5 +2680,16 @@
     ],
     "posted_at": "2026-10-24T07:59:48+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Centre approves 320 PG medical seats in Himachal Pradesh; Jamia Millia Islamia shifts all classes online due to security concerns",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/education-today/news/story/centre-approves-320-pg-seats-himachal-pradesh-government-medical-colleges-3024045-2026-10-24?utm_source=rss",
+      "https://www.indiatoday.in/education-today/news/story/jamia-millia-islamia-shifts-all-classes-online-amid-security-concerns-until-further-notice-3024125-2026-10-24?utm_source=rss"
+    ],
+    "posted_at": "2026-10-24T09:25:33+00:00",
+    "dry_run": false
   }
 ]
