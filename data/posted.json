@@ -2895,5 +2895,16 @@
     ],
     "posted_at": "2026-10-24T23:15:18+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Agra MLC repoll ordered; Trump votes in Florida",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/elections/story/agra-mlc-seat-repoll-at-3-centres-on-october-26-after-ec-declares-earlier-voting-void-3024486-2026-10-25?utm_source=rss",
+      "https://www.indiatoday.in/world/story/donald-trump-florida-vote-republicans-ramaswamy-ad-alaska-challenge-ptag-3024484-2026-10-25?utm_source=rss"
+    ],
+    "posted_at": "2026-10-24T23:48:43+00:00",
+    "dry_run": false
   }
 ]
