@@ -2835,5 +2835,18 @@
     ],
     "posted_at": "2026-10-24T19:49:51+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Houthi attack shrapnel falls in Mecca and Medina; Paris museums shut amid protests; Ras Al Khaimah beaches closed after oil spill; India advisory for Umrah pilgrims over flight cancellations",
+    "class": "B",
+    "region": "WORLD",
+    "links": [
+      "https://www.ndtv.com/world-news/saudi-says-shrapnel-fell-in-mecca-medina-after-houthi-attack-12231192#publisher=newsstand",
+      "https://www.ndtv.com/world-news/mona-lisa-off-limits-as-louvre-other-museums-across-paris-shut-amid-protests-12231331#publisher=newsstand",
+      "https://www.ndtv.com/world-news/uaes-ras-al-khaimah-shuts-all-beaches-after-oil-spill-in-neighbouring-cities-12231310#publisher=newsstand",
+      "https://www.ndtv.com/india-news/india-issues-fresh-advisory-for-umrah-pilgrims-in-saudi-arabia-12231410#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-24T20:16:01+00:00",
+    "dry_run": false
   }
 ]
