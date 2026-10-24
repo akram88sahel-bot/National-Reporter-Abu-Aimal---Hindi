@@ -2632,5 +2632,17 @@
     ],
     "posted_at": "2026-10-24T03:29:30+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "FSSAI suspends sweet shop licences in Hyderabad; UP announces 17,735 teacher vacancies; Border situation stable in Arunachal Pradesh",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.thehindu.com/news/cities/Hyderabad/ahead-of-deepavali-fssai-licences-of-three-hyderabad-sweet-shops-suspended-1035-kg-food-products-seized/article71616708.ece",
+      "https://www.ndtv.com/education/up-tgt-recruitment-2026-notification-for-17-735-vacancies-out-registration-begins-today-exam-in-december-otr-mandatory-12228492#publisher=newsstand",
+      "https://www.indiatoday.in/india/story/india-china-faceoff-arunachal-border-taksing-sensitive-itbp-chief-remark-3023985-2026-10-24?utm_source=rss"
+    ],
+    "posted_at": "2026-10-24T04:58:56+00:00",
+    "dry_run": false
   }
 ]
