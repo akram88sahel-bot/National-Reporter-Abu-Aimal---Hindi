@@ -2884,5 +2884,16 @@
     ],
     "posted_at": "2026-10-24T22:52:49+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Car rams into lorry near Huzurabad; Musk claims Ukraine misused Starlink",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/two-youths-killed-four-injured-as-car-rams-into-lorry-on-nh-563-near-huzurabad/article71619903.ece",
+      "https://www.indiatoday.in/world/story/musk-accuses-ukraine-of-using-starlink-for-offensive-drone-strikes-as-service-returns-to-normal-3024480-2026-10-25?utm_source=rss"
+    ],
+    "posted_at": "2026-10-24T23:15:18+00:00",
+    "dry_run": false
   }
 ]
