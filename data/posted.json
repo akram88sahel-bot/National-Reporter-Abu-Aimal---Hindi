@@ -2776,5 +2776,16 @@
     ],
     "posted_at": "2026-10-24T14:56:02+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "haryana_cm_slams_congress_rally; houthis_attack_saudi_facilities",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/haryana-chief-minister-nayab-singh-saini-congress-india-bloc-november-1-rally-1984-riots-anniversary-3024420-2026-10-24?utm_source=rss",
+      "https://www.indiatoday.in/world/story/yemens-houthis-say-they-attacked-dammam-and-riyadh-airports-saudi-aramco-facility-oil-refinery-3024437-2026-10-24?utm_source=rss"
+    ],
+    "posted_at": "2026-10-24T17:00:04+00:00",
+    "dry_run": false
   }
 ]
