@@ -2799,5 +2799,16 @@
     ],
     "posted_at": "2026-10-24T17:20:44+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "France anti-government protests and clashes; Jaipur panchayat polls clash over fake voting",
+    "class": "B",
+    "region": "WORLD",
+    "links": [
+      "https://www.indiatoday.in/world/story/france-unrest-protests-march-anti-government-demonstrations-rising-living-costs-economy-emmanuel-macron-paris-violence-3024469-2026-10-24?utm_source=rss",
+      "https://www.indiatoday.in/cities/jaipur/story/rajasthan-panchayat-elections-fake-voting-allegations-jaipur-maujamabad-clash-3024456-2026-10-24?utm_source=rss"
+    ],
+    "posted_at": "2026-10-24T19:03:31+00:00",
+    "dry_run": false
   }
 ]
