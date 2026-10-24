@@ -2619,5 +2619,18 @@
     ],
     "posted_at": "2026-10-24T02:03:02+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "First Russian diesel tanker departs for US; NEET PG round 1 provisional allotment list released; US intel warns of Iranian plots against diplomats; Twin quakes hit Vanuatu Islands",
+    "class": "B",
+    "region": "WORLD",
+    "links": [
+      "https://www.ndtv.com/world-news/first-tanker-carrying-russian-diesel-sets-sail-for-us-under-donald-trump-vladimir-putin-deal-12228241#publisher=newsstand",
+      "https://www.indiatoday.in/education-today/news/story/neet-pg-2026-counselling-round-1-seat-allotment-provisional-list-released-mcc-nic-in-final-result-3023961-2026-10-24?utm_source=rss",
+      "https://www.indiatoday.in/world/video/us-intel-warns-of-iran-plotting-against-us-officials-as-middle-east-war-escalates-ytvd-3023965-2026-10-24?utm_source=rss",
+      "https://www.indiatoday.in/world/story/72-magnitude-earthquake-strikes-vanuatu-islands-region-an-archipelago-in-the-south-pacific-ocean-3023958-2026-10-24?utm_source=rss"
+    ],
+    "posted_at": "2026-10-24T03:29:30+00:00",
+    "dry_run": false
   }
 ]
