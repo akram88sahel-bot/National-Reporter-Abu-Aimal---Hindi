@@ -2644,5 +2644,18 @@
     ],
     "posted_at": "2026-10-24T04:58:56+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "HYDRAA removes illegal pipelines at Sunnam Cheruvu; US FDA issues observations to Gland Pharma near Hyderabad; Clashes and tear gas firing in Arunachal dam protest; UP secondary school teacher recruitment announced",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/hydraa-operation-unearths-illegal-extraction-of-water-from-sunnam-cheruvu/article71619114.ece",
+      "https://www.thehindu.com/business/Industry/us-fda-issues-four-observations-to-gland-pharma-formulation-facility-near-hyderabad/article71616791.ece",
+      "https://www.indiatoday.in/india/story/arunachal-upper-multipurpose-project-protest-four-women-injured-police-clash-3023976-2026-10-24?utm_source=rss",
+      "https://www.indiatoday.in/education-today/news/story/up-teacher-recruitment-2026-20382-tgt-headmaster-and-principal-vacancies-dates-exam-schedule-3024010-2026-10-24?utm_source=rss"
+    ],
+    "posted_at": "2026-10-24T06:01:00+00:00",
+    "dry_run": false
   }
 ]
