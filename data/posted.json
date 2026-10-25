@@ -2963,5 +2963,17 @@
     ],
     "posted_at": "2026-10-25T08:20:53+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Delhi HC backs uniform cash aid for EWS students; BMC issues pollution guidelines in Mumbai; Assam announces vacancies across six departments",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/law-news/story/delhi-high-court-upholds-ews-student-uniform-cash-transfer-policy-ptag-3024624-2026-10-25?utm_source=rss",
+      "https://www.ndtv.com/india-news/mumbais-air-quality-worsens-as-dust-traffic-construction-fuel-smog-12233007#publisher=newsstand",
+      "https://www.ndtv.com/education/assam-announces-5-734-vacancies-across-six-departments-recruitment-to-begin-on-february-1-12233069#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-25T10:00:11+00:00",
+    "dry_run": false
   }
 ]
