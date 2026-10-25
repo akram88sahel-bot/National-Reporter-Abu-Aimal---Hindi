@@ -2987,5 +2987,17 @@
     ],
     "posted_at": "2026-10-25T10:23:23+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Telangana H1 revenue receipts fall below expectations; Clash and lathicharge over RSS march in Jalgaon; Expelled MLA Anant Singh attacks JDU leadership",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/telanganas-h1-revenue-below-expectations-as-expenditure-remains-high/article71622829.ece",
+      "https://www.indiatoday.in/cities/other-cities/story/maharashtra-jalgaon-kingaon-rss-route-march-mosque-opposition-stone-thrown-lathicharge-dussehra-tension-3024658-2026-10-25?utm_source=rss",
+      "https://www.indiatoday.in/india/story/anant-singh-expulsion-mokama-mla-attacks-jdu-hints-at-forming-own-party-3024539-2026-10-25?utm_source=rss"
+    ],
+    "posted_at": "2026-10-25T10:56:45+00:00",
+    "dry_run": false
   }
 ]
