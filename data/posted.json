@@ -3011,5 +3011,18 @@
     ],
     "posted_at": "2026-10-25T11:58:13+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Europe anti government protests and clashes; Op Trident Northeast drug cartel raids; Delhi government schools first aid facilities; IndiGo flights shift to Navi Mumbai airport",
+    "class": "B",
+    "region": "WORLD",
+    "links": [
+      "https://www.indiatoday.in/world/video/europe-protests-clashes-in-france-demonstrations-in-italy-and-unrest-in-albania-ytvd-3024751-2026-10-25?utm_source=rss",
+      "https://www.indiatoday.in/india/story/govt-operation-trident-hits-transnational-drug-cartel-38-sites-three-northeast-states-raided-rs-100-crore-hawala-trail-exposed-3024712-2026-10-25?utm_source=rss",
+      "https://www.indiatoday.in/cities/delhi/story/delhi-government-schools-first-aid-facilities-1086-campuses-ptag-3024740-2026-10-25?utm_source=rss",
+      "https://www.indiatoday.in/india/story/indigo-navi-mumbai-12-daily-international-flights-csmia-february-2027-3024730-2026-10-25?utm_source=rss"
+    ],
+    "posted_at": "2026-10-25T13:06:51+00:00",
+    "dry_run": false
   }
 ]
