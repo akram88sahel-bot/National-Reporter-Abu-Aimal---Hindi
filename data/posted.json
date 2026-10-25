@@ -2928,5 +2928,17 @@
     ],
     "posted_at": "2026-10-25T03:01:49+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Trump warns of strike on Iran; Trump casts midterm vote in Florida; JEE Main 2027 registration begins",
+    "class": "B",
+    "region": "WORLD",
+    "links": [
+      "https://www.indiatoday.in/world/us-news/story/us-iran-tensions-trump-sunday-strike-diplomatic-deal-3024504-2026-10-25?utm_source=rss",
+      "https://www.indiatoday.in/world/us-news/story/donald-trump-melania-trump-early-voting-florida-us-midterm-elections-3024500-2026-10-25?utm_source=rss",
+      "https://www.indiatoday.in/education-today/news/story/jee-main-2027-january-session-registration-begins-check-important-dates-exam-pattern-here-3024502-2026-10-25?utm_source=rss"
+    ],
+    "posted_at": "2026-10-25T03:32:15+00:00",
+    "dry_run": false
   }
 ]
