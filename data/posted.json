@@ -2999,5 +2999,17 @@
     ],
     "posted_at": "2026-10-25T10:56:45+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Protest over egg thrown near Durga procession in Hyderabad; Violent riots across France and Europe over cost of living; PM Modi visits Odisha to inaugurate RBI data centre",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.indiatoday.in/cities/hyderabad/story/hyderabad-durga-idol-immersion-procession-egg-thrown-one-detained-3024732-2026-10-25?utm_source=rss",
+      "https://www.indiatoday.in/world/video/europe-unrest-violent-france-riots-curfews-contagion-across-eu-ytvd-3024709-2026-10-25?utm_source=rss",
+      "https://www.ndtv.com/india-news/pm-modi-arrives-in-odisha-to-inaugurate-rbis-data-centre-12233478#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-25T11:58:13+00:00",
+    "dry_run": false
   }
 ]
