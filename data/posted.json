@@ -3035,5 +3035,16 @@
     ],
     "posted_at": "2026-10-25T13:58:50+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "voter id cards found madhya pradesh; earthquake hindu kush afghanistan",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/thousands-voter-id-cards-found-narmada-riverbank-mp-khargone-congress-demands-fir-3024810-2026-10-25?utm_source=rss",
+      "https://www.indiatoday.in/world/story/52-magnitude-earthquake-hits-afghanistans-hindu-kush-region-3024910-2026-10-25?utm_source=rss"
+    ],
+    "posted_at": "2026-10-25T20:54:04+00:00",
+    "dry_run": false
   }
 ]
