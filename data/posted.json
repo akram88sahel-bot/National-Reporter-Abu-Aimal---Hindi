@@ -2975,5 +2975,17 @@
     ],
     "posted_at": "2026-10-25T10:00:11+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "judge ravi kumar diwakar transferred to up family court; ex ias officer divya mittal announces candidates for up polls; mla anant singh attacks jdu after expulsion",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.ndtv.com/india-news/judge-who-awarded-23-death-sentences-in-6-months-transferred-to-up-family-court-12233111#publisher=newsstand",
+      "https://www.ndtv.com/india-news/candidates-in-all-403-seats-ex-ias-officer-divya-mittals-up-poll-pitch-12233085#publisher=newsstand",
+      "https://www.ndtv.com/india-news/bihar-politics-nitish-kumar-is-gone-so-is-jdu-mla-anant-singh-after-expulsion-12233052#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-25T10:23:23+00:00",
+    "dry_run": false
   }
 ]
