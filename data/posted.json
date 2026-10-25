@@ -2917,5 +2917,16 @@
     ],
     "posted_at": "2026-10-25T02:28:26+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "New York Archdiocese abuse settlement; Israel post-war election polls",
+    "class": "B",
+    "region": "WORLD",
+    "links": [
+      "https://www.indiatoday.in/world/story/new-york-archdiocese-800-million-settlement-1300-clergy-abuse-survivors-3024496-2026-10-25?utm_source=rss",
+      "https://www.indiatoday.in/world/story/israel-election-2026-benjamin-netanyahu-faces-tight-contest-from-gadi-eisenkot-in-post-war-polls-3024489-2026-10-25?utm_source=rss"
+    ],
+    "posted_at": "2026-10-25T03:01:49+00:00",
+    "dry_run": false
   }
 ]
