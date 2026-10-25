@@ -2940,5 +2940,16 @@
     ],
     "posted_at": "2026-10-25T03:32:15+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Serbia student movement election challenge; US intelligence warning on Iranian plots",
+    "class": "B",
+    "region": "WORLD",
+    "links": [
+      "https://www.indiatoday.in/world/story/serbia-election-student-list-challenges-aleksandar-vucic-protest-3024509-2026-10-25?utm_source=rss",
+      "https://www.indiatoday.in/world/story/iran-plots-against-us-personnel-reach-advanced-stages-intelligence-memo-warns-3024498-2026-10-25?utm_source=rss"
+    ],
+    "posted_at": "2026-10-25T04:25:11+00:00",
+    "dry_run": false
   }
 ]
