@@ -3046,5 +3046,18 @@
     ],
     "posted_at": "2026-10-25T20:54:04+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Arrest of 14 rice millers in Telangana; Ghulam Nabi Azad rejects Farooq Abdullah Kashmir remark; Israelis fly home to vote in election; Maria Corina Machado returns to Venezuela",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/14-rice-millers-arrested-over-diversion-of-fine-variety-rice-in-telangana/article71623299.ece",
+      "https://www.indiatoday.in/india/story/farooq-abdullah-pakistan-remark-ghulam-nabi-azad-jammu-kashmir-3024832-2026-10-25?utm_source=rss",
+      "https://www.indiatoday.in/world/story/thousands-of-israelis-fly-home-to-vote-in-october-27-election-why-netanyahus-likud-party-is-worried-3024898-2026-10-25?utm_source=rss",
+      "https://www.indiatoday.in/world/story/maria-corina-machado-returns-venezuela-trump-delcy-rodriguez-elections-3024925-2026-10-26?utm_source=rss"
+    ],
+    "posted_at": "2026-10-25T21:19:39+00:00",
+    "dry_run": false
   }
 ]
