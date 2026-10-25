@@ -3059,5 +3059,16 @@
     ],
     "posted_at": "2026-10-25T21:19:39+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "TG-iPASS portal restoration after cyberattack; Arrest of alleged Kuki cadres in Manipur",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/tg-ipass-portal-to-be-restored-in-two-days-after-cyberattack/article71623629.ece",
+      "https://www.ndtv.com/india-news/17-men-claiming-to-be-kuki-cadres-arrested-arms-seized-in-manipur-12234629#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-25T21:54:36+00:00",
+    "dry_run": false
   }
 ]
