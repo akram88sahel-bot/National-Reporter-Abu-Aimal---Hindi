@@ -48,6 +48,7 @@ FEEDS = [
     ("NDTV", "https://feeds.feedburner.com/ndtvnews-india-news"),
     ("India Today", "https://www.indiatoday.in/rss/home"),
     ("Indian Express", "https://news.google.com/rss/search?q=site:indianexpress.com+(Hyderabad+OR+Telangana+OR+India+OR+world)&hl=en-IN&gl=IN&ceid=IN:en"),
+    ("Indian Express", "https://news.google.com/rss/search?q=site:indianexpress.com+(protest+OR+politics+OR+election+OR+government+OR+court+OR+parliament+OR+agitation)&hl=en-IN&gl=IN&ceid=IN:en"),
     # Indian Express feeds currently return 403 to automated requests.
     # Add a working feed URL here when available.
 ]
@@ -591,6 +592,7 @@ AI_DAILY_LIMIT = int(os.getenv("AI_DAILY_LIMIT", "18"))
 IST_TZ = timezone(timedelta(hours=5, minutes=30))
 
 HYD_WORDS = re.compile(r"hyderabad|telangana|secunderabad|rangareddy|warangal|karimnagar|nizamabad|khammam|medak|nalgonda|ghmc|revanth|brs|kcr|telangana", re.I)
+PROTEST_WORDS = re.compile(r"protest|agitation|rally|march|bandh|dharna|strike|sit-in|demonstrat|stir", re.I)
 POLITICS_WORDS = re.compile(r"protest|march|agitation|rally|bandh|election|\bsir\b|vote|assembly|parliament|supreme court|high court|governor|minister|cabinet|congress|bjp|opposition|bloc|chief minister|\bcm\b|tribunal|policy|government|govt|petition|verdict|ruling", re.I)
 CRIME_WORDS = re.compile(r"arrest|murder|killed|\bdies\b|\bdead\b|theft|robbery|fraud|rape|drug|mdma|ganja|cyber|accident|stabbed|burns|suicide|loot|cheat|molest|kidnap", re.I)
 
@@ -718,7 +720,7 @@ DIGEST_MIN = 2           # a card needs at least 2 complete stories
 DIGEST_MAX = 5           # and at most 5
 
 DIGEST_PROMPT = """You are the editor of a Hyderabad/Telangana breaking-news Facebook page. You get a numbered list of news items (outlet, headline, summary, article text). Choose the 2 to 5 most important items that can each be written as a COMPLETE short story, and write each one in Hindi and Roman Urdu.
-Importance order: politics, protests, government or court decisions with public impact, and MAJOR national or world incidents come first. Hyderabad and Telangana items are preferred when they are equally important. Routine crime, single arrests, petty theft, fraud, sports, entertainment, celebrity, opinion, features and shopping are NOT important.
+Importance order: protests and agitations come first, then politics, government or court decisions with public impact, and MAJOR national or world incidents. For a protest or agitation, give the full picture in the story: who is protesting, where, why, and what happened or was said. Hyderabad and Telangana items are preferred when they are equally important. Routine crime, single arrests, petty theft, fraud, sports, entertainment, celebrity, opinion, features and shopping are NOT important.
 STRICT RULES:
 1. Use ONLY facts in the provided items. Never invent names, numbers, causes, places, or quotes.
 2. Each story must clearly state WHO, WHAT, WHERE and WHY/CONTEXT in one short sentence. If an item does not give all four, mark it "complete": false.
@@ -760,10 +762,12 @@ def run_digest():
     remaining = [it for it in remaining if not SOFT_WORDS.search(f'{it["title"]} {it["summary"]}')]
     def rank2(it):
         text = f'{it["title"]} {it["summary"]}'
+        protest = 0 if PROTEST_WORDS.search(text) else 1
         pol = 0 if POLITICS_WORDS.search(text) else 1
+        ie = 0 if it.get("outlet") == "Indian Express" else 1
         hyd = 0 if HYD_WORDS.search(text) else 1
         crime = 1 if CRIME_WORDS.search(text) and not POLITICS_WORDS.search(text) else 0
-        return (crime, pol, hyd)
+        return (crime, protest, pol, ie, hyd)
     remaining.sort(key=rank2)
     unique, titles = [], set()
     for it in remaining:
