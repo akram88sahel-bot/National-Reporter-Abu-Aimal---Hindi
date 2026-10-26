@@ -37,7 +37,7 @@ import feedparser
 import requests
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from card import render_card  # noqa: E402
+from card import render_card, render_digest_card  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 POSTED_FILE = ROOT / "data" / "posted.json"
@@ -433,6 +433,29 @@ def fetch_article_photo(url):
 
 
 
+def fetch_pixabay(query):
+    """Free stock photo from Pixabay (needs PIXABAY_API_KEY). Returns a PIL image or None."""
+    key = os.getenv("PIXABAY_API_KEY", "")
+    if not key or not query:
+        return None
+    try:
+        r = requests.get("https://pixabay.com/api/", params={"key": key, "q": query, "image_type": "photo",
+                         "orientation": "horizontal", "safesearch": "true", "min_width": 1000, "per_page": 5}, timeout=20)
+        r.raise_for_status()
+        hits = r.json().get("hits", [])
+        if not hits:
+            log(f"Pixabay: no photo for '{query[:40]}'")
+            return None
+        ir = requests.get(hits[0]["largeImageURL"], timeout=20)
+        ir.raise_for_status()
+        from PIL import Image
+        img = Image.open(io.BytesIO(ir.content)).convert("RGB")
+        return img if img.width >= 600 else None
+    except Exception as e:
+        log(f"Pixabay skipped: {str(e)[:100]}")
+        return None
+
+
 def publish(data, card_path):
     """Publish the black-and-gold card. Text lives on the image; caption is only the source line."""
     page_id = os.environ["FB_PAGE_ID"]
@@ -803,7 +826,7 @@ def run_single():
 SOFT_WORDS = re.compile(r"cricket|t20|\bmatch\b|\bipl\b|football|tennis|movie|film|trailer|actor|actress|celebrity|box office|recipe|horoscope|festive|festival sale|discount|offer|smartphone|review|launch|\bpyre\b|sculpture|feature|opinion|explainer|how to|tips", re.I)
 DIGEST_POOL = 12          # headlines sent to the AI in one call
 DIGEST_MIN = 1           # a card needs at least 1 complete story (a single story gets 3 bullets)
-DIGEST_MAX = 5           # and at most 5
+DIGEST_MAX = 3           # at most 3 stories per card
 
 DIGEST_PROMPT = """You are the editor of a Hyderabad/Telangana breaking-news Facebook page. You get a numbered list of news items (outlet, headline, summary, article text). Choose the 2 to 5 most important items that can each be written as a COMPLETE short story, and write each one in Hindi and Roman Urdu.
 Importance order: Hyderabad and Telangana items come first. Then India politics, protests and agitations, government or court decisions with public impact. World news comes last, unless it is a MAJOR world incident. For a protest or agitation, give the full picture in the story: who is protesting, where, why, and what happened or was said. Hyderabad and Telangana items are preferred when they are equally important. Routine crime, single arrests, petty theft, fraud, sports, entertainment, celebrity, opinion, features and shopping are NOT important.
@@ -813,7 +836,7 @@ STRICT RULES:
 3. No filler such as "more details awaited". Never name any news outlet or source.
 4. Hindi in simple Devanagari; Roman Urdu in simple Latin letters. Both carry the same facts, one bullet per story.
 5. Keep each bullet short (one sentence).
-Return JSON: {"stories": [{"id": item id, "important": true or false, "complete": true or false, "event_key": "short English description", "region": "HYDERABAD" or "TELANGANA" or "INDIA" or "WORLD", "hindi_points": ["3 short Hindi sentences: who and what; where; why or context"], "roman_points": ["3 short simple Roman Urdu sentences with the same facts"], "english": "one short complete English sentence with who, what, where and why", "hindi": "one Hindi sentence", "roman_urdu": "one Roman Urdu sentence in simple everyday Urdu (plain common words, not formal or heavy Urdu; keep English words like police, position, government, election, court where people normally use them)"}]}"""
+Return JSON: {"stories": [{"id": item id, "important": true or false, "complete": true or false, "event_key": "short English description", "region": "HYDERABAD" or "TELANGANA" or "INDIA" or "WORLD", "hindi_points": ["3 short Hindi sentences: who and what; where; why or context"], "roman_points": ["3 short simple Roman Urdu sentences with the same facts"], "photo_query": "2 to 3 English words for a free stock photo search, e.g. farmers protest delhi", "english": "one short complete English sentence with who, what, where and why", "hindi": "one Hindi sentence", "roman_urdu": "one Roman Urdu sentence in simple everyday Urdu (plain common words, not formal or heavy Urdu; keep English words like police, position, government, election, court where people normally use them)"}]}"""
 
 
 def _item_for_prompt(it):
@@ -945,13 +968,19 @@ def run_digest():
         "sources": [],
     }
     card_path = Path("/tmp/nr_card.png")
-    photo = None
-    for _, it in chosen:  # first story (in priority order) that has a usable photo
+    story_cards = []
+    for idx, (st, it) in enumerate(chosen):
+        # Photo is optional: the article's own photo if usable, otherwise a Pixabay photo, otherwise none
         photo = fetch_article_photo(it["link"])
-        if photo is not None:
-            break
-    render_card(card_data["headline"], card_data["hindi"], card_data["roman_urdu"], "", card_path, photo=photo)
-    log(f"Card photo: {'yes' if photo is not None else 'none (plain card)'}")
+        src = "article"
+        if photo is None:
+            photo = fetch_pixabay(st.get("photo_query") or it["title"])
+            src = "pixabay"
+        story_cards.append({"hindi": hp if single else [st["hindi"]],
+                            "roman": rp if single else [roman[idx]],
+                            "photo": photo})
+        log(f"Story {idx + 1} photo: {src if photo is not None else 'none'}")
+    render_digest_card(story_cards, card_path)
     if DRY_RUN:
         log("DRY RUN - would publish card:\n" + post_text(card_data))
     else:

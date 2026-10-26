@@ -156,3 +156,84 @@ def render_card(headline, hindi, roman_urdu, source, out_path, photo=None):
 
     img.save(out_path, "PNG", optimize=True)
     return out_path
+
+
+def fit_photo(img, w, h):
+    """Crop a photo to exactly w x h, keeping the upper part (where faces usually are)."""
+    scale = max(w / img.width, h / img.height)
+    rw, rh = int(img.width * scale) + 1, int(img.height * scale) + 1
+    resized = img.resize((rw, rh))
+    left = (rw - w) // 2
+    top = int((rh - h) * 0.25)
+    return resized.crop((left, top, left + w, top + h))
+
+
+def render_digest_card(stories, out_path):
+    """Per-story layout: each story has its own photo (optional) beside its bullets.
+
+    stories: list of {"hindi": [..], "roman": [..], "photo": PIL image or None}
+    """
+    img = Image.new("RGB", (W, H), BLACK)
+    draw = ImageDraw.Draw(img)
+    draw.rectangle([30, 30, W - 30, H - 30], outline=GOLD_DARK, width=3)
+    logo = _logo(170)
+    img.paste(logo, (MARGIN, MARGIN))
+    font_head = _font("NotoSans.ttf", 46, "Bold")
+    head_x = MARGIN + logo.width + 36
+    draw.text((head_x, MARGIN + 6), "LATEST NEWS", font=font_head, fill=GOLD)
+    top = MARGIN + logo.height + 26
+    draw.rectangle([MARGIN, top, W - MARGIN, top + 4], fill=GOLD)
+    body_top = top + 26
+
+    credit_font = _font("NotoSans.ttf", 36, "Bold")
+    credit = "ABU AIMAL & AIMAL AKRAM"
+    small_logo = _logo(64)
+    credit_w = draw.textlength(credit, font=credit_font)
+    group_w = small_logo.width + 18 + credit_w
+    group_x = (W - group_w) / 2
+    credit_y = H - 118
+    img.paste(small_logo, (int(group_x), credit_y - 6))
+    draw.text((group_x + small_logo.width + 18, credit_y), credit, font=credit_font, fill=GOLD)
+    bottom_rule = H - 160
+    draw.rectangle([MARGIN, bottom_rule, W - MARGIN, bottom_rule + 4], fill=GOLD)
+    body_bottom = bottom_rule - 24
+
+    n = len(stories)
+    gap = 28
+    photo_w, photo_h = 330, 210
+    text_w_photo = W - 2 * MARGIN - photo_w - 30
+    text_w_full = W - 2 * MARGIN
+
+    size = 36
+    while True:
+        f_hi = _font("NotoSansDevanagari.ttf", size, "Bold")
+        f_ru = _font("NotoSans.ttf", size - 4, "Medium")
+        heights = []
+        for s_ in stories:
+            tw = text_w_photo if s_["photo"] is not None else text_w_full
+            h_text = _bullets_height(draw, s_["hindi"], f_hi, tw, 8) + _bullets_height(draw, s_["roman"], f_ru, tw, 6)
+            heights.append(max(h_text, photo_h if s_["photo"] is not None else 0))
+        total = sum(heights) + gap * (n - 1)
+        if body_top + total <= body_bottom or size <= 22:
+            break
+        size -= 2
+
+    y = body_top
+    for i, s_ in enumerate(stories):
+        if s_["photo"] is not None:
+            px = W - MARGIN - photo_w
+            img.paste(fit_photo(s_["photo"], photo_w, photo_h), (px, int(y)))
+            draw.rectangle([px, y, px + photo_w, y + photo_h], outline=GOLD, width=3)
+            tw = text_w_photo
+        else:
+            tw = text_w_full
+        yy = _draw_bullets(draw, y, s_["hindi"], f_hi, tw, 8)
+        _draw_bullets(draw, yy + 4, s_["roman"], f_ru, tw, 6)
+        y += heights[i]
+        if i < n - 1:
+            sep = int(y + gap / 2)
+            draw.line([(MARGIN + 60, sep), (W - MARGIN - 60, sep)], fill=GOLD_DARK, width=2)
+            y += gap
+
+    img.save(out_path, "PNG", optimize=True)
+    return out_path
