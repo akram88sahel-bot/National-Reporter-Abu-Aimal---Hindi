@@ -58,12 +58,12 @@ jobs:
           git config user.name "breaking-news-bot"
           git config user.email "bot@users.noreply.github.com"
           mkdir -p /tmp/state
-          cp data/posted.json data/seen.json data/ai_usage.json /tmp/state/
+          cp data/posted.json data/seen.json data/ai_usage.json data/ig_pending.json /tmp/state/
           for i in 1 2 3 4 5; do
             git fetch -q origin main
             git reset -q --hard origin/main
-            cp /tmp/state/posted.json /tmp/state/seen.json /tmp/state/ai_usage.json data/
-            git add data/posted.json data/seen.json data/ai_usage.json
+            cp /tmp/state/posted.json /tmp/state/seen.json /tmp/state/ai_usage.json /tmp/state/ig_pending.json data/
+            git add data/posted.json data/seen.json data/ai_usage.json data/ig_pending.json
             git diff --cached --quiet && exit 0
             git commit -qm "Update posted record"
             git push -q origin HEAD:main && exit 0

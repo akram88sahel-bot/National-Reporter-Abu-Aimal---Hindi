@@ -386,22 +386,42 @@ def page_token():
 
 
 def fetch_article_photo(url):
-    """Main photo of an article (its og:image), or None. Used only as the card photo strip."""
+    """Main photo of an article (its og:image), or None. Logs the reason when no photo is used."""
     headers = {"User-Agent": "Mozilla/5.0 (compatible; NRBot/1.0)"}
     try:
         r = requests.get(url, headers=headers, timeout=20, allow_redirects=True)
-        m = (re.search(r'<meta[^>]+property=["\']og:image["\'][^>]*content=["\']([^"\']+)', r.text)
-             or re.search(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]*property=["\']og:image["\']', r.text))
-        if not m:
-            return None
-        ir = requests.get(_html.unescape(m.group(1)), headers=headers, timeout=20)
+    except Exception as e:
+        log(f"Photo skipped: article request failed ({str(e)[:80]})")
+        return None
+    if r.status_code != 200:
+        log(f"Photo skipped: article returned HTTP {r.status_code} ({r.url[:80]})")
+        return None
+    tag = None
+    for m in re.finditer(r"<meta[^>]+>", r.text, re.I):
+        if "og:image" in m.group(0).lower():
+            tag = m.group(0)
+            break
+    if tag is None:
+        log(f"Photo skipped: no og:image on page ({r.url[:80]})")
+        return None
+    c = re.search(r'content=["\']([^"\']+)', tag)
+    if not c:
+        log("Photo skipped: og:image has no content")
+        return None
+    img_url = _html.unescape(c.group(1))
+    try:
+        ir = requests.get(img_url, headers=headers, timeout=20)
         ir.raise_for_status()
         from PIL import Image
         img = Image.open(io.BytesIO(ir.content)).convert("RGB")
-        return img if img.width >= 600 and img.height >= 300 else None
     except Exception as e:
-        log(f"No article photo ({str(e)[:80]})")
+        log(f"Photo skipped: image download/decode failed ({str(e)[:80]})")
         return None
+    if img.width < 600 or img.height < 300:
+        log(f"Photo skipped: too small ({img.width}x{img.height})")
+        return None
+    return img
+
 
 
 def publish(data, card_path):
@@ -426,28 +446,19 @@ def publish(data, card_path):
     return result
 
 
-def publish_instagram(page_id, token, photo_id, caption):
-    """Post the same card to the Instagram account linked to the Facebook Page.
+IG_PENDING_FILE = ROOT / "data" / "ig_pending.json"
+IG_MAX_ATTEMPTS = 8
 
-    Uses the image URL Facebook already created for the published photo, so no extra file is stored.
-    """
-    if not photo_id:
-        raise RuntimeError("no Facebook photo id")
-    r = requests.get(f"{GRAPH}/{photo_id}", params={"fields": "images", "access_token": token}, timeout=30)
-    r.raise_for_status()
-    images = r.json().get("images") or []
-    if not images:
-        raise RuntimeError("no image URL from Facebook")
-    image_url = images[0]["source"]  # largest size first
+
+def _ig_publish_url(page_id, token, image_url, caption):
     r = requests.get(f"{GRAPH}/{page_id}", params={"fields": "instagram_business_account", "access_token": token}, timeout=30)
     r.raise_for_status()
     ig = (r.json().get("instagram_business_account") or {}).get("id")
     if not ig:
         raise RuntimeError("no Instagram account linked to this Page")
-    r = requests.post(f"{GRAPH}/{ig}/media",
-                      data={"image_url": image_url, "caption": caption, "access_token": token}, timeout=60)
+    r = requests.post(f"{GRAPH}/{ig}/media", data={"image_url": image_url, "caption": caption, "access_token": token}, timeout=60)
     if r.status_code != 200:
-        raise RuntimeError(f"Instagram container failed: {r.status_code} {r.text}")
+        raise RuntimeError(f"Instagram container failed: {r.status_code} {r.text[:300]}")
     creation_id = r.json()["id"]
     # Instagram needs time to fetch and process the image before it can be published
     for _ in range(20):
@@ -457,15 +468,59 @@ def publish_instagram(page_id, token, photo_id, caption):
         if status == "FINISHED":
             break
         if status == "ERROR":
-            raise RuntimeError(f"Instagram could not process image: {r.text}")
+            raise RuntimeError(f"Instagram could not process image: {r.text[:300]}")
     else:
         raise RuntimeError("Instagram image not ready after 60s")
-    r = requests.post(f"{GRAPH}/{ig}/media_publish",
-                      data={"creation_id": creation_id, "access_token": token}, timeout=60)
+    r = requests.post(f"{GRAPH}/{ig}/media_publish", data={"creation_id": creation_id, "access_token": token}, timeout=60)
     if r.status_code != 200:
-        raise RuntimeError(f"Instagram publish failed: {r.status_code} {r.text}")
+        raise RuntimeError(f"Instagram publish failed: {r.status_code} {r.text[:300]}")
     log(f"Instagram published: {r.json()}")
     return r.json()
+
+
+def publish_instagram(page_id, token, photo_id, caption):
+    """Post the card to Instagram. If that fails, queue it so a later run retries it."""
+    if not photo_id:
+        raise RuntimeError("no Facebook photo id")
+    r = requests.get(f"{GRAPH}/{photo_id}", params={"fields": "images", "access_token": token}, timeout=30)
+    r.raise_for_status()
+    images = r.json().get("images") or []
+    if not images:
+        raise RuntimeError("no image URL from Facebook")
+    image_url = images[0]["source"]  # largest size first
+    try:
+        return _ig_publish_url(page_id, token, image_url, caption)
+    except Exception as e:
+        queue = _load_json(IG_PENDING_FILE, [])
+        queue.append({"image_url": image_url, "caption": caption, "attempts": 1, "last_error": str(e)[:200],
+                      "queued_at": datetime.now(timezone.utc).isoformat(timespec="seconds")})
+        _save_json(IG_PENDING_FILE, queue[-20:])
+        log(f"Instagram queued for retry: {str(e)[:200]}")
+        raise
+
+
+def retry_pending_instagram():
+    """Try queued Instagram posts again. Runs at the start of every bot run."""
+    queue = _load_json(IG_PENDING_FILE, [])
+    if not queue:
+        return
+    page_id = os.environ["FB_PAGE_ID"]
+    token = page_token()
+    keep = []
+    for e in queue:
+        try:
+            _ig_publish_url(page_id, token, e["image_url"], e["caption"])
+            log("Instagram retry succeeded")
+        except Exception as ex:
+            e["attempts"] = e.get("attempts", 0) + 1
+            e["last_error"] = str(ex)[:200]
+            if e["attempts"] < IG_MAX_ATTEMPTS:
+                keep.append(e)
+            else:
+                log(f"Instagram retry dropped after {e['attempts']} attempts: {str(ex)[:120]}")
+    _save_json(IG_PENDING_FILE, keep)
+    log(f"Instagram retry queue: {len(keep)} waiting")
+
 
 
 def posts_today(posted):
@@ -758,6 +813,10 @@ def _item_for_prompt(it):
 
 
 def run_digest():
+    try:
+        retry_pending_instagram()
+    except Exception as e:
+        log(f"Instagram retry error: {str(e)[:160]}")
     posted = load_posted()
     seen = _load_json(SEEN_FILE, {})
     if isinstance(seen, list):  # older format: plain list of links
