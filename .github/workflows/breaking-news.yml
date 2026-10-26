@@ -1,8 +1,6 @@
 name: Breaking news bot
 
 on:
-  schedule:
-    - cron: "*/30 * * * *"   # every 30 minutes, UTC (GitHub may delay runs a few minutes)
   workflow_dispatch:         # manual run button in the Actions tab
     inputs:
       photo_test:
@@ -16,6 +14,7 @@ on:
 
 permissions:
   contents: write            # needed to commit data/posted.json
+  actions: write             # needed to start the next run (self-restart chain)
 
 concurrency:
   group: breaking-news
@@ -82,3 +81,23 @@ jobs:
             sleep 5
           done
           exit 1
+
+  # Self-restart: after the bot run, wait about 25 minutes and start the next run.
+  # Stop the chain by setting repo variable CHAIN to 0 (or by disabling the workflow).
+  next:
+    needs: run
+    if: always() && vars.CHAIN != '0'
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - name: Wait, then start the next run
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CHAIN: ${{ vars.CHAIN || '1' }}
+        run: |
+          if [ "$CHAIN" != "1" ]; then echo "Chain stopped (CHAIN=$CHAIN)"; exit 0; fi
+          sleep 1500
+          curl -fsS -X POST -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/workflows/breaking-news.yml/dispatches" \
+            -d '{"ref":"main"}'
+          echo "Next run requested"
