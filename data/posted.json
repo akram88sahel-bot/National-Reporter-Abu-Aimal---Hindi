@@ -3318,5 +3318,15 @@
     ],
     "posted_at": "2026-10-26T21:56:24+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "IIIT Hyderabad road closure extension",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.thehindu.com/news/cities/Hyderabad/iiit-hyderabad-junction-road-closure-extended-for-another-three-months-from-october-27/article71626175.ece"
+    ],
+    "posted_at": "2026-10-26T23:19:03+00:00",
+    "dry_run": false
   }
 ]
