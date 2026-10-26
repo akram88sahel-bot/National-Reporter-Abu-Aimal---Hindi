@@ -6,6 +6,7 @@ bullets (Devanagari, bold), Roman Urdu bullets, and a credit line at the
 bottom with a small logo before it. All text is drawn on the image.
 """
 
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont
@@ -168,22 +169,61 @@ def fit_photo(img, w, h):
     return resized.crop((left, top, left + w, top + h))
 
 
+def _para_height(draw, items, font, max_w, gap):
+    h = 0
+    for item in items:
+        h += len(_wrap(draw, item, font, max_w)) * (font.size + gap) + 10
+    return h
+
+
+def _draw_paras(draw, x, y, items, font, max_w, gap, color):
+    for item in items:
+        for line in _wrap(draw, item, font, max_w):
+            draw.text((x, y), line, font=font, fill=color)
+            y += font.size + gap
+        y += 10
+    return y
+
+
+def _rounded_photo(photo, card, x, y, w, h, radius=18):
+    """Paste a cropped photo with rounded corners and a gold edge."""
+    crop = fit_photo(photo, w, h)
+    mask = Image.new("L", (w, h), 0)
+    ImageDraw.Draw(mask).rounded_rectangle([0, 0, w - 1, h - 1], radius=radius, fill=255)
+    card.paste(crop, (x, y), mask)
+    ImageDraw.Draw(card).rounded_rectangle([x, y, x + w, y + h], radius=radius, outline=GOLD, width=3)
+
+
 def render_digest_card(stories, out_path):
-    """Per-story layout: each story has its own photo (optional) beside its bullets.
+    """Attractive per-story card: gold banner heading, date, numbered stories, photos beside text.
 
     stories: list of {"hindi": [..], "roman": [..], "photo": PIL image or None}
     """
     img = Image.new("RGB", (W, H), BLACK)
     draw = ImageDraw.Draw(img)
     draw.rectangle([30, 30, W - 30, H - 30], outline=GOLD_DARK, width=3)
-    logo = _logo(170)
+    draw.rectangle([44, 44, W - 44, H - 44], outline=(60, 48, 22), width=1)
+
+    logo = _logo(150)
     img.paste(logo, (MARGIN, MARGIN))
-    font_head = _font("NotoSans.ttf", 46, "Bold")
-    head_x = MARGIN + logo.width + 36
-    draw.text((head_x, MARGIN + 6), "LATEST NEWS", font=font_head, fill=GOLD)
-    top = MARGIN + logo.height + 26
-    draw.rectangle([MARGIN, top, W - MARGIN, top + 4], fill=GOLD)
-    body_top = top + 26
+
+    today = datetime.now(timezone(timedelta(hours=5, minutes=30))).strftime("%d-%m-%Y")
+    f_date = _font("NotoSans.ttf", 34, "Bold")
+    f_small = _font("NotoSans.ttf", 22, "Medium")
+    dw = draw.textlength(today, font=f_date)
+    draw.text((W - MARGIN - dw, MARGIN + 6), today, font=f_date, fill=GOLD)
+    tw0 = draw.textlength("(Today)", font=f_small)
+    draw.text((W - MARGIN - tw0, MARGIN + 52), "(Today)", font=f_small, fill=GOLD_DARK)
+
+    banner_y = MARGIN + logo.height + 30
+    f_head = _font("NotoSans.ttf", 50, "Bold")
+    label = "LATEST NEWS"
+    lw = draw.textlength(label, font=f_head)
+    bx0, bx1 = W // 2 - int(lw / 2) - 60, W // 2 + int(lw / 2) + 60
+    draw.rounded_rectangle([bx0, banner_y, bx1, banner_y + 88], radius=14, fill=(24, 19, 8), outline=GOLD, width=3)
+    draw.text(((bx0 + bx1) / 2 - lw / 2, banner_y + 16), label, font=f_head, fill=GOLD)
+    draw.line([(MARGIN, banner_y + 44), (bx0 - 24, banner_y + 44)], fill=GOLD_DARK, width=3)
+    draw.line([(bx1 + 24, banner_y + 44), (W - MARGIN, banner_y + 44)], fill=GOLD_DARK, width=3)
 
     credit_font = _font("NotoSans.ttf", 36, "Bold")
     credit = "ABU AIMAL & AIMAL AKRAM"
@@ -196,13 +236,16 @@ def render_digest_card(stories, out_path):
     draw.text((group_x + small_logo.width + 18, credit_y), credit, font=credit_font, fill=GOLD)
     bottom_rule = H - 160
     draw.rectangle([MARGIN, bottom_rule, W - MARGIN, bottom_rule + 4], fill=GOLD)
-    body_bottom = bottom_rule - 24
+    body_bottom = bottom_rule - 26
+    body_top = banner_y + 88 + 30
 
     n = len(stories)
-    gap = 28
-    photo_w, photo_h = 330, 210
-    text_w_photo = W - 2 * MARGIN - photo_w - 30
-    text_w_full = W - 2 * MARGIN
+    gap = 30
+    photo_w = 330
+    photo_h = 210 if n <= 2 else 165  # three stories: shorter photos so they clear the bottom rule
+    num_w = 66
+    text_w_photo = W - 2 * MARGIN - num_w - photo_w - 30
+    text_w_full = W - 2 * MARGIN - num_w
 
     size = 36
     while True:
@@ -210,9 +253,9 @@ def render_digest_card(stories, out_path):
         f_ru = _font("NotoSans.ttf", size - 4, "Medium")
         heights = []
         for s_ in stories:
-            tw = text_w_photo if s_["photo"] is not None else text_w_full
-            h_text = _bullets_height(draw, s_["hindi"], f_hi, tw, 8) + _bullets_height(draw, s_["roman"], f_ru, tw, 6)
-            heights.append(max(h_text, photo_h if s_["photo"] is not None else 0))
+            tw_ = text_w_photo if s_["photo"] is not None else text_w_full
+            h_text = _para_height(draw, s_["hindi"], f_hi, tw_, 8) + _para_height(draw, s_["roman"], f_ru, tw_, 6)
+            heights.append(max(h_text, photo_h if s_["photo"] is not None else 44))
         total = sum(heights) + gap * (n - 1)
         if body_top + total <= body_bottom or size <= 22:
             break
@@ -220,19 +263,26 @@ def render_digest_card(stories, out_path):
 
     y = body_top
     for i, s_ in enumerate(stories):
+        draw.ellipse([MARGIN, y + 2, MARGIN + 44, y + 46], fill=GOLD)
+        f_num = _font("NotoSans.ttf", 26, "Bold")
+        draw.text((MARGIN + 22, y + 24), str(i + 1), font=f_num, fill=BLACK, anchor="mm")
+        text_x = MARGIN + num_w
         if s_["photo"] is not None:
             px = W - MARGIN - photo_w
-            img.paste(fit_photo(s_["photo"], photo_w, photo_h), (px, int(y)))
-            draw.rectangle([px, y, px + photo_w, y + photo_h], outline=GOLD, width=3)
-            tw = text_w_photo
+            _rounded_photo(s_["photo"], img, px, int(y), photo_w, photo_h)
+            draw = ImageDraw.Draw(img)
+            tw_ = text_w_photo
         else:
-            tw = text_w_full
-        yy = _draw_bullets(draw, y, s_["hindi"], f_hi, tw, 8)
-        _draw_bullets(draw, yy + 4, s_["roman"], f_ru, tw, 6)
+            tw_ = text_w_full
+        yy = _draw_paras(draw, text_x, y, s_["hindi"], f_hi, tw_, 8, GOLD)
+        _draw_paras(draw, text_x, yy + 2, s_["roman"], f_ru, tw_, 6, (235, 235, 235))
         y += heights[i]
         if i < n - 1:
-            sep = int(y + gap / 2)
-            draw.line([(MARGIN + 60, sep), (W - MARGIN - 60, sep)], fill=GOLD_DARK, width=2)
+            mid = int(y + gap / 2)
+            cx = W // 2
+            draw.line([(MARGIN, mid), (cx - 16, mid)], fill=GOLD_DARK, width=2)
+            draw.line([(cx + 16, mid), (W - MARGIN, mid)], fill=GOLD_DARK, width=2)
+            draw.polygon([(cx, mid - 8), (cx + 8, mid), (cx, mid + 8), (cx - 8, mid)], fill=GOLD)
             y += gap
 
     img.save(out_path, "PNG", optimize=True)
