@@ -385,6 +385,9 @@ def page_token():
     return user_token
 
 
+LOGO_LIKE = re.compile(r"logo|default|placeholder|favicon|brand|sprite|avatar|icon|no-?image|og-?share|share-?image|social", re.I)
+
+
 def fetch_article_photo(url):
     """Main photo of an article (its og:image), or None. Logs the reason when no photo is used."""
     headers = {"User-Agent": "Mozilla/5.0 (compatible; NRBot/1.0)"}
@@ -409,6 +412,9 @@ def fetch_article_photo(url):
         log("Photo skipped: og:image has no content")
         return None
     img_url = _html.unescape(c.group(1))
+    if LOGO_LIKE.search(img_url):
+        log(f"Photo skipped: image looks like a logo or default image ({img_url[:90]})")
+        return None
     try:
         ir = requests.get(img_url, headers=headers, timeout=20)
         ir.raise_for_status()
@@ -419,6 +425,9 @@ def fetch_article_photo(url):
         return None
     if img.width < 600 or img.height < 300:
         log(f"Photo skipped: too small ({img.width}x{img.height})")
+        return None
+    if img.width / img.height < 1.3:  # logos and badges are near-square; news photos are landscape
+        log(f"Photo skipped: not a landscape photo ({img.width}x{img.height})")
         return None
     return img
 
