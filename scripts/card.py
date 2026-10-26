@@ -69,7 +69,7 @@ def _logo(width):
     return logo.resize((width, int(logo.height * width / logo.width)))
 
 
-def render_card(headline, hindi, roman_urdu, source, out_path):
+def render_card(headline, hindi, roman_urdu, source, out_path, photo=None):
     """`source` is ignored on purpose: source names are never printed on the card."""
     img = Image.new("RGB", (W, H), BLACK)
     draw = ImageDraw.Draw(img)
@@ -93,6 +93,32 @@ def render_card(headline, hindi, roman_urdu, source, out_path):
     rule1 = top_block_bottom + 26
     draw.rectangle([MARGIN, rule1, W - MARGIN, rule1 + 4], fill=GOLD)
     body_top = rule1 + 28
+    max_w_body = W - 2 * MARGIN
+    def _body_fits(top, size):
+        f_hi_ = _font("NotoSansDevanagari.ttf", size, "Bold")
+        f_ru_ = _font("NotoSans.ttf", size - 2, "Medium")
+        need_ = 90 + _bullets_height(draw, hindi, f_hi_, max_w_body, 10) + _bullets_height(draw, roman_urdu, f_ru_, max_w_body, 8)
+        return top + need_ <= H - 184  # same bottom limit as body_bottom below
+
+    if photo is not None:
+        # Photo band under the headline: cropped to fill, with a gold frame.
+        # Dropped if the stories would not fit beside it at a readable size.
+        band_h = 130
+        py_ = rule1 + 22
+        if not _body_fits(py_ + band_h + 26, 24):
+            photo = None
+    if photo is not None:
+        band_h = 130
+        band_w = W - 2 * MARGIN
+        py = rule1 + 22
+        scale = max(band_w / photo.width, band_h / photo.height)
+        resized = photo.resize((int(photo.width * scale) + 1, int(photo.height * scale) + 1))
+        left = (resized.width - band_w) // 2
+        top = (resized.height - band_h) // 2
+        band = resized.crop((left, top, left + band_w, top + band_h))
+        img.paste(band, (MARGIN, py))
+        draw.rectangle([MARGIN, py, W - MARGIN, py + band_h], outline=GOLD, width=3)
+        body_top = py + band_h + 26
 
     # Bottom: credit line with small logo, then rule
     credit_font = _font("NotoSans.ttf", 36, "Bold")

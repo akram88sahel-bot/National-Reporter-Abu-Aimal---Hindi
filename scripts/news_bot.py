@@ -28,6 +28,8 @@ import os
 import sys
 import time
 import calendar
+import html as _html
+import io
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -381,6 +383,25 @@ def page_token():
                 return acc["access_token"]
     print(f"--- page token lookup [{r.status_code}]: using token as given", flush=True)
     return user_token
+
+
+def fetch_article_photo(url):
+    """Main photo of an article (its og:image), or None. Used only as the card photo strip."""
+    headers = {"User-Agent": "Mozilla/5.0 (compatible; NRBot/1.0)"}
+    try:
+        r = requests.get(url, headers=headers, timeout=20, allow_redirects=True)
+        m = (re.search(r'<meta[^>]+property=["\']og:image["\'][^>]*content=["\']([^"\']+)', r.text)
+             or re.search(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]*property=["\']og:image["\']', r.text))
+        if not m:
+            return None
+        ir = requests.get(_html.unescape(m.group(1)), headers=headers, timeout=20)
+        ir.raise_for_status()
+        from PIL import Image
+        img = Image.open(io.BytesIO(ir.content)).convert("RGB")
+        return img if img.width >= 600 and img.height >= 300 else None
+    except Exception as e:
+        log(f"No article photo ({str(e)[:80]})")
+        return None
 
 
 def publish(data, card_path):
@@ -847,7 +868,13 @@ def run_digest():
         "sources": [],
     }
     card_path = Path("/tmp/nr_card.png")
-    render_card(card_data["headline"], card_data["hindi"], card_data["roman_urdu"], "", card_path)
+    photo = None
+    for _, it in chosen:  # first story (in priority order) that has a usable photo
+        photo = fetch_article_photo(it["link"])
+        if photo is not None:
+            break
+    render_card(card_data["headline"], card_data["hindi"], card_data["roman_urdu"], "", card_path, photo=photo)
+    log(f"Card photo: {'yes' if photo is not None else 'none (plain card)'}")
     if DRY_RUN:
         log("DRY RUN - would publish card:\n" + post_text(card_data))
     else:
