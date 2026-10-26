@@ -114,7 +114,7 @@ def render_card(headline, hindi, roman_urdu, source, out_path, photo=None):
         scale = max(band_w / photo.width, band_h / photo.height)
         resized = photo.resize((int(photo.width * scale) + 1, int(photo.height * scale) + 1))
         left = (resized.width - band_w) // 2
-        top = (resized.height - band_h) // 2
+        top = int((resized.height - band_h) * 0.12)  # near the top: keeps faces in portrait photos
         band = resized.crop((left, top, left + band_w, top + band_h))
         img.paste(band, (MARGIN, py))
         draw.rectangle([MARGIN, py, W - MARGIN, py + band_h], outline=GOLD, width=3)

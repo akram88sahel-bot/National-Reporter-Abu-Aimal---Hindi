@@ -1004,7 +1004,12 @@ def photo_test_card():
 def manual_card():
     """One-off (manual run only): post the card described in data/manual_card.json, with its article photo."""
     d = json.loads((ROOT / "data" / "manual_card.json").read_text(encoding="utf-8"))
-    photo = fetch_article_photo(d["link"]) if d.get("link") else None
+    photo = None
+    if d.get("photo_file"):  # a photo file kept in the repo
+        from PIL import Image
+        photo = Image.open(ROOT / d["photo_file"]).convert("RGB")
+    elif d.get("link"):
+        photo = fetch_article_photo(d["link"])
     data = {"headline": "LATEST NEWS", "hindi": d["hindi"], "roman_urdu": d["roman_urdu"], "sources": []}
     card_path = Path("/tmp/nr_manual_card.png")
     render_card(data["headline"], data["hindi"], data["roman_urdu"], "", card_path, photo=photo)
