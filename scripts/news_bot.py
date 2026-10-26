@@ -440,13 +440,20 @@ def fetch_pixabay(query):
         return None
     try:
         r = requests.get("https://pixabay.com/api/", params={"key": key, "q": query, "image_type": "photo",
-                         "orientation": "horizontal", "safesearch": "true", "min_width": 1000, "per_page": 5}, timeout=20)
+                         "orientation": "horizontal", "safesearch": "true", "min_width": 1000, "per_page": 10}, timeout=20)
         r.raise_for_status()
-        hits = r.json().get("hits", [])
-        if not hits:
-            log(f"Pixabay: no photo for '{query[:40]}'")
+        words = {w.lower() for w in re.findall(r"[A-Za-z]{4,}", query)}
+        best, best_score = None, 0
+        for h in r.json().get("hits", []):  # keep only photos whose tags match the story's search words
+            tags = {t.strip().lower() for t in h.get("tags", "").split(",")}
+            tag_words = {w for t in tags for w in re.findall(r"[a-z]{4,}", t)}
+            score = len(words & tag_words)
+            if score > best_score:
+                best, best_score = h, score
+        if best is None:
+            log(f"Pixabay: no relevant photo for '{query[:40]}'")
             return None
-        ir = requests.get(hits[0]["largeImageURL"], timeout=20)
+        ir = requests.get(best["largeImageURL"], timeout=20)
         ir.raise_for_status()
         from PIL import Image
         img = Image.open(io.BytesIO(ir.content)).convert("RGB")
