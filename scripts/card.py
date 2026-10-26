@@ -204,26 +204,28 @@ def render_digest_card(stories, out_path):
     draw.rectangle([30, 30, W - 30, H - 30], outline=GOLD_DARK, width=3)
     draw.rectangle([44, 44, W - 44, H - 44], outline=(60, 48, 22), width=1)
 
-    logo = _logo(150)
+    logo = _logo(96)
     img.paste(logo, (MARGIN, MARGIN))
 
     today = datetime.now(timezone(timedelta(hours=5, minutes=30))).strftime("%d-%m-%Y")
-    f_date = _font("NotoSans.ttf", 34, "Bold")
-    f_small = _font("NotoSans.ttf", 22, "Medium")
+    f_date = _font("NotoSans.ttf", 28, "Bold")
+    f_small = _font("NotoSans.ttf", 18, "Medium")
     dw = draw.textlength(today, font=f_date)
-    draw.text((W - MARGIN - dw, MARGIN + 6), today, font=f_date, fill=GOLD)
+    draw.text((W - MARGIN - dw, MARGIN + 2), today, font=f_date, fill=GOLD)
     tw0 = draw.textlength("(Today)", font=f_small)
-    draw.text((W - MARGIN - tw0, MARGIN + 52), "(Today)", font=f_small, fill=GOLD_DARK)
+    draw.text((W - MARGIN - tw0, MARGIN + 36), "(Today)", font=f_small, fill=GOLD_DARK)
 
-    banner_y = MARGIN + logo.height + 30
-    f_head = _font("NotoSans.ttf", 50, "Bold")
+    banner_y = MARGIN + max(0, (logo.height - 66) // 2)
+    f_head = _font("NotoSans.ttf", 40, "Bold")
     label = "LATEST NEWS"
     lw = draw.textlength(label, font=f_head)
     bx0, bx1 = W // 2 - int(lw / 2) - 60, W // 2 + int(lw / 2) + 60
-    draw.rounded_rectangle([bx0, banner_y, bx1, banner_y + 88], radius=14, fill=(24, 19, 8), outline=GOLD, width=3)
-    draw.text(((bx0 + bx1) / 2 - lw / 2, banner_y + 16), label, font=f_head, fill=GOLD)
-    draw.line([(MARGIN, banner_y + 44), (bx0 - 24, banner_y + 44)], fill=GOLD_DARK, width=3)
-    draw.line([(bx1 + 24, banner_y + 44), (W - MARGIN, banner_y + 44)], fill=GOLD_DARK, width=3)
+    draw.rounded_rectangle([bx0, banner_y, bx1, banner_y + 66], radius=14, fill=(24, 19, 8), outline=GOLD, width=3)
+    draw.text(((bx0 + bx1) / 2 - lw / 2, banner_y + 10), label, font=f_head, fill=GOLD)
+    left_start = MARGIN + logo.width + 20
+    date_left = W - MARGIN - max(dw, tw0)
+    draw.line([(left_start, banner_y + 33), (bx0 - 24, banner_y + 33)], fill=GOLD_DARK, width=3)
+    draw.line([(bx1 + 24, banner_y + 33), (date_left - 20, banner_y + 33)], fill=GOLD_DARK, width=3)
 
     credit_font = _font("NotoSans.ttf", 36, "Bold")
     credit = "ABU AIMAL & AIMAL AKRAM"
@@ -237,7 +239,7 @@ def render_digest_card(stories, out_path):
     bottom_rule = H - 160
     draw.rectangle([MARGIN, bottom_rule, W - MARGIN, bottom_rule + 4], fill=GOLD)
     body_bottom = bottom_rule - 26
-    body_top = banner_y + 88 + 30
+    body_top = max(banner_y + 66, MARGIN + logo.height) + 24
 
     n = len(stories)
     gap = 30
