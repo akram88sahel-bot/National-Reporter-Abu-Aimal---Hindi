@@ -86,7 +86,7 @@ jobs:
   # Stop the chain by setting repo variable CHAIN to 0 (or by disabling the workflow).
   next:
     needs: run
-    if: always() && vars.CHAIN != '0'
+    if: always() && (vars.CHAIN || '1') != '0'
     runs-on: ubuntu-latest
     timeout-minutes: 35
     steps:
