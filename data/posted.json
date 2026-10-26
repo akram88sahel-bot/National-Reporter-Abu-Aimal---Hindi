@@ -3093,5 +3093,16 @@
     ],
     "posted_at": "2026-10-26T00:29:03+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Brazil Presidential Election Lula; Rahul Gandhi convoy accident UP",
+    "class": "B",
+    "region": "WORLD",
+    "links": [
+      "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNNl8zaUlZbGJFcjFTb3oxZ1E0MUlyUGVjSEVjT3hnR3JFQjZSYk1PdHg4dk1Ub1ZiNmxQbzFmWXhDUzRZTmFUbEhvc2JwZmdkaXJQcENhaURyaFhZV04xQ3Z6bTVINW02WThOYWZITUpSX2FBWnlWcGpvNFZFWldFTTNHcHd5c1VXRnFVa1ZjZ0VYZmhTbWlPaXhMeHRNRlI1akRLRU03QmtoUFZlblhPMW1PWlhQcXFXMkZacW54azVvSVFwaXBCV1hzRHpvWTc5dl8wTU9vMDXSAd8BQVVfeXFMTWtHVkhhNUs0d2pUVE05NlF2Y1gyZGdpdFFSSTRIM0tYQ1g1bXphZ0lHTnBLMlA4V1NBT1dib3o1OEJDNFQ1aHlQR1BQNy1LS3RCd2NZNGJDUldzNkxYUTNOSEhxNEwwR3hZaFQ2RmZWbngwSXBwT1J1SU5iTFcybm9YNU5VMHNlUjVnY3hNUTNZLUVveE5fNk5wQXR5aGdfc29BUlZVazZrZU9odFN4YkE0a2tta3B0empxMzJYX3hiaVVTd2ZOcFYwNThNcUR2TTFYM2UtOUZkcTFqZlY3MA?oc=5",
+      "https://www.indiatoday.in/india/story/vehicles-part-of-rahul-gandhis-convoy-collide-on-purvanchal-expressway-congress-leaders-car-not-involved-3025040-2026-10-26?utm_source=rss"
+    ],
+    "posted_at": "2026-10-26T06:05:24+00:00",
+    "dry_run": false
   }
 ]
