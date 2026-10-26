@@ -3224,5 +3224,15 @@
     ],
     "posted_at": "2026-10-26T16:24:16+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Allahabad High Court bars Oudh Bar Association members",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/law-news/story/oudh-bar-association-election-allahabad-high-court-bars-300-members-voting-ptag-3025617-2026-10-26?utm_source=rss"
+    ],
+    "posted_at": "2026-10-26T16:52:09+00:00",
+    "dry_run": false
   }
 ]
