@@ -203,7 +203,7 @@ def gemini_json(system_prompt, user_content, temperature=0.0, model=None):
     for m in chain:
         try:
             return _gemini_once(system_prompt, user_content, temperature, model=m)
-        except GeminiUnavailable as e:
+        except (GeminiUnavailable, requests.RequestException) as e:  # 503s and timeouts both fall through
             last = str(e)
             log(f"Gemini model unavailable, trying next: {last[:200]}")
     errors = [f"gemini: {last[:160]}"]
