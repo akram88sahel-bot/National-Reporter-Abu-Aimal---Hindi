@@ -3255,5 +3255,15 @@
     ],
     "posted_at": "2026-10-26T17:47:20+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "kharge modi remark protest",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/programme/to-the-point/video/kharges-modi-ka-baap-remark-row-bjp-nationwide-protests-and-discourse-in-politics-3025666-2026-10-26?utm_source=rss"
+    ],
+    "posted_at": "2026-10-26T18:15:27+00:00",
+    "dry_run": false
   }
 ]
