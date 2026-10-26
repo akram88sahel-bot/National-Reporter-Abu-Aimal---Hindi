@@ -9,6 +9,10 @@ on:
         description: "Post one test card with real article photos"
         type: boolean
         default: false
+      manual_card:
+        description: "Post the card in data/manual_card.json"
+        type: boolean
+        default: false
 
 permissions:
   contents: write            # needed to commit data/posted.json
@@ -50,6 +54,7 @@ jobs:
           TEST_WRITE: ${{ vars.TEST_WRITE || '0' }}
           DIAG: ${{ vars.DIAG || '0' }}
           PHOTO_TEST: ${{ inputs.photo_test && '1' || '0' }}
+          MANUAL_CARD: ${{ inputs.manual_card && '1' || '0' }}
           CARD_CHECK: ${{ vars.CARD_CHECK || '0' }}
           CARD_PUBLISH: ${{ vars.CARD_PUBLISH || '0' }}
           REPOST: ${{ vars.REPOST || '0' }}

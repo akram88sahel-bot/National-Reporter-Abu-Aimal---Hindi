@@ -1001,7 +1001,25 @@ def photo_test_card():
     return 0
 
 
+def manual_card():
+    """One-off (manual run only): post the card described in data/manual_card.json, with its article photo."""
+    d = json.loads((ROOT / "data" / "manual_card.json").read_text(encoding="utf-8"))
+    photo = fetch_article_photo(d["link"]) if d.get("link") else None
+    data = {"headline": "LATEST NEWS", "hindi": d["hindi"], "roman_urdu": d["roman_urdu"], "sources": []}
+    card_path = Path("/tmp/nr_manual_card.png")
+    render_card(data["headline"], data["hindi"], data["roman_urdu"], "", card_path, photo=photo)
+    log("Manual card rendered; photo: " + ("yes" if photo is not None else "none"))
+    if DRY_RUN:
+        log("DRY RUN - manual card not published")
+        return 0
+    result = publish(data, card_path)
+    log(f"Manual card published: {result}")
+    return 0
+
+
 def main():
+    if os.getenv("MANUAL_CARD", "0") == "1":
+        return manual_card()
     if os.getenv("DIAG", "0") == "1":
         return diagnose()
     if os.getenv("PHOTO_TEST", "0") == "1":
