@@ -3297,5 +3297,16 @@
     ],
     "posted_at": "2026-10-26T21:00:23+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "arunachal pradesh anti-dam protests; brazil flavio bolsonaro court ban",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.ndtv.com/india-news/riot-control-forces-airlifted-to-arunachal-pradesh-after-anti-dam-protests-12239857#publisher=newsstand",
+      "https://www.ndtv.com/world-news/brazils-flavio-bolsonaro-says-court-banned-him-from-leaving-country-12240034#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-26T21:29:36+00:00",
+    "dry_run": false
   }
 ]
