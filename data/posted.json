@@ -3275,5 +3275,15 @@
     ],
     "posted_at": "2026-10-26T18:42:46+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Bihar illegal firecracker trade deaths",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india-today-insight/story/bihars-diwali-dampener-5-deaths-and-an-illegal-firecracker-trade-3025466-2026-10-26?utm_source=rss"
+    ],
+    "posted_at": "2026-10-26T20:05:40+00:00",
+    "dry_run": false
   }
 ]
