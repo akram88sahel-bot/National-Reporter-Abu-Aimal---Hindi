@@ -3244,5 +3244,16 @@
     ],
     "posted_at": "2026-10-26T17:19:37+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Hyderabad hotel fined for water wastage; JK cabinet reshuffle and congress stand",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.indiatoday.in/cities/hyderabad/story/hyderabad-water-wastage-paradise-hotel-fined-sultan-bazaar-pipeline-repairs-3025652-2026-10-26?utm_source=rss",
+      "https://www.indiatoday.in/india/story/jammu-kashmir-cabinet-reshuffle-congress-statehood-demand-3025629-2026-10-26?utm_source=rss"
+    ],
+    "posted_at": "2026-10-26T17:47:20+00:00",
+    "dry_run": false
   }
 ]
