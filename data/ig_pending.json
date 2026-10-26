@@ -19,5 +19,12 @@
     "attempts": 1,
     "last_error": "Instagram publish failed: 403 {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":4,\"error_subcode\":2207051,\"error_user_title\":\"Action is blocke",
     "queued_at": "2026-10-26T10:42:24+00:00"
+  },
+  {
+    "image_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/861996515_1652540086234027_4486094589757247524_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=e5c1b6&_nc_ohc=chbkCjVzmYwQ7kNvwEr4FEn&_nc_oc=Adqc60pHF9dVtgC1fGK02m7P7Kfq0HnuLN1_FH5vTA5V6NNmKwA0nXz3wFXDZgD0R3s&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&edm=AMAeTUEEAAAA&_nc_gid=YTq0vUdL1KzxZ5xPURtTrQ&_nc_tpa=Q5bMBQIxdMwtT_5Tw86W1IM-iGuXBTwEL1BqL18gMYj27am0eCYHCJ0jVe-7P1vlANajcpCGjpaTtVDX0A&oh=00_AQMLqv8CRJfGz74Ttdsuz3rfotPrf-ZHJ5AygDAlrdn10A&oe=6AE4FF89",
+    "caption": "🚨 LATEST NEWS\n\nHINDI\n• पंजाब में बीजेपी और शिरोमणि अकाली दल फिर साथ आ सकते हैं, सूत्रों के अनुसार सीट बंटवारे पर बातचीत अंतिम दौर में है।\n• बीजेपी राज्य की 117 में से 35 से 45 सीटों पर चुनाव लड़ सकती है, बाकी सीटों पर अकाली दल और छोटे दल लड़ेंगे।\n• दोनों दलों का मानना है कि अलग लड़ने से नुकसान हुआ है; गठबंधन में बड़ा भाई अकाली दल रहेगा और जीत पर मुख्यमंत्री पद पर भी उसी का दावा होगा।\n\nROMAN URDU\n• Punjab mein BJP aur Shiromani Akali Dal dobara saath aa sakte hain, sources ke mutabik seat bantwara baat cheet akhri daur mein hai.\n• BJP 117 mein se 35 se 45 seats par lad sakti hai, baaki seats par Akali Dal aur chote dal ladenge.\n• Dono parties ka maanna hai ke alag lad ne se nuksan hua; ittehad mein bara bhai Akali Dal rahega aur jeet ki soorat mein CM ka daawa bhi usi ka hoga.",
+    "attempts": 1,
+    "last_error": "Instagram publish failed: 403 {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":4,\"error_subcode\":2207051,\"error_user_title\":\"Action is blocke",
+    "queued_at": "2026-10-26T10:53:57+00:00"
   }
 ]
