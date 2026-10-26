@@ -3159,5 +3159,15 @@
     ],
     "posted_at": "2026-10-26T11:31:25+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Jamia student union protest",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/education-today/news/story/jamia-student-union-protests-alumni-urge-administration-dialogue-3025432-2026-10-26?utm_source=rss"
+    ],
+    "posted_at": "2026-10-26T13:52:04+00:00",
+    "dry_run": false
   }
 ]
