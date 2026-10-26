@@ -802,7 +802,7 @@ def run_single():
 # ---------------------------------------------------------------------------
 SOFT_WORDS = re.compile(r"cricket|t20|\bmatch\b|\bipl\b|football|tennis|movie|film|trailer|actor|actress|celebrity|box office|recipe|horoscope|festive|festival sale|discount|offer|smartphone|review|launch|\bpyre\b|sculpture|feature|opinion|explainer|how to|tips", re.I)
 DIGEST_POOL = 12          # headlines sent to the AI in one call
-DIGEST_MIN = 2           # a card needs at least 2 complete stories
+DIGEST_MIN = 1           # a card needs at least 1 complete story (a single story gets 3 bullets)
 DIGEST_MAX = 5           # and at most 5
 
 DIGEST_PROMPT = """You are the editor of a Hyderabad/Telangana breaking-news Facebook page. You get a numbered list of news items (outlet, headline, summary, article text). Choose the 2 to 5 most important items that can each be written as a COMPLETE short story, and write each one in Hindi and Roman Urdu.
@@ -813,7 +813,7 @@ STRICT RULES:
 3. No filler such as "more details awaited". Never name any news outlet or source.
 4. Hindi in simple Devanagari; Roman Urdu in simple Latin letters. Both carry the same facts, one bullet per story.
 5. Keep each bullet short (one sentence).
-Return JSON: {"stories": [{"id": item id, "important": true or false, "complete": true or false, "event_key": "short English description", "region": "HYDERABAD" or "TELANGANA" or "INDIA" or "WORLD", "english": "one short complete English sentence with who, what, where and why", "hindi": "one Hindi sentence", "roman_urdu": "one Roman Urdu sentence in simple everyday Urdu (plain common words, not formal or heavy Urdu; keep English words like police, position, government, election, court where people normally use them)"}]}"""
+Return JSON: {"stories": [{"id": item id, "important": true or false, "complete": true or false, "event_key": "short English description", "region": "HYDERABAD" or "TELANGANA" or "INDIA" or "WORLD", "hindi_points": ["3 short Hindi sentences: who and what; where; why or context"], "roman_points": ["3 short simple Roman Urdu sentences with the same facts"], "english": "one short complete English sentence with who, what, where and why", "hindi": "one Hindi sentence", "roman_urdu": "one Roman Urdu sentence in simple everyday Urdu (plain common words, not formal or heavy Urdu; keep English words like police, position, government, election, court where people normally use them)"}]}"""
 
 
 def _item_for_prompt(it):
@@ -908,6 +908,13 @@ def run_digest():
         log(f"Only {len(chosen)} complete important stories this run; need {DIGEST_MIN}. No card.")
         return 0
 
+    single = len(chosen) == 1
+    if single:  # one complete story: it must carry 3 full bullets (who/what, where, why)
+        hp = chosen[0][0].get("hindi_points") or []
+        rp = chosen[0][0].get("roman_points") or []
+        if not (len(hp) == 3 and len(rp) == 3 and all(hp) and all(rp)):
+            log("Single story without 3 complete points; no card this run.")
+            return 0
     roman = [st["roman_urdu"] for st, _ in chosen]
     try:
         import translator as ru_translator
@@ -929,9 +936,11 @@ def run_digest():
     except Exception as e:  # never let the translator stop the card
         log(f"Translator error, using AI Roman Urdu: {str(e)[:120]}")
 
+    if single:
+        roman = rp  # the 3 full Roman Urdu bullets from the AI
     card_data = {
         "headline": "LATEST NEWS",  # always the plain heading; no region name
-        "hindi": [st["hindi"] for st, _ in chosen],
+        "hindi": hp if single else [st["hindi"] for st, _ in chosen],
         "roman_urdu": roman,
         "sources": [],
     }
