@@ -3137,5 +3137,17 @@
     ],
     "posted_at": "2026-10-26T10:42:24+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Cyclone Arnab approaching Andhra coast; Gen Z protests against Siang dam in Arunachal Pradesh; Government approves E100 fuel for cars",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/cyclone-arnab-andhra-coast-landfall-odisha-telangana-chhattisgarh-puducherry-centre-alert-3025259-2026-10-26?utm_source=rss",
+      "https://www.indiatoday.in/india/story/siang-dam-protests-gen-z-arunachal-pradesh-india-china-medog-tibet-brahmaputra-tsangpo-itspc-3025099-2026-10-26?utm_source=rss",
+      "https://www.indiatoday.in/auto/story/ethanol-cars-e100-flex-fuel-vehicles-approved-central-motor-vehicles-rules-3025258-2026-10-26?utm_source=rss"
+    ],
+    "posted_at": "2026-10-26T11:08:58+00:00",
+    "dry_run": false
   }
 ]
