@@ -3081,5 +3081,17 @@
     ],
     "posted_at": "2026-10-25T22:50:47+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Cyclone alert for Andhra Pradesh coast; Massive fire breaks out in Jammu market; Candidates finalized for Vijayawada civic polls",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.thehindu.com/news/national/odisha/depression-over-bay-of-bengal-set-to-become-very-severe-cyclonic-storm-cross-ap-coast-by-october-28/article71623850.ece",
+      "https://www.indiatoday.in/cities/other-cities/story/jammu-shiv-market-fire-guts-35-40-shops-near-railway-station-3024928-2026-10-26?utm_source=rss",
+      "https://www.thehindu.com/news/national/andhra-pradesh/19-candidates-in-fray-for-vmc-mayors-post/article71624110.ece"
+    ],
+    "posted_at": "2026-10-26T00:29:03+00:00",
+    "dry_run": false
   }
 ]
