@@ -3203,5 +3203,16 @@
     ],
     "posted_at": "2026-10-26T15:24:49+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Election Commission defense in Supreme Court over SIR; Lula wins Brazil election",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.ndtv.com/india-news/poll-bodys-unanimous-defence-in-supreme-court-over-sir-row-12239120#publisher=newsstand",
+      "https://www.indiatoday.in/diu/story/lula-brazil-election-win-brics-india-trade-ties-3025497-2026-10-26?utm_source=rss"
+    ],
+    "posted_at": "2026-10-26T15:55:17+00:00",
+    "dry_run": false
   }
 ]
