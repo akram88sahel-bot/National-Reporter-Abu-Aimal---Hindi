@@ -3,7 +3,12 @@ name: Breaking news bot
 on:
   schedule:
     - cron: "*/30 * * * *"   # every 30 minutes, UTC (GitHub may delay runs a few minutes)
-  workflow_dispatch: {}      # manual run button in the Actions tab
+  workflow_dispatch:         # manual run button in the Actions tab
+    inputs:
+      photo_test:
+        description: "Post one test card with real article photos"
+        type: boolean
+        default: false
 
 permissions:
   contents: write            # needed to commit data/posted.json
@@ -44,6 +49,7 @@ jobs:
           GEMINI_WRITE_MODEL: ${{ vars.GEMINI_WRITE_MODEL || 'gemini-flash-latest' }}
           TEST_WRITE: ${{ vars.TEST_WRITE || '0' }}
           DIAG: ${{ vars.DIAG || '0' }}
+          PHOTO_TEST: ${{ inputs.photo_test && '1' || '0' }}
           CARD_CHECK: ${{ vars.CARD_CHECK || '0' }}
           CARD_PUBLISH: ${{ vars.CARD_PUBLISH || '0' }}
           REPOST: ${{ vars.REPOST || '0' }}

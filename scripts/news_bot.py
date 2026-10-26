@@ -952,9 +952,42 @@ def run_digest():
     return 0
 
 
+def photo_test_card():
+    """One-off test (manual run only): post one card with real article photos. Not saved to the posted record."""
+    items = fetch_items()
+    chosen, photo = [], None
+    for it in items:
+        if not it.get("link"):
+            continue
+        img = fetch_article_photo(it["link"])
+        if img is None:
+            continue
+        chosen.append(it)
+        if photo is None:
+            photo = img
+        if len(chosen) == 3:
+            break
+    if len(chosen) < 3:
+        log(f"Photo test: found only {len(chosen)} articles with usable photos")
+        return 0
+    titles = [re.sub(r"\s+", " ", it["title"])[:110] for it in chosen]
+    data = {"headline": "LATEST NEWS", "hindi": titles, "roman_urdu": titles, "sources": []}
+    card_path = Path("/tmp/nr_photo_test.png")
+    render_card(data["headline"], data["hindi"], data["roman_urdu"], "", card_path, photo=photo)
+    log("Photo test card rendered with photo: " + str(photo is not None))
+    if DRY_RUN:
+        log("DRY RUN - photo test not published")
+        return 0
+    result = publish(data, card_path)
+    log(f"Photo test published: {result}")
+    return 0
+
+
 def main():
     if os.getenv("DIAG", "0") == "1":
         return diagnose()
+    if os.getenv("PHOTO_TEST", "0") == "1":
+        return photo_test_card()
     if os.getenv("CARD_PUBLISH", "0") == "1":
         return publish_test_draft()
     if os.getenv("CARD_CHECK", "0") == "1":
