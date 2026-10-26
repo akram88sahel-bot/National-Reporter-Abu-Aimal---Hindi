@@ -3308,5 +3308,15 @@
     ],
     "posted_at": "2026-10-26T21:29:36+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "India national debt GDP target 2030",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/business/story/india-national-debt-50-percent-gdp-2030-nirmala-sitharaman-ptag-3025364-2026-10-26?utm_source=rss"
+    ],
+    "posted_at": "2026-10-26T21:56:24+00:00",
+    "dry_run": false
   }
 ]
