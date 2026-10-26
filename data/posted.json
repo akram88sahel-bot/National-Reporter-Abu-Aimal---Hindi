@@ -3285,5 +3285,17 @@
     ],
     "posted_at": "2026-10-26T20:05:40+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Delhi universities graffiti political row; Bengal festival crowd management inquiry; IIT Ropar new PhD model without thesis",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/programme/india-first/video/jamia-and-jnu-graffiti-row-sparks-war-over-kashmir-slogans-sharjeel-imam-umar-khalid-3025671-2026-10-26?utm_source=rss",
+      "https://www.indiatoday.in/india/law-news/story/west-bengal-durga-puja-adhikari-chorbagan-stampede-inquiry-festival-safety-ptag-3025678-2026-10-26?utm_source=rss",
+      "https://www.indiatoday.in/education-today/news/story/iit-ropar-startup-driven-phd-products-patents-no-thesis-3025202-2026-10-26?utm_source=rss"
+    ],
+    "posted_at": "2026-10-26T21:00:23+00:00",
+    "dry_run": false
   }
 ]
