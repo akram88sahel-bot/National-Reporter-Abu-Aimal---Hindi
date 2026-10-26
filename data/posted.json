@@ -3116,5 +3116,15 @@
     ],
     "posted_at": "2026-10-26T09:43:49+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Amit Shah BJP march Hyderabad",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.indiatoday.in/india/story/amit-shah-to-lead-save-democracy-reject-mobocracy-march-in-hyderabad-on-nov-2-day-after-opposition-rally-3025250-2026-10-26?utm_source=rss"
+    ],
+    "posted_at": "2026-10-26T10:32:38+00:00",
+    "dry_run": false
   }
 ]
