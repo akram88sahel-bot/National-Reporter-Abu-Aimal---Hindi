@@ -3579,5 +3579,15 @@
     ],
     "posted_at": "2026-10-27T23:08:17+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "trains cancelled cyclone arnab",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/scr-cancels-daily-express-trains-as-cyclone-arnab-intensifies/article71631019.ece"
+    ],
+    "posted_at": "2026-10-27T23:35:09+00:00",
+    "dry_run": false
   }
 ]
