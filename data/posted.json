@@ -3430,5 +3430,15 @@
     ],
     "posted_at": "2026-10-27T06:16:27+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Supreme Court seeks Centre response on data protection law and press freedom",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/law-news/story/digital-personal-data-protection-act-challenge-supreme-court-seeks-centre-response-ptag-3025873-2026-10-27?utm_source=rss"
+    ],
+    "posted_at": "2026-10-27T06:43:59+00:00",
+    "dry_run": false
   }
 ]
