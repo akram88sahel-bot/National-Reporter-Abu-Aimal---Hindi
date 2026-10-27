@@ -3360,5 +3360,15 @@
     ],
     "posted_at": "2026-10-27T01:09:14+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Delhi flyover reopen",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.ndtv.com/delhi-news/delhi-airport-vasant-vihar-rtr-flyover-reopens-after-6-days-but-not-for-all-vehicles-12240323#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-27T01:37:51+00:00",
+    "dry_run": false
   }
 ]
