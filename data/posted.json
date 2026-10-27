@@ -3420,5 +3420,15 @@
     ],
     "posted_at": "2026-10-27T04:51:34+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Calcutta HC judge appointed Telangana HC Chief Justice",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/justice-tapabrata-chakraborty-of-calcutta-hc-elevated-as-telangana-hc-chief-justice/article71629800.ece"
+    ],
+    "posted_at": "2026-10-27T06:16:27+00:00",
+    "dry_run": false
   }
 ]
