@@ -3536,5 +3536,17 @@
     ],
     "posted_at": "2026-10-27T19:56:54+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "ktr drought nirmal meeting; jan suraaj bihar upper house win; ec official transfers assembly polls",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/congress-induced-drought-not-forced-by-nature-ktr/article71632731.ece",
+      "https://www.ndtv.com/india-news/prashant-kishors-jan-suraaj-wins-first-seat-in-bihar-upper-house-12245395#publisher=newsstand",
+      "https://www.indiatoday.in/elections/assembly/story/election-commission-officer-transfers-five-states-2027-assembly-polls-ptag-3026084-2026-10-27?utm_source=rss"
+    ],
+    "posted_at": "2026-10-27T20:50:18+00:00",
+    "dry_run": false
   }
 ]
