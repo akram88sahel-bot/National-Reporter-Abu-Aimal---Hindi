@@ -3370,5 +3370,15 @@
     ],
     "posted_at": "2026-10-27T01:37:51+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "hyderabad police child marriage stop",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.ndtv.com/hyderabad-news/hyderabad-police-stops-child-marriage-gets-teen-enrolled-in-college-12240438#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-27T03:00:35+00:00",
+    "dry_run": false
   }
 ]
