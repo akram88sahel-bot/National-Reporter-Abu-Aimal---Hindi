@@ -3450,5 +3450,17 @@
     ],
     "posted_at": "2026-10-27T07:17:20+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Supreme Court seeks Centre response on Vande Mataram plea; Youth Congress deletes promotional video for Delhi rally; UP poll body apologises for bizarre voter list entry",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/law-news/story/vande-mataram-equal-status-plea-supreme-court-centre-response-ptag-3025918-2026-10-27?utm_source=rss",
+      "https://www.indiatoday.in/india/story/indian-youth-congress-deletes-nov-1-chalo-delhi-rally-video-after-online-backlash-comparison-to-stalking-harassment-3025868-2026-10-27?utm_source=rss",
+      "https://www.indiatoday.in/india/story/up-election-officer-apologises-thank-god-ram-didnt-kill-minority-sharma-ko-mara-mlc-election-voter-rolls-bizarre-3025885-2026-10-27?utm_source=rss"
+    ],
+    "posted_at": "2026-10-27T07:47:03+00:00",
+    "dry_run": false
   }
 ]
