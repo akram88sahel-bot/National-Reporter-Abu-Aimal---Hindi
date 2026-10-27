@@ -3440,5 +3440,15 @@
     ],
     "posted_at": "2026-10-27T06:43:59+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "delhi traders urge congress postpone rally",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/business/story/delhi-chamber-of-trade-and-industry-cti-urges-congress-to-postpone-november-1-rally-traders-warn-rs-10000-crore-diwali-business-losses-3025879-2026-10-27?utm_source=rss"
+    ],
+    "posted_at": "2026-10-27T07:17:20+00:00",
+    "dry_run": false
   }
 ]
