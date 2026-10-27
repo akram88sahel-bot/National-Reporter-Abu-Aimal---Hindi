@@ -3349,5 +3349,16 @@
     ],
     "posted_at": "2026-10-27T00:42:16+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Tamil Nadu jailbreak; Kashmiri Pandit activist arrested",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/tamil-nadu/story/theni-sub-jail-escape-17-inmates-one-arrested-police-search-3025703-2026-10-27?utm_source=rss",
+      "https://www.indiatoday.in/india/jammu-and-kashmir/story/rakesh-handoo-arrested-fabricated-militant-threat-letters-kashmir-3025691-2026-10-27?utm_source=rss"
+    ],
+    "posted_at": "2026-10-27T01:09:14+00:00",
+    "dry_run": false
   }
 ]
