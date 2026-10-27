@@ -3492,5 +3492,15 @@
     ],
     "posted_at": "2026-10-27T09:14:34+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Telangana RTC land allotted for housing",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/telangana-rtc-land-in-musheerabad-for-affordable-housing-sparks-concerns/article71630595.ece"
+    ],
+    "posted_at": "2026-10-27T10:44:01+00:00",
+    "dry_run": false
   }
 ]
