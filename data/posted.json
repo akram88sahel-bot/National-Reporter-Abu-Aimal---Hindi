@@ -3380,5 +3380,15 @@
     ],
     "posted_at": "2026-10-27T03:00:35+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Cyclone Arnab in Bay of Bengal",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/cyclone-arnab-very-severe-storm-bay-of-bengal-andhra-pradesh-odisha-evacuations-train-cancellations-bengal-rainfall-landfall-on-october-28-3025715-2026-10-27?utm_source=rss"
+    ],
+    "posted_at": "2026-10-27T03:27:43+00:00",
+    "dry_run": false
   }
 ]
