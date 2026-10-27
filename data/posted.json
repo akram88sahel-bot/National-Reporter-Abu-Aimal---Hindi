@@ -3502,5 +3502,17 @@
     ],
     "posted_at": "2026-10-27T10:44:01+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "karnataka voter list revision; france university admissions protest; dharmendra kashyap joins samajwadi party",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/karnataka/story/karnataka-final-voter-list-crore-lakh-names-deleted-after-sir-exercise-3026021-2026-10-27?utm_source=rss",
+      "https://www.indiatoday.in/education-today/news/story/france-university-admissions-parcoursup-replacement-2028-student-protests-3026057-2026-10-27?utm_source=rss",
+      "https://www.indiatoday.in/india/story/dharmendra-kashyap-joins-samajwadi-party-after-bjp-rajya-sabha-ticket-snub-ptag-3026001-2026-10-27?utm_source=rss"
+    ],
+    "posted_at": "2026-10-27T11:11:35+00:00",
+    "dry_run": false
   }
 ]
