@@ -3328,5 +3328,15 @@
     ],
     "posted_at": "2026-10-26T23:19:03+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "guwahati hotel shooting",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/guwahati-hotel-shooting-death-toll-injuries-3025642-2026-10-26?utm_source=rss"
+    ],
+    "posted_at": "2026-10-27T00:13:21+00:00",
+    "dry_run": false
   }
 ]

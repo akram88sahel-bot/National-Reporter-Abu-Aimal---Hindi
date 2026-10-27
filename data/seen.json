@@ -1,10 +1,4 @@
 {
-  "https://www.ndtv.com/world-news/how-christa-pike-survived-execution-attempt-veins-may-have-ruptured-blown-12223766#publisher=newsstand": 1,
-  "https://www.thehindu.com/news/national/telangana/left-parties-brs-stage-joint-dharna-demanding-transparency-in-indiramma-houses-beneficiary-selection/article71612250.ece": 99,
-  "https://www.indiatoday.in/india/karnataka/story/dk-shivakumar-vd-satheesan-meta-glasses-sting-operation-karnataka-siddaramaiah-itspc-3023299-2026-10-23?utm_source=rss": 2,
-  "https://www.indiatoday.in/india/story/rahul-gandhi-vs-priyanka-rift-congress-bjp-raihan-vadra-photo-exhibition-3023353-2026-10-23?utm_source=rss": 2,
-  "https://www.indiatoday.in/india/law-news/story/vande-mataram-equal-status-plea-supreme-court-transfer-hearing-ptag-3023376-2026-10-23?utm_source=rss": 99,
-  "https://www.thehindu.com/news/national/telangana/forest-beat-officer-who-died-in-line-of-duty-selected-for-national-award/article71612391.ece": 99,
   "https://www.ndtv.com/world-news/abdul-majid-hakeem-elahi-at-ndtv-world-summit-why-healthy-mojtaba-khamenei-cant-appear-in-public-reveals-iranian-diplomat-12224156#publisher=newsstand": 2,
   "https://www.ndtv.com/world-news/iran-diplomat-dr-abdul-majeed-hakim-ilahi-at-ndtv-world-summit-on-minab-school-bombing-us-never-apologised-12224054#publisher=newsstand": 1,
   "https://www.ndtv.com/world-news/needs-very-rapid-new-concept-of-warfare-ex-cia-chiefs-advice-to-india-12224066#publisher=newsstand": 1,
@@ -993,10 +987,16 @@
   "https://news.google.com/rss/articles/CBMixwFBVV95cUxQeVV6U2thb3U1TU4xV0RkMzFPU195NzNFV1piWjBuNUlwSU1FMnpKU1VCSnRUeTN5QUZBRnlRZTZyRXdDaDhYT25qbWJEMFBPY0ViX2JNSVVBX000R1RRZmp2SDlUUTNCMXJ2X3liLS1CNmE4MjFOdVROcE1DRE9DRXJpYVQ5QVBwYnRaeTNmTWxQS0VfYUZ6cGgxdmtTd0JWbHRucEtUREtXQVlhUmJyS0M2VUF1cFlYZ25yLXRqMl8wUXlGeXE00gHOAUFVX3lxTE11SDVWYjAzVXlzYnV2MnVDX2NMTGRIV0xXLUhBQlVMZ2QyQktOVmZxbGRabUVQazYzdlFPUGFhRmEzanFwZ1F0V2d6RklaM3cxQXRrTld4NURfT2prX2JoY3NOMDF1bHo0NktUWnI2aVBDdTJTNldtMWtOQkdDVUZGamtDU2YzMWlBa01GSEV0OUt5dEZCZjdzTlc4eFlnbVAwWEpKVmZPWUQ5Mk9OeDktWlJYUGRLcjd6VVlIcFNtYmpWY0V0b3ZPUFN4WTNn?oc=5": 2,
   "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOdEg1a2xLWldrd3VLLWQ1cnhHdG5sT3lkUUlpSkNLSHNjUEZQTE12Y2FSR2E0RkMxNkdpWEZraXBVd0JHZk1LY1dVUmdqaTVVMTJlQ2JrQVlQeWRxU3BFb3J2Mnotb1hNckJCUGR4WTl0OXFvVUxtc1VhOGFGSFl0eWttYzY2YnFoZXp4bk9yY1dRNGVTclBrRjZXWXNyaTV0UkhVWXpuTF9ZLUFBX1B6T1V4Z0I3ZVA0cjdCZkc2ZErSAccBQVVfeXFMUDkxX0FCOG9WaTEtTlJfQ1VEaGIxTE9qRkR5MTdWbldBTUd6VFM2VjRJWFpFeGVxTF9kZnlqZmRhVTRmWFJ2YTdmZkp6Q2lhS0ZGMHBNMnVJamdmaHZMaXRibmJ2WU5MZnRVZzlvTjNFM1M1RmlaRXJObUFhWHdsUlFNSnlVc25jaUZyTGtvRFVlakZXaG9TVXAtRllaWkdwT0JnRkZ1cU5ualFwazNsZVhlNjdsVVVEQlZGcGZDRm14RWRTWHFXMA?oc=5": 2,
   "https://news.google.com/rss/articles/CBMivgFBVV95cUxPRG5BTUVBUC1wYVdlRjBldGdtUHhCSkhGUXBQRE9HQUw3am1tY3NWR0lkMzlkYVhEZGdIZHpNbzJyUVJ1WDdXeV9Bb2Vjb1ZheTZPZXBQcVZQak5DZlVnYkJMODJWaHdQcVJrYjBBSVAyUXEzQlh0VlF5RVFvcktQZkNUZXhyMWhzX2ZycEJwTFp5SWh0cGVPMVhuejZBOUhoQWNaWW9tZTM1ZTM5azBlM0JzNkN6YTFGZGlKTmRn0gHEAUFVX3lxTFBRLU9DSHlXaF8wVUJfc1ZlOTVTcjhHT00zd190WlFFR21WYVlBM3RtcGM4cTBYQTE3WGJjMGRqZDJNUF8xc1BNaXFEYjhZZkF5NWx3ZmUwSjljRXRFWXdYcVh0bVFHZE9PLUtDcXV0MlREcHR6YmlSSUZ4aEhON2JYcjZIQkcxalJyNGJqMGRsdnVHQU9adkdoX3N3WlhzazNhS09NZUVjay1MaGV3dWZRMzkxb3FKbDExaFlQUGw2clB1X3k?oc=5": 1,
-  "https://www.indiatoday.in/world/story/iran-talks-saudi-arabia-turkey-pakistan-de-escalation-houthi-attacks-3025701-2026-10-27?utm_source=rss": 1,
-  "https://www.thehindu.com/news/national/telangana/rajasthan-man-arrested-in-gujarat-by-adilabad-police-in-cyber-fraud-case/article71628427.ece": 1,
-  "https://www.thehindu.com/news/national/telangana/woman-daughter-arrested-for-thefts-in-trains-gold-worth-106-lakh-recovered/article71626840.ece": 1,
-  "https://www.thehindu.com/news/national/telangana/21-year-old-engineering-graduate-found-dead-after-birthday-party-at-farmhouse-near-ghatkesar/article71626875.ece": 1,
-  "https://www.thehindu.com/news/national/telangana/75-year-old-woman-arrested-for-selling-marijuana-in-fateh-nagar/article71626825.ece": 1,
-  "https://www.ndtv.com/india-news/17-inmates-escaped-from-tamil-nadu-jail-police-arrest-1-12240136#publisher=newsstand": 1
+  "https://www.indiatoday.in/world/story/iran-talks-saudi-arabia-turkey-pakistan-de-escalation-houthi-attacks-3025701-2026-10-27?utm_source=rss": 2,
+  "https://www.thehindu.com/news/national/telangana/rajasthan-man-arrested-in-gujarat-by-adilabad-police-in-cyber-fraud-case/article71628427.ece": 2,
+  "https://www.thehindu.com/news/national/telangana/woman-daughter-arrested-for-thefts-in-trains-gold-worth-106-lakh-recovered/article71626840.ece": 2,
+  "https://www.thehindu.com/news/national/telangana/21-year-old-engineering-graduate-found-dead-after-birthday-party-at-farmhouse-near-ghatkesar/article71626875.ece": 2,
+  "https://www.thehindu.com/news/national/telangana/75-year-old-woman-arrested-for-selling-marijuana-in-fateh-nagar/article71626825.ece": 2,
+  "https://www.ndtv.com/india-news/17-inmates-escaped-from-tamil-nadu-jail-police-arrest-1-12240136#publisher=newsstand": 2,
+  "https://www.ndtv.com/india-news/four-shot-dead-two-critically-injured-at-guwahati-hotel-12239778#publisher=newsstand": 1,
+  "https://www.ndtv.com/india-news/air-force-officers-delhi-house-looted-jewellery-worth-rs-40-lakh-stolen-12239813#publisher=newsstand": 1,
+  "https://www.ndtv.com/india-news/mumbai-man-21-killed-after-local-train-hits-him-while-crossing-tracks-12239715#publisher=newsstand": 1,
+  "https://www.ndtv.com/india-news/gurugram-to-install-nearly-2-500-streetlights-to-reduce-accident-risk-12239706#publisher=newsstand": 1,
+  "https://www.indiatoday.in/india/story/guwahati-hotel-shooting-death-toll-injuries-3025642-2026-10-26?utm_source=rss": 99,
+  "https://www.indiatoday.in/india-today-insight/story/why-kerala-police-handling-of-mercedes-accident-death-invited-intense-scrutiny-3025447-2026-10-26?utm_source=rss": 1
 }
