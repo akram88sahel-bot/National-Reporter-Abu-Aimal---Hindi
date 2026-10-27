@@ -3514,5 +3514,17 @@
     ],
     "posted_at": "2026-10-27T11:11:35+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Telangana drought declaration; Telangana paddy seed self declaration; Arunachal Siang valley paramilitary deployment",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/telangana-declares-365-mandals-drought-affected-of-which-111-severely-drought-affected/article71632836.ece",
+      "https://www.thehindu.com/news/national/telangana/self-declaration-not-required-for-paddy-seed-purchase-telangana-agriculture-dept/article71631035.ece",
+      "https://www.ndtv.com/india-news/30-paramilitary-companies-deployed-in-arunachals-siang-valley-after-anti-dam-protests-12245297#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-27T18:35:11+00:00",
+    "dry_run": false
   }
 ]
