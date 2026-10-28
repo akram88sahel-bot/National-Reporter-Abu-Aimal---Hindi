@@ -3653,5 +3653,17 @@
     ],
     "posted_at": "2026-10-28T07:09:07+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Telangana IAS reshuffle; Telangana Congress Delhi rally mobilisation; Supreme Court cybercrime cases merger",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/telangana-ias-transfers-oct-2026-govt-reshuffles-12-officers-orders-key-administrative-changes/article71634753.ece",
+      "https://www.thehindu.com/news/national/telangana/telangana-congress-plans-to-mobilise-10000-cadres-for-delhi-rally/article71632263.ece",
+      "https://www.indiatoday.in/india/law-news/story/supreme-court-rejects-merger-35-mule-account-cybercrime-cases-ptag-3026720-2026-10-28?utm_source=rss"
+    ],
+    "posted_at": "2026-10-28T07:37:43+00:00",
+    "dry_run": false
   }
 ]
