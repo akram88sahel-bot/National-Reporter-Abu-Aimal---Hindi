@@ -3643,5 +3643,15 @@
     ],
     "posted_at": "2026-10-28T06:41:38+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "BJP sweeps Karnataka MLC elections",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/elections/story/karnataka-mlc-election-results-bjp-jds-sweep-four-seats-congress-draws-blank-3026699-2026-10-28?utm_source=rss"
+    ],
+    "posted_at": "2026-10-28T07:09:07+00:00",
+    "dry_run": false
   }
 ]
