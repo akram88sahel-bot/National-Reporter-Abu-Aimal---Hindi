@@ -3797,5 +3797,15 @@
     ],
     "posted_at": "2026-10-28T19:05:19+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "jamia extend online classes",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/education-today/story/jamia-extends-online-classes-till-nov-24-shifts-exams-online-physical-classes-to-resume-after-jan-13-3027109-2026-10-28?utm_source=rss"
+    ],
+    "posted_at": "2026-10-28T19:31:50+00:00",
+    "dry_run": false
   }
 ]
