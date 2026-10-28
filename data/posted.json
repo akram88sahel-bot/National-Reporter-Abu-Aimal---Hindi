@@ -3740,5 +3740,17 @@
     ],
     "posted_at": "2026-10-28T11:32:30+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Supreme Court Delhi SIR hearing; Supreme Court summons Sanjay Raut; Delhi HC upholds passport fee hike",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.ndtv.com/india-news/election-commission-cant-modify-forms-6-7-and-8-supreme-court-during-delhi-sir-hearing-12248065#publisher=newsstand",
+      "https://www.indiatoday.in/india/law-news/story/sanjay-raut-supreme-court-contempt-case-personal-appearance-november-17-ptag-3026947-2026-10-28?utm_source=rss",
+      "https://www.indiatoday.in/india/law-news/story/delhi-high-court-upholds-passport-fee-hike-for-indians-abroad-ptag-3026920-2026-10-28?utm_source=rss"
+    ],
+    "posted_at": "2026-10-28T12:01:28+00:00",
+    "dry_run": false
   }
 ]
