@@ -3775,5 +3775,17 @@
     ],
     "posted_at": "2026-10-28T13:25:14+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "wrong traffic challans hyderabad portal; brs demands farmer relief congress govt; kavitha threatens census obc column",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/hyderabad-nearly-four-in-10-complaints-on-new-traffic-portal-are-for-wrongly-issued-challans/article71635688.ece",
+      "https://www.thehindu.com/news/national/telangana/brs-slams-congress-govt-over-all-party-meeting-demands-50000-relief-for-farmers/article71637312.ece",
+      "https://www.thehindu.com/news/national/telangana/kavitha-threatens-to-block-census-operations-over-obc-column-demand/article71635925.ece"
+    ],
+    "posted_at": "2026-10-28T18:38:49+00:00",
+    "dry_run": false
   }
 ]
