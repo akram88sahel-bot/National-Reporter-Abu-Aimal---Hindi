@@ -3730,5 +3730,15 @@
     ],
     "posted_at": "2026-10-28T11:01:06+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Allahabad High Court lawyers protest and vandalism",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/law-news/story/allahabad-high-court-lawyers-allegedly-vandalise-courtroom-justice-ajay-bhanot-row-ptag-3026916-2026-10-28?utm_source=rss"
+    ],
+    "posted_at": "2026-10-28T11:32:30+00:00",
+    "dry_run": false
   }
 ]
