@@ -3862,5 +3862,17 @@
     ],
     "posted_at": "2026-10-28T22:44:43+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "ED attaches Jauhar University; Ahmedabad mawa seizure; Cyclone Arnab weather alert",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/jauhar-university-assets-attached-ed-azam-khan-money-laundering-case-uttar-pradesh-3027079-2026-10-28?utm_source=rss",
+      "https://www.indiatoday.in/cities/story/no-expiry-dates-batch-numbers-45000-kg-mawa-barred-from-sale-in-ahmedabad-ahead-of-diwali-3027318-2026-10-29?utm_source=rss",
+      "https://www.indiatoday.in/science/story/delhi-ncr-on-hailstorm-alert-heavy-rain-in-6-states-as-cyclone-arnab-weakens-imd-3026985-2026-10-28?utm_source=rss"
+    ],
+    "posted_at": "2026-10-28T23:42:27+00:00",
+    "dry_run": false
   }
 ]
