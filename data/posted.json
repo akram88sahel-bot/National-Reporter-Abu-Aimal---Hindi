@@ -3787,5 +3787,15 @@
     ],
     "posted_at": "2026-10-28T18:38:49+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Telangana thunderstorm forecast",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/thunderstorm-forecast-for-12-telangana-districts-for-october-29/article71636685.ece"
+    ],
+    "posted_at": "2026-10-28T19:05:19+00:00",
+    "dry_run": false
   }
 ]
