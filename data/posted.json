@@ -3609,5 +3609,17 @@
     ],
     "posted_at": "2026-10-28T03:59:49+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Madras High Court Agamic temple rule; Karnataka MLC polls NDA victory; Kerala Congress apologises to CJI",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.ndtv.com/india-news/non-hindus-wearing-religious-markers-cant-enter-agamic-temples-without-affirming-reverence-madras-high-court-12246385#publisher=newsstand",
+      "https://www.ndtv.com/india-news/karnataka-mlc-election-results-nda-dominates-karnataka-legislative-council-elections-as-bjp-wins-3-jds-1-12246192#publisher=newsstand",
+      "https://www.ndtv.com/kerala-news/kerala-congress-apologises-to-chief-justice-surya-kant-over-controversial-post-12246217#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-28T04:26:28+00:00",
+    "dry_run": false
   }
 ]
