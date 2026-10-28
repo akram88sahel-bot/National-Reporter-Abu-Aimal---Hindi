@@ -3599,5 +3599,15 @@
     ],
     "posted_at": "2026-10-28T02:40:35+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Cyclone Arnab hits Andhra Pradesh",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/science/story/cyclone-arnab-landfall-andhra-pradesh-150-kmph-winds-kakinada-flood-rescues-3026554-2026-10-28?utm_source=rss"
+    ],
+    "posted_at": "2026-10-28T03:59:49+00:00",
+    "dry_run": false
   }
 ]
