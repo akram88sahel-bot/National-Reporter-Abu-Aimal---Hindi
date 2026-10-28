@@ -3840,5 +3840,15 @@
     ],
     "posted_at": "2026-10-28T20:56:00+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Abhishek Banerjee demands fresh West Bengal polls",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/law-news/story/west-bengal-elections-abhishek-banerjee-seeks-fresh-polls-voter-roll-row-ptag-3027309-2026-10-29?utm_source=rss"
+    ],
+    "posted_at": "2026-10-28T21:23:04+00:00",
+    "dry_run": false
   }
 ]
