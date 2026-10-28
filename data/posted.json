@@ -3687,5 +3687,16 @@
     ],
     "posted_at": "2026-10-28T08:34:49+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "tamil nadu auto fare hike; delhi high court mohsin riot death",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/tamil-nadu/story/tamil-nadu-autorickshaw-fares-increased-by-vijay-tvk-govt-minimum-fare-doubled-to-rs-50-3026766-2026-10-28?utm_source=rss",
+      "https://www.indiatoday.in/india/law-news/story/delhi-riots-case-high-court-upholds-five-convictions-mohsin-death-ptag-3026784-2026-10-28?utm_source=rss"
+    ],
+    "posted_at": "2026-10-28T09:35:45+00:00",
+    "dry_run": false
   }
 ]
