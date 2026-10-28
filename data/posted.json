@@ -3589,5 +3589,15 @@
     ],
     "posted_at": "2026-10-27T23:35:09+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "NCPCR head vacancy",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/education-today/news/story/ncpcr-vacancies-hamper-child-rights-inquiries-digital-monitoring-india-3026478-2026-10-28?utm_source=rss"
+    ],
+    "posted_at": "2026-10-28T02:40:35+00:00",
+    "dry_run": false
   }
 ]
