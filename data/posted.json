@@ -3677,5 +3677,15 @@
     ],
     "posted_at": "2026-10-28T08:05:21+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Telangana rain cyclonic storm",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/cyclone-arnab-brings-rain-to-telangana-districts-on-october-28/article71634946.ece"
+    ],
+    "posted_at": "2026-10-28T08:34:49+00:00",
+    "dry_run": false
   }
 ]
