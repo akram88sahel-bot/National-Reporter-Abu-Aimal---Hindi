@@ -3665,5 +3665,17 @@
     ],
     "posted_at": "2026-10-28T07:37:43+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Telangana Congress Delhi protest trains issue; Congress loss in MLC elections; Punjab police body custody protest row",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/telangana-congress-alleges-trains-not-allocated-for-partys-protest-in-delhi-on-november-1/article71634743.ece",
+      "https://www.indiatoday.in/elections/story/congress-zero-seats-win-mlc-polls-bjp-jds-karnataka-dk-shivakumar-bihar-maharashtra-uttar-pradesh-itspc-3026696-2026-10-28?utm_source=rss",
+      "https://www.indiatoday.in/india/story/mansa-police-body-custody-row-opposition-targets-bhagwant-mann-government-3026728-2026-10-28?utm_source=rss"
+    ],
+    "posted_at": "2026-10-28T08:05:21+00:00",
+    "dry_run": false
   }
 ]
