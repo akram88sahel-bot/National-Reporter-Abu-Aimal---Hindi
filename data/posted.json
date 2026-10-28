@@ -3698,5 +3698,15 @@
     ],
     "posted_at": "2026-10-28T09:35:45+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Form 6 Supreme Court hearing",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.aajtak.in/india/news/story/delhi-sir-case-form-6-voter-list-deletions-supreme-court-hearing-ntc-mnrd-smsr-2682382-2026-10-28?utm_source=rss"
+    ],
+    "posted_at": "2026-10-28T10:03:55+00:00",
+    "dry_run": false
   }
 ]
