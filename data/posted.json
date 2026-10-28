@@ -3752,5 +3752,17 @@
     ],
     "posted_at": "2026-10-28T12:01:28+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "ACB arrests Banjara Hills SI for bribe; SCR introduces GPS tracking for patrolmen; Delhi liquor booking app technical glitches",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/banjara-hills-sub-inspector-caught-by-telangana-acb-for-demanding-1-lakh-bribe/article71635626.ece",
+      "https://www.thehindu.com/news/national/telangana/scr-rolls-out-gps-tracking-devices-for-1800-patrolmen-across-three-divisions/article71634751.ece",
+      "https://www.indiatoday.in/cities/delhi/story/delhi-liquor-booking-app-rekha-gupta-arvind-kejriwal-technical-glitches-aap-bjp-political-row-itspc-3026846-2026-10-28?utm_source=rss"
+    ],
+    "posted_at": "2026-10-28T12:28:18+00:00",
+    "dry_run": false
   }
 ]
