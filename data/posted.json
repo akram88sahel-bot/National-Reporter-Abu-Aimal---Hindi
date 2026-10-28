@@ -3764,5 +3764,16 @@
     ],
     "posted_at": "2026-10-28T12:28:18+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Air Force sports complex shutdown Delhi; Supreme Court COVID drug approvals",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/cities/delhi/story/iaf-sports-complex-closed-lok-kalyan-marg-centre-land-reclamation-drive-3027014-2026-10-28?utm_source=rss",
+      "https://www.indiatoday.in/health/story/liposomal-amphotericin-b-black-fungus-supreme-court-dcgi-expired-covid-drug-permits-3026930-2026-10-28?utm_source=rss"
+    ],
+    "posted_at": "2026-10-28T13:25:14+00:00",
+    "dry_run": false
   }
 ]
