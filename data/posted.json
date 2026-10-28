@@ -3621,5 +3621,16 @@
     ],
     "posted_at": "2026-10-28T04:26:28+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "samajwadi party wins varanasi mlc seats; delhi haridwar expressway announcement",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/elections/story/uttar-pradesh-mlc-election-results-varanasi-gorakhpur-samajwadi-party-bjp-3026636-2026-10-28?utm_source=rss",
+      "https://www.indiatoday.in/cities/delhi/story/delhi-haridwar-expressway-90-minute-travel-nitin-gadkari-3026628-2026-10-28?utm_source=rss"
+    ],
+    "posted_at": "2026-10-28T04:53:52+00:00",
+    "dry_run": false
   }
 ]
