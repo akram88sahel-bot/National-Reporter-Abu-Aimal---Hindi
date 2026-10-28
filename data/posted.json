@@ -3807,5 +3807,15 @@
     ],
     "posted_at": "2026-10-28T19:31:50+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "maharashtra clean power project protest",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/cities/other-cities/story/maharashtra-raigad-saidongar-hydropower-project-32490-tree-felling-karjat-forest-livelihood-row-aaditya-thackeray-3027229-2026-10-28?utm_source=rss"
+    ],
+    "posted_at": "2026-10-28T19:58:23+00:00",
+    "dry_run": false
   }
 ]
