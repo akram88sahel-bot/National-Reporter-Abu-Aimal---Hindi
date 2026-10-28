@@ -3850,5 +3850,17 @@
     ],
     "posted_at": "2026-10-28T21:23:04+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "women open air jail inaugurated in patiala; publishers challenge data protection act; madrid train crash indian embassy advisory",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/punjab/story/punjab-womens-open-air-jail-inaugurated-at-patiala-central-jail-3027320-2026-10-29?utm_source=rss",
+      "https://www.indiatoday.in/india-today-insight/story/why-indias-new-privacy-law-has-newsrooms-worried-3027025-2026-10-28?utm_source=rss",
+      "https://www.ndtv.com/world-news/indians-in-madrid-asked-to-contact-embassy-for-help-after-train-crash-12250821#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-28T22:44:43+00:00",
+    "dry_run": false
   }
 ]
