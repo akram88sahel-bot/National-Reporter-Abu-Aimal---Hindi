@@ -3817,5 +3817,17 @@
     ],
     "posted_at": "2026-10-28T19:58:23+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "BJP mocks Congress over MLC election defeat; Centre reviews LTCG and STT taxes after market outflow; Tamil Nadu cabinet meeting on investments and welfare",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/congress-mlc-election-loss-modi-amit-shah-mock-zero-wins-ballot-paper-polls-3027242-2026-10-28?utm_source=rss",
+      "https://www.indiatoday.in/india-today-insight/story/foreign-money-exodus-puts-ltcg-stt-on-govt-table-can-tax-relief-bring-it-back-3027072-2026-10-28?utm_source=rss",
+      "https://www.indiatoday.in/india/tamil-nadu/story/tamil-nadu-cabinet-meeting-vijay-investments-bess-welfare-schemes-3027311-2026-10-29?utm_source=rss"
+    ],
+    "posted_at": "2026-10-28T20:28:18+00:00",
+    "dry_run": false
   }
 ]
