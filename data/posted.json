@@ -3928,5 +3928,15 @@
     ],
     "posted_at": "2026-10-29T02:53:51+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "journalists protest in udaipur",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/cities/other-cities/story/udaipur-journalist-photographer-son-assaulted-pre-wedding-shoot-dispute-3027357-2026-10-29?utm_source=rss"
+    ],
+    "posted_at": "2026-10-29T03:49:33+00:00",
+    "dry_run": false
   }
 ]
