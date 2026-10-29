@@ -3918,5 +3918,15 @@
     ],
     "posted_at": "2026-10-29T02:26:42+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "jamia students union protest",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/education-today/news/story/jamia-students-union-protest-elections-demand-online-classes-3027331-2026-10-29?utm_source=rss"
+    ],
+    "posted_at": "2026-10-29T02:53:51+00:00",
+    "dry_run": false
   }
 ]
