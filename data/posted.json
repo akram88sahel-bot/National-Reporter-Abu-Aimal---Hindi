@@ -4061,5 +4061,15 @@
     ],
     "posted_at": "2026-10-29T19:07:55+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Jamia student union elections",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.ndtv.com/india-news/jamia-millia-islamia-sets-dates-for-restoring-students-union-appeals-for-end-to-protest-12255667#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-29T19:36:25+00:00",
+    "dry_run": false
   }
 ]
