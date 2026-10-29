@@ -4039,5 +4039,15 @@
     ],
     "posted_at": "2026-10-29T08:44:35+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Supreme Court Miyapur land case",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/after-23-year-legal-battle-telangana-government-secures-protection-for-land-worth-thousands-of-crores/article71641650.ece"
+    ],
+    "posted_at": "2026-10-29T18:36:57+00:00",
+    "dry_run": false
   }
 ]
