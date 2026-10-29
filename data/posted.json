@@ -3908,5 +3908,15 @@
     ],
     "posted_at": "2026-10-29T01:59:15+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "central government da hike",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/business/story/rs-540-to-rs-1683-extra-per-month-how-much-will-your-salary-rise-after-da-hike-3027061-2026-10-29?utm_source=rss"
+    ],
+    "posted_at": "2026-10-29T02:26:42+00:00",
+    "dry_run": false
   }
 ]
