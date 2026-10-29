@@ -4015,5 +4015,17 @@
     ],
     "posted_at": "2026-10-29T07:41:35+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Telangana El Nino mitigation committees; Congress wins Nagpur MLC seat; Supreme Court rejects investment fund disclosure plea",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/mandal-level-committees-to-oversee-el-nino-mitigation-measures-in-telangana/article71639116.ece",
+      "https://www.indiatoday.in/india/story/maharashtra-congress-abhijit-wanjarri-retains-nagpur-graduates-seat-defeats-bjp-sudhakar-kohale-3027494-2026-10-29?utm_source=rss",
+      "https://www.indiatoday.in/india/law-news/story/supreme-court-rejects-public-disclosure-plea-aifs-foreign-portfolio-investors-ptag-3027527-2026-10-29?utm_source=rss"
+    ],
+    "posted_at": "2026-10-29T08:11:03+00:00",
+    "dry_run": false
   }
 ]
