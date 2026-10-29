@@ -3995,5 +3995,15 @@
     ],
     "posted_at": "2026-10-29T06:38:17+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Supreme Court Chhattisgarh bail cancellation",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/law-news/story/anil-tuteja-bail-supreme-court-chhattisgarh-cancellation-plea-misuse-ptag-3027475-2026-10-29?utm_source=rss"
+    ],
+    "posted_at": "2026-10-29T07:10:12+00:00",
+    "dry_run": false
   }
 ]
