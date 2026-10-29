@@ -3948,5 +3948,17 @@
     ],
     "posted_at": "2026-10-29T04:16:38+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Telangana voter application rejections; Spain train crash protest; Pentagon top military planner fired",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/telangana-sir-form-6-rejections-and-form-7-deletions-unusually-high-during-pre-sir-period/article71637814.ece",
+      "https://www.indiatoday.in/world/story/spain-train-crash-protest-oscar-puente-resignation-3027373-2026-10-29?utm_source=rss",
+      "https://www.indiatoday.in/world/us-news/story/pete-hegseth-fires-pentagon-top-military-planner-brett-sylvia-as-donald-trump-plans-fresh-iran-strikes-3027367-2026-10-29?utm_source=rss"
+    ],
+    "posted_at": "2026-10-29T04:44:13+00:00",
+    "dry_run": false
   }
 ]
