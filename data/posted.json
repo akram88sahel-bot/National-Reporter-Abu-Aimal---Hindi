@@ -3938,5 +3938,15 @@
     ],
     "posted_at": "2026-10-29T03:49:33+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "anthropic ai models court block",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/technology/news/story/anthropic-says-courts-should-be-able-to-block-high-risk-ai-models-3027382-2026-10-29?utm_source=rss"
+    ],
+    "posted_at": "2026-10-29T04:16:38+00:00",
+    "dry_run": false
   }
 ]
