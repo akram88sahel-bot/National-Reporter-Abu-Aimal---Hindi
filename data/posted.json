@@ -3885,5 +3885,17 @@
     ],
     "posted_at": "2026-10-29T01:04:05+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "railway train night charging ban; congress mlc election blank; rss friends us foreign agent registration",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.thehindu.com/news/national/railways-to-strictly-enforce-overnight-mobile-charging-ban-on-trains/article71637074.ece",
+      "https://www.indiatoday.in/programme/india-first/video/congress-draws-blank-in-28-mlc-seats-israel-polls-and-jio-platforms-market-debut-3027299-2026-10-28?utm_source=rss",
+      "https://www.indiatoday.in/world/story/rss-friends-us-foreign-agent-registration-rss-foreign-principal-ptag-3027330-2026-10-29?utm_source=rss"
+    ],
+    "posted_at": "2026-10-29T01:32:14+00:00",
+    "dry_run": false
   }
 ]
