@@ -3971,5 +3971,17 @@
     ],
     "posted_at": "2026-10-29T05:14:32+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Congress demands CEC removal over SIR; UP government job verification rules; Assam child marriage crackdown",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/law-news/story/sir-electoral-roll-revision-congress-demands-cec-gyanesh-kumar-removal-ptag-3027420-2026-10-29?utm_source=rss",
+      "https://www.ndtv.com/india-news/yogi-adityanath-protests-no-up-government-jobs-for-those-seeking-violent-regime-change-sp-slams-order-12251953#publisher=newsstand",
+      "https://www.ndtv.com/india-news/over-500-arrested-as-assam-steps-up-action-against-child-marriage-12252123#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-29T06:09:15+00:00",
+    "dry_run": false
   }
 ]
