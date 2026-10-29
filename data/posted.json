@@ -3960,5 +3960,16 @@
     ],
     "posted_at": "2026-10-29T04:44:13+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "delhi ncr rain yellow alert; kerala judge anticipatory bail car crash",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/science/story/delhi-ncr-weather-imd-yellow-alert-rain-thunderstorms-hailstorms-3027375-2026-10-29?utm_source=rss",
+      "https://www.indiatoday.in/india/kerala/story/kerala-judge-anticipatory-bail-minor-son-fatal-mercedes-crash-3027397-2026-10-29?utm_source=rss"
+    ],
+    "posted_at": "2026-10-29T05:14:32+00:00",
+    "dry_run": false
   }
 ]
