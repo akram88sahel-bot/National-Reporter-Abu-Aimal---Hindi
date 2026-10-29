@@ -4005,5 +4005,15 @@
     ],
     "posted_at": "2026-10-29T07:10:12+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "UP govt job policy bars violent protesters",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/up-government-jobs-recruitment-policy-bars-violent-protesters-serious-offenders-3027481-2026-10-29?utm_source=rss"
+    ],
+    "posted_at": "2026-10-29T07:41:35+00:00",
+    "dry_run": false
   }
 ]
