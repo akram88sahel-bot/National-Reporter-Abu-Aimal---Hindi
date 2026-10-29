@@ -4049,5 +4049,17 @@
     ],
     "posted_at": "2026-10-29T18:36:57+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "HMWSSB PAANI app water wastage reporting; Telangana fire safety norms data centres; Harish Rao Mallannasagar blasts allegation",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.thehindu.com/news/cities/Hyderabad/hyderabad-residents-can-now-report-water-wastage-through-hmwssbs-paani-app/article71641255.ece",
+      "https://www.thehindu.com/news/national/telangana/telangana-introduces-special-fire-safety-norms-for-data-centres-mandates-suppression-systems/article71640123.ece",
+      "https://www.thehindu.com/news/national/telangana/govt-conspiring-to-damage-mallannasagar-with-blasts-near-bund-alleges-harish-rao/article71641218.ece"
+    ],
+    "posted_at": "2026-10-29T19:07:55+00:00",
+    "dry_run": false
   }
 ]
