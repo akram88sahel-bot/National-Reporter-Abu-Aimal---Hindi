@@ -3983,5 +3983,17 @@
     ],
     "posted_at": "2026-10-29T06:09:15+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Telangana officials warn millers; JP Nadda HealthWealth Summit; Maharashtra MLC election chit",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/old-rice-stocks-dominate-inventories-prices-cannot-be-increased-abnormally-telangana-officials-to-millers/article71637415.ece",
+      "https://www.indiatoday.in/health/story/healthy-nation-must-to-become-developed-nation-minister-jp-nadda-kicks-off-india-todays-maiden-healthwealth-3027440-2026-10-29?utm_source=rss",
+      "https://www.indiatoday.in/india/story/pratapsinh-patil-wins-aurangabad-graduates-constituency-election-ptag-3027374-2026-10-29?utm_source=rss"
+    ],
+    "posted_at": "2026-10-29T06:38:17+00:00",
+    "dry_run": false
   }
 ]
