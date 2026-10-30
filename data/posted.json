@@ -4397,5 +4397,15 @@
     ],
     "posted_at": "2026-10-30T23:13:31+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Rafale Marine Jet lands on INS Vikrant",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.ndtv.com/india-news/video-rafale-marine-jet-touches-down-on-ins-vikrant-for-first-time-12259518#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-30T23:41:15+00:00",
+    "dry_run": false
   }
 ]

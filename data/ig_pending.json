@@ -2,7 +2,7 @@
   {
     "image_url": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-6/871150619_1656314035856632_2939268090888354880_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=054031&_nc_ohc=3XI4Xo8hkBMQ7kNvwERgnrt&_nc_oc=AdoBSjRu22zYLS0ink8XiX_E3FQj8mcNvB0O-03yDiR3yKZ98IXmjaCcltzfSppGMWU&_nc_zt=23&_nc_ht=scontent-atl3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=Ddungb1Q7pKySS49Qglf8w&_nc_tpa=Q5bMBQKKRAZIihXeoYCyFw6SuwMU_cUBdQQtAlOM02Z6EfXiyctzvRsHOv2An4fhaNW_ZGegozhXB7Gzqg&oh=00_AQSXiswp-ADWnoNFDlMXOFRlHAMCP3pJ7w4MjBfQzxAZ4g&oe=6AEA13DC",
     "caption": "🚨 LATEST NEWS\n\nHINDI\n• प्रयागराज में शिक्षक भर्ती के उम्मीदवारों का विरोध प्रदर्शन समाप्त हो गया और कई लोगों को हिरासत में लिया गया।\n• यह घटना प्रयागराज में हुई।\n• उम्मीदवार भर्ती परीक्षाओं में अतिरिक्त अवसर की मांग कर रहे थे।\n\nROMAN URDU\n• Prayagraj mein teacher recruitment aspirants ka protest khatam ho gaya aur kai logon ko detain kiya gaya.\n• Yeh ghatna Prayagraj mein hui.\n• Aspirants recruitment exams mein additional attempt ki maang kar rahe the.",
-    "attempts": 3,
+    "attempts": 4,
     "last_error": "Instagram publish failed: 403 {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":4,\"error_subcode\":2207051,\"error_user_title\":\"Action is blocke",
     "queued_at": "2026-10-30T06:37:20+00:00"
   },
@@ -103,5 +103,12 @@
     "attempts": 1,
     "last_error": "Instagram publish failed: 403 {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":4,\"error_subcode\":2207051,\"error_user_title\":\"Action is blocke",
     "queued_at": "2026-10-30T23:13:31+00:00"
+  },
+  {
+    "image_url": "https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-6/875948343_1657036749117694_3939969372000344501_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=054031&_nc_ohc=dekuL3mNct8Q7kNvwHQtnxf&_nc_oc=AdqJ_RSBTXGGepHH8bAlTBm4C043BK46vseFtnJPdx_OSYW7z-bo6hlsE8Ay3tV-XEo&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=Tlceh5ijCaLkFY8rwuxs1Q&_nc_tpa=Q5bMBQJgUGesjWdR2ciJuWNB78FkGFt2JbbrHIKJYY2h6tKx5embFI90G5K8E8vIiscKX9owVFiI55gZVQ&oh=00_AQRwhxYz94aD9JF_3sjMhDFOh2DgaZb0mQarkb_FnSRqFw&oe=6AEAF3D0",
+    "caption": "🚨 LATEST NEWS\n\nHINDI\n• भारतीय नौसेना ने देश में बने विमान वाहक पोत INS विक्रांत पर राफेल-मरीन फाइटर जेट की पहली सफल लैंडिंग कराई है।\n• यह ऐतिहासिक लैंडिंग समुद्र में युद्धपोतों से विमान संचालित करने की क्षमता को मजबूत करने के लिए की गई है।\n• इससे भारतीय नौसेना की समुद्री ताकत और मारक क्षमता में काफी इजाफा हुआ है।\n\nROMAN URDU\n• Bharatiya nau-sena ne desh mein bane viman vahak pot INS Vikrant par Rafale-Marine fighter jet ki pehli safal landing karai hai.\n• Yeh aitihasik landing samudra mein yuddhpoton se viman sanchalit karne ki kshamta ko majboot karne ke liye ki gayi hai.\n• Isse Bharatiya nau-sena ki samudri takat aur marak kshamta mein kafi izafa hua hai.",
+    "attempts": 1,
+    "last_error": "Instagram publish failed: 403 {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":4,\"error_subcode\":2207051,\"error_user_title\":\"Action is blocke",
+    "queued_at": "2026-10-30T23:41:15+00:00"
   }
 ]
