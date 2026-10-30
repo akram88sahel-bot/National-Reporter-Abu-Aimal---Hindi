@@ -4128,5 +4128,15 @@
     ],
     "posted_at": "2026-10-30T00:39:21+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Delhi NCR vehicle pollution ban",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india-today-insight/story/delhis-unusual-diwali-pollution-brake-on-1-million-ncr-vehicles-3028044-2026-10-29?utm_source=rss"
+    ],
+    "posted_at": "2026-10-30T01:06:09+00:00",
+    "dry_run": false
   }
 ]
