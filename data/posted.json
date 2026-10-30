@@ -4366,5 +4366,15 @@
     ],
     "posted_at": "2026-10-30T21:54:39+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "TRS nominates Akash Kolluru as Graduate MLC candidate",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/trs-names-akash-kolluru-as-graduate-mlc-candidate/article71644676.ece"
+    ],
+    "posted_at": "2026-10-30T22:20:56+00:00",
+    "dry_run": false
   }
 ]
