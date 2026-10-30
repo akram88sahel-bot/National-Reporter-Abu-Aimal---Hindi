@@ -4138,5 +4138,16 @@
     ],
     "posted_at": "2026-10-30T01:06:09+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Supreme Court firecracker ban hearing; Delhi NCR rain forecast",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/law-news/story/supreme-court-firecracker-hearing-green-crackers-delhi-pollution-enforcement-3027883-2026-10-29?utm_source=rss",
+      "https://www.indiatoday.in/science/story/delhi-ncr-rain-lowers-temperature-improves-aqi-imd-thunderstorm-forecast-3028162-2026-10-30?utm_source=rss"
+    ],
+    "posted_at": "2026-10-30T02:00:38+00:00",
+    "dry_run": false
   }
 ]
