@@ -1,9 +1,11 @@
 """
-Renders the black-and-gold breaking-news card (1080x1080 PNG).
+Renders the black-and-gold breaking-news card (1080x1350 PNG).
 
-Layout: small logo in the top-left corner, gold headline beside it, Hindi
-bullets (Devanagari, bold), Roman Urdu bullets, and a credit line at the
-bottom with a small logo before it. All text is drawn on the image.
+Design (reference card, Oct 2026): NR logo centred at the top, date at the
+top right, trapezoid "LATEST NEWS" banner, one wide photo under it, then a
+Hindi section and a Roman Urdu section, each a numbered list, divided by a
+gold line with a diamond, and a centred "By Abu Aimal & Aimal Akram"
+credit with a small NR logo at the bottom. All text is drawn on the image.
 """
 
 from datetime import datetime, timedelta, timezone
@@ -15,13 +17,18 @@ ROOT = Path(__file__).resolve().parent.parent
 FONT_DIR = ROOT / "assets" / "fonts"
 LOGO = ROOT / "assets" / "logo.jpg"
 
-W = H = 1080
+W, H = 1080, 1350
 BLACK = (14, 12, 10)
 GOLD = (212, 175, 90)
+GOLD_LIGHT = (228, 198, 128)
 GOLD_DARK = (150, 118, 52)
 WHITE = (245, 240, 230)
 GREY = (190, 182, 168)
 MARGIN = 70
+
+# The NR letters inside the square logo file (the "NATIONAL REPORTER" line
+# below them is left out, as on the reference card).
+_LOGO_MARK_BOX = (205, 370, 875, 690)
 
 
 def _font(name, size, weight="Bold"):
@@ -48,115 +55,79 @@ def _wrap(draw, text, font, max_width):
     return lines
 
 
-def _bullets_height(draw, items, font, max_w, line_gap):
-    h = 0
-    for item in items:
-        h += len(_wrap(draw, item, font, max_w - 44)) * (font.size + line_gap) + 22
-    return h
-
-
-def _draw_bullets(draw, y, items, font, max_w, line_gap):
-    for item in items:
-        lines = _wrap(draw, item, font, max_w - 44)
-        draw.ellipse([MARGIN + 6, y + font.size // 2 - 4, MARGIN + 22, y + font.size // 2 + 12], fill=GOLD)
-        for i, line in enumerate(lines):
-            draw.text((MARGIN + 44, y + i * (font.size + line_gap)), line, font=font, fill=WHITE)
-        y += len(lines) * (font.size + line_gap) + 22
-    return y
-
-
 def _logo(width):
     logo = Image.open(LOGO).convert("RGB")
     return logo.resize((width, int(logo.height * width / logo.width)))
 
 
-def render_card(headline, hindi, roman_urdu, source, out_path, photo=None):
-    """`source` is ignored on purpose: source names are never printed on the card."""
-    img = Image.new("RGB", (W, H), BLACK)
+def _logo_mark(width):
+    """The NR letters only, as an RGBA image (logo background made transparent)."""
+    crop = Image.open(LOGO).convert("RGB").crop(_LOGO_MARK_BOX)
+    crop = crop.resize((width, int(crop.height * width / crop.width)))
+    # The logo sits on a solid near-black background; fade pixels by how much
+    # brighter they are than that background so no grey patch is visible.
+    table = [0 if i <= 42 else min(255, int((i - 42) * 255 / 55)) for i in range(256)]
+    alpha = crop.convert("L").point(table)
+    mark = crop.convert("RGBA")
+    mark.putalpha(alpha)
+    return mark
+
+
+def _background():
+    """Black card with a very subtle vertical gradient, as on the reference."""
+    top, bottom = (19, 16, 12), (10, 9, 7)
+    grad = Image.new("RGB", (1, H))
+    for y in range(H):
+        t = y / max(1, H - 1)
+        grad.putpixel((0, y), tuple(int(top[i] + (bottom[i] - top[i]) * t) for i in range(3)))
+    return grad.resize((W, H))
+
+
+def _frame(draw):
+    draw.rectangle([26, 26, W - 26, H - 26], outline=GOLD_DARK, width=2)
+    draw.rounded_rectangle([46, 46, W - 46, H - 46], radius=20, outline=(170, 140, 75), width=2)
+    # Thicker gold corner caps on the outer frame
+    cap, o = 125, 26
+    for x0, y0, dx, dy in [(o, o, 1, 1), (W - o, o, -1, 1), (o, H - o, 1, -1), (W - o, H - o, -1, -1)]:
+        draw.line([(x0, y0), (x0 + dx * cap, y0)], fill=GOLD, width=5)
+        draw.line([(x0, y0), (x0, y0 + dy * cap)], fill=GOLD, width=5)
+
+
+def _tracked_width(draw, text, font, tracking):
+    return sum(draw.textlength(ch, font=font) for ch in text) + tracking * max(0, len(text) - 1)
+
+
+def _draw_tracked(draw, x, y, text, font, fill, tracking):
+    for ch in text:
+        draw.text((x, y), ch, font=font, fill=fill)
+        x += draw.textlength(ch, font=font) + tracking
+    return x
+
+
+def _gradient_text(img, cx, y, text, font, tracking=3):
+    """Gold-gradient text (light on top, deeper gold below), centred at cx."""
     draw = ImageDraw.Draw(img)
-    draw.rectangle([30, 30, W - 30, H - 30], outline=GOLD_DARK, width=3)
+    w = int(_tracked_width(draw, text, font, tracking)) + 8
+    h = font.size + 26
+    mask = Image.new("L", (w, h), 0)
+    md = ImageDraw.Draw(mask)
+    x = 4
+    for ch in text:
+        md.text((x, 4), ch, font=font, fill=255)
+        x += md.textlength(ch, font=font) + tracking
+    grad = Image.new("RGB", (1, h))
+    top, bottom = (246, 219, 151), (168, 126, 54)
+    for yy in range(h):
+        t = yy / max(1, h - 1)
+        grad.putpixel((0, yy), tuple(int(top[i] + (bottom[i] - top[i]) * t) for i in range(3)))
+    img.paste(grad.resize((w, h)), (int(cx - w / 2), int(y - 4)), mask)
 
-    # Logo in the top-left corner
-    logo = _logo(170)
-    img.paste(logo, (MARGIN, MARGIN))
 
-    # Headline beside the logo (wraps to two lines if needed)
-    head_x = MARGIN + logo.width + 36
-    head_max = W - MARGIN - head_x
-    font_head = _font("NotoSans.ttf", 46, "Bold")
-    head_lines = _wrap(draw, headline, font_head, head_max)
-    hy = MARGIN + 6
-    for line in head_lines:
-        draw.text((head_x, hy), line, font=font_head, fill=GOLD)
-        hy += font_head.size + 8
-    top_block_bottom = max(MARGIN + logo.height, hy)
-
-    rule1 = top_block_bottom + 26
-    draw.rectangle([MARGIN, rule1, W - MARGIN, rule1 + 4], fill=GOLD)
-    body_top = rule1 + 28
-    max_w_body = W - 2 * MARGIN
-    def _body_fits(top, size):
-        f_hi_ = _font("NotoSansDevanagari.ttf", size, "Bold")
-        f_ru_ = _font("NotoSans.ttf", size - 2, "Medium")
-        need_ = 90 + _bullets_height(draw, hindi, f_hi_, max_w_body, 10) + _bullets_height(draw, roman_urdu, f_ru_, max_w_body, 8)
-        return top + need_ <= H - 184  # same bottom limit as body_bottom below
-
-    if photo is not None:
-        # Photo band under the headline: cropped to fill, with a gold frame.
-        # Dropped if the stories would not fit beside it at a readable size.
-        band_h = 130
-        py_ = rule1 + 22
-        if not _body_fits(py_ + band_h + 26, 24):
-            photo = None
-    if photo is not None:
-        band_h = 130
-        band_w = W - 2 * MARGIN
-        py = rule1 + 22
-        scale = max(band_w / photo.width, band_h / photo.height)
-        resized = photo.resize((int(photo.width * scale) + 1, int(photo.height * scale) + 1))
-        left = (resized.width - band_w) // 2
-        top = int((resized.height - band_h) * 0.12)  # near the top: keeps faces in portrait photos
-        band = resized.crop((left, top, left + band_w, top + band_h))
-        img.paste(band, (MARGIN, py))
-        draw.rectangle([MARGIN, py, W - MARGIN, py + band_h], outline=GOLD, width=3)
-        body_top = py + band_h + 26
-
-    # Bottom: credit line with small logo, then rule
-    credit_font = _font("NotoSans.ttf", 36, "Bold")
-    credit = "ABU AIMAL & AIMAL AKRAM"
-    small_logo = _logo(64)
-    credit_w = draw.textlength(credit, font=credit_font)
-    group_w = small_logo.width + 18 + credit_w
-    group_x = (W - group_w) / 2
-    credit_y = H - 118
-    img.paste(small_logo, (int(group_x), credit_y - 6))
-    draw.text((group_x + small_logo.width + 18, credit_y), credit, font=credit_font, fill=GOLD)
-    bottom_rule = H - 160
-    draw.rectangle([MARGIN, bottom_rule, W - MARGIN, bottom_rule + 4], fill=GOLD)
-    body_bottom = bottom_rule - 24
-
-    max_w = W - 2 * MARGIN
-    size = 54
-    while size > 22:
-        f_hi = _font("NotoSansDevanagari.ttf", size, "Bold")
-        f_ru = _font("NotoSans.ttf", size - 2, "Medium")
-        label_h = 40 + 50
-        need = label_h + _bullets_height(draw, hindi, f_hi, max_w, 10) + _bullets_height(draw, roman_urdu, f_ru, max_w, 8)
-        if body_top + need <= body_bottom:
-            break
-        size -= 1
-
-    label_font = _font("NotoSans.ttf", 30, "Bold")
-    y = body_top
-    draw.text((MARGIN, y), "HINDI", font=label_font, fill=GOLD_DARK)
-    y += 40
-    y = _draw_bullets(draw, y, hindi, f_hi, max_w, 10)
-    draw.text((MARGIN, y + 4), "ROMAN URDU", font=label_font, fill=GOLD_DARK)
-    y += 50
-    _draw_bullets(draw, y, roman_urdu, f_ru, max_w, 8)
-
-    img.save(out_path, "PNG", optimize=True)
-    return out_path
+def _calendar_icon(draw, x, y, size=34):
+    draw.line([(x + 9, y), (x + 9, y + 11)], fill=GOLD, width=3)
+    draw.line([(x + size - 9, y), (x + size - 9, y + 11)], fill=GOLD, width=3)
+    draw.rounded_rectangle([x, y + 5, x + size, y + 5 + size], radius=6, outline=GOLD, width=3)
+    draw.line([(x + 2, y + 16), (x + size - 2, y + 16)], fill=GOLD, width=2)
 
 
 def fit_photo(img, w, h):
@@ -169,23 +140,7 @@ def fit_photo(img, w, h):
     return resized.crop((left, top, left + w, top + h))
 
 
-def _para_height(draw, items, font, max_w, gap):
-    h = 0
-    for item in items:
-        h += len(_wrap(draw, item, font, max_w)) * (font.size + gap) + 10
-    return h
-
-
-def _draw_paras(draw, x, y, items, font, max_w, gap, color):
-    for item in items:
-        for line in _wrap(draw, item, font, max_w):
-            draw.text((x, y), line, font=font, fill=color)
-            y += font.size + gap
-        y += 10
-    return y
-
-
-def _rounded_photo(photo, card, x, y, w, h, radius=18):
+def _rounded_photo(photo, card, x, y, w, h, radius=22):
     """Paste a cropped photo with rounded corners and a gold edge."""
     crop = fit_photo(photo, w, h)
     mask = Image.new("L", (w, h), 0)
@@ -194,98 +149,188 @@ def _rounded_photo(photo, card, x, y, w, h, radius=18):
     ImageDraw.Draw(card).rounded_rectangle([x, y, x + w, y + h], radius=radius, outline=GOLD, width=3)
 
 
-def render_digest_card(stories, out_path):
-    """Attractive per-story card: gold banner heading, date, numbered stories, photos beside text.
+NUM_W = 52          # space reserved for "1." at the start of each item
+ITEM_GAP = 16       # space after each numbered item
+LABEL_H = 48        # space a section label (हिंदी / ROMAN URDU) takes
+DIVIDER_H = 44      # space the divider between the two sections takes
 
-    stories: list of {"hindi": [..], "roman": [..], "photo": PIL image or None}
-    """
-    img = Image.new("RGB", (W, H), BLACK)
+
+def _numbered_height(draw, items, font, max_w):
+    h = 0
+    for item in items:
+        h += len(_wrap(draw, item, font, max_w)) * (font.size + 9) + ITEM_GAP
+    return h
+
+
+def _draw_numbered(draw, y, items, font):
+    max_w = W - MARGIN - (MARGIN + NUM_W)
+    f_num = _font("NotoSans.ttf", font.size, "Bold")
+    for i, item in enumerate(items):
+        draw.text((MARGIN + 2, y), f"{i + 1}.", font=f_num, fill=GOLD_LIGHT)
+        for line in _wrap(draw, item, font, max_w):
+            draw.text((MARGIN + NUM_W, y), line, font=font, fill=WHITE)
+            y += font.size + 9
+        y += ITEM_GAP
+    return y
+
+
+def _section_label(draw, y, text, font, tracking=0, y_off=0):
+    draw.rounded_rectangle([MARGIN, y + 4, MARGIN + 10, y + 36], radius=5, fill=GOLD)
+    if tracking:
+        _draw_tracked(draw, MARGIN + 26, y + y_off, text, font, GOLD, tracking)
+    else:
+        draw.text((MARGIN + 26, y + y_off), text, font=font, fill=GOLD)
+
+
+def _diamond_divider(draw, y):
+    cx = W // 2
+    draw.line([(MARGIN + 40, y), (cx - 18, y)], fill=GOLD_DARK, width=2)
+    draw.line([(cx + 18, y), (W - MARGIN - 40, y)], fill=GOLD_DARK, width=2)
+    draw.polygon([(cx, y - 8), (cx + 8, y), (cx, y + 8), (cx - 8, y)], fill=GOLD)
+
+
+def _render(hindi, roman_urdu, photo, out_path, banner="LATEST NEWS", headline_extra=""):
+    img = _background()
     draw = ImageDraw.Draw(img)
-    draw.rectangle([30, 30, W - 30, H - 30], outline=GOLD_DARK, width=3)
-    draw.rectangle([44, 44, W - 44, H - 44], outline=(60, 48, 22), width=1)
+    _frame(draw)
+    cx = W // 2
 
-    logo = _logo(96)
-    img.paste(logo, (MARGIN, MARGIN))
+    # Header: NR logo centred, date at the top right
+    # Center text
+    mark = _logo_mark(225)
+    img.paste(mark, (cx - mark.width // 2, 46), mark)
 
     today = datetime.now(timezone(timedelta(hours=5, minutes=30))).strftime("%d-%m-%Y")
-    f_date = _font("NotoSans.ttf", 28, "Bold")
-    f_small = _font("NotoSans.ttf", 18, "Medium")
+    f_date = _font("NotoSans.ttf", 30, "Bold")
+    f_today = _font("NotoSans.ttf", 21, "Medium")
     dw = draw.textlength(today, font=f_date)
-    draw.text((W - MARGIN - dw, MARGIN + 2), today, font=f_date, fill=GOLD)
-    tw0 = draw.textlength("(Today)", font=f_small)
-    draw.text((W - MARGIN - tw0, MARGIN + 36), "(Today)", font=f_small, fill=GOLD_DARK)
+    date_x = W - MARGIN - dw
+    _calendar_icon(draw, int(date_x - 48), 60)
+    draw.text((date_x, 62), today, font=f_date, fill=GOLD_LIGHT)
+    tw = draw.textlength("(Today)", font=f_today)
+    draw.text((W - MARGIN - tw, 100), "(Today)", font=f_today, fill=GREY)
 
-    banner_y = MARGIN + max(0, (logo.height - 66) // 2)
-    f_head = _font("NotoSans.ttf", 40, "Bold")
-    label = "LATEST NEWS"
-    lw = draw.textlength(label, font=f_head)
-    bx0, bx1 = W // 2 - int(lw / 2) - 60, W // 2 + int(lw / 2) + 60
-    draw.rounded_rectangle([bx0, banner_y, bx1, banner_y + 66], radius=14, fill=(24, 19, 8), outline=GOLD, width=3)
-    draw.text(((bx0 + bx1) / 2 - lw / 2, banner_y + 10), label, font=f_head, fill=GOLD)
-    left_start = MARGIN + logo.width + 20
-    date_left = W - MARGIN - max(dw, tw0)
-    draw.line([(left_start, banner_y + 33), (bx0 - 24, banner_y + 33)], fill=GOLD_DARK, width=3)
-    draw.line([(bx1 + 24, banner_y + 33), (date_left - 20, banner_y + 33)], fill=GOLD_DARK, width=3)
-
-    credit_font = _font("NotoSans.ttf", 36, "Bold")
-    credit = "ABU AIMAL & AIMAL AKRAM"
-    small_logo = _logo(64)
-    credit_w = draw.textlength(credit, font=credit_font)
-    group_w = small_logo.width + 18 + credit_w
-    group_x = (W - group_w) / 2
-    credit_y = H - 118
-    img.paste(small_logo, (int(group_x), credit_y - 6))
-    draw.text((group_x + small_logo.width + 18, credit_y), credit, font=credit_font, fill=GOLD)
-    bottom_rule = H - 160
-    draw.rectangle([MARGIN, bottom_rule, W - MARGIN, bottom_rule + 4], fill=GOLD)
-    body_bottom = bottom_rule - 26
-    body_top = max(banner_y + 66, MARGIN + logo.height) + 24
-
-    n = len(stories)
-    gap = 30
-    photo_w = 330
-    photo_h = 210 if n <= 2 else 165  # three stories: shorter photos so they clear the bottom rule
-    num_w = 66
-    text_w_photo = W - 2 * MARGIN - num_w - photo_w - 30
-    text_w_full = W - 2 * MARGIN - num_w
-
-    size = 36
-    while True:
-        f_hi = _font("NotoSansDevanagari.ttf", size, "Bold")
-        f_ru = _font("NotoSans.ttf", size - 4, "Medium")
-        heights = []
-        for s_ in stories:
-            tw_ = text_w_photo if s_["photo"] is not None else text_w_full
-            h_text = _para_height(draw, s_["hindi"], f_hi, tw_, 8) + _para_height(draw, s_["roman"], f_ru, tw_, 6)
-            heights.append(max(h_text, photo_h if s_["photo"] is not None else 44))
-        total = sum(heights) + gap * (n - 1)
-        if body_top + total <= body_bottom or size <= 22:
+    # Trapezoid "LATEST NEWS" banner with side lines
+    banner_y, banner_h = 172, 78
+    pts = [(cx - 292, banner_y), (cx + 292, banner_y), (cx + 264, banner_y + banner_h), (cx - 264, banner_y + banner_h)]
+    draw.polygon(pts, fill=(19, 16, 9))
+    draw.line(pts + [pts[0]], fill=GOLD, width=3, joint="curve")
+    mid = banner_y + banner_h // 2
+    for dy in (-7, 7):
+        draw.line([(MARGIN, mid + dy), (cx - 320, mid + dy)], fill=GOLD_DARK, width=2)
+        draw.line([(cx + 320, mid + dy), (W - MARGIN, mid + dy)], fill=GOLD_DARK, width=2)
+    bsize = 48
+    while bsize > 24:
+        f_banner = _font("NotoSans.ttf", bsize, "Bold")
+        if _tracked_width(draw, banner, f_banner, 3) <= 500:
             break
-        size -= 2
+        bsize -= 2
+    f_banner = _font("NotoSans.ttf", bsize, "Bold")
+    _gradient_text(img, cx, banner_y + (banner_h - bsize) // 2 - 2, banner, f_banner)
 
-    y = body_top
-    for i, s_ in enumerate(stories):
-        draw.ellipse([MARGIN, y + 2, MARGIN + 44, y + 46], fill=GOLD)
-        f_num = _font("NotoSans.ttf", 26, "Bold")
-        draw.text((MARGIN + 22, y + 24), str(i + 1), font=f_num, fill=BLACK, anchor="mm")
-        text_x = MARGIN + num_w
-        if s_["photo"] is not None:
-            px = W - MARGIN - photo_w
-            _rounded_photo(s_["photo"], img, px, int(y), photo_w, photo_h)
-            draw = ImageDraw.Draw(img)
-            tw_ = text_w_photo
-        else:
-            tw_ = text_w_full
-        yy = _draw_paras(draw, text_x, y, s_["hindi"], f_hi, tw_, 8, GOLD)
-        _draw_paras(draw, text_x, yy + 2, s_["roman"], f_ru, tw_, 6, (235, 235, 235))
-        y += heights[i]
-        if i < n - 1:
-            mid = int(y + gap / 2)
-            cx = W // 2
-            draw.line([(MARGIN, mid), (cx - 16, mid)], fill=GOLD_DARK, width=2)
-            draw.line([(cx + 16, mid), (W - MARGIN, mid)], fill=GOLD_DARK, width=2)
-            draw.polygon([(cx, mid - 8), (cx + 8, mid), (cx, mid + 8), (cx - 8, mid)], fill=GOLD)
-            y += gap
+    y = banner_y + banner_h + 22
+
+    # A long headline (old single-story mode) goes under the banner in gold
+    if headline_extra:
+        f_extra = _font("NotoSans.ttf", 26, "Bold")
+        for line in _wrap(draw, headline_extra, f_extra, W - 2 * MARGIN)[:2]:
+            lw = draw.textlength(line, font=f_extra)
+            draw.text((cx - lw / 2, y), line, font=f_extra, fill=GOLD)
+            y += 34
+        y += 6
+
+    # Footer position is fixed; the body must fit above it
+    footer_line_y = H - 150
+    body_bottom = footer_line_y - 28
+    text_w = W - MARGIN - (MARGIN + NUM_W)
+
+    # Pick photo height + text size: reference photo first, then trade a
+    # little photo height for readability, then shrink text, then drop photo.
+    if photo is not None:
+        attempts = []
+        for ph, min_size in [(270, 24), (235, 24), (200, 23), (270, 22), (235, 22), (200, 22), (0, 22)]:
+            for size in range(27, min_size - 1, -1):
+                if (ph, size) not in attempts:
+                    attempts.append((ph, size))
+    else:
+        attempts = [(0, size) for size in range(28, 21, -1)]
+
+    chosen = attempts[-1]
+    for photo_h, size in attempts:
+        f_hi = _font("NotoSansDevanagari.ttf", size, "Bold")
+        f_ru = _font("NotoSans.ttf", size - 1, "Medium")
+        top = y + photo_h + 26 if photo_h else y + 4
+        need = (LABEL_H + _numbered_height(draw, hindi, f_hi, text_w)
+                + DIVIDER_H + LABEL_H + _numbered_height(draw, roman_urdu, f_ru, text_w))
+        if top + need <= body_bottom:
+            chosen = (photo_h, size)
+            break
+    photo_h, size = chosen
+    f_hi = _font("NotoSansDevanagari.ttf", size, "Bold")
+    f_ru = _font("NotoSans.ttf", size - 1, "Medium")
+    if photo_h:
+        # Fewer/shorter stories leave space at the bottom: give it to the photo
+        need = (LABEL_H + _numbered_height(draw, hindi, f_hi, text_w)
+                + DIVIDER_H + LABEL_H + _numbered_height(draw, roman_urdu, f_ru, text_w))
+        leftover = body_bottom - (y + photo_h + 26 + need)
+        if leftover > 60:
+            photo_h += min(int(leftover - 24), 110)
+
+    if photo is not None and photo_h:
+        _rounded_photo(photo, img, MARGIN, int(y), W - 2 * MARGIN, photo_h)
+        draw = ImageDraw.Draw(img)
+        y += photo_h + 26
+    else:
+        y += 4
+
+    # Hindi section, divider, Roman Urdu section
+    _section_label(draw, y, "हिंदी", _font("NotoSansDevanagari.ttf", 30, "Bold"))
+    y += LABEL_H
+    y = _draw_numbered(draw, y, hindi, f_hi)
+    _diamond_divider(draw, y + 12)
+    y += DIVIDER_H
+    _section_label(draw, y, "ROMAN URDU", _font("NotoSans.ttf", 25, "Bold"), tracking=2, y_off=4)
+    y += LABEL_H
+    _draw_numbered(draw, y, roman_urdu, f_ru)
+
+    # Footer: small NR logo, separator, byline, with a rule on both sides
+    credit = "By Abu Aimal & Aimal Akram"
+    f_credit = _font("NotoSans.ttf", 30, "Bold")
+    small = _logo_mark(96)
+    credit_w = draw.textlength(credit, font=f_credit)
+    group_w = small.width + 26 + credit_w
+    group_x = (W - group_w) / 2
+    credit_y = H - 112
+    draw.line([(MARGIN + 50, footer_line_y), (group_x - 28, footer_line_y)], fill=GOLD_DARK, width=2)
+    draw.line([(group_x + group_w + 28, footer_line_y), (W - MARGIN - 50, footer_line_y)], fill=GOLD_DARK, width=2)
+    img.paste(small, (int(group_x), int(credit_y + 17 - small.height / 2)), small)
+    sep_x = group_x + small.width + 13
+    draw.line([(sep_x, credit_y - 8), (sep_x, credit_y + 42)], fill=GOLD, width=3)
+    draw.text((group_x + small.width + 26, credit_y), credit, font=f_credit, fill=GOLD_LIGHT)
 
     img.save(out_path, "PNG", optimize=True)
     return out_path
+
+
+def render_card(headline, hindi, roman_urdu, source, out_path, photo=None):
+    """`source` is ignored on purpose: source names are never printed on the card."""
+    headline = (headline or "").strip()
+    if not headline or headline.upper() == "LATEST NEWS":
+        return _render(hindi, roman_urdu, photo, out_path)
+    if len(headline) <= 24:
+        return _render(hindi, roman_urdu, photo, out_path, banner=headline.upper())
+    return _render(hindi, roman_urdu, photo, out_path, headline_extra=headline)
+
+
+def render_digest_card(stories, out_path):
+    """Reference-design card for a digest of stories.
+
+    stories: list of {"hindi": [..], "roman": [..], "photo": PIL image or None}
+    All stories' Hindi points form the numbered Hindi list and all Roman Urdu
+    points the numbered Roman Urdu list; the wide photo at the top is the
+    first story photo available (none if no story has a usable photo).
+    """
+    hindi = [p for s in stories for p in s["hindi"]]
+    roman = [p for s in stories for p in s["roman"]]
+    photo = next((s["photo"] for s in stories if s.get("photo") is not None), None)
+    return _render(hindi, roman, photo, out_path)
