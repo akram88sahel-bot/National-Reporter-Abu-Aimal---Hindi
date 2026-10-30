@@ -20,6 +20,8 @@ Settings (env vars):
   TEST_WRITE=1 -> writes one sample post to the log and exits (no publish)
   MAX_POSTS_PER_RUN (default 2)
   MIN_SOURCES (default 2)
+  POST_TO_FACEBOOK=1/0 (default 1) -> public Facebook Page post on/off
+  POST_TO_INSTAGRAM=1/0 (default 1) -> Instagram post on/off
 """
 
 import json
@@ -57,6 +59,8 @@ FEEDS = [
 PREFERRED_OUTLETS = {"The Hindu", "Indian Express", "NDTV", "India Today"}
 
 DRY_RUN = os.getenv("DRY_RUN", "1") == "1"
+POST_TO_FACEBOOK = os.getenv("POST_TO_FACEBOOK", "1") != "0"
+POST_TO_INSTAGRAM = os.getenv("POST_TO_INSTAGRAM", "1") != "0"
 MODEL = os.getenv("GEMINI_MODEL", "gemini-flash-latest")
 OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
 WRITE_MODEL = os.getenv("GEMINI_WRITE_MODEL", "gemini-flash-latest")
@@ -463,26 +467,70 @@ def fetch_pixabay(query):
         return None
 
 
-def publish(data, card_path):
-    """Publish the black-and-gold card. Text lives on the image; caption is only the source line."""
-    page_id = os.environ["FB_PAGE_ID"]
-    token = page_token()
-    caption = post_text(data)  # same headline and bullets as the card; no source names
+def _upload_card_photo(page_id, token, card_path, caption, published):
+    """Upload the card to the Page. published=True makes a public Facebook
+    post; published=False only hosts the image (not visible on the Page),
+    which Instagram needs because its API requires an online image URL."""
     with open(card_path, "rb") as f:
         r = requests.post(
             f"{GRAPH}/{page_id}/photos",
-            data={"message": caption, "access_token": token, "published": "true"},
+            data={"message": caption, "access_token": token,
+                  "published": "true" if published else "false"},
             files={"source": ("card.png", f, "image/png")},
             timeout=60,
         )
     if r.status_code != 200:
-        raise RuntimeError(f"Facebook publish failed: {r.status_code} {r.text}")
-    result = r.json()
+        what = "Facebook publish" if published else "unpublished image upload for Instagram"
+        raise RuntimeError(f"{what} failed: {r.status_code} {r.text}")
+    return r.json()
+
+
+def _delete_host_photo(token, photo_id):
+    """Best-effort removal of an unpublished host photo after Instagram used it."""
+    if not photo_id:
+        return False
     try:
-        publish_instagram(page_id, token, result.get("id"), caption)
-    except Exception as e:  # Instagram must never block or undo the Facebook post
-        log(f"Instagram publish skipped: {e}")
-    return result
+        r = requests.delete(f"{GRAPH}/{photo_id}", params={"access_token": token}, timeout=30)
+        return r.status_code == 200
+    except Exception:
+        return False
+
+
+def publish(data, card_path):
+    """Publish the black-and-gold card to Facebook and/or Instagram.
+
+    POST_TO_FACEBOOK=0 + POST_TO_INSTAGRAM=1 is Instagram-only mode: NO
+    public Facebook post is made. The card is uploaded unpublished only to
+    get a hosted image URL for Instagram, and removed again after a
+    successful Instagram post (kept while an Instagram retry is queued).
+    """
+    if not POST_TO_FACEBOOK and not POST_TO_INSTAGRAM:
+        log("Both Facebook and Instagram are OFF (POST_TO_FACEBOOK=0, POST_TO_INSTAGRAM=0); card not published anywhere.")
+        return {"skipped": True, "reason": "facebook_and_instagram_off"}
+    page_id = os.environ["FB_PAGE_ID"]
+    token = page_token()
+    caption = post_text(data)  # same headline and bullets as the card; no source names
+    if POST_TO_FACEBOOK:
+        result = _upload_card_photo(page_id, token, card_path, caption, published=True)
+        if POST_TO_INSTAGRAM:
+            try:
+                publish_instagram(page_id, token, result.get("id"), caption)
+            except Exception as e:  # Instagram must never block or undo the Facebook post
+                log(f"Instagram publish skipped: {e}")
+        else:
+            log("Instagram is OFF (POST_TO_INSTAGRAM=0); Facebook only.")
+        return result
+    # Instagram-only mode
+    log("Instagram-only mode: public Facebook post SKIPPED (POST_TO_FACEBOOK=0).")
+    result = _upload_card_photo(page_id, token, card_path, caption, published=False)
+    try:
+        ig_result = publish_instagram(page_id, token, result.get("id"), caption)
+    except Exception as e:  # publish_instagram already queued it for a later retry
+        log(f"Instagram publish queued/skipped: {e}")
+        return {"facebook_public": False, "instagram": "queued", "host_photo_id": result.get("id")}
+    deleted = _delete_host_photo(token, result.get("id"))
+    log(f"Instagram-only: unpublished host photo deleted: {deleted}")
+    return {"facebook_public": False, "instagram": ig_result, "host_photo_deleted": deleted}
 
 
 IG_PENDING_FILE = ROOT / "data" / "ig_pending.json"
@@ -538,15 +586,26 @@ def publish_instagram(page_id, token, photo_id, caption):
         raise
 
 
+IG_RETRY_PER_RUN = 2  # cap retries per run so a blocked queue cannot eat the whole run
+
+
 def retry_pending_instagram():
     """Try queued Instagram posts again. Runs at the start of every bot run."""
+    if not POST_TO_INSTAGRAM:
+        log("Instagram is OFF (POST_TO_INSTAGRAM=0); queued Instagram posts not retried.")
+        return
     queue = _load_json(IG_PENDING_FILE, [])
     if not queue:
         return
     page_id = os.environ["FB_PAGE_ID"]
     token = page_token()
     keep = []
-    for e in queue:
+    tried = 0
+    for idx, e in enumerate(queue):
+        if tried >= IG_RETRY_PER_RUN:
+            keep.extend(queue[idx:])  # leave the rest untouched for the next run
+            break
+        tried += 1
         try:
             _ig_publish_url(page_id, token, e["image_url"], e["caption"])
             log("Instagram retry succeeded")
@@ -557,6 +616,10 @@ def retry_pending_instagram():
                 keep.append(e)
             else:
                 log(f"Instagram retry dropped after {e['attempts']} attempts: {str(ex)[:120]}")
+            if "request limit" in str(ex).lower() or "action is blocked" in str(ex).lower():
+                log("Meta rate limit hit; leaving the rest of the Instagram queue for the next run.")
+                keep.extend(queue[idx + 1:])
+                break
     _save_json(IG_PENDING_FILE, keep)
     log(f"Instagram retry queue: {len(keep)} waiting")
 
@@ -678,6 +741,9 @@ def card_check():
 
 def publish_test_draft():
     """Publish one connection-check card publicly, then remove the earlier unpublished draft."""
+    if not POST_TO_FACEBOOK:
+        log("CARD_PUBLISH blocked: public Facebook posting is OFF (POST_TO_FACEBOOK=0).")
+        return 0
     page_id = os.environ["FB_PAGE_ID"]
     token = os.environ["FB_PAGE_TOKEN"]
     card_path = Path("/tmp/nr_check_card.png")
@@ -1074,9 +1140,9 @@ def main():
     if TEST_WRITE:
         return test_write()
     if os.getenv("DIGEST", "1") == "1":
-        log(f"Start (one card per run, 3-5 stories, one AI call). DRY_RUN={DRY_RUN} MODEL={WRITE_MODEL}")
+        log(f"Start (one card per run, 3-5 stories, one AI call). DRY_RUN={DRY_RUN} MODEL={WRITE_MODEL} POST_TO_FACEBOOK={POST_TO_FACEBOOK} POST_TO_INSTAGRAM={POST_TO_INSTAGRAM}")
         return run_digest()
-    log(f"Start. DRY_RUN={DRY_RUN} MODEL={MODEL} WRITE_MODEL={WRITE_MODEL} MIN_SOURCES={MIN_SOURCES}")
+    log(f"Start. DRY_RUN={DRY_RUN} MODEL={MODEL} WRITE_MODEL={WRITE_MODEL} MIN_SOURCES={MIN_SOURCES} POST_TO_FACEBOOK={POST_TO_FACEBOOK} POST_TO_INSTAGRAM={POST_TO_INSTAGRAM}")
     posted = load_posted()
     items = fetch_items()
     if not items:

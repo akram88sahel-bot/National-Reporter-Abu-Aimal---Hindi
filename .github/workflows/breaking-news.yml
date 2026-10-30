@@ -39,6 +39,8 @@ jobs:
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
           FB_PAGE_TOKEN: ${{ secrets.FB_ACCESS_TOKEN }}
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+          POST_TO_FACEBOOK: ${{ vars.POST_TO_FACEBOOK || '1' }}   # set repo variable POST_TO_FACEBOOK to 0 to stop public Facebook posts
+          POST_TO_INSTAGRAM: ${{ vars.POST_TO_INSTAGRAM || '1' }}   # set repo variable POST_TO_INSTAGRAM to 0 to stop Instagram posts
           RU_PROVIDER: openai
           RU_BASE_URL: https://api.groq.com/openai/v1
           RU_MODEL: llama-3.3-70b-versatile
