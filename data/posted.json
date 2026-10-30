@@ -4336,5 +4336,15 @@
     ],
     "posted_at": "2026-10-30T20:33:05+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Tripura civic polls scheduled",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/elections/story/tripura-civic-elections-21-urban-local-bodies-polling-november-27-ptag-3028817-2026-10-30?utm_source=rss"
+    ],
+    "posted_at": "2026-10-30T21:01:31+00:00",
+    "dry_run": false
   }
 ]

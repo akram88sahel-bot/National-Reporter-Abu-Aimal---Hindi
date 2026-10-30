@@ -2,7 +2,7 @@
   {
     "image_url": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-6/874884009_1656296712525031_5261001641148178462_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=054031&_nc_ohc=8b81DD6vBFUQ7kNvwFmRIa5&_nc_oc=Adoo8Uy4jZwcRYdDlDKIGtiGpGHyR9_vU-L8b106rzjZ4s32ifCi3XPpChI8w8xhxQg&_nc_zt=23&_nc_ht=scontent-sjc6-1.xx&edm=AMAeTUEEAAAA&_nc_gid=fbf1CBXW05RN649ClEaBKQ&_nc_tpa=Q5bMBQKxK41JtsUKSd11abFVnIgr3diJA8u-CHFd1w3VKHX5WD-uwQbxH6oOvih7BzuS8LGSsrW_1IT2ng&oh=00_AQQKLZqACzRWu-BWnPkfz7Z8ma1igst7_v11_r0qnhxSIA&oe=6AE9F251",
     "caption": "🚨 LATEST NEWS\n\nHINDI\n• आंध्र प्रदेश में चक्रवात अरनब के बाद जगन मोहन रेड्डी ने मुख्यमंत्री चंद्रबाबू नायडू पर निशाना साधते हुए करीब 12 लाख एकड़ में फसल नुकसान का दावा किया।\n• सुप्रीम कोर्ट ने कृष्णा-गोदावरी गैस विवाद में समझौते की कोशिशें नाकाम होने के बाद पूर्व न्यायाधीश रंजना प्रकाश देसाई को मध्यस्थ नियुक्त किया है।\n• चैंबर ऑफ ट्रेड एंड इंडस्ट्री ने दिवाली के दौरान 12,000 करोड़ रुपये के व्यापार के नुकसान की आशंका जताते हुए सोनिया गांधी से 1 नवंबर की रैली टालने का अनुरोध किया है।\n\nROMAN URDU\n• Andhra Pradesh mein Cyclone Arnab ke baad Jagan Mohan Reddy ne Chief Minister Chandrababu Naidu par nishana sadhte hue kareeb 12 lakh acre fasal kharab hone ka dawa kiya.\n• Supreme Court ne Krishna-Godavari gas dispute mein settlement ki koshishein nakam hone ke baad former judge Ranjana Prakash Desai ko mediator muqarrar kiya hai.\n• Chamber of Trade and Industry ne Diwali ke dauran 12,000 crore rupaye ke business loss ke dar se Sonia Gandhi se 1 November ki rally aage badhane ki appeal ki hai.",
-    "attempts": 4,
+    "attempts": 5,
     "last_error": "Instagram publish failed: 403 {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":4,\"error_subcode\":2207051,\"error_user_title\":\"Action is blocke",
     "queued_at": "2026-10-30T06:08:57+00:00"
   },
@@ -68,5 +68,12 @@
     "attempts": 1,
     "last_error": "Instagram publish failed: 403 {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":4,\"error_subcode\":2207051,\"error_user_title\":\"Action is blocke",
     "queued_at": "2026-10-30T20:33:05+00:00"
+  },
+  {
+    "image_url": "https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-6/870468789_1656941039127265_4096550591824207849_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=054031&_nc_ohc=RslhRJK3hVMQ7kNvwHQMHcl&_nc_oc=AdrXi_Tj_E_y1JXvIY8d9HuurDZawR62PjxHHWUjtrYdCaM17jx67vwSKnzuNy0zT-4&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=d3jTHXPupv622CtWxx8ZOA&_nc_tpa=Q5bMBQKQgxd2f-WwP1X8s-TuHkrrIJ9riCXSFP3I-bLwflRTBPN4RK30EK-kzJGpu2olTz26g7k4KUg2QQ&oh=00_AQQA2tpOc6TgJNByOHqE6Hph9952GLp8KDDkIFr_R98-dA&oe=6AEAEBD9",
+    "caption": "🚨 LATEST NEWS\n\nHINDI\n• त्रिपुरा में 21 शहरी स्थानीय निकायों के चुनाव 27 नवंबर को होंगे।\n• इन चुनावों में कुल 345 वार्ड शामिल हैं और अगरतला नगर निगम में 51 वार्ड हैं।\n• मतगणना 2 दिसंबर को होगी क्योंकि मौजूदा निकायों का कार्यकाल 9 दिसंबर को समाप्त हो रहा है।\n\nROMAN URDU\n• Tripura mein 21 urban local bodies ke chunav 27 November ko honge.\n• In chunavon mein kul 345 wards shamil hain aur Agartala Municipal Corporation mein 51 wards hain.\n• Matganna 2 December ko hogi kyunki maujuda nikayon ka karyakal 9 December ko samapt ho raha hai.",
+    "attempts": 1,
+    "last_error": "Instagram publish failed: 403 {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":4,\"error_subcode\":2207051,\"error_user_title\":\"Action is blocke",
+    "queued_at": "2026-10-30T21:01:31+00:00"
   }
 ]
