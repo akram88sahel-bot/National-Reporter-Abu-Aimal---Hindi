@@ -2,7 +2,7 @@
   {
     "image_url": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-6/871150619_1656314035856632_2939268090888354880_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=054031&_nc_ohc=3XI4Xo8hkBMQ7kNvwERgnrt&_nc_oc=AdoBSjRu22zYLS0ink8XiX_E3FQj8mcNvB0O-03yDiR3yKZ98IXmjaCcltzfSppGMWU&_nc_zt=23&_nc_ht=scontent-atl3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=Ddungb1Q7pKySS49Qglf8w&_nc_tpa=Q5bMBQKKRAZIihXeoYCyFw6SuwMU_cUBdQQtAlOM02Z6EfXiyctzvRsHOv2An4fhaNW_ZGegozhXB7Gzqg&oh=00_AQSXiswp-ADWnoNFDlMXOFRlHAMCP3pJ7w4MjBfQzxAZ4g&oe=6AEA13DC",
     "caption": "🚨 LATEST NEWS\n\nHINDI\n• प्रयागराज में शिक्षक भर्ती के उम्मीदवारों का विरोध प्रदर्शन समाप्त हो गया और कई लोगों को हिरासत में लिया गया।\n• यह घटना प्रयागराज में हुई।\n• उम्मीदवार भर्ती परीक्षाओं में अतिरिक्त अवसर की मांग कर रहे थे।\n\nROMAN URDU\n• Prayagraj mein teacher recruitment aspirants ka protest khatam ho gaya aur kai logon ko detain kiya gaya.\n• Yeh ghatna Prayagraj mein hui.\n• Aspirants recruitment exams mein additional attempt ki maang kar rahe the.",
-    "attempts": 2,
+    "attempts": 3,
     "last_error": "Instagram publish failed: 403 {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":4,\"error_subcode\":2207051,\"error_user_title\":\"Action is blocke",
     "queued_at": "2026-10-30T06:37:20+00:00"
   },
@@ -96,5 +96,12 @@
     "attempts": 1,
     "last_error": "Instagram publish failed: 403 {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":4,\"error_subcode\":2207051,\"error_user_title\":\"Action is blocke",
     "queued_at": "2026-10-30T22:47:14+00:00"
+  },
+  {
+    "image_url": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/876300329_1657020239119345_5233135948588457799_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=054031&_nc_ohc=6K0Hh5WXNhQQ7kNvwGgGF7L&_nc_oc=Adqqc59_HTs6S7fY2v9-9YQivNeEJZ-_D8mSplWb4sn9BugxjsKJk-VmuvKzNISCPB4&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AMAeTUEEAAAA&_nc_gid=ec3WJRdQgLjLGctnmjrD_A&_nc_tpa=Q5bMBQKgXyO6wF_FVgXEG4KvziGc4F9e3mROWmbsHudW83x0S86w4rh30-oTEoZo4O24-eV3ZSZ3ExuYOw&oh=00_AQRh90f9Po1RxLIzjjQ4tv8LdAYM-TTa851lmvhjMZrmyQ&oe=6AEAED42",
+    "caption": "🚨 LATEST NEWS\n\nHINDI\n• इटली में हजारों लोगों ने देशव्यापी हड़ताल के दौरान विरोध प्रदर्शन किया।\n• यह प्रदर्शन पूरे देश में आयोजित किए गए।\n• यह प्रदर्शन बढ़ते जीवनयापन खर्च, कम वेतन और सैन्य खर्च के विरोध में किया गया।\n\nROMAN URDU\n• Italy mein hazaaron logon ne deshvyapi hartal ke dauran virodh pradarshan kiya.\n• Yeh pradarshan poore desh mein aayojit kiye gaye.\n• Yeh pradarshan badhte jeevanyapan kharch, kam vetan aur sainya kharch ke virodh mein kiya gaya.",
+    "attempts": 1,
+    "last_error": "Instagram publish failed: 403 {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":4,\"error_subcode\":2207051,\"error_user_title\":\"Action is blocke",
+    "queued_at": "2026-10-30T23:13:31+00:00"
   }
 ]

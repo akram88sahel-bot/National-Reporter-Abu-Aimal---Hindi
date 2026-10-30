@@ -4387,5 +4387,15 @@
     ],
     "posted_at": "2026-10-30T22:47:14+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Italy nationwide strike and protests",
+    "class": "B",
+    "region": "WORLD",
+    "links": [
+      "https://www.indiatoday.in/world/story/italy-gripped-by-nationwide-strike-as-thousands-protest-over-rising-living-costs-wages-3029071-2026-10-31?utm_source=rss"
+    ],
+    "posted_at": "2026-10-30T23:13:31+00:00",
+    "dry_run": false
   }
 ]
