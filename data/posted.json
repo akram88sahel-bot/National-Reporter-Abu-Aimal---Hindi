@@ -4304,5 +4304,17 @@
     ],
     "posted_at": "2026-10-30T09:32:30+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Infosys opens new block at Pocharam campus; Telangana government protected public lands; BRS MLAs allege water release to Andhra Pradesh",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.thehindu.com/news/cities/Hyderabad/infosys-opens-11-million-sqft-new-block-at-pocharam-campus-in-hyderabad/article71645905.ece",
+      "https://www.thehindu.com/news/national/telangana/telangana-cm-revanth-says-govt-protected-15-lakh-crore-worth-public-lands-since-december-2023/article71644459.ece",
+      "https://www.thehindu.com/news/national/telangana/brs-mlas-accuse-telangana-cm-of-letting-1000-tmc-ft-godavari-water-flow-to-andhra-pradesh/article71644652.ece"
+    ],
+    "posted_at": "2026-10-30T18:35:32+00:00",
+    "dry_run": false
   }
 ]
