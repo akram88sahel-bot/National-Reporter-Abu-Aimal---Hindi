@@ -4376,5 +4376,16 @@
     ],
     "posted_at": "2026-10-30T22:20:56+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Telangana rice millers hoarding warning; Singareni workers Deepavali bonus",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/uttam-warns-rice-millers-traders-against-hoarding-black-marketing/article71645931.ece",
+      "https://www.thehindu.com/news/national/telangana/about-38k-singareni-workers-to-get-up-to-11-lakh-deepavali-bonus-on-nov-5/article71645103.ece"
+    ],
+    "posted_at": "2026-10-30T22:47:14+00:00",
+    "dry_run": false
   }
 ]
