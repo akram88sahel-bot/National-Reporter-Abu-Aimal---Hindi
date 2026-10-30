@@ -4195,5 +4195,15 @@
     ],
     "posted_at": "2026-10-30T04:18:35+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Rahul Gandhi opposes IDBI Bank stake sale",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/rahul-gandhi-backs-employees-idbi-bank-stake-sale-against-fairfax-deal-3028231-2026-10-30?utm_source=rss"
+    ],
+    "posted_at": "2026-10-30T04:49:10+00:00",
+    "dry_run": false
   }
 ]
