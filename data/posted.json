@@ -4161,5 +4161,16 @@
     ],
     "posted_at": "2026-10-30T02:29:03+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "amit shah up bjp meeting; indian coast guard rescues crew andhra",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/elections/assembly/story/amit-shah-up-bjp-lucknow-meeting-2027-assembly-election-strategy-3028188-2026-10-30?utm_source=rss",
+      "https://www.ndtv.com/andhra-pradesh-news/cyclone-arnab-indian-coast-guard-rescues-20-crew-from-stranded-singapore-bound-cargo-ship-off-andhra-coast-12256701#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-30T02:56:04+00:00",
+    "dry_run": false
   }
 ]
