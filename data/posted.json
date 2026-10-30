@@ -4283,5 +4283,16 @@
     ],
     "posted_at": "2026-10-30T08:02:22+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Telangana thunderstorm forecast and temperatures; Odisha parties unite against Andhra polls in Kotia",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/telanganas-minimum-temperature-between-18%C2%B0c-and-25%C2%B0c-on-october-30-morning-222%C2%B0c-in-ghmc/article71644202.ece",
+      "https://www.indiatoday.in/india/law-news/story/kotia-dispute-odisha-parties-oppose-andhra-pradesh-rural-elections-ptag-3028409-2026-10-30?utm_source=rss"
+    ],
+    "posted_at": "2026-10-30T08:29:21+00:00",
+    "dry_run": false
   }
 ]

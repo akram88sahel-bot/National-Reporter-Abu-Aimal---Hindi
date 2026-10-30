@@ -2,7 +2,7 @@
   {
     "image_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/876440725_1656209999200369_7774773429399863796_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=e5c1b6&_nc_ohc=o8ZWEaeZ3WwQ7kNvwGiSq3b&_nc_oc=AdqnIyVYq--toL0nr9sjJXYtJAMLXJ53f0IwJ3HuEGOBryR-309EIuXNjcLIiOeT_1I&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&edm=AMAeTUEEAAAA&_nc_gid=R2cUhwjetnMGYzCrfx8VDg&_nc_tpa=Q5bMBQIc4h7eMFnFWA6saksCQKalqjti40T49M4eM2TzNw_jJFKgQzaGwfNV-cT1ZkddQaU9TWIwDKrzYg&oh=00_AQRuvanOTMykxPkJQbDmd93oSp7XMHDZxGyFxSVFzymBww&oe=6AE9F900",
     "caption": "🚨 LATEST NEWS\n\nHINDI\n• भारत मौसम विज्ञान विभाग ने चक्रवात अरनव के चलते चार साल का सबसे ठंडा अक्टूबर दिन दर्ज होने के बाद दिल्ली-एनसीआर में आंधी-तूफान के लिए रेड और ऑरेंज अलर्ट जारी किया।\n• खंडित जनादेश के बाद बेंजामिन नेतन्याहू को सत्ता में लौटने से रोकने के लिए प्रदर्शनकारियों ने उनके घर के बाहर प्रदर्शन कर उनके इस्तीफे और संयुक्त यहूदी-अरब सरकार बनाने की मांग की।\n• रेडिट ने एआई स्क्रैपिंग रोकने और गूगल से घटते ट्रैफिक से निपटने के लिए अपने प्लेटफॉर्म पर पोस्ट पढ़ने के लिए अकाउंट लॉगिन अनिवार्य कर दिया है।\n\nROMAN URDU\n• India Meteorological Department ne Cyclone Arnab ke asar se char saal ka sabse sarda October din record hone par Delhi-NCR mein aandhi aur toofan ke liye red aur orange alert jari kiya.\n• Fractured verdict ke baad Benjamin Netanyahu ko dobara power mein aane se rokne ke liye muzahireen ne unke ghar ke bahar muzahira karke unke istefe aur Jewish-Arab government banane ki maang ki.\n• Reddit ne AI scraping ko rokne aur Google se girte traffic se nipatne ke liye apne platform par posts padhne ke liye account login lazmi kar diya hai.",
-    "attempts": 4,
+    "attempts": 5,
     "last_error": "Instagram publish failed: 403 {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":4,\"error_subcode\":2207051,\"error_user_title\":\"Action is blocke",
     "queued_at": "2026-10-30T03:50:47+00:00"
   },
@@ -68,5 +68,12 @@
     "attempts": 1,
     "last_error": "Instagram publish failed: 403 {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":4,\"error_subcode\":2207051,\"error_user_title\":\"Action is blocke",
     "queued_at": "2026-10-30T08:02:22+00:00"
+  },
+  {
+    "image_url": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/861806924_1656386229182746_7739572568723795692_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=054031&_nc_ohc=I0Pxg8di_qoQ7kNvwGt2e4V&_nc_oc=AdruDFlvHU-w11b15Yd37EdFP0pCr6Z0WR8ZW8gSii9bk5dQsgS4VfJQfPxdF2CHJXE&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AMAeTUEEAAAA&_nc_gid=l0hZJe5MAvURHePXKgaF7Q&_nc_tpa=Q5bMBQLXWXzrvbXOEKOYW1TE1vb1me8_IM8W9hwi2s-z5VOwBfkV8Z7BHOudqPtA37JmRSJxdDQuqjHocA&oh=00_AQTc6b4zfstDu0MvXJoANGdWDWQxYIpSvGZQQAsjV5P6Lg&oe=6AEA423A",
+    "caption": "🚨 LATEST NEWS\n\nHINDI\n• तेलंगाना के 11 जिलों में शुक्रवार दोपहर से शनिवार सुबह तक आंधी-तूफान का अलर्ट जारी किया गया है, जबकि राज्य में न्यूनतम तापमान 18 से 25 डिग्री सेल्सियस के बीच दर्ज किया गया।\n• ओडिशा की सत्तारूढ़ भाजपा और विपक्षी दलों ने कोरापुट के विवादित सीमावर्ती क्षेत्र कोटिया में आंध्र प्रदेश द्वारा ग्रामीण चुनाव कराने का विरोध करने के लिए हाथ मिलाया है, जिसका विवाद सुप्रीम कोर्ट में लंबित है।\n\nROMAN URDU\n• Telangana ke 11 zilon mein jumme ki dopehar se hafte ki subah tak toofan ka alert jaari kiya gaya hai, jabke riyasat mein kam se kam temperature 18 se 25 degree Celsius ke darmiyan darj hua.\n• Odisha ki hukmaran BJP aur opposition parties ne Koraput ke mutanaza sarhadi ilaqe Kotia mein Andhra Pradesh ke dehi elections karwane ki mukhalifat ke liye ittehad kiya hai, kyunki yeh tanaza Supreme Court mein zere iltwa hai.",
+    "attempts": 1,
+    "last_error": "Instagram publish failed: 403 {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":4,\"error_subcode\":2207051,\"error_user_title\":\"Action is blocke",
+    "queued_at": "2026-10-30T08:29:21+00:00"
   }
 ]
