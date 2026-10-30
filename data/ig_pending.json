@@ -2,7 +2,7 @@
   {
     "image_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/861945832_1656156592539043_799585897012236109_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=e5c1b6&_nc_ohc=l8PzONWOk-MQ7kNvwHfrfyf&_nc_oc=Adpj1XSg-gKSOFvg6n51gm_gXZeAL6rb-lBXVZJVg-ho9XKilNTrXfXzKpqn0kfI1D0&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=aXaQ3T1uhJDfgCb5YpF1uQ&_nc_tpa=Q5bMBQKO-tTdDM-ifJC4DF7c-xFnnsojOfrhHqnboRkaazi06ZY8GZ7vjmpWIIysJy-h7wMou4jSgVxRWw&oh=00_AQR4V1NJdEYuJ6CgFEHyukYvSWSiZbL-StyLvRdkaBHy-g&oe=6AE9D114",
     "caption": "🚨 LATEST NEWS\n\nHINDI\n• केंद्र सरकार दीवाली से पहले 30 अक्टूबर को देश भर के 9.34 करोड़ किसानों को पीएम-किसान योजना की 24वीं किस्त जारी करेगी।\n• दिल्ली में 1 नवंबर को होने वाली रैली के मद्देनजर सुरक्षा के लिए 27 हजार पैरामिलिट्री जवानों की तैनाती 16 नवंबर तक बढ़ा दी गई है।\n• इजरायल के संसदीय चुनाव में किसी भी दल को सरकार बनाने का बहुमत न मिलने से गतिरोध पैदा हो गया है, जबकि प्रधानमंत्री बेंजामिन नेतन्याहू ने वोट में धांधली का आरोप लगाया है।\n\nROMAN URDU\n• Central government Diwali se pehle 30 October ko desh bhar ke 9.34 crore farmers ko PM-Kisan scheme ki 24th instalment release karegi.\n• Delhi mein 1 November ki rally ke chalte security ke liye 27 hazar paramilitary forces ki deployment ko 16 November tak badha diya gaya hai.\n• Israel ke parliamentary election mein kisi bhi party ko government banane ka majority na milne se deadlock ho gaya hai, jabki Prime Minister Benjamin Netanyahu ne vote fraud ka ilzam lagaya hai.",
-    "attempts": 6,
+    "attempts": 7,
     "last_error": "Instagram publish failed: 403 {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":4,\"error_subcode\":2207051,\"error_user_title\":\"Action is blocke",
     "queued_at": "2026-10-30T02:29:03+00:00"
   },
@@ -40,5 +40,12 @@
     "attempts": 1,
     "last_error": "Instagram publish failed: 403 {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":4,\"error_subcode\":2207051,\"error_user_title\":\"Action is blocke",
     "queued_at": "2026-10-30T05:16:00+00:00"
+  },
+  {
+    "image_url": "https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/876968729_1656279152526787_8172599302573162794_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=054031&_nc_ohc=o1puMgvygCsQ7kNvwHRoag4&_nc_oc=AdqTMIHmibY21Dml8oL2WXhRmk4uyW_mafWI6dpMK_yXO67PVIYrrGotuQc_xLSS3Ug&_nc_zt=23&_nc_ht=scontent-ord5-1.xx&edm=AMAeTUEEAAAA&_nc_gid=FvkZ0rC8BUvM1beYNjSAMw&_nc_tpa=Q5bMBQJsxb5MqlAoIVoEiMHTmX5geJdPWwG6KMcs0rjBuw8lHPERGhw19pmuJSFyLHp69MBVobSmgcWhDQ&oh=00_AQSS7NHJTrFzzF3uHW2ZUWv9ohQ4ARlNV4im7VDQMx8aLQ&oe=6AEA155A",
+    "caption": "🚨 LATEST NEWS\n\nHINDI\n• इलाहाबाद हाई कोर्ट ने उत्तर प्रदेश में केजीबीवी शिक्षकों के लंबे अनुबंधों को असंवैधानिक जबरन श्रम करार दिया।\n• यह फैसला अदालत द्वारा कम पारिश्रमिक और असुरक्षित संविदात्मक नौकरियों के खिलाफ दिया गया।\n• अदालत ने उत्तर प्रदेश सरकार को इन शिक्षकों के वेतन और सेवा शर्तों में सुधार करने का आदेश दिया।\n\nROMAN URDU\n• Allahabad High Court ne Uttar Pradesh mein KGBV teachers ke lambe contracts ko unconstitutional forced labour qarar diya.\n• Yeh faisla adalat dwara kam parishramik aur asurakshit contractual jobs ke khilaf diya gaya.\n• Adalat ne Uttar Pradesh government ko in teachers ke वेतन aur service conditions mein sudhar karne ka order diya.",
+    "attempts": 1,
+    "last_error": "Instagram publish failed: 403 {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":4,\"error_subcode\":2207051,\"error_user_title\":\"Action is blocke",
+    "queued_at": "2026-10-30T05:42:17+00:00"
   }
 ]
