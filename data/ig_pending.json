@@ -2,7 +2,7 @@
   {
     "image_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/876440725_1656209999200369_7774773429399863796_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=e5c1b6&_nc_ohc=o8ZWEaeZ3WwQ7kNvwGiSq3b&_nc_oc=AdqnIyVYq--toL0nr9sjJXYtJAMLXJ53f0IwJ3HuEGOBryR-309EIuXNjcLIiOeT_1I&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&edm=AMAeTUEEAAAA&_nc_gid=R2cUhwjetnMGYzCrfx8VDg&_nc_tpa=Q5bMBQIc4h7eMFnFWA6saksCQKalqjti40T49M4eM2TzNw_jJFKgQzaGwfNV-cT1ZkddQaU9TWIwDKrzYg&oh=00_AQRuvanOTMykxPkJQbDmd93oSp7XMHDZxGyFxSVFzymBww&oe=6AE9F900",
     "caption": "🚨 LATEST NEWS\n\nHINDI\n• भारत मौसम विज्ञान विभाग ने चक्रवात अरनव के चलते चार साल का सबसे ठंडा अक्टूबर दिन दर्ज होने के बाद दिल्ली-एनसीआर में आंधी-तूफान के लिए रेड और ऑरेंज अलर्ट जारी किया।\n• खंडित जनादेश के बाद बेंजामिन नेतन्याहू को सत्ता में लौटने से रोकने के लिए प्रदर्शनकारियों ने उनके घर के बाहर प्रदर्शन कर उनके इस्तीफे और संयुक्त यहूदी-अरब सरकार बनाने की मांग की।\n• रेडिट ने एआई स्क्रैपिंग रोकने और गूगल से घटते ट्रैफिक से निपटने के लिए अपने प्लेटफॉर्म पर पोस्ट पढ़ने के लिए अकाउंट लॉगिन अनिवार्य कर दिया है।\n\nROMAN URDU\n• India Meteorological Department ne Cyclone Arnab ke asar se char saal ka sabse sarda October din record hone par Delhi-NCR mein aandhi aur toofan ke liye red aur orange alert jari kiya.\n• Fractured verdict ke baad Benjamin Netanyahu ko dobara power mein aane se rokne ke liye muzahireen ne unke ghar ke bahar muzahira karke unke istefe aur Jewish-Arab government banane ki maang ki.\n• Reddit ne AI scraping ko rokne aur Google se girte traffic se nipatne ke liye apne platform par posts padhne ke liye account login lazmi kar diya hai.",
-    "attempts": 6,
+    "attempts": 7,
     "last_error": "Instagram publish failed: 403 {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":4,\"error_subcode\":2207051,\"error_user_title\":\"Action is blocke",
     "queued_at": "2026-10-30T03:50:47+00:00"
   },
@@ -75,5 +75,12 @@
     "attempts": 1,
     "last_error": "Instagram publish failed: 403 {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":4,\"error_subcode\":2207051,\"error_user_title\":\"Action is blocke",
     "queued_at": "2026-10-30T08:29:21+00:00"
+  },
+  {
+    "image_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/873071100_1656426399178729_6993687975968041777_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=054031&_nc_ohc=WuAbpDNsnUcQ7kNvwGm3D7j&_nc_oc=Adra2pHi0UYp9Xuw8EalRP80DVRihLdh-X8DWG6BUONj3BEW_mnVYyXAENo11MyfQiI&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&edm=AMAeTUEEAAAA&_nc_gid=ujD7YGORI_1ctz6dnJbA9A&_nc_tpa=Q5bMBQJRwAmCfsbWOugOOdGac-KaPIZ_5iKeVHH7wkBg3gFHW9Oh4b6r0Pc_HIb--u8BKTiJ9e8rE-LUyw&oh=00_AQQBMX-BtLFBiWGxriftniPuySLcMNkXA4yuH0tfWQp58Q&oe=6AEA357F",
+    "caption": "🚨 LATEST NEWS\n\nHINDI\n• गुवाहाटी हाई कोर्ट ने फैसला सुनाया है कि किसी गैर-सरकारी निकाय को लोगों को समाज से बहिष्कृत करने का कोई अधिकार नहीं है।\n• यह फैसला गुवाहाटी हाई कोर्ट द्वारा दिया गया है।\n• यह निर्णय लोगों के अधिकारों की रक्षा और अवैध सामाजिक बहिष्कार को रोकने के लिए दिया गया है।\n\nROMAN URDU\n• Gauhati High Court ne faisla sunaya hai ki kisi non-government body ko logon ko samaj se bahishkrit karne ka koi adhikar nahi hai.\n• Yeh faisla Gauhati High Court dwara diya gaya hai.\n• Yeh nirnay logon ke adhikon ki raksha aur avaidh samajik bahishkar ko rokne ke liye diya gaya hai.",
+    "attempts": 1,
+    "last_error": "Instagram publish failed: 403 {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":4,\"error_subcode\":2207051,\"error_user_title\":\"Action is blocke",
+    "queued_at": "2026-10-30T09:32:30+00:00"
   }
 ]
