@@ -4172,5 +4172,17 @@
     ],
     "posted_at": "2026-10-30T02:56:04+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "delhi cyclone weather alert; netanyahu protest israel; reddit login rule change",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.ndtv.com/delhi-news/delhi-logs-coldest-october-day-in-4-years-amid-cyclone-arnab-delhi-ncr-weather-delhi-rain-12256785#publisher=newsstand",
+      "https://www.indiatoday.in/world/story/israel-election-protests-netanyahu-resignation-jewish-arab-coalition-3028178-2026-10-30?utm_source=rss",
+      "https://www.indiatoday.in/technology/news/story/reddit-tightens-rules-now-you-will-need-to-log-in-to-read-posts-3028216-2026-10-30?utm_source=rss"
+    ],
+    "posted_at": "2026-10-30T03:50:47+00:00",
+    "dry_run": false
   }
 ]
