@@ -4226,5 +4226,17 @@
     ],
     "posted_at": "2026-10-30T05:42:17+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Jagan targets Naidu over Cyclone Arnab damage; SC appoints mediator in KG gas dispute; Traders urge Sonia Gandhi to postpone rally",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.ndtv.com/india-news/cyclone-arnab-triggers-political-storm-in-andhra-jagan-reddy-targets-chandrababu-naidu-12257092#publisher=newsstand",
+      "https://www.indiatoday.in/india/law-news/story/krishna-godavari-gas-dispute-supreme-court-appoints-ranjana-desai-mediator-ptag-3028277-2026-10-30?utm_source=rss",
+      "https://www.ndtv.com/india-news/rs-12-000-crore-business-at-stake-traders-ask-sonia-gandhi-to-postpone-november-1-india-bloc-rally-12257123#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-30T06:08:57+00:00",
+    "dry_run": false
   }
 ]
