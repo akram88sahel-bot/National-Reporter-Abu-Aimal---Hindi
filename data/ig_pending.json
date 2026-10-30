@@ -2,7 +2,7 @@
   {
     "image_url": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-6/874884009_1656296712525031_5261001641148178462_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=054031&_nc_ohc=8b81DD6vBFUQ7kNvwFmRIa5&_nc_oc=Adoo8Uy4jZwcRYdDlDKIGtiGpGHyR9_vU-L8b106rzjZ4s32ifCi3XPpChI8w8xhxQg&_nc_zt=23&_nc_ht=scontent-sjc6-1.xx&edm=AMAeTUEEAAAA&_nc_gid=fbf1CBXW05RN649ClEaBKQ&_nc_tpa=Q5bMBQKxK41JtsUKSd11abFVnIgr3diJA8u-CHFd1w3VKHX5WD-uwQbxH6oOvih7BzuS8LGSsrW_1IT2ng&oh=00_AQQKLZqACzRWu-BWnPkfz7Z8ma1igst7_v11_r0qnhxSIA&oe=6AE9F251",
     "caption": "🚨 LATEST NEWS\n\nHINDI\n• आंध्र प्रदेश में चक्रवात अरनब के बाद जगन मोहन रेड्डी ने मुख्यमंत्री चंद्रबाबू नायडू पर निशाना साधते हुए करीब 12 लाख एकड़ में फसल नुकसान का दावा किया।\n• सुप्रीम कोर्ट ने कृष्णा-गोदावरी गैस विवाद में समझौते की कोशिशें नाकाम होने के बाद पूर्व न्यायाधीश रंजना प्रकाश देसाई को मध्यस्थ नियुक्त किया है।\n• चैंबर ऑफ ट्रेड एंड इंडस्ट्री ने दिवाली के दौरान 12,000 करोड़ रुपये के व्यापार के नुकसान की आशंका जताते हुए सोनिया गांधी से 1 नवंबर की रैली टालने का अनुरोध किया है।\n\nROMAN URDU\n• Andhra Pradesh mein Cyclone Arnab ke baad Jagan Mohan Reddy ne Chief Minister Chandrababu Naidu par nishana sadhte hue kareeb 12 lakh acre fasal kharab hone ka dawa kiya.\n• Supreme Court ne Krishna-Godavari gas dispute mein settlement ki koshishein nakam hone ke baad former judge Ranjana Prakash Desai ko mediator muqarrar kiya hai.\n• Chamber of Trade and Industry ne Diwali ke dauran 12,000 crore rupaye ke business loss ke dar se Sonia Gandhi se 1 November ki rally aage badhane ki appeal ki hai.",
-    "attempts": 6,
+    "attempts": 7,
     "last_error": "Instagram publish failed: 403 {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":4,\"error_subcode\":2207051,\"error_user_title\":\"Action is blocke",
     "queued_at": "2026-10-30T06:08:57+00:00"
   },
@@ -82,5 +82,12 @@
     "attempts": 1,
     "last_error": "Instagram publish failed: 403 {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":4,\"error_subcode\":2207051,\"error_user_title\":\"Action is blocke",
     "queued_at": "2026-10-30T21:28:21+00:00"
+  },
+  {
+    "image_url": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/869867847_1656974009123968_6739738214002640117_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=054031&_nc_ohc=6v-e621WyYQQ7kNvwHK6eSF&_nc_oc=AdrtS82bzEwnHzM_a8yj032k0oRym1h4RC44ybB-qx9WYnyNEvaoZXaRqjXxtidTXO8&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AMAeTUEEAAAA&_nc_gid=r4pepMBXvI4k2SRuoMXMWQ&_nc_tpa=Q5bMBQJkz9foNl6wFo6q64CSam4RFUh1DgvVwoUVD3nuf11i7mYXVMGzEk6Jeq5mleltpQLZQxIQxbY9NQ&oh=00_AQTtu5auCATyM-qNlo8bXR6BGOB4_WvhG4k0W3w0do12WQ&oe=6AEAD834",
+    "caption": "🚨 LATEST NEWS\n\nHINDI\n• नेशनल कॉन्फ्रेंस के 19 विधायकों ने कैबिनेट फेरबदल और दो सहयोगियों को हटाने की मांग को लेकर प्रस्ताव अपनाया।\n• यह बैठक श्रीनगर में हुई।\n• यह कदम कई वरिष्ठ विधायकों को नजरअंदाज किए जाने के बाद उपजे असंतोष को दर्शाता है।\n\nROMAN URDU\n• National Conference ke 19 MLAs ne cabinet reshuffle aur do aides ko hatane ki maang ka resolution adopt kiya.\n• Yeh meeting Srinagar mein hui.\n• Yeh kadam kai senior legislators ko overlook kiye jaane ke baad asantosh ko darshata hai.",
+    "attempts": 1,
+    "last_error": "Instagram publish failed: 403 {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":4,\"error_subcode\":2207051,\"error_user_title\":\"Action is blocke",
+    "queued_at": "2026-10-30T21:54:39+00:00"
   }
 ]
