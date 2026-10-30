@@ -4316,5 +4316,15 @@
     ],
     "posted_at": "2026-10-30T18:35:32+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "delivery agent falls in drain",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.indiatoday.in/cities/hyderabad/story/hyderabad-zepto-delivery-executive-falls-open-drain-bike-madhapur-heavy-rain-3029007-2026-10-30?utm_source=rss"
+    ],
+    "posted_at": "2026-10-30T20:06:48+00:00",
+    "dry_run": false
   }
 ]
