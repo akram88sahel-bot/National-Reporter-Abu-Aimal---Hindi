@@ -4326,5 +4326,15 @@
     ],
     "posted_at": "2026-10-30T20:06:48+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Italy workers strike living cost",
+    "class": "B",
+    "region": "WORLD",
+    "links": [
+      "https://www.ndtv.com/world-news/thousands-of-workers-students-protest-in-italy-over-high-living-costs-12261322#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-30T20:33:05+00:00",
+    "dry_run": false
   }
 ]
