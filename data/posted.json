@@ -4149,5 +4149,17 @@
     ],
     "posted_at": "2026-10-30T02:00:38+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "PM Kisan instalment release; Delhi paramilitary deployment extended; Israel parliamentary election deadlock",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQbTBLMHlPX1E5MDRxeWw3elNwNkVkN0thdklGYXBBX1lOTU5xT09VUEtnMWpUT1NOV3RWeFFTLWx1aUxYa0ZGazZ4OFBwNjA4RTc4T2hOcFl3ZHVMMHJBZHhJWUpVOHlkbWFsNmFLVno0UEs4dWx3aEhoeUdPRVdfUVlkMHdzbmhMcGk1aEhnb2h5Z2RPVVM3Um9QV1g1ODNqMF9mdXhORC1HSDFLcWxfdG9XN0I3M2xEWEVlUGpiMjJqZ9IByAFBVV95cUxPck1TR2w1MENPR3ZSM0VUVjJ5azZaYWZMLS1GdGQ0WmN5Ym1XQlpSQ0xFaVI0SU1lTnZvZGVQNm5iMFJNLXRqZzY0WkVnWlRxckU3OGdSd3ZiMlNjU2ZybnR0bkhlM19UcHdRRno0WlBaYllVcGVfWEYxSWQxaTdCQTVUTFZSSDZBR2N1YkMxRVBhdmF3RHBjVFF6ZS1ubGFKX0pvY0RDeDRHT0xMYUtiQk5yZ0FvYTBJcDNMYnk3bmxRaEhKamFLcg?oc=5",
+      "https://www.aajtak.in/india/delhi/story/delhi-capf-deployment-extended-november-16-india-bloc-rally-ntc-aktw-dskc-2683793-2026-10-30?utm_source=rss",
+      "https://www.indiatoday.in/world/story/israel-election-deadlock-2026-results-live-updates-benjamin-netanyahu-gadi-eisenkot-3028169-2026-10-30?utm_source=rss"
+    ],
+    "posted_at": "2026-10-30T02:29:03+00:00",
+    "dry_run": false
   }
 ]
