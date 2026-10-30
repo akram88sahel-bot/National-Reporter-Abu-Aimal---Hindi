@@ -2,7 +2,7 @@
   {
     "image_url": "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.30808-6/874290520_1656174189203950_5895096310801151508_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=e5c1b6&_nc_ohc=PZ9qpKgAmQYQ7kNvwF4J1ZK&_nc_oc=AdqxRyIde96FE92uz66sFkozFvqDJ6BDAFbUJZ0GZSGwprsFYdUPCsyCW048fEe4vDs&_nc_zt=23&_nc_ht=scontent-dfw6-1.xx&edm=AMAeTUEEAAAA&_nc_gid=1fjvIMaDiHe6Fk4bvUStAQ&_nc_tpa=Q5bMBQKppYkZxyQhgWPfzqpeV-lTNTilpYeZSJTFX1L9800rxsgXkUieaADbPEg-G3eJNAjwvdMTpEzBpw&oh=00_AQQU5LmmOpZL7WjqfXU5OqVFgN8Ie0QYUKFGCPXcgLn1cw&oe=6AE9D7B2",
     "caption": "🚨 LATEST NEWS\n\nHINDI\n• अमित शाह ने 2027 के विधानसभा चुनावों के लिए पार्टी की संगठनात्मक और चुनावी रूपरेखा तैयार करने हेतु लखनऊ में उत्तर प्रदेश भाजपा नेताओं की एक विशाल बैठक को संबोधित किया।\n• भारतीय तटरक्षक बल ने आंध्र तट के पास फंसे एक मालवाहक जहाज से 20 चालक दल के सदस्यों को जहाज सुजय और हेलीकॉप्टर तैनात करके सुरक्षित बचा लिया।\n\nROMAN URDU\n• Amit Shah ne 2027 ke assembly chunavon ke liye party ka organizational aur electoral roadmap taiyar karne hetu Lucknow mein Uttar Pradesh BJP netaon ki ek mega baithak ko sambodhit kiya.\n• Indian Coast Guard ne Andhra coast ke paas phanse ek cargo ship se 20 crew members ko ship Sujay aur helicopter tainat karke rescue kiya.",
-    "attempts": 6,
+    "attempts": 7,
     "last_error": "Instagram publish failed: 403 {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":4,\"error_subcode\":2207051,\"error_user_title\":\"Action is blocke",
     "queued_at": "2026-10-30T02:56:04+00:00"
   },
@@ -54,5 +54,12 @@
     "attempts": 1,
     "last_error": "Instagram publish failed: 403 {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":4,\"error_subcode\":2207051,\"error_user_title\":\"Action is blocke",
     "queued_at": "2026-10-30T06:37:20+00:00"
+  },
+  {
+    "image_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/871558553_1656331972521505_9000791431928805180_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=054031&_nc_ohc=605VDc0MCSAQ7kNvwFl1ASl&_nc_oc=AdrZYudhFp576ogPZOGSTM1_skPyBIWqZdzJ2xNIskjh4Jave64WoEFrOMPj68k1Ydc&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=VSy0UflvEmpXGi9heOM9OA&_nc_tpa=Q5bMBQJmJAXhayNXeST7mlw5zsM5WNlp0j8TBjPmp1nySXnFAb7P-W4KToL_yfyLiGo5REWEG7i0uAIPhQ&oh=00_AQRmiQVcfWQwKZvgNgJXf56y0o6dHBvM6vr7IL0wKeVl_g&oe=6AEA2808",
+    "caption": "🚨 LATEST NEWS\n\nHINDI\n• सुप्रीम कोर्ट ने आदेश दिया कि लापरवाही पाए जाने पर देशभर के बैंकों को डिजिटल धोखाधड़ी के पीड़ितों को मुआवजा देना होगा, जिसे 30 नवंबर तक अधिसूचित किया जाएगा।\n• केरल के आबकारी मंत्री एम लिजू ने राज्य में रोजगार देने वाले पर्यटन क्षेत्र को नुकसान पहुंचाए बिना शराब की खपत घटाने के मकसद से नई शराब नीति की घोषणा की है।\n• सुप्रीम कोर्ट ने एक हत्या के मामले में पूर्व जदयू नेता अनंत सिंह की जमानत रद्द कर दी है और उन्हें तुरंत सरेंडर करने का आदेश दिया है।\n\nROMAN URDU\n• Supreme Court ne order diya ke agar laparwahi sabit ho toh desh bhar ke banks ko digital fraud ke victims ko compensation dena hoga, jise 30 November tak notify kiya jayega.\n• Kerala ke Excise Minister M Liju ne state me rozgar dene wale tourism sector ko nuksan pahunchaye bina sharab ki consumption kam karne ke liye nayi liquor policy ka ailan kiya hai.\n• Supreme Court ne murder case me former JD(U) leader Anant Singh ki bail cancel kar di hai aur unhe foran surrender karne ka order diya hai.",
+    "attempts": 1,
+    "last_error": "Instagram publish failed: 403 {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":4,\"error_subcode\":2207051,\"error_user_title\":\"Action is blocke",
+    "queued_at": "2026-10-30T07:05:03+00:00"
   }
 ]
