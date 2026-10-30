@@ -4238,5 +4238,15 @@
     ],
     "posted_at": "2026-10-30T06:08:57+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Teacher recruitment protest Prayagraj",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.ndtv.com/education/up-teacher-recruitment-aspirants-protest-ends-in-prayagraj-several-detained-12257471#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-30T06:37:20+00:00",
+    "dry_run": false
   }
 ]

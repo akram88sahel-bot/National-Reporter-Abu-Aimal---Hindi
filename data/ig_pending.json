@@ -2,7 +2,7 @@
   {
     "image_url": "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.30808-6/874290520_1656174189203950_5895096310801151508_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=e5c1b6&_nc_ohc=PZ9qpKgAmQYQ7kNvwF4J1ZK&_nc_oc=AdqxRyIde96FE92uz66sFkozFvqDJ6BDAFbUJZ0GZSGwprsFYdUPCsyCW048fEe4vDs&_nc_zt=23&_nc_ht=scontent-dfw6-1.xx&edm=AMAeTUEEAAAA&_nc_gid=1fjvIMaDiHe6Fk4bvUStAQ&_nc_tpa=Q5bMBQKppYkZxyQhgWPfzqpeV-lTNTilpYeZSJTFX1L9800rxsgXkUieaADbPEg-G3eJNAjwvdMTpEzBpw&oh=00_AQQU5LmmOpZL7WjqfXU5OqVFgN8Ie0QYUKFGCPXcgLn1cw&oe=6AE9D7B2",
     "caption": "🚨 LATEST NEWS\n\nHINDI\n• अमित शाह ने 2027 के विधानसभा चुनावों के लिए पार्टी की संगठनात्मक और चुनावी रूपरेखा तैयार करने हेतु लखनऊ में उत्तर प्रदेश भाजपा नेताओं की एक विशाल बैठक को संबोधित किया।\n• भारतीय तटरक्षक बल ने आंध्र तट के पास फंसे एक मालवाहक जहाज से 20 चालक दल के सदस्यों को जहाज सुजय और हेलीकॉप्टर तैनात करके सुरक्षित बचा लिया।\n\nROMAN URDU\n• Amit Shah ne 2027 ke assembly chunavon ke liye party ka organizational aur electoral roadmap taiyar karne hetu Lucknow mein Uttar Pradesh BJP netaon ki ek mega baithak ko sambodhit kiya.\n• Indian Coast Guard ne Andhra coast ke paas phanse ek cargo ship se 20 crew members ko ship Sujay aur helicopter tainat karke rescue kiya.",
-    "attempts": 5,
+    "attempts": 6,
     "last_error": "Instagram publish failed: 403 {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":4,\"error_subcode\":2207051,\"error_user_title\":\"Action is blocke",
     "queued_at": "2026-10-30T02:56:04+00:00"
   },
@@ -47,5 +47,12 @@
     "attempts": 1,
     "last_error": "Instagram publish failed: 403 {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":4,\"error_subcode\":2207051,\"error_user_title\":\"Action is blocke",
     "queued_at": "2026-10-30T06:08:57+00:00"
+  },
+  {
+    "image_url": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-6/871150619_1656314035856632_2939268090888354880_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=054031&_nc_ohc=3XI4Xo8hkBMQ7kNvwERgnrt&_nc_oc=AdoBSjRu22zYLS0ink8XiX_E3FQj8mcNvB0O-03yDiR3yKZ98IXmjaCcltzfSppGMWU&_nc_zt=23&_nc_ht=scontent-atl3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=Ddungb1Q7pKySS49Qglf8w&_nc_tpa=Q5bMBQKKRAZIihXeoYCyFw6SuwMU_cUBdQQtAlOM02Z6EfXiyctzvRsHOv2An4fhaNW_ZGegozhXB7Gzqg&oh=00_AQSXiswp-ADWnoNFDlMXOFRlHAMCP3pJ7w4MjBfQzxAZ4g&oe=6AEA13DC",
+    "caption": "🚨 LATEST NEWS\n\nHINDI\n• प्रयागराज में शिक्षक भर्ती के उम्मीदवारों का विरोध प्रदर्शन समाप्त हो गया और कई लोगों को हिरासत में लिया गया।\n• यह घटना प्रयागराज में हुई।\n• उम्मीदवार भर्ती परीक्षाओं में अतिरिक्त अवसर की मांग कर रहे थे।\n\nROMAN URDU\n• Prayagraj mein teacher recruitment aspirants ka protest khatam ho gaya aur kai logon ko detain kiya gaya.\n• Yeh ghatna Prayagraj mein hui.\n• Aspirants recruitment exams mein additional attempt ki maang kar rahe the.",
+    "attempts": 1,
+    "last_error": "Instagram publish failed: 403 {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":4,\"error_subcode\":2207051,\"error_user_title\":\"Action is blocke",
+    "queued_at": "2026-10-30T06:37:20+00:00"
   }
 ]
