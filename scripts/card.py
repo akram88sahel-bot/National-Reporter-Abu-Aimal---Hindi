@@ -11,7 +11,7 @@ credit with a small NR logo at the bottom. All text is drawn on the image.
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
 
 ROOT = Path(__file__).resolve().parent.parent
 FONT_DIR = ROOT / "assets" / "fonts"
@@ -141,8 +141,17 @@ def fit_photo(img, w, h):
 
 
 def _rounded_photo(photo, card, x, y, w, h, radius=22):
-    """Paste a cropped photo with rounded corners and a gold edge."""
-    crop = fit_photo(photo, w, h)
+    """Paste the whole photo inside the frame, with rounded corners and a gold edge.
+
+    The full photo is always shown (nothing is cut off): it is scaled to fit
+    inside the frame and centred, and any space left at the sides is filled
+    with a darkened, blurred copy of the same photo, as on the reference card.
+    """
+    frame = ImageEnhance.Brightness(fit_photo(photo, w, h).filter(ImageFilter.GaussianBlur(18))).enhance(0.45)
+    scale = min(w / photo.width, h / photo.height)
+    fg = photo.resize((max(1, int(photo.width * scale)), max(1, int(photo.height * scale))))
+    frame.paste(fg, ((w - fg.width) // 2, (h - fg.height) // 2))
+    crop = frame
     mask = Image.new("L", (w, h), 0)
     ImageDraw.Draw(mask).rounded_rectangle([0, 0, w - 1, h - 1], radius=radius, fill=255)
     card.paste(crop, (x, y), mask)
