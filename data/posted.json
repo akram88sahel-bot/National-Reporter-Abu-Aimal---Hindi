@@ -4548,5 +4548,17 @@
     ],
     "posted_at": "2026-10-31T09:41:09+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "BJP criticises Musi project hearing; INDIA bloc symbolic impeachment CEC; Yogi Adityanath UP voter rolls",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/bjp-terms-musi-project-public-hearing-a-farce-demands-dialogue-with-displaced-families/article71644998.ece",
+      "https://www.indiatoday.in/india/story/india-bloc-public-impeachment-live-updates-cec-row-gyanesh-kumar-rahul-gandhi-mallikarjun-kharge-congress-3029266-2026-10-31?utm_source=rss",
+      "https://www.indiatoday.in/india/story/up-voter-rolls-yogi-claims-one-crore-hindu-voters-missing-3029253-2026-10-31?utm_source=rss"
+    ],
+    "posted_at": "2026-10-31T10:12:30+00:00",
+    "dry_run": false
   }
 ]
