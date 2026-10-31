@@ -4407,5 +4407,16 @@
     ],
     "posted_at": "2026-10-30T23:41:15+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "AIIMS Gorakhpur Director falls ill; North Korea blamed for crypto heist",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/cities/other-cities/story/aiims-gorakhpur-executive-director-major-general-retired-vibha-dutta-falls-ill-referred-to-private-hospital-for-treatment-cath-lab-not-operational-uttar-pradesh-3028823-2026-10-30?utm_source=rss",
+      "https://www.indiatoday.in/business/story/north-korea-blamed-for-usd-63-billion-crypto-heist-pulled-off-from-binance-in-20-minutes-3028988-2026-10-30?utm_source=rss"
+    ],
+    "posted_at": "2026-10-31T00:09:36+00:00",
+    "dry_run": false
   }
 ]
