@@ -4482,5 +4482,15 @@
     ],
     "posted_at": "2026-10-31T05:59:53+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "AAP Punjab candidate list",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/elections/assembly/story/aaps-first-list-for-punjab-polls-out-bhagwant-mann-to-contest-from-dhuri-jailed-sanjeev-arora-also-named-3029180-2026-10-31?utm_source=rss"
+    ],
+    "posted_at": "2026-10-31T06:53:51+00:00",
+    "dry_run": false
   }
 ]
