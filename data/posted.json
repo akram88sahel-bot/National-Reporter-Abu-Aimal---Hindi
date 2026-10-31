@@ -4537,5 +4537,16 @@
     ],
     "posted_at": "2026-10-31T09:14:05+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Andhra Pradesh school chainsaw attack; Karnataka milk price hike drought",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/andhra-pradesh/story/andhra-pradesh-school-attack-class-10-girl-injured-accused-arrested-3029254-2026-10-31?utm_source=rss",
+      "https://www.indiatoday.in/india/karnataka/story/karnataka-milk-price-hike-dairy-farmers-drought-nandini-rates-ptag-3029255-2026-10-31?utm_source=rss"
+    ],
+    "posted_at": "2026-10-31T09:41:09+00:00",
+    "dry_run": false
   }
 ]
