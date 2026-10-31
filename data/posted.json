@@ -4418,5 +4418,15 @@
     ],
     "posted_at": "2026-10-31T00:09:36+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Kashmiri Pandit activist police probe",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india-today-insight/story/why-a-well-known-kashmiri-pandit-activist-faces-jk-police-probe-in-online-threats-case-3028798-2026-10-30?utm_source=rss"
+    ],
+    "posted_at": "2026-10-31T00:37:25+00:00",
+    "dry_run": false
   }
 ]
