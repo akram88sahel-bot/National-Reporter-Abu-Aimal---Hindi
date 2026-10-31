@@ -2,7 +2,7 @@
   {
     "image_url": "https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-6/863454752_1657004952454207_443205967994283691_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=054031&_nc_ohc=V75J50PSH3IQ7kNvwHHGV5L&_nc_oc=AdqYb1MolL8g9hLSkpLTu3zG94SlGvoX6Sy8Oh9gmtw_lLAjXhHf5AU1_1UjG_mtul8&_nc_zt=23&_nc_ht=scontent-lga3-2.xx&edm=AMAeTUEEAAAA&_nc_gid=BHbJxa8ELnTx5ZVDNTG6ZQ&_nc_tpa=Q5bMBQLQqQ9rQFUD3uauxX3TKUUNoqru2a5ssewH4Lt6OTJ2_NdReBmpeueFxUnYDckShSsGNSluwfd2cw&oh=00_AQRzGG_Cnn91tXek2-3z3q_B6qNZ5eKw5QJm-AjV3KjDfQ&oe=6AEADDD2",
     "caption": "🚨 LATEST NEWS\n\nHINDI\n• तेलंगाना में मंत्री उत्तम ने राइस मिलरों और व्यापारियों को जमाखोरी और कालाबाजारी के खिलाफ चेतावनी दी, क्योंकि सामान्य बीपीटी चावल के लिए 66 रुपये प्रति किलोग्राम की सीमा तय की गई है।\n• तेलंगाना में लगभग 38,000 सिंगरेनी श्रमिकों को 5 नवंबर को 1.1 लाख रुपये तक का दिवाली बोनस मिलेगा, जिन्हें इससे पहले दशहरा बोनस के रूप में 596 करोड़ रुपये मिले थे।\n\nROMAN URDU\n• Telangana mein minister Uttam ne rice millers aur traders ko hoarding aur black-marketing ke khilaf warning di, kyunki common BPT rice ke liye 66 rupees per kg ceiling fix ki gayi hai.\n• Telangana mein lagbhag 38,000 Singareni workers ko 5 November ko 1.1 lakh rupees tak ka Deepavali bonus milega, jinhe isse pehle Dasara bonus ke roop mein 596 crore rupees mile the.",
-    "attempts": 3,
+    "attempts": 4,
     "last_error": "Instagram publish failed: 403 {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":4,\"error_subcode\":2207051,\"error_user_title\":\"Action is blocke",
     "queued_at": "2026-10-30T22:47:14+00:00"
   },
@@ -124,5 +124,12 @@
     "attempts": 1,
     "last_error": "Instagram publish failed: 403 {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":4,\"error_subcode\":2207051,\"error_user_title\":\"Action is blocke",
     "queued_at": "2026-10-31T20:11:07+00:00"
+  },
+  {
+    "image_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/862899775_1657916942363008_3278959361809307764_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=054031&_nc_ohc=0E3E4QbntMAQ7kNvwFS9dNo&_nc_oc=Adpl7l6UYe4B7HumaYfMy6quUWXmjdJE5eknjCOcj0qn9jxPSJnsxryOPGAbO-qqjIE&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&edm=AMAeTUEEAAAA&_nc_gid=C1BXdn6gaqzKvdXIIM7ZHw&_nc_tpa=Q5bMBQKP9ELt1IjvzlG4DmFYrQQlwpaAMVeABToTUamwYBg2xAm1zQbjjNBz7vFuZpIiREdmlD2bZIgweQ&oh=00_AQSccBpAqp0zRcFdTtctN6hmMyLV8L32NrW8SNnh-JJ9PQ&oe=6AEC1841",
+    "caption": "🚨 LATEST NEWS\n\nHINDI\n• मणिपुर के इम्फाल में मेइती और नागा समुदायों ने सोओ युद्धविराम समझौते को रद्द करने की मांग को लेकर एक रैली निकाली।\n• यह विरोध प्रदर्शन इम्फाल में आयोजित किया गया था।\n• इस रैली का उद्देश्य सोओ युद्धविराम समझौते को समाप्त करना है।\n\nROMAN URDU\n• Manipur ke Imphal me Meitei aur Naga samudayon ne SoO truce pact ko khatam karne ki maang ko lekar ek rally nikali.\n• Yeh protest Imphal me aayojit kiya gaya tha.\n• Is rally ka maksad SoO truce pact ko abrogate karna hai.",
+    "attempts": 1,
+    "last_error": "Instagram publish failed: 403 {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":4,\"error_subcode\":2207051,\"error_user_title\":\"Action is blocke",
+    "queued_at": "2026-10-31T20:37:24+00:00"
   }
 ]
