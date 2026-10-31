@@ -4448,5 +4448,15 @@
     ],
     "posted_at": "2026-10-31T01:30:09+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "worm found in hostel meal",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/cities/other-cities/story/greater-noida-hostel-kitchen-shut-worm-found-food-hygiene-lapses-3029076-2026-10-31?utm_source=rss"
+    ],
+    "posted_at": "2026-10-31T01:56:50+00:00",
+    "dry_run": false
   }
 ]
