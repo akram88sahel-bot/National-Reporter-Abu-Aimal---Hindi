@@ -4502,5 +4502,17 @@
     ],
     "posted_at": "2026-10-31T07:22:43+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Telangana village development framework; Supreme Court Ayodhya survey petition; AAP Punjab assembly candidate list",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/telangana-introduces-unified-village-development-planning-framework/article71648357.ece",
+      "https://www.indiatoday.in/india/law-news/story/ayodhya-ram-temple-petition-supreme-court-land-survey-ptag-3029203-2026-10-31?utm_source=rss",
+      "https://www.ndtv.com/india-news/aap-releases-first-list-for-2027-punjab-assembly-polls-bhagwant-mann-to-fight-from-dhuri-12262498#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-31T07:49:34+00:00",
+    "dry_run": false
   }
 ]
