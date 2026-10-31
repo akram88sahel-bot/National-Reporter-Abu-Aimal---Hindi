@@ -4560,5 +4560,17 @@
     ],
     "posted_at": "2026-10-31T10:12:30+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Telangana weather depression rain forecast; Security deployed for INDIA bloc Delhi rally; Manipur mass protest against killings and conflict",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/depression-over-bay-of-bengal-to-bring-rain-to-telangana-heavy-showers-likely-in-nine-districts-on-november-2/article71649315.ece",
+      "https://www.indiatoday.in/india/story/india-bloc-mega-rally-against-cec-gyanesh-kumar-sir-delhi-ramlila-maidan-congress-rahul-gandhi-traders-association-3029504-2026-10-31?utm_source=rss",
+      "https://www.ndtv.com/india-news/thousands-protest-in-5-manipur-districts-against-killings-ethnic-conflict-12264810#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-31T20:11:07+00:00",
+    "dry_run": false
   }
 ]
