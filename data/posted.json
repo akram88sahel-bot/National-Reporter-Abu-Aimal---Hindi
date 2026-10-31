@@ -4594,5 +4594,15 @@
     ],
     "posted_at": "2026-10-31T21:04:37+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Tamil Nadu DA hike",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/tamil-nadu/story/tamil-nadu-cm-vijay-da-hike-63-percent-16-lakh-beneficiaries-diwali-3029560-2026-10-31?utm_source=rss"
+    ],
+    "posted_at": "2026-10-31T21:30:55+00:00",
+    "dry_run": false
   }
 ]
