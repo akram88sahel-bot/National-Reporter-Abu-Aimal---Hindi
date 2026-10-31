@@ -4625,5 +4625,16 @@
     ],
     "posted_at": "2026-10-31T22:24:08+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "spdcl electric fencing warning; rijiju bhutan stupa ceremony",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/spdcl-warns-farmers-against-putting-up-electric-fencing-around-fields-illegally/article71649459.ece",
+      "https://www.ndtv.com/world-news/kiren-rijiju-bhutan-pm-drive-together-to-attend-stupa-construction-ceremony-12264990#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-31T23:45:48+00:00",
+    "dry_run": false
   }
 ]

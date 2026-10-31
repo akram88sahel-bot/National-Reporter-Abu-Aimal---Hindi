@@ -1,10 +1,4 @@
 {
-  "https://www.thehindu.com/news/national/telangana/dont-spread-misinformation-on-tummidihatti-congress-tells-harish-rao/article71632449.ece": 2,
-  "https://www.ndtv.com/india-news/delhi-government-may-hike-agricultural-land-circle-rates-after-18-years-12245417#publisher=newsstand": 2,
-  "https://news.google.com/rss/articles/CBMizwFBVV95cUxOM2R2M1hZYWdwWXRSUm5HY3RQeHdtRDB6LXlUVzZlcnBpaHVWSUs0MGVvTFVFang0T2o1UUkxVDlTN1J4MnhQLV9ya3o5cjRjcFdHWlhHMTJUcnNLZGFaNlI1SGlZaEdPaXd3cXNLa0ZyYzRBUmVLR0hiZTgyQVh5bDZqeHlFblI5c00tT3UzYWp0MGcyVkMwWU4zU2t3OVVudl8xMFVhUV9ZcExOdW12U09QUjkxQ0ZTVUJuQlFLU2dLa29KbGpaZnA1Nzl6U1nSAdYBQVVfeXFMUHRZTXFwM2VVOGRQT296cFBHaTZSeUhmUFhrZGhlQ1dDM0EyY2lhdlI2LWF4S2h5bnNlTkloaVVrajFmSnFGemZTbXNYTlJ6a0NFN2JmcVBEd19OeHZyUjRBYUtWc3NwSEJMN2ppRWZ6UXVRdFVveWNMZE91UkhMTjU3ZzlSYkFNMDlvWElRODRsOVpyTHNRZnU0NG9vd01tVS1BazIwNWRveUZjbmpxLTZsdElWeHBTVmxISWZvS1pPc0h0TkVzZEJBZGRsUFpneFRBTTJidw?oc=5": 2,
-  "https://www.ndtv.com/india-news/prashant-kishors-jan-suraaj-wins-first-seat-in-bihar-upper-house-12245395#publisher=newsstand": 99,
-  "https://www.ndtv.com/india-news/delhi-assembly-met-for-just-17-days-in-2025-speaker-backs-30-sitting-target-12245401#publisher=newsstand": 2,
-  "https://www.ndtv.com/india-news/arrest-judge-and-son-kerala-crash-victims-family-to-move-high-court-12245343#publisher=newsstand": 2,
   "https://www.indiatoday.in/india/law-news/story/sanjay-kishan-kaul-memoir-government-role-judicial-appointments-3026512-2026-10-27?utm_source=rss": 2,
   "https://www.indiatoday.in/elections/assembly/story/election-commission-officer-transfers-five-states-2027-assembly-polls-ptag-3026084-2026-10-27?utm_source=rss": 99,
   "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQN2Nrb3dYMU5tTFZnRHNpRld5V1BQMm9xSHg5WDYtY0tWOFp1eXNwYW9MTkpUVFp2S0RZV1FoSFoxSGVuWEZPUEhtMVRBVXJCb0xzMW5UZi1RTUQ5OFEzU2pxQi1vaXdfR2NkQUhZQVlzMFlVMXU5R0cxd0VxX1RnTkpfa1RfdmhJOFhSWXl2Vk9Cb08yVElzSGlEUTF3RWVNQUJPZTlWTFBLTWZKemhHX3dueXF5aE51WEw0ZFB4RXl3eFhXVDQwNUNvX3A3Wjk2Qlhrb0l3UkVDWnBZRFFYSHVHSXZMREJtRnl2RTFKOXBaeVFNRmfSAfwBQVVfeXFMUENtc0k3dkNXTGlXY0FnWWdBYWYtaENQSmIyemVCUC1BbE9fdk5XeVIzU0xITEp3SlRhWHZ3cXZRaTE3ZzQyeFotempvNEJmbUlPVWJkQVJmY1ZoWEtybkdVdGh4cjRwRFhwMlN5MlltaVNDOG1LbmpWb21rN2tyTURxbktIc25OZTlxN3hsWk9kdW9fUkNzZ1I0YzRya1dUVzkzLVBFUlpxYnEwM0liRmwyaEREYlhzaUk3dm1jLVhVdE1uazhwWTlvSzFXMDZ5ZVFEeklJMVRPbFNlZWx1NkZTMzVMVzdpb2ZQMlBKMzhCSF9vQzRmSzVWY0J4?oc=5": 2,
@@ -993,10 +987,16 @@
   "https://www.thehindu.com/news/national/telangana/23-year-old-held-with-stolen-gold-linked-to-house-burglaries/article71649696.ece": 2,
   "https://www.thehindu.com/news/cities/Hyderabad/faba-lifetime-award-for-indian-immunologicals-md-anand-kumar/article71646232.ece": 2,
   "https://www.thehindu.com/news/cities/Hyderabad/ananth-tech-supplies-critical-systems-to-isros-gslv-f18-mission/article71649375.ece": 2,
-  "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNSzY4Nmcwejdmckhvd1ZqUUlRellyVTkxdWZycFhld0p1M0hGRWZtY1FTM2trQ1RqaFE2VHNKNVQ3TmpRWnBHVHpFT3hiU3pPaFRtVTVrMWVraVlwMVNWcmpDY0VJN3F6RG90b2Z4bWowY2J0dmdSRU1QOVNtUER4Y1RGTHhSczhWbUNiUklUVjFhMjBMaGprU1N6dGp6UXc1UzRzRVVUZ2x2UENseW5WcERtd3Y3S1hLVE5j0gHCAUFVX3lxTFBVdERFX3RKWHlUVVdZX2F1OXVHRVdVeHIwYndVbUNoTmRTeFJPVS04RkJWcjJUdzhQbTZaN1FtYUttREJycTZKVEhPVlBaRmdROE5rbTM2U3ptSW44TzkybjdxLUlHOEdfV2pkR0JrVS05RWtYTHBlVDdKUEEtajJJelgtVDl2MzI5OGFTcXd1R1lRMDhzMHpsQ3ZRY2NmalVlTW94ZkZvdF9VM1RfM3E2R2d3TWQ3aEI4R19WbWtOb0FR?oc=5": 1,
-  "https://www.thehindu.com/news/national/telangana/new-technologies-adoption-must-go-hand-in-hand-with-sound-engineering-practices-worker-safety-meil-projects-division-president/article71649122.ece": 1,
-  "https://www.thehindu.com/news/national/telangana/over-4500-students-participate-in-technical-symposium-at-kitsw/article71649338.ece": 1,
-  "https://www.thehindu.com/news/national/telangana/maps-have-changed-as-their-purpose-has-changed/article71650234.ece": 1,
-  "https://www.thehindu.com/news/national/telangana/white-coat-ceremony-held-at-aimsr/article71649555.ece": 1,
-  "https://www.thehindu.com/news/national/telangana/cesl-to-help-set-up-ev-charging-battery-swapping-stations-in-gram-panchayats/article71649267.ece": 1
+  "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNSzY4Nmcwejdmckhvd1ZqUUlRellyVTkxdWZycFhld0p1M0hGRWZtY1FTM2trQ1RqaFE2VHNKNVQ3TmpRWnBHVHpFT3hiU3pPaFRtVTVrMWVraVlwMVNWcmpDY0VJN3F6RG90b2Z4bWowY2J0dmdSRU1QOVNtUER4Y1RGTHhSczhWbUNiUklUVjFhMjBMaGprU1N6dGp6UXc1UzRzRVVUZ2x2UENseW5WcERtd3Y3S1hLVE5j0gHCAUFVX3lxTFBVdERFX3RKWHlUVVdZX2F1OXVHRVdVeHIwYndVbUNoTmRTeFJPVS04RkJWcjJUdzhQbTZaN1FtYUttREJycTZKVEhPVlBaRmdROE5rbTM2U3ptSW44TzkybjdxLUlHOEdfV2pkR0JrVS05RWtYTHBlVDdKUEEtajJJelgtVDl2MzI5OGFTcXd1R1lRMDhzMHpsQ3ZRY2NmalVlTW94ZkZvdF9VM1RfM3E2R2d3TWQ3aEI4R19WbWtOb0FR?oc=5": 2,
+  "https://www.thehindu.com/news/national/telangana/new-technologies-adoption-must-go-hand-in-hand-with-sound-engineering-practices-worker-safety-meil-projects-division-president/article71649122.ece": 2,
+  "https://www.thehindu.com/news/national/telangana/over-4500-students-participate-in-technical-symposium-at-kitsw/article71649338.ece": 2,
+  "https://www.thehindu.com/news/national/telangana/maps-have-changed-as-their-purpose-has-changed/article71650234.ece": 2,
+  "https://www.thehindu.com/news/national/telangana/white-coat-ceremony-held-at-aimsr/article71649555.ece": 2,
+  "https://www.thehindu.com/news/national/telangana/cesl-to-help-set-up-ev-charging-battery-swapping-stations-in-gram-panchayats/article71649267.ece": 2,
+  "https://www.thehindu.com/news/national/telangana/spdcl-warns-farmers-against-putting-up-electric-fencing-around-fields-illegally/article71649459.ece": 99,
+  "https://www.ndtv.com/india-news/at-quad-meet-s-jaishankar-highlights-importance-of-maintaining-stability-12265022#publisher=newsstand": 1,
+  "https://www.ndtv.com/india-news/noodles-too-spicy-3-men-thrash-fast-food-shop-staff-in-bengaluru-12264995#publisher=newsstand": 1,
+  "https://www.ndtv.com/world-news/kiren-rijiju-bhutan-pm-drive-together-to-attend-stupa-construction-ceremony-12264990#publisher=newsstand": 99,
+  "https://www.ndtv.com/india-news/case-against-school-after-boy-8-assaults-6-year-old-girl-in-haryana-12264964#publisher=newsstand": 1,
+  "https://www.ndtv.com/india-news/sikhar-agarwal-ias-prashakha-mathur-ips-36-villas-2-cities-rs-5-crore-rajasthan-ias-ips-couple-under-probe-12264648#publisher=newsstand": 1
 }
