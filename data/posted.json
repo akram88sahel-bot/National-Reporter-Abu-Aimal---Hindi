@@ -4514,5 +4514,17 @@
     ],
     "posted_at": "2026-10-31T07:49:34+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "telangana ppp mri govt hospitals; delhi hc non bs vi vehicle ban; aap punjab assembly poll candidate list",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/telangana-plans-ppp-model-to-ensure-uninterrupted-mri-services-at-govt-hospitals/article71648395.ece",
+      "https://www.indiatoday.in/india/law-news/story/delhi-bs-vi-vehicle-ban-high-court-refuses-urgent-hearing-ptag-3029230-2026-10-31?utm_source=rss",
+      "https://www.ndtv.com/india-news/aap-bhagwant-mann-sanjeev-arora-punjab-assembly-polls-candidates-list-12262639#publisher=newsstand"
+    ],
+    "posted_at": "2026-10-31T08:43:21+00:00",
+    "dry_run": false
   }
 ]
