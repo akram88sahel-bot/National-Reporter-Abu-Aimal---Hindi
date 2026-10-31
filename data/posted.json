@@ -4438,5 +4438,15 @@
     ],
     "posted_at": "2026-10-31T01:03:45+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "UP man shot by disinherited son",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/cities/other-cities/story/up-banda-property-dispute-disinherited-son-held-for-shooting-father-3029023-2026-10-30?utm_source=rss"
+    ],
+    "posted_at": "2026-10-31T01:30:09+00:00",
+    "dry_run": false
   }
 ]
