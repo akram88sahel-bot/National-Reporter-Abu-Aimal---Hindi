@@ -4604,5 +4604,15 @@
     ],
     "posted_at": "2026-10-31T21:30:55+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "PM Modi remarks on opposition obstruction",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/video/opposition-turn-avrodh-paksh-creating-obstacles-pm-narendra-modi-ytvd-3029564-2026-10-31?utm_source=rss"
+    ],
+    "posted_at": "2026-10-31T21:57:31+00:00",
+    "dry_run": false
   }
 ]
