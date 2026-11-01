@@ -4741,5 +4741,16 @@
     ],
     "posted_at": "2026-11-01T05:57:08+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "karnataka kannada flag mandatory; delhi agra bullet train approval",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/karnataka/story/karnataka-kannada-flag-official-status-dk-shivakumar-legal-framework-belagavi-session-3029739-2026-11-01?utm_source=rss",
+      "https://www.ndtv.com/india-news/pm-modi-approves-northern-bullet-train-corridor-delhi-to-agra-in-59-minutes-12266008#publisher=newsstand"
+    ],
+    "posted_at": "2026-11-01T06:24:51+00:00",
+    "dry_run": false
   }
 ]
