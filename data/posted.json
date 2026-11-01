@@ -4848,5 +4848,15 @@
     ],
     "posted_at": "2026-11-01T20:16:52+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "wild boar hunting bomb explosion",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.indiatoday.in/cities/other-cities/story/kamareddy-country-made-bomb-explosion-injures-seven-during-test-telangana-3030219-2026-11-02?utm_source=rss"
+    ],
+    "posted_at": "2026-11-01T20:43:04+00:00",
+    "dry_run": false
   }
 ]
