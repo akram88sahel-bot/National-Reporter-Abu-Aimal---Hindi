@@ -4785,5 +4785,15 @@
     ],
     "posted_at": "2026-11-01T08:16:04+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "rahul gandhi bjp connaught place protest shops",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/rahul-gandhi-bjp-clash-delhi-trader-losses-connaught-place-shop-closures-3029831-2026-11-01?utm_source=rss"
+    ],
+    "posted_at": "2026-11-01T08:46:58+00:00",
+    "dry_run": false
   }
 ]
