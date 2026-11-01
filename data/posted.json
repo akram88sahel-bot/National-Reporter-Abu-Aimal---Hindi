@@ -4827,5 +4827,16 @@
     ],
     "posted_at": "2026-11-01T18:57:21+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Manipur violence 5 killed; Rahul Gandhi Delhi rally Amit Shah retort",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.ndtv.com/india-news/5-killed-in-manipur-protests-in-kangpokpi-after-two-bodies-found-3-shot-in-noney-12268493#publisher=newsstand",
+      "https://www.indiatoday.in/india/story/rahul-gandhi-gyanesh-kumar-jail-ramlila-maidan-rally-opposition-vote-chori-sir-pm-modi-amit-shah-bjp-attacks-mamata-banerjee-mallikarjun-kharge-akhilesh-yadav-delhi-march-3029968-2026-11-01?utm_source=rss"
+    ],
+    "posted_at": "2026-11-01T19:49:10+00:00",
+    "dry_run": false
   }
 ]
