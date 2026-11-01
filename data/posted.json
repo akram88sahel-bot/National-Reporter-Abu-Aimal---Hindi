@@ -4678,5 +4678,16 @@
     ],
     "posted_at": "2026-11-01T03:17:30+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "bullet train corridor approval; delhi winter pollution plan",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/delhi-guwahati-bullet-train-corridor-approved-pm-modi-ashwini-vaishnaw-3029678-2026-11-01?utm_source=rss",
+      "https://www.indiatoday.in/cities/delhi/story/delhi-pollution-curbs-bs-iv-vehicle-barred-construction-ban-october-aqi-eight-year-low-3029686-2026-11-01?utm_source=rss"
+    ],
+    "posted_at": "2026-11-01T03:43:58+00:00",
+    "dry_run": false
   }
 ]
