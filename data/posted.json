@@ -4858,5 +4858,15 @@
     ],
     "posted_at": "2026-11-01T20:43:04+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "oilpalm processing increase telangana",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/oilpalm-bunches-processing-increases-by-446-in-2025-26-ryots-get-1100-cr-payments/article71652815.ece"
+    ],
+    "posted_at": "2026-11-01T21:09:30+00:00",
+    "dry_run": false
   }
 ]
