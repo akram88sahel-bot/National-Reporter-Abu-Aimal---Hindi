@@ -2,7 +2,7 @@
   {
     "image_url": "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.30808-6/863475828_1658084295679606_2901543943364826504_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=054031&_nc_ohc=btRABHEHWo0Q7kNvwGEXn1L&_nc_oc=AdoscUoByHVC746EkJlY7gI9DazITwFg4mirMjoVc9fnt4-ZYKrS6Z8G2riXDXH1b6A&_nc_zt=23&_nc_ht=scontent-dfw6-1.xx&edm=AMAeTUEEAAAA&_nc_gid=5e4Z3J1DZddzFHBpQSQvIQ&_nc_tpa=Q5bMBQLYi0sf1KDw2tDTKLrDgkbRgT67qwZVmoV7IfFPL1PfDda2zjuG2pl-0sCCgOK8pwjXw7lOuVTJ_A&oh=00_AQToMwprJyRh-S4BLq1r60AdjeQUnbty-V8g6LL53wEJmw&oe=6AEC6D52",
     "caption": "🚨 LATEST NEWS\n\nHINDI\n• महाराष्ट्र के लातूर में एक कूरियर वैन के अंदर पार्सल फटने से दो कर्मचारी घायल हो गए।\n• यह घटना शनिवार को कूरियर ऑफिस के बाहर अनलोडिंग के दौरान हुई।\n• पुलिस, फॉरेसिक और एटीएस इस एयरगुन शिपमेंट और उसकी कानूनी वैधता की जांच कर रहे हैं।\n\nROMAN URDU\n• Maharashtra ke Latur mein ek courier van ke andar parcel phatne se do karmchari ghayal ho gaye.\n• Yeh ghatna shanivar ko courier office ke bahar unloading ke dauran hui.\n• Police, forensic aur ATS is airgun shipment aur uski kanooni vaidyata ki jaanch kar rahe hain.",
-    "attempts": 1,
+    "attempts": 2,
     "last_error": "Instagram publish failed: 403 {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":4,\"error_subcode\":2207051,\"error_user_title\":\"Action is blocke",
     "queued_at": "2026-11-01T01:05:57+00:00"
   },
@@ -131,5 +131,12 @@
     "attempts": 1,
     "last_error": "Instagram publish failed: 403 {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":4,\"error_subcode\":2207051,\"error_user_title\":\"Action is blocke",
     "queued_at": "2026-11-01T19:49:10+00:00"
+  },
+  {
+    "image_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/886128244_1658915405596495_898066219001734350_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=054031&_nc_ohc=RgL_Exn36PEQ7kNvwGDOqWE&_nc_oc=AdrQjxSh2r3rpiaK7nsA0W5TEnat06zN5oZ06DS-KrSNPwQm1Oe-lP2FlMLWUpHdeGo&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=fiY3lDAyKjszo9fedQ6vLw&_nc_tpa=Q5bMBQI5hPXbH4-4tyD6EeaJjTY1YOiPZlnYJfNkooPbQ8SIP1_xc6_YG6XGg_8GkPDXTY1BMNDvcphJYA&oh=00_AQT9oguQvGMdhI_Y6gU4ZTg6wvvde7nsWo_4bxLRwxIn3Q&oe=6AED81EC",
+    "caption": "🚨 LATEST NEWS\n\nHINDI\n• बीजेपी सांसद संबित पात्रा ने इंडिया गठबंधन की रैली को फ्लॉप बताया।\n• यह रैली नई दिल्ली के रामलीला मैदान में आयोजित की गई थी।\n• पात्रा ने दावा किया कि चुनाव आयोग पर 'वोट चोरी' के आरोपों को लेकर हुई रैली में 10 लाख के दावे के उलट मैदान का बड़ा हिस्सा खाली रहा।\n\nROMAN URDU\n• BJP MP Sambit Patra ne INDIA bloc ki rally ko flop qarar diya.\n• Yeh rally New Delhi ke Ramlila Maidan mein organize ki gayi thi.\n• Patra ne dawa kiya ke Election Commission par 'vote chori' ke ilzamaat par hui rally mein 10 lakh ke daave ke baraks maidan ka bada hissa khali raha.",
+    "attempts": 1,
+    "last_error": "Instagram publish failed: 403 {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":4,\"error_subcode\":2207051,\"error_user_title\":\"Action is blocke",
+    "queued_at": "2026-11-01T20:16:52+00:00"
   }
 ]
