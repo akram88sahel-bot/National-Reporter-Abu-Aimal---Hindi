@@ -4636,5 +4636,15 @@
     ],
     "posted_at": "2026-10-31T23:45:48+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "parcel explosion latur courier office",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/cities/other-cities/story/maharashtra-latur-parcel-blast-two-injured-airgun-co2-cartridges-probe-3029452-2026-10-31?utm_source=rss"
+    ],
+    "posted_at": "2026-11-01T01:05:57+00:00",
+    "dry_run": false
   }
 ]
