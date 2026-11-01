@@ -4805,5 +4805,17 @@
     ],
     "posted_at": "2026-11-01T09:19:39+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Cyclone Murasu approaches Andhra and Odisha; Two Punjab AAP MLAs quit party; CBI takes over Tripura rifleman missing case",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/odisha-cyclone-murasu-landfall-andhra-pradesh-high-alert-3029859-2026-11-01?utm_source=rss",
+      "https://www.ndtv.com/india-news/2-mlas-quit-in-setback-for-punjab-aap-after-1st-candidates-list-announced-12266645#publisher=newsstand",
+      "https://www.indiatoday.in/india/law-news/story/cbi-probe-tripura-rifleman-subhash-chandra-bose-2012-train-disappearance-ptag-3029909-2026-11-01?utm_source=rss"
+    ],
+    "posted_at": "2026-11-01T10:49:10+00:00",
+    "dry_run": false
   }
 ]
