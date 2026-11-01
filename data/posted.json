@@ -4902,5 +4902,16 @@
     ],
     "posted_at": "2026-11-01T23:27:46+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "assam eviction drive; haryana school principal suspended",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.ndtv.com/india-news/750-families-removed-mosques-demolished-in-assam-eviction-drive-12268248#publisher=newsstand",
+      "https://www.ndtv.com/india-news/principal-of-haryana-school-where-8-year-old-assaulted-girl-6-suspended-12268080#publisher=newsstand"
+    ],
+    "posted_at": "2026-11-01T23:54:05+00:00",
+    "dry_run": false
   }
 ]
