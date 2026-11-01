@@ -4762,5 +4762,16 @@
     ],
     "posted_at": "2026-11-01T07:18:09+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "andhra pradesh cyclone warning; bihar engineering college clash",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/science/story/second-cyclone-in-less-than-a-week-headed-to-hit-andhra-satellite-tracks-from-space-3029784-2026-11-01?utm_source=rss",
+      "https://www.indiatoday.in/cities/other-cities/story/bihar-motihari-engineering-college-clash-students-fight-ragging-allegations-3029781-2026-11-01?utm_source=rss"
+    ],
+    "posted_at": "2026-11-01T07:45:14+00:00",
+    "dry_run": false
   }
 ]
