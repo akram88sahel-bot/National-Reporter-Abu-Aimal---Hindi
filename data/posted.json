@@ -4646,5 +4646,16 @@
     ],
     "posted_at": "2026-11-01T01:05:57+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Pune Metro launch; Cyclone Murasu Andhra Pradesh",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://news.google.com/rss/articles/CBMixwFBVV95cUxQcjZJX2I5VlRFSlpRbHE5aDhWdVBIV2NNTHVyYzd0XzlBbndxUGllanl4N0FKbzY4SFZpQ1JPOTdkQlZ2ZnFsQWZxSERJcnZCX1dOVVpoTVNQRGhKOTdSOWdRb2ozZzZXdXliREhRLXBfVlZMQU5fQWhhSXduTHFHbWI1MDNQQ1puOWZ4ajBTWVlRUHh0OEwzWUZXcFFkUG9pUDJTc2d2OG5SNnBrREdoWFg1WGgtSW5ZblRnTjl2aDhLd3F0TjRj0gHOAUFVX3lxTE1NeE5nSTd6a3pqVXBmM05mdGMyQVJFLWV2MmVLM0JMamc2aG1UOUk4VEpxanJjVWdod2s1cEN2ZDZYcGxYOXZodUFzM2t1V0UyUmFKcXlUQUg5cDRncktZM0hvWHQ0dGUwcGFIeUduSGU4OUtqcDJnMFRrdW1fdEtfQjBFbHgyeVh3by1WNHZvRnNtcHU2c21NRUg5U3V4VmNLQXZMYWRlekVWaHRsQmdZVUpTcGtDMDhOd2E0QzVpdXNaWlZvd0YxcThwOXlR?oc=5",
+      "https://www.indiatoday.in/india/andhra-pradesh/story/andhra-pradesh-cyclone-murasu-landfall-november-3-imd-rain-warning-3029658-2026-11-01?utm_source=rss"
+    ],
+    "posted_at": "2026-11-01T02:24:17+00:00",
+    "dry_run": false
   }
 ]
