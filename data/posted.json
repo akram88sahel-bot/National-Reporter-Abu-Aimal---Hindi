@@ -4817,5 +4817,15 @@
     ],
     "posted_at": "2026-11-01T10:49:10+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "teenager arrested with counterfeit currency",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/teenager-held-with-counterfeit-currency-of-face-value-60-lakh-at-secunderabad-railway-station/article71653200.ece"
+    ],
+    "posted_at": "2026-11-01T18:57:21+00:00",
+    "dry_run": false
   }
 ]
