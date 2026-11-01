@@ -4699,5 +4699,17 @@
     ],
     "posted_at": "2026-11-01T04:10:31+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "INDIA bloc Ramlila Maidan rally; Trump Iran targets threat; Jaishankar bilateral talks Atlanta",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/india-bloc-rally-live-updates-ramlila-maidan-delhi-vote-bachao-desh-bachao-cec-row-gyanesh-kumar-rahul-gandhi-mallikarjun-kharge-congress-3029657-2026-11-01?utm_source=rss",
+      "https://www.indiatoday.in/world/story/donald-trump-iran-threat-targets-mojtaba-khamenei-warning-pickaxe-mountain-3029687-2026-11-01?utm_source=rss",
+      "https://www.indiatoday.in/world/story/s-jaishankar-g20-atlanta-meetings-russia-poland-south-korea-ptag-3029704-2026-11-01?utm_source=rss"
+    ],
+    "posted_at": "2026-11-01T04:38:24+00:00",
+    "dry_run": false
   }
 ]
