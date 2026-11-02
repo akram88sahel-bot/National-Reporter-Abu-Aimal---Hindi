@@ -5054,5 +5054,15 @@
     ],
     "posted_at": "2026-11-02T07:04:23+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Trump Iran military pressure",
+    "class": "B",
+    "region": "WORLD",
+    "links": [
+      "https://www.indiatoday.in/world/story/us-iran-israel-conflict-netanyahu-presses-trump-pickaxe-mountain-strikes-talks-3030346-2026-11-02?utm_source=rss"
+    ],
+    "posted_at": "2026-11-02T07:35:10+00:00",
+    "dry_run": false
   }
 ]
