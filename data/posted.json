@@ -5010,5 +5010,15 @@
     ],
     "posted_at": "2026-11-02T05:18:46+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Cyclone Murasu approaches Andhra coast",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/tamil-nadu/story/cyclone-murasu-chennai-rain-flooding-flights-andhra-pradesh-landfall-ptag-3030313-2026-11-02?utm_source=rss"
+    ],
+    "posted_at": "2026-11-02T05:44:54+00:00",
+    "dry_run": false
   }
 ]
