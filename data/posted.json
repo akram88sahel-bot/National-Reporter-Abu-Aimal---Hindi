@@ -5130,5 +5130,16 @@
     ],
     "posted_at": "2026-11-02T22:10:24+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "BSF jawans attacked by smugglers in Tripura; Pro-Kannada activists demand jobs in Bengaluru IT parks",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.ndtv.com/india-news/smugglers-attack-3-bsf-jawans-in-tripura-chief-minister-vows-strict-action-12273883#publisher=newsstand",
+      "https://www.ndtv.com/india-news/pro-kannada-activists-enter-it-parks-in-bengaluru-demand-jobs-for-locals-12272398#publisher=newsstand"
+    ],
+    "posted_at": "2026-11-02T23:59:13+00:00",
+    "dry_run": false
   }
 ]
