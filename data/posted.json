@@ -5075,5 +5075,15 @@
     ],
     "posted_at": "2026-11-02T08:03:03+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Cyclone Murasu red alert in Telangana",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/cyclone-murasu-red-alert-in-two-telangana-districts-orange-in-three-more-on-november-3/article71655916.ece"
+    ],
+    "posted_at": "2026-11-02T19:15:42+00:00",
+    "dry_run": false
   }
 ]
