@@ -4977,5 +4977,17 @@
     ],
     "posted_at": "2026-11-02T03:28:26+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "RG Kar victim mother questions CBI probe; IIT Bombay agricultural drought forecasting portal; Binance covers cyberattack stolen assets",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/law-news/story/rg-kar-case-ratna-debnath-questions-cbi-probe-medical-college-corruption-ptag-3030278-2026-11-02?utm_source=rss",
+      "https://www.indiatoday.in/education-today/news/story/iit-bombay-portal-four-week-agricultural-drought-forecasts-india-3030275-2026-11-02?utm_source=rss",
+      "https://www.indiatoday.in/technology/news/story/63-billion-gone-in-20-minutes-binance-back-online-after-hack-says-it-will-cover-95-of-stolen-assets-3030261-2026-11-02?utm_source=rss"
+    ],
+    "posted_at": "2026-11-02T04:24:07+00:00",
+    "dry_run": false
   }
 ]
