@@ -4913,5 +4913,15 @@
     ],
     "posted_at": "2026-11-01T23:54:05+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Assamese shopkeeper assaulted Bengaluru",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/cities/bengaluru/story/bengaluru-spicy-noodles-row-assamese-shop-workers-assaulted-3030173-2026-11-01?utm_source=rss"
+    ],
+    "posted_at": "2026-11-02T00:20:25+00:00",
+    "dry_run": false
   }
 ]
