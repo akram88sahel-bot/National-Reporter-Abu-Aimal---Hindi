@@ -5064,5 +5064,16 @@
     ],
     "posted_at": "2026-11-02T07:35:10+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Cyclone Murasu Andhra Pradesh flight cancellations; Delhi police personnel protest headquarters transfer",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.thehindu.com/news/national/andhra-pradesh/cyclone-murasu-12-flight-services-cancelled-at-vijayawada-visakhapatnam-flights-hit/article71655530.ece",
+      "https://www.indiatoday.in/cities/delhi/story/delhi-police-protest-officers-transfers-shahdara-lawyers-clash-3030431-2026-11-02?utm_source=rss"
+    ],
+    "posted_at": "2026-11-02T08:03:03+00:00",
+    "dry_run": false
   }
 ]
