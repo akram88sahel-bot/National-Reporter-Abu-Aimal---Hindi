@@ -4923,5 +4923,15 @@
     ],
     "posted_at": "2026-11-02T00:20:25+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "delhi pollution fines and vehicle crackdown",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/cities/delhi/story/delhi-winter-action-plan-rs-68-4-lakh-penalties-1539-vehicles-turned-back-3030227-2026-11-02?utm_source=rss"
+    ],
+    "posted_at": "2026-11-02T00:46:39+00:00",
+    "dry_run": false
   }
 ]
