@@ -4989,5 +4989,16 @@
     ],
     "posted_at": "2026-11-02T04:24:07+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "four die cleaning hotel chamber MP; delhi air quality very poor AQI 300",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.ndtv.com/india-news/4-die-by-suffocation-while-cleaning-hotel-waste-chamber-in-madhya-pradesh-12269244#publisher=newsstand",
+      "https://www.indiatoday.in/cities/delhi/story/delhi-air-pollution-aqi-turns-very-poor-crosses-300-after-brief-rain-relief-3030262-2026-11-02?utm_source=rss"
+    ],
+    "posted_at": "2026-11-02T04:50:37+00:00",
+    "dry_run": false
   }
 ]
