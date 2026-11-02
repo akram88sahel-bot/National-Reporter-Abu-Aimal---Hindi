@@ -4966,5 +4966,16 @@
     ],
     "posted_at": "2026-11-02T03:01:59+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "char dham helicopter operators protest; government intervention in airfares",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/char-dham-helicopter-services-suspension-dgca-two-pilot-rule-3030270-2026-11-02?utm_source=rss",
+      "https://www.indiatoday.in/business/story/high-flight-plane-ticket-prices-centre-temporary-airfare-intervention-2027-bharatiya-vayuyan-niyam-3030252-2026-11-02?utm_source=rss"
+    ],
+    "posted_at": "2026-11-02T03:28:26+00:00",
+    "dry_run": false
   }
 ]
