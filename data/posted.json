@@ -5338,5 +5338,15 @@
     ],
     "posted_at": "2026-11-03T20:21:40+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Ladakh halts Wangchuk school activities",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/sonam-wangchuk-hial-desert-flower-school-activities-halted-high-court-ruling-3031741-2026-11-03?utm_source=rss"
+    ],
+    "posted_at": "2026-11-03T21:45:00+00:00",
+    "dry_run": false
   }
 ]
