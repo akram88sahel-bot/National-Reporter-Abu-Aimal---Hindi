@@ -5369,5 +5369,15 @@
     ],
     "posted_at": "2026-11-03T23:03:20+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "ACB seizes assets from MEPMA Director",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/acb-finds-475-crore-assets-in-searches-against-mepma-additional-director/article71662065.ece"
+    ],
+    "posted_at": "2026-11-03T23:56:15+00:00",
+    "dry_run": false
   }
 ]
