@@ -5141,5 +5141,15 @@
     ],
     "posted_at": "2026-11-02T23:59:13+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "visakhapatnam oil refinery blast",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/major-explosion-at-visakhapatnam-oil-refinery-sends-flames-soaring-thick-smoke-engulfs-area-3030981-2026-11-02?utm_source=rss"
+    ],
+    "posted_at": "2026-11-03T00:27:44+00:00",
+    "dry_run": false
   }
 ]
