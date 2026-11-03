@@ -5223,5 +5223,15 @@
     ],
     "posted_at": "2026-11-03T04:33:09+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "niloufer hospital protest hyderabad",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.thehindu.com/news/cities/Hyderabad/protest-at-hyderabads-niloufer-hospital-as-survey-highlights-bed-shortages-poor-sanitation-and-irregularities/article71657949.ece"
+    ],
+    "posted_at": "2026-11-03T04:59:38+00:00",
+    "dry_run": false
   }
 ]
