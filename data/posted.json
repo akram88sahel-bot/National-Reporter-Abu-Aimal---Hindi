@@ -5294,5 +5294,16 @@
     ],
     "posted_at": "2026-11-03T08:11:41+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Cyclone Murasu weather alert in Telangana; Poultry industry live chicken price meeting Hyderabad",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/cyclone-murasu-nov-3-red-alert-lifted-from-two-telangana-districts-now-sounded-for-suryapet-khammam-and-bhadradri/article71659922.ece",
+      "https://www.thehindu.com/news/national/telangana/poultry-industry-pushes-for-110-per-kg-live-chicken-price/article71659617.ece"
+    ],
+    "posted_at": "2026-11-03T08:40:03+00:00",
+    "dry_run": false
   }
 ]
