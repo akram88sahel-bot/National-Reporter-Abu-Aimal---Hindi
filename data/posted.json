@@ -5213,5 +5213,15 @@
     ],
     "posted_at": "2026-11-03T04:06:12+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Sensex rises 600 points",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/business/market/story/stock-market-today-rise-2nd-day-sensex-rises-600-points-fii-buying-lower-crude-ltcg-tax-hopes-3031139-2026-11-03?utm_source=rss"
+    ],
+    "posted_at": "2026-11-03T04:33:09+00:00",
+    "dry_run": false
   }
 ]
