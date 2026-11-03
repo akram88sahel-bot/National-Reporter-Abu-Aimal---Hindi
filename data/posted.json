@@ -5171,5 +5171,15 @@
     ],
     "posted_at": "2026-11-03T01:48:53+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "BSF clash with locals in Tripura",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/tripura-bsf-clash-four-personnel-injured-locals-attack-vehicle-3031082-2026-11-03?utm_source=rss"
+    ],
+    "posted_at": "2026-11-03T02:42:00+00:00",
+    "dry_run": false
   }
 ]

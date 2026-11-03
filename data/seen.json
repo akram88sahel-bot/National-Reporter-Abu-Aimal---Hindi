@@ -1,9 +1,4 @@
 {
-  "https://news.google.com/rss/articles/CBMisgFBVV95cUxOd19GVDd5TnhBY2JMWHFXOXFuN2JsMzMxUjBmNmNTQkN2MXRxa0ctRkFQaFAzWUdnZ3QwTGFFcnVQYkhBRzJLSFZaM1lXOG9fUlowSUNfQ2JrbU5tRlc1emMxOFF1TVV4VTlCWTBQckJyd1oxemFzZjYwRS1oQjVtNk5RRkdwTm8zMW5xV3ZXNWFvTndfU3FTUnFmZnQ3M2tfZlM5UjkyQk5ZVWZBV29IVXp30gG4AUFVX3lxTE9PZ3NuazdVMU83Rm5YbXBPck9PcjZWNkYzdEwyR0RQM1JSNDZaMS1sZkJwcjVJUzdPZldQM3hwdFVhMnJVM1NtVVdfYWJnYmtyZWh0RmRmaXdmakhqZ1NRUlVQT2xEbUYyODVEX3AtVGJYZmNtZDAwU29TZllDdWlVQkNSM2hpZkxuU0pOV1JQd09VNmlOYjduak1Xck04Q29hZVA3OXBtM185VHhKcWxWUmJReTlxdy0?oc=5": 2,
-  "https://www.thehindu.com/news/national/telangana/bjp-losing-ground-in-its-top-leaders-strongholds-says-tpcc-chief/article71640450.ece": 2,
-  "https://www.ndtv.com/india-news/delhi-sir-deadline-extended-till-november-25-relief-for-5-other-states-12256057#publisher=newsstand": 2,
-  "https://www.ndtv.com/india-news/jammu-and-kashmir-scraps-anantnag-bar-association-polls-over-blatant-violation-12256039#publisher=newsstand": 2,
-  "https://www.ndtv.com/india-news/vijay-meets-economist-after-row-over-his-early-morning-detention-12255790#publisher=newsstand": 2,
   "https://www.ndtv.com/india-news/congress-minister-defends-sir-deletions-in-karnataka-bjp-jabs-rahul-gandhi-12255577#publisher=newsstand": 2,
   "https://www.ndtv.com/india-news/will-appeal-against-judges-bail-kerala-minister-on-mercedes-hit-and-run-12255288#publisher=newsstand": 2,
   "https://www.indiatoday.in/india/story/up-mlc-election-results-2026-op-rajbhar-educated-voters-sp-bjp-varanasi-lucknow-graduates-seats-suheldev-bharatiya-samaj-party-3027803-2026-10-29?utm_source=rss": 99,
@@ -992,11 +987,16 @@
   "https://www.indiatoday.in/visualstories/technology/oneplus-nord-6-gets-cheaper-on-amazon-details-here-287215-02-11-2026?utm_source=rss": 2,
   "https://www.indiatoday.in/visualstories/technology/iphone-16-gets-a-massive-price-drop-on-amazon-details-here-287211-02-11-2026?utm_source=rss": 2,
   "https://www.indiatoday.in/sports/other-sports/story/dhinidhi-desinghu-swimming-youth-olympics-bronze-national-100m-freestyle-3030895-2026-11-02?utm_source=rss": 2,
-  "https://www.indiatoday.in/entertainment/music/story/diljit-dosanjhs-delhi-concert-was-a-blast-but-did-non-punjabi-fans-feel-left-out-3030559-2026-11-03?utm_source=rss": 1,
-  "https://www.indiatoday.in/jobs/deep-dive/story/unpaid-work-india-time-use-survey-gender-gap-second-shift-educ-3030533-2026-11-03?utm_source=rss": 1,
-  "https://www.indiatoday.in/newsmo/short-videos/explosion-at-visakhapatnam-oil-refinery-3031041-2026-11-02?utm_source=rss": 1,
-  "https://www.indiatoday.in/newsmo/short-videos/hackers-target-supermarket-fridges-3031025-2026-11-02?utm_source=rss": 1,
-  "https://www.indiatoday.in/newsmo/short-videos/tukaram-mundhe-checks-ladoo-quality-ahead-of-diwali-3030899-2026-11-02?utm_source=rss": 1,
-  "https://www.indiatoday.in/newsmo/short-videos/death-dresses-up-for-a-party-in-mexico-3030889-2026-11-02?utm_source=rss": 1,
-  "https://www.indiatoday.in/newsmo/short-videos/srks-continues-iconic-birthday-tradition-3030867-2026-11-02?utm_source=rss": 1
+  "https://www.indiatoday.in/entertainment/music/story/diljit-dosanjhs-delhi-concert-was-a-blast-but-did-non-punjabi-fans-feel-left-out-3030559-2026-11-03?utm_source=rss": 2,
+  "https://www.indiatoday.in/jobs/deep-dive/story/unpaid-work-india-time-use-survey-gender-gap-second-shift-educ-3030533-2026-11-03?utm_source=rss": 2,
+  "https://www.indiatoday.in/newsmo/short-videos/explosion-at-visakhapatnam-oil-refinery-3031041-2026-11-02?utm_source=rss": 2,
+  "https://www.indiatoday.in/newsmo/short-videos/hackers-target-supermarket-fridges-3031025-2026-11-02?utm_source=rss": 2,
+  "https://www.indiatoday.in/newsmo/short-videos/tukaram-mundhe-checks-ladoo-quality-ahead-of-diwali-3030899-2026-11-02?utm_source=rss": 2,
+  "https://www.indiatoday.in/newsmo/short-videos/death-dresses-up-for-a-party-in-mexico-3030889-2026-11-02?utm_source=rss": 2,
+  "https://www.indiatoday.in/newsmo/short-videos/srks-continues-iconic-birthday-tradition-3030867-2026-11-02?utm_source=rss": 2,
+  "https://www.indiatoday.in/world/story/bangladesh-anti-india-protest-sheikh-hasina-return-ganga-water-treaty-matarbari-port-nahid-islam-tarique-rahman-itspc-3030831-2026-11-03?utm_source=rss": 1,
+  "https://www.thehindu.com/news/national/congress-seeks-jpc-probe-into-idbi-bank-sale-alleges-valuation-irregularities/article71657915.ece": 1,
+  "https://www.indiatoday.in/cities/delhi/story/delhi-air-pollution-worsens-before-diwali-aqi-331-several-areas-cross-400-severe-category-very-poor-3031079-2026-11-03?utm_source=rss": 1,
+  "https://www.indiatoday.in/india/karnataka/story/karnataka-kmf-curd-price-cut-nandini-milk-hike-d-k-shivakumar-3031028-2026-11-02?utm_source=rss": 1,
+  "https://www.indiatoday.in/india/story/tripura-bsf-clash-four-personnel-injured-locals-attack-vehicle-3031082-2026-11-03?utm_source=rss": 99
 }
