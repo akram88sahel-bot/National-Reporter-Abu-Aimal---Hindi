@@ -5284,5 +5284,15 @@
     ],
     "posted_at": "2026-11-03T07:40:57+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Russian strike in Ukraine",
+    "class": "B",
+    "region": "WORLD",
+    "links": [
+      "https://www.ndtv.com/world-news/russia-ukraine-war-russian-strike-on-ukraine-aid-distribution-site-kills-26-after-ceasefire-ends-12275451#publisher=newsstand"
+    ],
+    "posted_at": "2026-11-03T08:11:41+00:00",
+    "dry_run": false
   }
 ]
