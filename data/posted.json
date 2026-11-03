@@ -5181,5 +5181,15 @@
     ],
     "posted_at": "2026-11-03T02:42:00+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "UP Government Medical Students Grievances System",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.ndtv.com/education/up-government-sets-up-3-tier-system-to-address-medical-students-grievances-12274159#publisher=newsstand"
+    ],
+    "posted_at": "2026-11-03T03:10:52+00:00",
+    "dry_run": false
   }
 ]
