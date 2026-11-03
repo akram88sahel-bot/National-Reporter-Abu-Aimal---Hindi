@@ -5359,5 +5359,15 @@
     ],
     "posted_at": "2026-11-03T22:11:14+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Uttarakhand High Court relocation",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/law-news/story/uttarakhand-high-court-relocation-dhami-seeks-haldwani-forest-land-transfer-ptag-3031794-2026-11-03?utm_source=rss"
+    ],
+    "posted_at": "2026-11-03T23:03:20+00:00",
+    "dry_run": false
   }
 ]
