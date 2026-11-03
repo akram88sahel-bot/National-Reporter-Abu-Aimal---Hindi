@@ -5253,5 +5253,15 @@
     ],
     "posted_at": "2026-11-03T06:19:04+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "indian sailor killed near oman",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.ndtv.com/world-news/indian-sailor-killed-in-attack-on-cargo-vessel-al-jusufi-off-oman-coast-12274884#publisher=newsstand"
+    ],
+    "posted_at": "2026-11-03T06:46:18+00:00",
+    "dry_run": false
   }
 ]
