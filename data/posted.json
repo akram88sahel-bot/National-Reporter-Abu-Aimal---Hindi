@@ -5201,5 +5201,17 @@
     ],
     "posted_at": "2026-11-03T03:39:36+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "acp suspended delhi police protest; nandini curd price cut karnataka; delhi aqi diwali pollution",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/cities/delhi/story/acp-manasvi-vashishtha-suspended-day-after-leading-protest-outside-delhi-police-hq-over-working-conditions-3031133-2026-11-03?utm_source=rss",
+      "https://www.indiatoday.in/india/karnataka/story/karnataka-kmf-curd-price-cut-nandini-milk-hike-d-k-shivakumar-3031028-2026-11-02?utm_source=rss",
+      "https://www.indiatoday.in/cities/delhi/story/delhi-air-pollution-worsens-before-diwali-aqi-331-several-areas-cross-400-severe-category-very-poor-3031079-2026-11-03?utm_source=rss"
+    ],
+    "posted_at": "2026-11-03T04:06:12+00:00",
+    "dry_run": false
   }
 ]
