@@ -5161,5 +5161,15 @@
     ],
     "posted_at": "2026-11-03T00:56:12+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Bengaluru-Mumbai Vande Bharat Sleeper operations",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/story/bengaluru-mumbai-vande-bharat-sleeper-fares-timings-travel-time-ptag-3030880-2026-11-02?utm_source=rss"
+    ],
+    "posted_at": "2026-11-03T01:48:53+00:00",
+    "dry_run": false
   }
 ]
