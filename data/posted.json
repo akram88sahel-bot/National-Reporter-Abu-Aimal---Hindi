@@ -5326,5 +5326,17 @@
     ],
     "posted_at": "2026-11-03T09:35:23+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Telangana HC extends stay on Ranganath HYDRAA order; TERC hearing on 7800 MW renewable energy procurement; Iran issues nuclear survival guide amid US strike threat",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/telangana-high-court-extends-stay-on-single-judge-order-to-relieve-ranganath-as-hydraa-commissioner/article71662112.ece",
+      "https://www.thehindu.com/news/national/telangana/telangana-electricity-regulatory-commission-holds-hearing-on-procurement-of-7800-mw-renewable-energy/article71662169.ece",
+      "https://www.indiatoday.in/world/story/iran-nuclear-attack-survival-guide-24-hours-indoors-ac-off-radioactive-fallout-trump-us-pickaxe-mountain-itspc-3031294-2026-11-03?utm_source=rss"
+    ],
+    "posted_at": "2026-11-03T20:21:40+00:00",
+    "dry_run": false
   }
 ]
