@@ -5419,5 +5419,15 @@
     ],
     "posted_at": "2026-11-04T03:01:59+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "No illegal immigrants on Hyderabad electoral rolls",
+    "class": "B",
+    "region": "HYDERABAD",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/telangana-sir-not-one-illegal-immigrant-found-on-hyderabad-districts-electoral-rolls/article71662812.ece"
+    ],
+    "posted_at": "2026-11-04T03:28:09+00:00",
+    "dry_run": false
   }
 ]
