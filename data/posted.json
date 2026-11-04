@@ -5379,5 +5379,15 @@
     ],
     "posted_at": "2026-11-03T23:56:15+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Cyclone Murasu control room in Bhadradri Kothagudem",
+    "class": "B",
+    "region": "TELANGANA",
+    "links": [
+      "https://www.thehindu.com/news/national/telangana/cyclone-murasu-control-room-activated-public-advisory-issued-in-bhadradri-kothagudem-district/article71660902.ece"
+    ],
+    "posted_at": "2026-11-04T00:23:11+00:00",
+    "dry_run": false
   }
 ]
