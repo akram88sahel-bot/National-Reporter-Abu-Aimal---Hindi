@@ -5389,5 +5389,15 @@
     ],
     "posted_at": "2026-11-04T00:23:11+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "Supreme Court freezes BMC chief salary",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/india/law-news/story/supreme-court-bmc-contempt-salary-freeze-borivali-best-land-encroachments-3031647-2026-11-03?utm_source=rss"
+    ],
+    "posted_at": "2026-11-04T02:06:55+00:00",
+    "dry_run": false
   }
 ]

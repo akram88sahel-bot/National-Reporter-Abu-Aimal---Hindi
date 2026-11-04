@@ -1,12 +1,4 @@
 {
-  "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQOEdJNFJ0R2oxMVltcS1ybFQyVXYwakI5VmVBMnNoY29iZlQ4MmRvTTA4UmE2ckJ6aU5oLTVyNDZGVk1RNGNoU2JVTTV5R1pTSzAxM3BwQi10cS1JOXVmMVRJTlVlSGExZ2pscThDclVEY2E0eUNmSUEtemtLbHFpNHprbEtKdnRSRW9vM2hHTEFzQ1VpaGtwZlVQMGNkWG4tU0t5YnpNeUR5dVBxRmxtX0M4akR3VGRRYVZCQVpuWEZlcUpIUlJxZC1nWG9aazAxeUxjajBrVUvSAd8BQVVfeXFMT3p5SmlUa1JQZVZoallWdWlBTFhkNW44djZCTkUycDdrckJuLUZoekFjTEN0bm9lclFlNG9RWUg4ck5ESnBBbW4wdW15VGpJS2RxQV9jcHMyOHZKUFlrS1dJR3FGdmlSUjgyU3RJRlU5VDEyQ0pmNmhBd2gzNTN6aF9oR2ctLVYtdFRpc2s5eGhZNGdvTW5KaXoyUHB6dHpHd1lLbTNRbjVJaTR2ajc3SEJ4TXcxU1huV200STJxbTJxaHZ0Y3dWek1DMjJBNTlPLWI5VHpTTkxCbm02ZHM5Zw?oc=5": 2,
-  "https://www.thehindu.com/news/national/telangana/aimim-intensifies-campaign-for-ap-local-body-polls-urges-voters-to-remember-tdp-bjp-alliance/article71645120.ece": 2,
-  "https://www.ndtv.com/india-news/a-kabir-bhajan-tejasvi-suryas-singer-wife-sivasri-skandaprasad-and-the-meaning-of-jantar-mantar-12260362#publisher=newsstand": 2,
-  "https://www.ndtv.com/india-news/aap-claims-government-jobs-halting-punjab-migration-bjp-blames-visa-rules-12261196#publisher=newsstand": 2,
-  "https://www.ndtv.com/india-news/does-a-man-not-have-right-to-end-relationship-supreme-court-on-false-rape-cases-12261084#publisher=newsstand": 2,
-  "https://www.indiatoday.in/elections/story/tripura-civic-elections-21-urban-local-bodies-polling-november-27-ptag-3028817-2026-10-30?utm_source=rss": 99,
-  "https://www.indiatoday.in/india-today-insight/story/lotus-wilting-in-modis-varanasi-how-samajwadi-party-is-reading-up-mlc-poll-verdict-3028818-2026-10-30?utm_source=rss": 2,
-  "https://www.indiatoday.in/india-today-insight/story/did-expired-antivirals-kill-nipah-patients-in-kerala-govts-claim-lefts-counter-3028785-2026-10-30?utm_source=rss": 2,
   "https://www.indiatoday.in/india/story/up-chief-electoral-officer-holds-deos-accountable-for-voter-list-lapses-warns-of-action-3029062-2026-10-31?utm_source=rss": 99,
   "https://www.indiatoday.in/trending-news/story/vrindavans-pookie-baba-has-social-media-users-queuing-up-to-be-his-devotees-3028442-2026-10-30?utm_source=rss": 2,
   "https://www.indiatoday.in/business/story/tata-sons-board-vote-noel-tata-rejig-25000-crore-sp-group-payout-3028709-2026-10-30?utm_source=rss": 2,
@@ -995,8 +987,16 @@
   "https://www.ndtv.com/india-news/madhya-pradesh-cop-hit-and-run-case-both-accused-injured-in-police-encounter-12279432#publisher=newsstand": 2,
   "https://www.ndtv.com/gurgaon-news/gurugram-orders-50-wfh-curbs-construction-from-tomorrow-amid-pollution-12279273#publisher=newsstand": 2,
   "https://www.ndtv.com/world-news/plane-parts-found-as-far-as-3-8-miles-from-crash-site-in-south-florida-ntsb-official-says-12279092#publisher=newsstand": 2,
-  "https://news.google.com/rss/articles/CBMizAFBVV95cUxONWRLUTVJbzhzYm9UZ2hrRlUtWmVhYnJkc2ZUY0FzRXpJSS05TUxXY21yUDJwektlVE9ZQXNQc3lVMjdpX3E3QU5RZkhZLW16TWxPVHVLZzNOallNU09yd0Z6eFlrYW9nODBWLVc2c09LNXp3NVhjY2I0YThXV18ySFo5bG1HUlNiZTJjNGJVemVLMEpERHJqb3RNTDRUd29WUUotaDdQNFIyYUZESzktRFdfZ3phdHRfbEs1akFIQ3dpWExWTkdTcXdWcTU?oc=5": 1,
-  "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOaXdGblVvY0JfaUNfT1N4ZnlmZS1Za0RvczRGZnhhSm1sREJic0NzZUt4YVNvZDBJSEhnSHpNaTI5YTQyVHFYQlJpOEZIdXh2SERhZ3lBNEEtdVVadGpfSU9vaXNEcW9HUVNmXzdaMmtrVFdITWFFQ18tdl9nUGlEZFdQY0k3b3lPczRfdWhjWG8tT3JNMWNhMG5tNENLcFJHc210X0ZURjRQTWVrbVZISnFoYUVpU2FPbG13VU56akdKUdIByAFBVV95cUxPeU11NlNnUUEyd2hoNUNoYWJENUxGYVBFTXB0ckY2VVVsNHdKanpHR0tIVGxHRkdDSnZKaVdocVllMHZuc3ljVTBUajIteTZDcDJ4RFJ5MDRsMzhNZ1lTUGNHZDZmQTBLUWliWkFfT3lvMjgyeE5GSjd6UzhScjItVWdNWlk1X1I2X1dYbVZjTXNtRkJPY05TazdXa08wXzM0MDZwa3ZKbEtnc2I1RDZyaDZKaWhTSEdxd2Rlc3BwbFdFT0p3SEVWTg?oc=5": 1,
-  "https://news.google.com/rss/articles/CBMingFBVV95cUxNU29GR1pjY0FERDNyNkNXWEJnTW1VZEJpWEhZRy13ODJDSnQ4WUp5NEl3N1FhbHZ5S2oxc0p6VWQyRnVGeWFONkNlRkh4Q09zT25rMkhTUi02alNySU04YjN2YU9Tc0xoR01GZDJMOERFeG42SEJOT1J6SWJIYmlyZk1DUkRsOVZpU2tyQ1VkdDFvdGtfQktvamxva21LUQ?oc=5": 1,
-  "https://www.ndtv.com/world-news/openai-employees-warned-about-operational-security-lapses-for-years-sources-12279123#publisher=newsstand": 1
+  "https://news.google.com/rss/articles/CBMizAFBVV95cUxONWRLUTVJbzhzYm9UZ2hrRlUtWmVhYnJkc2ZUY0FzRXpJSS05TUxXY21yUDJwektlVE9ZQXNQc3lVMjdpX3E3QU5RZkhZLW16TWxPVHVLZzNOallNU09yd0Z6eFlrYW9nODBWLVc2c09LNXp3NVhjY2I0YThXV18ySFo5bG1HUlNiZTJjNGJVemVLMEpERHJqb3RNTDRUd29WUUotaDdQNFIyYUZESzktRFdfZ3phdHRfbEs1akFIQ3dpWExWTkdTcXdWcTU?oc=5": 2,
+  "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOaXdGblVvY0JfaUNfT1N4ZnlmZS1Za0RvczRGZnhhSm1sREJic0NzZUt4YVNvZDBJSEhnSHpNaTI5YTQyVHFYQlJpOEZIdXh2SERhZ3lBNEEtdVVadGpfSU9vaXNEcW9HUVNmXzdaMmtrVFdITWFFQ18tdl9nUGlEZFdQY0k3b3lPczRfdWhjWG8tT3JNMWNhMG5tNENLcFJHc210X0ZURjRQTWVrbVZISnFoYUVpU2FPbG13VU56akdKUdIByAFBVV95cUxPeU11NlNnUUEyd2hoNUNoYWJENUxGYVBFTXB0ckY2VVVsNHdKanpHR0tIVGxHRkdDSnZKaVdocVllMHZuc3ljVTBUajIteTZDcDJ4RFJ5MDRsMzhNZ1lTUGNHZDZmQTBLUWliWkFfT3lvMjgyeE5GSjd6UzhScjItVWdNWlk1X1I2X1dYbVZjTXNtRkJPY05TazdXa08wXzM0MDZwa3ZKbEtnc2I1RDZyaDZKaWhTSEdxd2Rlc3BwbFdFT0p3SEVWTg?oc=5": 2,
+  "https://news.google.com/rss/articles/CBMingFBVV95cUxNU29GR1pjY0FERDNyNkNXWEJnTW1VZEJpWEhZRy13ODJDSnQ4WUp5NEl3N1FhbHZ5S2oxc0p6VWQyRnVGeWFONkNlRkh4Q09zT25rMkhTUi02alNySU04YjN2YU9Tc0xoR01GZDJMOERFeG42SEJOT1J6SWJIYmlyZk1DUkRsOVZpU2tyQ1VkdDFvdGtfQktvamxva21LUQ?oc=5": 2,
+  "https://www.ndtv.com/world-news/openai-employees-warned-about-operational-security-lapses-for-years-sources-12279123#publisher=newsstand": 2,
+  "https://www.indiatoday.in/world/us-news/story/us-midterm-elections-2026-results-president-donald-trump-republican-vs-democrat-us-congress-itspc-3031273-2026-11-04?utm_source=rss": 1,
+  "https://www.indiatoday.in/world/story/iran-war-us-trump-nuclear-strike-pickaxe-mountain-india-fallout-3031469-2026-11-04?utm_source=rss": 1,
+  "https://www.ndtv.com/india-news/rahul-gandhi-doubles-down-on-debate-dare-gets-a-counter-from-n-sitharaman-12278905#publisher=newsstand": 1,
+  "https://www.ndtv.com/india-news/gujarat-finds-38-fake-doctors-in-15-day-drive-35-charged-12278810#publisher=newsstand": 1,
+  "https://www.ndtv.com/india-news/bullet-train-connectivity-to-guwahati-approved-himanta-biswa-sarma-12278672#publisher=newsstand": 1,
+  "https://www.ndtv.com/education/cbse-board-timetable-2027-live-updates-class-10th-12th-date-sheet-pdf-download-link-exam-instructions-12275029#publisher=newsstand": 1,
+  "https://www.ndtv.com/india-news/probe-agencys-rs-510-crore-action-on-anil-ambani-group-2-planes-6-plots-12277788#publisher=newsstand": 1,
+  "https://www.indiatoday.in/india/law-news/story/supreme-court-bmc-contempt-salary-freeze-borivali-best-land-encroachments-3031647-2026-11-03?utm_source=rss": 99
 }
