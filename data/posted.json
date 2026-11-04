@@ -5429,5 +5429,15 @@
     ],
     "posted_at": "2026-11-04T03:28:09+00:00",
     "dry_run": false
+  },
+  {
+    "event_key": "bengaluru police stop play shows",
+    "class": "B",
+    "region": "INDIA",
+    "links": [
+      "https://www.indiatoday.in/cities/bengaluru/story/mahatma-gandhi-assassination-play-row-bengaluru-police-suchitra-cinema-and-cultural-academy-suspend-shows-further-orders-3031786-2026-11-03?utm_source=rss"
+    ],
+    "posted_at": "2026-11-04T03:54:13+00:00",
+    "dry_run": false
   }
 ]
